@@ -1,0 +1,2864 @@
+: 1428555947:0;exit
+: 1428556428:0;ls ~
+: 1428556437:0;ls -A ~
+: 1428556464:0;cat ~/.dotfiles/zsh/zsh_history
+: 1428556478:0;awk '{FS=";"}{print $2}' ~/.zsh_history |peco |zsh
+: 1428557183:0;run-help
+: 1428557189:0;run-help zsh
+: 1428557842:0;vim
+: 1428557865:0;vim vimrc
+: 1428557887:0;zsh
+: 1428557907:0;vim zsh/aliases.zsh
+: 1428557972:0;zsh
+: 1428558020:0;wd --help
+: 1428558038:0;wd add dots
+: 1428558045:0;wd list
+: 1428558049:0;wd dots
+: 1428558052:0;cd -
+: 1428558055:0;cd ~
+: 1428558060:0;wd dots
+: 1428558067:0;.
+: 1428558069:0;..
+: 1428558071:0;...
+: 1428558078:0;wd dots
+: 1428558092:0;cd antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh.git/custom/plugins/example/
+: 1428558096:0;....
+: 1428558104:0;cd -
+: 1428558110:0;.....
+: 1428558114:0;cd ../
+: 1428558116:0;ls
+: 1428558119:0;ls -A
+: 1428558524:0;dot
+: 1428558537:0;cd antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-Tarrasch-SLASH-zsh-bd.git/tests/
+: 1428558543:0;bd repos
+: 1428558549:0;bd dotfiles
+: 1428558554:0;bd .dotfiles
+: 1428558561:0;bd repos
+: 1428592064:0;sshd
+: 1428592610:0;pacsearch npm
+: 1428592749:0;cd Downloads
+: 1428592754:0;wd add down
+: 1428592757:0;wd down
+: 1428592758:0;ls
+: 1428592858:0;pacin dtrx
+: 1428592893:0;pacsearch dtrx
+: 1428593019:0;cat README
+: 1428593050:0;dtrx 
+: 1428593053:0;dtrx
+: 1428593065:0;chmod -x dtrx
+: 1428593069:0;dtrx
+: 1428593098:0;./ dtrx
+: 1428593103:0;sudo ./ dtrx
+: 1428593127:0;.
+: 1428593129:0;ls
+: 1428593149:0;python setup.py install --prefix=/usr/local
+: 1428593157:0;sudo python setup.py install --prefix=/usr/local
+: 1428593160:0;ls
+: 1428593163:0;cd ../
+: 1428593163:0;ls
+: 1428593171:0;dtrx
+: 1428593186:0;vim /usr/local/bin/dtrx
+: 1428593211:0;dtrx node-v0.12.2-linux-x64.tar.gz 
+: 1428593425:0;pacin yaourt
+: 1428593433:0;pacsearch yaourt
+: 1428593451:0;pacman -S yaourt
+: 1428593456:0;sudo pacman -S yaourt
+: 1428593501:0;wget https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz
+: 1428593535:0;tar -xvf yaourt.tar.gz 
+: 1428593537:0;ls
+: 1428593543:0;cd yaourt/
+: 1428593544:0;ls
+: 1428593546:0;ls -A
+: 1428593569:0;makepkg -A
+: 1428593573:0;makepkg
+: 1428593575:0;ls
+: 1428593633:0;vim /etc/pacman.conf
+: 1428593724:0;pacman -S
+: 1428593763:0;which python
+: 1428593769:0;python -version
+: 1428593772:0;python -v
+: 1428593806:0;vim /etc/pacman.conf
+: 1428594564:0;pacin packag-query
+: 1428594569:0;pacin package-query
+: 1428594754:0;wd down
+: 1428594761:0;curl -O https://aur.archlinux.org/packages/pa/package-query/package-query.tar.gz
+: 1428594763:0;ls
+: 1428594786:0;tar zxvf package-query.tar.gz
+: 1428594789:0;cd package-query/
+: 1428594796:0;makepkg -si
+: 1428594848:0;pacin base-devel
+: 1428594903:0;makepkg -si
+: 1428595062:0;cd ..
+: 1428595077:0;curl -O https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz
+: 1428595095:0;tar zxvf yaourt.tar.gz
+: 1428595099:0;cd yaourt/
+: 1428595102:0;makepkg -si
+: 1428595118:0;cd ..
+: 1428595145:0;yaourt dtrx
+: 1428595202:0;dtrx node-v0.12.2-linux-x64.tar.gz 
+: 1428595267:0;pacin atool
+: 1428595280:0;atool --help
+: 1428595291:0;atool node-v0.12.2-linux-x64.tar.gz
+: 1428595304:0;atool -x node-v0.12.2-linux-x64.tar.gz
+: 1428595306:0;ls
+: 1428595316:0;cd node-v0.12.2-linux-x64/
+: 1428595316:0;ls
+: 1428595323:0;cat README.md
+: 1428654111:0;ps aux | peco sublime
+: 1428654114:0;ps aux | peco
+: 1428654128:0;ps aux | grep sublime
+: 1428654412:0;sublime
+: 1428654433:0;ps aux | grep sublime
+: 1428654439:0;ps aux | peco
+: 1428654471:0;which sublime
+: 1428654650:0;pacin xprop
+: 1428654659:0;pacsearch xprop
+: 1428654677:0;pacin xorg-xprop
+: 1428656288:0;cat README
+: 1428656325:0;vim sublime-text-fix.sh 
+: 1428656385:0;which sublime
+: 1428656443:0;vim sublime-text-fix.sh 
+: 1428656500:0;./ sublime-text-fix.sh 
+: 1428656504:0;sudo ./ sublime-text-fix.sh 
+: 1428656537:0;sh sublime-text-fix.sh
+: 1428656555:0;vim sublime-text-fix.sh 
+: 1428656577:0;sh sublime-text-fix.sh
+: 1428656597:0;vim sublime-text-fix.sh 
+: 1428656614:0;sh sublime-text-fix.sh
+: 1428656708:0;vim sublime-text-fix.sh 
+: 1428656725:0;sh sublime-text-fix.sh
+: 1428657240:0;wd dow
+: 1428657243:0;wd down
+: 1428657244:0;ls
+: 1428657248:0;cd vertex-theme/
+: 1428657248:0;ls
+: 1428657254:0;vim README
+: 1428657329:0;wd down
+: 1428657330:0;ls
+: 1428657463:0;cd ~
+: 1428657464:0;ls
+: 1428657467:0;ls -A
+: 1428657512:0;ls -a
+: 1428657517:0;cd Downloads/
+: 1428657518:0;ls
+: 1428657649:0;vimrc
+: 1428657656:0;zshrc
+: 1428657794:0;cd ~/.config/
+: 1428657798:0;cd base16-gnome-terminal/
+: 1428657799:0;ls
+: 1428657826:0;source base16-monokai.dark.sh
+: 1428657882:0;ls
+: 1428658066:0;cd ~/.config/base16-shell/
+: 1428658067:0;ls
+: 1428658074:0;colortest
+: 1428658079:0;sh colortest
+: 1428658136:0;vim $DOTDIR/zsh/aliases.zsh
+: 1428658183:0;./ colortest base16-monokai.dark.sh
+: 1428658188:0;sudo ./ colortest base16-monokai.dark.sh
+: 1428658356:0;source ~/.dotfiles/zsh/aliases.zsh
+: 1428658358:0;./ colortest base16-monokai.dark.sh
+: 1428658363:0;sudo ./ colortest base16-monokai.dark.sh
+: 1428658404:0;./colortest base16-monokai.dark.sh
+: 1428658465:0;zshrc
+: 1428658521:0;source $DOTDIR/zshrc
+: 1428658534:0;source ~/.zshrc
+: 1428658539:0;ls
+: 1428658655:0;cd ~/.config/base16-shell/
+: 1428658656:0;ls
+: 1428658659:0;colortest
+: 1428658670:0;./colortest
+: 1428658744:0;cd ~/Documents/
+: 1428658745:0;ls
+: 1428658751:0;colors.pl
+: 1428658757:0;perl colors.pl
+: 1428658774:0;perl 256colors2.pl
+: 1428658792:0;echo GREEN
+: 1428658796:0;echo #GREEN
+: 1428658800:0;echo $GREEN
+: 1428658827:0;cd -
+: 1428658829:0;ls
+: 1428658834:0;colortest
+: 1428658856:0;./colortest
+: 1428659025:0;cd .config/base16-shell/
+: 1428659028:0;./colortest
+: 1428659055:0;cd ~/Documents/
+: 1428659056:0;ls
+: 1428659062:0;perl 256colors2.pl
+: 1428659072:0;cd -
+: 1428659076:0;./colortest
+: 1428659090:0;cd ~/.config/base16-shell/
+: 1428659093:0;./colortest
+: 1428659550:0;ps aux | grep archive
+: 1428659568:0;ps aux | peco
+: 1428659644:0;kill 16798
+: 1428659710:0;cd ~/Downloads/
+: 1428659711:0;ls
+: 1428659856:0;vimrc
+: 1428659862:0;zshrc
+: 1428659910:0;vimrc
+: 1428659941:0;ln -s ~/.dotfiles/vimrc  ~/.vimrc
+: 1428659950:0;vimrc
+: 1428659966:0;ls
+: 1428659973:0;ls -a
+: 1428659990:0;mv .vimrc ~/.dotfiles/vimrc
+: 1428659992:0;ls
+: 1428659995:0;ls -a
+: 1428659999:0;cd ~/.dotfiles/
+: 1428660000:0;ls
+: 1428660004:0;vimrc
+: 1428660594:0;ls
+: 1428660609:0;mv zshrc zshrc.bak
+: 1428660625:0;mv zshrc.bak zshrc
+: 1428660639:0;mv vimrc vimrc.bak
+: 1428660661:0;tmux
+: 1428660738:0;vimrc
+: 1428660765:0;vim vimrc.bak
+: 1428660863:0;tmux list
+: 1428660873:0;tmux list-sessions
+: 1428660882:0;tmux kill-session
+: 1428661341:0;git clone https://github.com/tmux-plugins/tpm ~/.dotdir/tmux/plugins/tpm
+: 1428661354:0;cd ~/.dotdir
+: 1428661355:0;ls
+: 1428661373:0;mv tmux ~/.dotfiles/tmux
+: 1428661375:0;ls
+: 1428661376:0;ls -a
+: 1428661382:0;../
+: 1428661384:0;ls
+: 1428661391:0;rm .dotdir
+: 1428661396:0;rm -Rf .dotdir
+: 1428661399:0;ls -a
+: 1428661413:0;cd dots
+: 1428661417:0;dots
+: 1428661420:0;dot
+: 1428661421:0;ld
+: 1428661422:0;ls
+: 1428661427:0;cd tmux
+: 1428661428:0;ls
+: 1428661430:0;cd plugins/
+: 1428661431:0;ls
+: 1428661471:0;zshrc
+: 1428661831:0;cd $DOTDIR/antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-RobSis-SLASH-zsh-completion-generator.git/
+: 1428661832:0;ls
+: 1428661844:0;python help2comp.py
+: 1428661850:0;vim help2comp.py
+: 1428661924:0;python --version
+: 1428662030:0;vim help2comp.py
+: 1428662086:0;ls
+: 1428815825:0;wd down
+: 1428815826:0;ls
+: 1428815829:0;ls -A
+: 1428815834:0;zshrc
+: 1428815847:0;vim $DOTDIR/zsh/aliases.zsh
+: 1428815901:0;zsh
+: 1428815914:0;aliasrc
+: 1428815921:0;vim $DOTDIR/zsh/aliases.zsh
+: 1428815942:0;aliasrc
+: 1428815948:0;zsh
+: 1428815952:0;aliasrc
+: 1428816158:0;zsh
+: 1428816163:0;cd down
+: 1428816169:0;cd dots
+: 1428816234:0;cd ~dots
+: 1428816249:0;cd ~/down
+: 1428816253:0;cd ~down
+: 1428816304:0;aliasrc
+: 1428816906:0;cd ~dots
+: 1428820650:0;aliasrc
+: 1428820741:0;vimrc
+: 1428821285:0;git clone https://github.com/lunixbochs/actualvim.git ~/.config/sublime-text-3/Packages/actualvim
+: 1428822023:0;yaourt -S neovim-git
+: 1428825316:0;neo
+: 1428825338:0;nvim
+: 1428828364:0;dot
+: 1428828365:0;ls
+: 1428828370:0;cd vim
+: 1428828371:0;ls
+: 1428828373:0;cd colors/
+: 1428828373:0;ls
+: 1428828381:0;vim miromiro.vim
+: 1428828409:0;ls
+: 1428828413:0;vim miromiro.vim
+: 1428853408:0;cd ~dots
+: 1428853413:0;aliasrc
+: 1428853505:0;ls -a
+: 1428853508:0;ls -l
+: 1428853517:0;cd ../
+: 1428853519:0;ls
+: 1428853523:0;cd ../
+: 1428853523:0;ls
+: 1428853686:0;zsh
+: 1428853698:0;cd ~down
+: 1428853702:0;ls
+: 1428853723:0;aliasrc
+: 1428854061:0;zsh
+: 1428854206:0;aliasrc
+: 1428854233:0;zsh
+: 1428854241:0;aliasrc
+: 1428854289:0;zsh
+: 1428854295:0;cd zshdir
+: 1428854296:0;ls
+: 1428854300:0;cd ../
+: 1428854305:0;aliasrc
+: 1428854336:0;cd .dotfiles/
+: 1428854342:0;ls
+: 1428854386:0;ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
+: 1428854394:0;tmux --help
+: 1428854401:0;tmux
+: 1428854424:0;exit
+: 1428854445:0;tmux -f ~/.tmux.conf
+: 1428854459:0;cd ~dots
+: 1428854462:0;zsh
+: 1428854465:0;cd ~dots
+: 1428854475:0;vim tmux.conf
+: 1428854572:0;man tmux
+: 1428855484:0;pacin xclip
+: 1428855514:0;pacin xsel
+: 1428856836:0;pacin pbcopy
+: 1428856845:0;pacsearch pbcopy
+: 1428856855:0;pacsearch pbpaste
+: 1428856932:0;aliasrc
+: 1428857666:0;cd ~/Documents/
+: 1428857667:0;ls
+: 1428857683:0;vim colors.py
+: 1428857721:0;python colors.py
+: 1428857764:0;python colors.py -t 
+: 1428858269:0;for i in{0..255}; do printf "\x1b[38;5;${1}mcolours${i}\n" done
+: 1428859372:0;vim 256-colors.sh
+: 1428859496:0;sh 256-colors.sh
+: 1428860718:0;curl icanhazip.com
+: 1428860813:0;tmux -f ~/.tmux.conf
+: 1428860818:0;exit
+: 1428860826:0;cd ../
+: 1428860827:0;ls
+: 1428860829:0;ls -a
+: 1428860964:0;tmux ls
+: 1428860998:0;tmux kill-server
+: 1428861000:0;tmux ls
+: 1428861005:0;tmux
+: 1428861112:0;aliasrc
+: 1428861138:0;zsh
+: 1428861159:0;tmuxrc
+: 1428861264:0;tmux ls
+: 1428861274:0;tmuxrc
+: 1428861769:0;cd Documents/
+: 1428861770:0;ls
+: 1428861777:0;sh 256-colors.sh
+: 1428861956:0;man tmux
+: 1428862425:0;exit
+: 1428862441:0;tmux ls
+: 1428862456:0;tmux
+: 1428862468:0;clear
+: 1428875311:0;pacin gvim
+: 1428917013:0;ls
+: 1428917021:0;cd ~dots
+: 1428917022:0;ls
+: 1428917024:0;cd vim
+: 1428917036:0;cd ~/Documents/
+: 1428917036:0;ls
+: 1428917046:0;cd ~/down
+: 1428917052:0;cd ~down
+: 1428917053:0;ls
+: 1428917055:0;cd tmp
+: 1428917056:0;ls
+: 1428917086:0;cp vimrc-final ~/.dotfiles/vimrc
+: 1428917088:0;ls
+: 1428917093:0;cd ~dots
+: 1428917094:0;ls
+: 1428917103:0;rm vimrc.bak
+: 1428917105:0;ls
+: 1428917108:0;aliasrc
+: 1428918076:0;cp ~/Downloads/tmp/vimrc-final ~/.dotfiles/vimrc
+: 1428918079:0;aliasrc
+: 1428918125:0;vimrc
+: 1428918290:0;cd ~dots
+: 1428918291:0;ls
+: 1428918300:0;cd vim
+: 1428918300:0;ls
+: 1428918316:0;mkdir vimbackup vimswap vimviews
+: 1428918317:0;ls
+: 1428918329:0;mkdir undo
+: 1428918337:0;ls
+: 1428918367:0;vimrc
+: 1428918533:0;cls
+: 1428918535:0;clear
+: 1428918537:0;ls
+: 1428918544:0;cd ../
+: 1428918545:0;ls
+: 1428918547:0;ls -a
+: 1428918568:0;vimrc
+: 1428918772:0;clear
+: 1428918775:0;vimrc
+: 1428918860:0;clear
+: 1428918862:0;vimrc
+: 1428919321:0;kill vim
+: 1428919339:0;kill 7479
+: 1428919343:0;vim ls
+: 1428919407:0;vim
+: 1428919700:0;vimrc
+: 1428920026:0;exit
+: 1428920032:0;tmux ls
+: 1428920037:0;aliasrc
+: 1428920059:0;vimrc
+: 1428920132:0;clear
+: 1428920168:0;cd dots
+: 1428920170:0;ls
+: 1428920173:0;cd vim
+: 1428920175:0;ls
+: 1428920178:0;cd undo
+: 1428920179:0;ls
+: 1428920181:0;ls -a
+: 1428920184:0;cd ../
+: 1428920184:0;ls
+: 1428920191:0;cd vimbackup/
+: 1428920192:0;ls
+: 1428920195:0;cd ../
+: 1428920318:0;vimrc
+: 1428920503:0;zsh
+: 1428920507:0;cls
+: 1428920517:0;mkdir
+: 1428920520:0;mkdir --help
+: 1428920533:0;mkdir -p ~/.vim/autoload
+: 1428920538:0;cd ~/.vim
+: 1428920541:0;ls -a
+: 1428920543:0;la
+: 1428920547:0;lsa
+: 1428920550:0;la
+: 1428920561:0;ls -ad
+: 1428920564:0;ls -aa
+: 1428920566:0;ls -as
+: 1428920583:0;cd autoload/
+: 1428920584:0;ls
+: 1428920588:0;ls -a
+: 1428920598:0;cd ~/.dotfiles/vim
+: 1428920600:0;ls
+: 1428920613:0;cd autoload/
+: 1428920614:0;ls
+: 1428920617:0;ls -A
+: 1428920646:0;mkdir -p ~/.vim/bundle
+: 1428920686:0;curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+: 1428920690:0;ls
+: 1428920876:0;rm pathogen.vim
+: 1428920878:0;ls
+: 1428920880:0;cd ../
+: 1428920881:0;ls
+: 1428920888:0;rm -R bundle
+: 1428920889:0;ls
+: 1428920929:0;mkdir -p ~/.vim/bundle
+: 1428920952:0;git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+: 1428920955:0;ls
+: 1428920958:0;cd bundle/
+: 1428920959:0;ls
+: 1428921323:0;aliasrc
+: 1428921349:0;zsh
+: 1428921396:0;cd ../
+: 1428921397:0;ls
+: 1428921400:0;cd undo
+: 1428921400:0;ls
+: 1428921402:0;ls -a
+: 1428921406:0;cd ../
+: 1428922867:0;zsh
+: 1428922873:0;vimvundle
+: 1428922889:0;vim
+: 1428922900:0;vimrc
+: 1428923660:0;cls
+: 1428923665:0;cd ../
+: 1428923667:0;ls
+: 1429021512:0;gd
+: 1429021520:0;gdf
+: 1429021524:0;cls
+: 1429021570:0;dmesg
+: 1429021595:0;clear
+: 1429021716:0;cd dots
+: 1429021718:0;ls
+: 1429021725:0;cd zsh
+: 1429021737:0;vim lolzsh.zsh
+: 1429021860:0;source lolzsh.zsh
+: 1429021867:0;ls
+: 1429021870:0;cd ../
+: 1429021870:0;ls
+: 1429021886:0;cd ../
+: 1429021889:0;ls
+: 1429021893:0;cd cjd
+: 1429022215:0;pacsearch vim
+: 1429022366:0;yaourt vim-gtk
+: 1429022420:0;clear
+: 1429022466:0;pacin ranger
+: 1429022476:0;ranger
+: 1429022506:0;ranger --help
+: 1429022558:0;cd .config/
+: 1429022559:0;ls
+: 1429022562:0;cd ranger/
+: 1429022563:0;ls
+: 1429023188:0;mv ~/Downloads/rawine.py ~/.config/ranger/
+: 1429023190:0;ls
+: 1429023205:0;mkdir colorschemes
+: 1429023210:0;mv rawine.py colorschemes/
+: 1429023262:0;ranger
+: 1429023343:0;ls
+: 1429023393:0;vim options.py
+: 1429023414:0;vim options.py 
+: 1429023451:0;cd ~/.config/ranger/
+: 1429023452:0;ls
+: 1429023455:0;cd colorschemes/
+: 1429023457:0;ls
+: 1429023478:0;ranger
+: 1429023517:0;vim options.py 
+: 1429023538:0;mv options.py options.py.bak
+: 1429023540:0;ls
+: 1429023639:0;vim rc.conf
+: 1429023684:0;ranger
+: 1429023702:0;vim rc.conf
+: 1429023709:0;ranger
+: 1429023970:0;vim rc.conf
+: 1429023991:0;ranger
+: 1429024000:0;vim rc.conf
+: 1429024011:0;ranger
+: 1429024133:0;mv ~/Downloads/colorscheme ~/.config/ranger/colorschemes/classytouch.py
+: 1429024172:0;vim rc.conf
+: 1429024186:0;ranger
+: 1429024240:0;pacin irssi
+: 1429024329:0;irssi
+: 1429024359:0;cd ../
+: 1429024359:0;ls
+: 1429024361:0;ls -a
+: 1429024369:0;cd ../
+: 1429024369:0;ls
+: 1429024371:0;ls -a
+: 1429024383:0;cd .irssi/
+: 1429024383:0;ls
+: 1429024392:0;vim config
+: 1429024399:0;vimrc
+: 1429024689:0;cd Documents/
+: 1429024690:0;ls
+: 1429024701:0;py colors.py -t
+: 1429024710:0;python colors.py -t
+: 1429024735:0;perl 256colors2.pl -t
+: 1429024752:0;./ 256-colors.sh
+: 1429024757:0;./256-colors.sh
+: 1429024761:0;256-colors.sh
+: 1429024766:0;sh 256-colors.sh
+: 1429024809:0;vimrc
+: 1429025294:0;ls
+: 1429025296:0;ls -a
+: 1429025300:0;vim config
+: 1429025422:0;vimrc
+: 1429025483:0;vimvundle
+: 1429025488:0;vimrc
+: 1429026563:0;pacin exuberant-ctags
+: 1429026625:0;yaourt --help
+: 1429026638:0;ls
+: 1429026641:0;cd ../
+: 1429026642:0;ls
+: 1429026644:0;ls -a
+: 1429026675:0;cp /etc/yaourtrc ~/.dotfiles/yaourtrc
+: 1429026678:0;ls
+: 1429026683:0;cd dots
+: 1429026684:0;ls
+: 1429026689:0;vim yaourtrc
+: 1429026846:0;vimrc
+: 1429026896:0;cd vim
+: 1429026898:0;ls
+: 1429026901:0;cd colors
+: 1429026902:0;ls
+: 1429026904:0;cd ../
+: 1429026907:0;cd bundle
+: 1429026908:0;ls
+: 1429026915:0;cd gruvbox
+: 1429026916:0;ls
+: 1429026920:0;cd colors
+: 1429026928:0;ls
+: 1429026972:0;ln -s ~/.dotfiles/vim/bundle/gruvbox/colors/gruvbox.vim ~/.vim/colors/gruvbox.vim
+: 1429026976:0;cd ../
+: 1429026976:0;ls
+: 1429026979:0;cd autoload/
+: 1429026980:0;ls
+: 1429026985:0;cd ../
+: 1429027001:0;sh gruvbox_256palette.sh
+: 1429027014:0;vim gruvbox_256palette.sh
+: 1429027206:0;sh gruvbox_256palette.sh
+: 1429027216:0;sh gruvbox_256palette_osx.sh
+: 1429027226:0;./gruvbox_256palette.sh 
+: 1429027267:0;cd ../../../
+: 1429027268:0;ls
+: 1429027298:0;zip --help
+: 1429027371:0;zip -r vim.zip vim
+: 1429027375:0;ls
+: 1429027383:0;zip --help
+: 1429027497:0;ls
+: 1429027505:0;cp zshrc zshrc.bak
+: 1429027524:0;cp vimrc vimrc.bak
+: 1429027541:0;zip -g vim.zip vimrc
+: 1429027543:0;ls
+: 1429027551:0;zip --help
+: 1429027621:0;peco vim.zip
+: 1429027640:0;less vim.zip
+: 1429027668:0;pacin gvim
+: 1429027692:0;ls
+: 1429027699:0;cd vim
+: 1429027700:0;ls
+: 1429027704:0;cd ../
+: 1429027707:0;vimrc
+: 1429027909:0;su
+: 1429051801:0;ifconfig
+: 1429051806:0;ip
+: 1429051809:0;ip link
+: 1429052190:0;systemctl start sshd.service
+: 1429052201:0;pacin ssdh
+: 1429052207:0;pacin ssh
+: 1429052210:0;pacin sshd
+: 1429052224:0;pacsearch ssh
+: 1429052256:0;pacin openssh
+: 1429052263:0;systemctl start sshd.service
+: 1429052282:0;systemctl enable sshd.service
+: 1429052361:0;ls
+: 1429052962:0;df
+: 1429053241:0;ps aux | 2>&1 | $PAGER
+: 1429053297:0;clear
+: 1429053339:0;ps aux | less
+: 1429053376:0;ps aux | most
+: 1429053386:0;pacin most
+: 1429053396:0;ls
+: 1429053414:0;ps aux | most
+: 1429053456:0;most --help
+: 1429053515:0;pacin lynx
+: 1429053538:0;pacin mosh
+: 1429053566:0;df -h
+: 1429053588:0;ls
+: 1429053596:0;ls -A
+: 1429053662:0;ls -A | sed |^ln
+: 1429053689:0;lynx
+: 1429054199:0;ps aux | peco
+: 1429054212:0;ls
+: 1429054214:0;cls
+: 1429054227:0;ls -A
+: 1429054343:0;ls
+: 1429054421:0;cls
+: 1429054428:0;ls -A
+: 1429054529:0;vimrc
+: 1429054565:0;echo $TERM
+: 1429054582:0;cd down
+: 1429054584:0;ls
+: 1429054590:0;ls -A
+: 1429054657:0;mv irssi_miromiro.theme ../.irssi/
+: 1429054666:0;cd ../.irssi/
+: 1429054667:0;ls
+: 1429054673:0;ls -A
+: 1429054684:0;vim irssi_miromiro.theme 
+: 1429056250:0;pacsearch ctags
+: 1429056265:0;pacin ctags
+: 1429056289:0;ctags --help
+: 1429057685:0;vimrc
+: 1429058053:0;vim
+: 1429058070:0;vimrc
+: 1429058184:0;vimvundle
+: 1429058415:0;vim
+: 1429058553:0;vimrc
+: 1429058716:0;vimvundle
+: 1429058766:0;vim
+: 1429058796:0;vimrc
+: 1429058832:0;vimvundle
+: 1429058884:0;vim
+: 1429061117:0;cd .dotfiles/vim
+: 1429061118:0;ls
+: 1429061125:0;cd bundle
+: 1429061127:0;ls
+: 1429061174:0;vimrc
+: 1429061208:0;vimvundle
+: 1429061215:0;ls
+: 1429061219:0;vim
+: 1429061227:0;vimrc
+: 1429061436:0;cd ~
+: 1429061442:0;ls -A
+: 1429061453:0;cat .vimtags
+: 1429061592:0;cls
+: 1429061609:0;clear
+: 1429061624:0;pacin urxvt
+: 1429061636:0;pacsearch urxvt
+: 1429061664:0;exit
+: 1429104075:0;ls
+: 1429104381:0;vimrc
+: 1429104567:0;cls
+: 1429104610:0;ls -A
+: 1429104642:0;irssi
+: 1429104872:0;vim .ls++.conf
+: 1429105028:0;ls
+: 1429105041:0;ls -A
+: 1429105069:0;vim .ls++.conf
+: 1429105112:0;ls
+: 1429105205:0;exit
+: 1429105839:0;vimrc
+: 1429106937:0;cd Downloads/
+: 1429106937:0;ls
+: 1429106952:0;mv desert256.vim ~/.vim/colors/
+: 1429106955:0;vimrc
+: 1429107082:0;gvim
+: 1429107265:0;pacin ncurses-term
+: 1429107274:0;pacsearch ncurses
+: 1429107346:0;pacsearch rxvt-unicode
+: 1429107368:0;pacin rxvt-unicode rxvt-unicode-terminfo
+: 1429107399:0;vimrc
+: 1429107470:0;vimvundle
+: 1429107481:0;vimrc
+: 1429107788:0;vimvundle
+: 1429107795:0;vimrc
+: 1429107999:0;irssi
+: 1429108016:0;cd .irssi
+: 1429108017:0;ls
+: 1429108049:0;vim config
+: 1429108939:0;irssi
+: 1429111223:0;ls
+: 1429111230:0;ls -A
+: 1429111250:0;vim .Xresources
+: 1429111619:0;ls
+: 1429111623:0;exit
+: 1429111672:0;xrdb -load ~/.Xresources
+: 1429111689:0;vim .Xresources
+: 1429111881:0;xrdb -load ~/.Xresources
+: 1429111907:0;ls
+: 1429111976:0;vim .Xresources
+: 1429112284:0;xrdb -load ~/.Xresources
+: 1429112296:0;ls
+: 1429112413:0;cd Documents/
+: 1429112414:0;ls
+: 1429112425:0;vim colorer.sh
+: 1429112438:0;colorer.sh
+: 1429112442:0;sh colorer.sh
+: 1429112449:0;./colorer.sh
+: 1429112462:0;sudo ./colorer.sh
+: 1429112507:0;chmod a+x colorer.sh
+: 1429112513:0;sh colorer.sh
+: 1429112523:0;./colorer.sh
+: 1429112539:0;vim colorer.sh
+: 1429112557:0;zsh colorer.zsh
+: 1429112563:0;zsh colorer.sh
+: 1429112567:0;vim colorer.sh
+: 1429112596:0;which sh
+: 1429112613:0;ln -s /usr/bin/sh /bin/sh
+: 1429112624:0;ls -A /bin
+: 1429112640:0;vim colorer.sh
+: 1429112654:0;sh colorer.sh
+: 1429112659:0;./ colorer.sh
+: 1429112682:0;cd Documents/
+: 1429112683:0;ls
+: 1429112688:0;sh colorer.sh
+: 1429112694:0;sh ./colorer.sh
+: 1429112698:0;sh coloerer
+: 1429112782:0;vim colorer.sh
+: 1429112803:0;sh coloerer.sh
+: 1429112809:0;sh colorer.sh
+: 1429112940:0;vim colorer.sh
+: 1429112988:0;sh colorer.sh 2
+: 1429113012:0;zshrc
+: 1429113076:0;zsh
+: 1429113081:0;xrdb -load ~/.Xresources
+: 1429113087:0;sh colorer.sh 2
+: 1429113089:0;exit
+: 1429113103:0;cd Documents/
+: 1429113104:0;ls
+: 1429113108:0;colorer.sh 2
+: 1429113112:0;sh colorer.sh 2
+: 1429113251:0;xrdb -load ~/.Xresources
+: 1429113254:0;sh colorer.sh 2
+: 1429113267:0;cd Documents/
+: 1429113268:0;sh colorer.sh 2
+: 1429113272:0;ls -A
+: 1429113653:0;cd ../
+: 1429113654:0;ls
+: 1429113669:0;mv .Xresources ~/.dotfiles
+: 1429113700:0;mv ~/.dotfiles/.Xresources ~/.dotfiles/Xresources
+: 1429113718:0;ln -s ~/.dotfiles/Xresources ~/.Xresources
+: 1429113720:0;ls -A
+: 1429113734:0;vim .Xresources
+: 1429113864:0;xrdb -load ~/.Xresources
+: 1429113871:0;aliasrc
+: 1429114032:0;pacin jmk
+: 1429114038:0;pacsearch jmk
+: 1429114121:0;cd ~down
+: 1429114121:0;ls
+: 1429114138:0;mv dweep.pcf /usr/local/lib/X11/fonts
+: 1429114152:0;cd /usr/local/lib/X11
+: 1429114155:0;cd /usr/local
+: 1429114157:0;ls
+: 1429114159:0;cd lin
+: 1429114161:0;cd lib
+: 1429114162:0;ls
+: 1429114175:0;mkdir -p X11/fonts
+: 1429114186:0;sudo mkdir -p X11/fonts
+: 1429114187:0;ls
+: 1429114193:0;cd X11/fonts/
+: 1429114194:0;ls
+: 1429114210:0;mv ~/Downloads/dweep.pcf 
+: 1429114230:0;mv ~/Downloads/dweep.pcf /usr/local/lib/X11/fonts/
+: 1429114243:0;sudo mv ~/Downloads/dweep.pcf /usr/local/lib/X11/fonts/
+: 1429114247:0;ls
+: 1429114255:0;mkfontdir
+: 1429114259:0;sudo mkfontdir
+: 1429114267:0;fc-cache -f -v
+: 1429114297:0;find -name / "xorg.conf"
+: 1429114311:0;find -name xorg.conf
+: 1429114319:0;find / -name xorg.conf
+: 1429114331:0;sudo find / -name xorg.conf
+: 1429114366:0;sudo find / -name xorg
+: 1429114378:0;cd /usr/lib/xorg
+: 1429114379:0;ls
+: 1429114383:0;cd -
+: 1429114395:0;cd /usr/include/xorg/
+: 1429114395:0;ls
+: 1429114399:0;cd -
+: 1429114416:0;cd ~/.local/share/xorg/
+: 1429114417:0;ls
+: 1429114422:0;cd ~
+: 1429114481:0;cd /etc/X11
+: 1429114482:0;ls
+: 1429114485:0;cd xorg.conf.d/
+: 1429114486:0;ls
+: 1429114695:0;exit
+: 1429114725:0;ls
+: 1429114730:0;exit
+: 1429115593:0;ls
+: 1429115622:0;exit
+: 1429115723:0;ls
+: 1429115726:0;exit
+: 1429116957:0;aliasrc
+: 1429117608:0;cls
+: 1429117648:0;curl ifconfig.me
+: 1429117666:0;curl ifconfig.me/ip
+: 1429117748:0;man ascii
+: 1429117968:0;history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+: 1429117992:0;aliasrc
+: 1429118094:0;source ~/.dotfiles/zsh/aliases.zsh 
+: 1429118103:0;aliasrc
+: 1429118169:0;source ~/.dotfiles/zsh/aliases.zsh 
+: 1429118176:0;mstcmd
+: 1429118191:0;aliasrc
+: 1429118290:0;mstcmd
+: 1429118295:0;source ~/.dotfiles/zsh/aliases.zsh 
+: 1429118299:0;mstcmd
+: 1429118308:0;aliasrc
+: 1429118341:0;source ~/.dotfiles/zsh/aliases.zsh 
+: 1429118345:0;mstcmd
+: 1429118515:0;ps aux | sort -nk +4 | tail
+: 1429119141:0;ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'
+: 1429119153:0;cd .dotfiles/
+: 1429119157:0;ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'
+: 1429119202:0;tree -d
+: 1429119213:0;pacin tree
+: 1429119235:0;tree -d
+: 1429119347:0;curl icanhazip,com
+: 1429119463:0;ls | tr  "\n" " "
+: 1429119840:0;aliasrc
+: 1429119995:0;source ~/.dotfiles/zsh/aliases.zsh 
+: 1429120004:0;mcd test
+: 1429120005:0;ls
+: 1429120011:0;cd ..
+: 1429120020:0;rm -R test
+: 1429120296:0;alias myip="curl http://ipecho.net/plain; echo"
+: 1429120333:0;myip
+: 1429120346:0;aliasrc
+: 1429120456:0;du
+: 1429121745:0;qxit
+: 1429122034:0;cd down
+: 1429122036:0;ls
+: 1429122047:0;cd ../Documents/
+: 1429122049:0;du
+: 1429122124:0;du | sed 's/.[.^]*$//'
+: 1429122143:0;du | sed 's/.[^.]*$//'
+: 1429122204:0;du | cut -d '.' -f1-3
+: 1429122213:0;du | cut -d '.'
+: 1429122220:0;du | cut -d '.' -f1-2
+: 1429122234:0;du | cut -d '.' -l1-3
+: 1429122251:0;cut --help
+: 1429122314:0;du | cut -d '.' -M1-3
+: 1429122321:0;du | cut -d '.' -m1-3
+: 1429122377:0;du | cut -d '.' -f2
+: 1429122390:0;du | cut -d '.' -f1
+: 1429122410:0;du | cut -d '.' -s3
+: 1429122414:0;du | cut -d '.' -s2
+: 1429122418:0;du | cut -d '.' -s
+: 1429122492:0;du | cut -d '.' -f3-1
+: 1429122500:0;du | cut -d '.' -f1-2
+: 1429122572:0;du | sed 's/.[^.]*$//'
+: 1429122589:0;du | sed 's/.[^.]*2//'
+: 1429122617:0;du | sed 's/.[^.]*$/u/'
+: 1429122642:0;du | sed 's/.[^.]^*//'
+: 1429122800:0;du | sed 's/k.[^.]^*//'
+: 1429122810:0;du | sed 's/.k[^.]^*//'
+: 1429122820:0;du | sed 's/.[^.k]^*//'
+: 1429122839:0;du | sed 's/.[^.]k^*//'
+: 1429122848:0;du | sed 's/.[^.K]^*//'
+: 1429122860:0;du | sed 's/.[^.]K^*//'
+: 1429122906:0;du | sed 's/.[^.]K[0-9]^*//'
+: 1429122952:0;du | sed 's/.[^.][0-9]K^*//'
+: 1429122964:0;du | sed 's/.[^.]K^*//'
+: 1429122993:0;du | sed 's/.[^.]K^*/[0-9]/'
+: 1429123011:0;du | sed 's/.[^.]K^*[0-9]//'
+: 1429123019:0;du | sed 's/.[^.][0-9]//'
+: 1429123034:0;du | sed 's/.[^.]K^*//'
+: 1429123071:0;du | sed 's/.[^.][0-9]^*//'
+: 1429123090:0;du | sed 's/k[^.]K^*//'
+: 1429123093:0;du | sed 's/.[^.][0-9]^*//'
+: 1429123101:0;du | sed 's/.[^.]K^*//'
+: 1429123303:0;du | cut -d '.' -f-3
+: 1429123309:0;du | cut -d '.' -f-2
+: 1429123314:0;du | cut -d '.' -f-1
+: 1429123344:0;rev du
+: 1429123349:0;rev | du
+: 1429123360:0;du | rev
+: 1429123390:0;du | rev | cut -d '.' -f-1 | rev
+: 1429123399:0;du | rev | cut -d '.' -f-2 | rev
+: 1429123461:0;du | rev | cut -d '.' -f-2 | rev | sed '/[0-9]//'
+: 1429123465:0;du | rev | cut -d '.' -f-2 | rev
+: 1429123474:0;du | rev | cut -d '.' -f-2 | rev | peco
+: 1429123490:0;du | rev | cut -d '.' -f-2 | rev
+: 1429123496:0;du | rev | cut -d '.' -f-2 | rev | peco
+: 1429123887:0;pacin ncdu
+: 1429123914:0;ping google.com
+: 1429123923:0;pacin ncdu
+: 1429123979:0;pacin htop
+: 1429123990:0;yaourt ncdu
+: 1429124032:0;pacin ttyload
+: 1429124074:0;pacin pydf
+: 1429124086:0;pydf
+: 1429124098:0;ttyload
+: 1429124121:0;cls
+: 1429124130:0;sh colorer.sh 2
+: 1429124137:0;sh colorer.sh 1
+: 1429124145:0;sh colorer.sh 4
+: 1429124149:0;sh colorer.sh 3
+: 1429124154:0;sh colorer.sh 0
+: 1429124163:0;sh colorer.sh 1
+: 1429124210:0;zshrc
+: 1429124329:0;zsh
+: 1429124341:0;clear
+: 1429124391:0;which vnc
+: 1429124400:0;x11vnc
+: 1429124442:0;myip
+: 1429124564:0;x11vnc -b
+: 1429125554:0;cd Do
+: 1429125561:0;cd Documents/
+: 1429125567:0;cd learnjs/
+: 1429125568:0;ls
+: 1429125611:0;vim ch5_examp6.htm
+: 1429133497:0;shutdown
+: 1429133500:0;su
+: 1429191534:0;yaourt ncdu
+: 1429191557:0;clear
+: 1429191568:0;yaourt finalterm
+: 1429191679:0;n
+: 1429191696:0;pacman -Syu
+: 1429191704:0;sudo pacman -Syu
+: 1429192055:0;cd down
+: 1429192056:0;ls
+: 1429192079:0;cd ~/.local/share/xorg/
+: 1429192080:0;ls
+: 1429192083:0;cd ../
+: 1429192198:0;mv creep.bdf /usr/local/lib/X11/fonts/
+: 1429192205:0;sudo mv creep.bdf /usr/local/lib/X11/fonts/
+: 1429192478:0;yaourt finalterm
+: 1429192492:0;cd ~/.vim/colors
+: 1429192492:0;ls
+: 1429192505:0;mv zevv-peep-iso8859-1-08x16.bdf ~/Downloads/
+: 1429192749:0;cd ~/down
+: 1429192755:0;cd ~down
+: 1429192755:0;ls
+: 1429192757:0;cd tmp
+: 1429192758:0;ls
+: 1429192770:0;mcd tmpbuild
+: 1429192772:0;ls
+: 1429192792:0;git clone https://github.com/p-e-w/finalterm.git
+: 1429192798:0;cd finalterm/
+: 1429192804:0;mkdir build
+: 1429192808:0;cd build
+: 1429192812:0;cmake
+: 1429192817:0;cmake ..
+: 1429192824:0;make
+: 1429193062:0;ls -a
+: 1429193071:0;cd ../
+: 1429193072:0;ls
+: 1429193078:0;cd ../
+: 1429193078:0;ls
+: 1429193085:0;rm -R finalterm/
+: 1429193093:0;rm -Rf finalterm/
+: 1429193095:0;ls
+: 1429193099:0;git clone https://github.com/p-e-w/finalterm.git
+: 1429193125:0;ls
+: 1429193128:0;cd finalterm/
+: 1429193128:0;ls
+: 1429193132:0;cd src
+: 1429193133:0;ls
+: 1429193157:0;vim TerminalView.vala
+: 1429193195:0;ls
+: 1429193197:0;cd ../
+: 1429193199:0;ls
+: 1429193218:0;mcd build
+: 1429193221:0;cmake
+: 1429193225:0;cmake ..
+: 1429193239:0;make
+: 1429193265:0;sudo make install
+: 1429193454:0;cd /bin/usr
+: 1429193460:0;cd /usr/local
+: 1429193460:0;ls
+: 1429193463:0;cd share
+: 1429193464:0;ls
+: 1429193469:0;cd applications/
+: 1429193469:0;ls
+: 1429193474:0;vim finalterm.desktop
+: 1429193489:0;finalterm
+: 1429193498:0;cd ~
+: 1429193501:0;finalterm
+: 1429193684:0;pacin clutter
+: 1429193703:0;which clutter
+: 1429193710:0;pacin Gee
+: 1429193713:0;pacin gee
+: 1429193720:0;finalterm
+: 1429193794:0;pacin libgee
+: 1429193815:0;pacin mx
+: 1429193829:0;pacin keybinder-3.0
+: 1429193836:0;pacin keybinder
+: 1429193843:0;pacin libnotify
+: 1429193926:0;pacin clutter-gtk
+: 1429193931:0;finalterm
+: 1429194439:0;aliasrc
+: 1429194464:0;pacinf
+: 1429194476:0;sudo pacman --help
+: 1429194543:0;pacman -Ss clutter
+: 1429194871:0;finalterm
+: 1429194903:0;pacsearch gtk
+: 1429195251:0;finalterm
+: 1429195583:0;extract
+: 1429195606:0;cd ~/.dotfiles/zsh
+: 1429195607:0;ls
+: 1429195620:0;mcd funcs
+: 1429195621:0;ls
+: 1429195623:0;cd funcs
+: 1429195636:0;vim misc-functions.zsh
+: 1429196370:0;clear
+: 1429196374:0;ls -a
+: 1429196379:0;source misc-functions.zsh 
+: 1429196383:0;treedir
+: 1429196389:0;cd ../
+: 1429196390:0;ls
+: 1429196393:0;cd ../
+: 1429196396:0;treedir
+: 1429196418:0;treedir | peco
+: 1429196440:0;vim zsh/funcs/misc-functions.zsh 
+: 1429196488:0;source zsh/funcs/misc-functions.zsh 
+: 1429196498:0;vim zsh/funcs/misc-functions.zsh 
+: 1429196507:0;f func
+: 1429196974:0;cd down
+: 1429196976:0;ls
+: 1429197006:0;cd /usr/local/lib/X11
+: 1429197007:0;ls
+: 1429197009:0;cd fonts
+: 1429197010:0;ls
+: 1429197111:0;sudo mv zevv* /usr/local/lib/X11/fonts
+: 1429197123:0;cd /usr/local/lib/X11/fonts/
+: 1429197124:0;ls
+: 1429197126:0;ls -A
+: 1429197179:0;mkfontdir /usr/local/lib/X11/fonts
+: 1429197186:0;sudo mkfontdir /usr/local/lib/X11/fonts
+: 1429197187:0;ls
+: 1429197212:0;xset +fp /usr/local/lib/X11/fonts
+: 1429197222:0;wd add xfonts
+: 1429197228:0;wd list
+: 1429197233:0;ls
+: 1429197244:0;cd ~
+: 1429197245:0;ls
+: 1429197248:0;ls -A
+: 1429197252:0;vim .Xresources
+: 1429197390:0;(x=`tput op` y=`printf %76s`;for i in {0..256};do o=00$i;echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;done)
+: 1429197413:0;tput colors
+: 1429197427:0;for T in `find /usr/share/terminfo -type f -printf '%f '`;do echo "$T `tput -T $T colors`";done|sort -nk2
+: 1429197541:0;cd /usr/share/
+: 1429197541:0;ls
+: 1429197547:0;cd terminfo/
+: 1429197547:0;ls
+: 1429197552:0;cd r
+: 1429197552:0;ls
+: 1429197583:0;cd ~
+: 1429197618:0;cd Documents/
+: 1429197618:0;ls
+: 1429197623:0;wd add docs
+: 1429197624:0;ls
+: 1429197631:0;vim colortest.sh
+: 1429197671:0;chmod a+x colortest.sh
+: 1429197672:0;ls
+: 1429197680:0;sh colortest.sh
+: 1429197687:0;sh colortest.sh -numbers
+: 1429197717:0;vim colortable.sh
+: 1429197787:0;chmod a+x colortable.sh
+: 1429197793:0;sh colortable.sh
+: 1429197838:0;vim colortable2.sh
+: 1429197876:0;chmod a+x colortable2.sh
+: 1429197881:0;sh colortable2.sh
+: 1429197910:0;vim spacecolor.sh
+: 1429197939:0;chmod a+x spacecolor.sh
+: 1429197945:0;sh spacecolor.sh 
+: 1429197958:0;ls
+: 1429197971:0;sh colortest.sh
+: 1429197973:0;ls
+: 1429197982:0;sh colorer.sh 1
+: 1429197985:0;sh colorer.sh 2
+: 1429197988:0;sh colorer.sh 
+: 1429197990:0;sh colorer.sh 3
+: 1429197999:0;sh colorer.sh 2 && 3
+: 1429198014:0;sh colorer.sh 2 && 1
+: 1429198040:0;sh colorer.sh 2 && sh colorer.sh 1 && sh spacecolor.sh
+: 1429198064:0;wd docs
+: 1429198065:0;ls
+: 1429198069:0;sh colorer.sh 2 && sh colorer.sh 1 && sh spacecolor.sh
+: 1429198088:0;tmux
+: 1429198102:0;ls
+: 1429198110:0;cld
+: 1429198111:0;cls
+: 1429198117:0;yaourt ncdu
+: 1429198134:0;ncdu
+: 1429198261:0;ranger
+: 1429198287:0;cls
+: 1429198291:0;vim colorer.sh
+: 1429198302:0;vim spacecolor.sh
+: 1429198377:0;exit
+: 1429198398:0;cls
+: 1429198423:0;vim paccolor.sh
+: 1429198440:0;chmod a+x paccolor.sh 
+: 1429198447:0;sh paccolor.sh
+: 1429198486:0;cd ~
+: 1429198550:0;urxvt --help 2>&1| sed -n '/: /s/^ */! URxvt*/gp' >> ~/.Xresources
+: 1429198559:0;vim ~/.Xresources
+: 1429198731:0;xres
+: 1429198757:0;urxvt
+: 1429198764:0;vim ~/.Xresources
+: 1429198841:0;xres
+: 1429198844:0;urxvt
+: 1429198850:0;xres
+: 1429198854:0;vim ~/.Xresources
+: 1429198879:0;xres
+: 1429198881:0;urxvt
+: 1429198884:0;ls
+: 1429198887:0;xres
+: 1429198943:0;urxvt -fg green -bg black -fn '-zevv-peep-medium-r-normal--16-140-75-75-c-80-iso8859-15'
+: 1429198957:0;xlsfonts
+: 1429198970:0;pacin xlsfonts
+: 1429198979:0;pacsearch xlsfonts
+: 1429198992:0;pacin xorg-xlsfonts
+: 1429198998:0;xlsfonts
+: 1429199139:0;urxvt -fg green -bg black -fn '-zevv-peep-medium-r-normal--16-140-75-75-c-80-iso8859-1'
+: 1429199148:0;vim ~/.Xresources
+: 1429199403:0;xres
+: 1429199406:0;vim ~/.Xresources
+: 1429199423:0;xres
+: 1429199432:0;ls
+: 1429199505:0;urxvt -fn '-zevv-peep-medium-r-normal--16-140-75-75-c-80-iso8859-15'
+: 1429199514:0;urxvt -fn '-zevv-peep-medium-r-normal--14-140-75-75-c-80-iso8859-1'
+: 1429199528:0;urxvt -fn '-zevv-peep-medium-r-normal--14-130-75-75-c-80-iso8859-1'
+: 1429199558:0;urxvt -fn '-zevv-peep-medium-r-normal--0-0-75-75-c-0-iso8859-1'
+: 1429199564:0;ls
+: 1429199602:0;xlsfonts | grep creep
+: 1429199648:0;urxvt -fn '-gdbfed-creep-regular-r-normal-0-0-96-96-m-0-iso10646-1'
+: 1429199658:0;urxvt -fn '-gdbfed-creep-regular-r-normal--0-0-96-96-m-0-iso10646-1'
+: 1429199708:0;urxvt -fn '-gbdfed-creep-regular-r-normal--0-0-96-96-m-0-iso10646-1'
+: 1429199713:0;ls
+: 1429199980:0;vim ~/.Xresources
+: 1429200072:0;xres
+: 1429200083:0;vim ~/.Xresources
+: 1429200103:0;xres
+: 1429200112:0;vim ~/.Xresources
+: 1429200244:0;xres
+: 1429200256:0;ls /etc/fonts/conf.d/
+: 1429200294:0;cd -
+: 1429200300:0;ls /etc/fonts/conf.avail/
+: 1429200335:0;ln -s /etc/fonts/conf.avail/70-yes-bitmaps.conf  /etc/fonts/conf.d/
+: 1429200340:0;sudo ln -s /etc/fonts/conf.avail/70-yes-bitmaps.conf  /etc/fonts/conf.d/
+: 1429200393:0;cd /etc/fonts/conf.d
+: 1429200394:0;ls
+: 1429200414:0;sudo rm 10-scale-bitmap-fonts.conf
+: 1429200415:0;ls
+: 1429200530:0;vim ~/.Xresources
+: 1429200849:0;xres
+: 1429200863:0;vim ~/.Xresources
+: 1429200873:0;xres
+: 1429200882:0;vim ~/.Xresources
+: 1429200911:0;xres
+: 1429205314:0;ls -A
+: 1429205324:0;vim ~/.Xresources
+: 1429205854:0;cls
+: 1429205886:0;aliasrc
+: 1429205993:0;findfn 
+: 1429206007:0;findfn xorg
+: 1429206014:0;aliasrc
+: 1429206063:0;source ~/.dotfiles/zsh/aliases.zsh 
+: 1429206069:0;findfn xorg
+: 1429206096:0;findfn xorg.conf
+: 1429206104:0;lynx
+: 1429206259:0;echo $LYNX_LSS
+: 1429206636:0;cd /etc
+: 1429206638:0;ls
+: 1429206666:0;vim lynx.lss
+: 1429206847:0;cls
+: 1429206895:0;vim wgetrc
+: 1429206997:0;ls | grep rc
+: 1429207030:0;vim colordiffrc
+: 1429207153:0;vim nanorc
+: 1429207168:0;ls
+: 1429207227:0;cd X11
+: 1429207229:0;ls
+: 1429207252:0;cd xorg.conf.d/
+: 1429207253:0;ls
+: 1429207257:0;cd ..
+: 1429207262:0;cd xinit/
+: 1429207264:0;ls
+: 1429207270:0;cd xinitrc.d/
+: 1429207272:0;ls
+: 1429207277:0;cd ..
+: 1429207279:0;ls
+: 1429207289:0;vim xinitrc
+: 1429215207:0;ls
+: 1429215230:0;cd ..
+: 1429215238:0;cd -
+: 1429216817:0;shutdown
+: 1429216823:0;sudo shutdown
+: 1429229036:0;pacsearch gnome
+: 1429229244:0;finalterm
+: 1429230319:0;pacsearch gnome | gdk
+: 1429230325:0;pacsearch gnome | grep gdk
+: 1429230330:0;pacsearch gnome | grep GDK
+: 1429230334:0;pacsearch gnome
+: 1429230343:0;pacsearch gnome | peco
+: 1429230962:0;pacsearch gdk
+: 1429232127:0;urxvt
+: 1429232137:0;urxvt -fn '-gbdfed-creep-regular-r-normal--0-0-96-96-m-0-iso10646-1'
+: 1429232154:0;xlsfonts
+: 1429232280:0;vim .Xresources
+: 1429232459:0;export CLUTTER_BACKEND=x11
+: 1429232464:0;finalterm
+: 1429233682:0;ls
+: 1429233953:0;vim .Xresources
+: 1429233983:0;cls
+: 1429234064:0;ls
+: 1429234066:0;cls
+: 1429234232:0;ps aux | sort -nk +4 | tail
+: 1429234241:0;cls
+: 1429234368:0;vim .Xresources
+: 1429234751:0;cls
+: 1429234772:0;vim .ls++.conf
+: 1429234921:0;ls
+: 1429235200:0;cd .gnome/
+: 1429235201:0;ls
+: 1429235205:0;cd ap
+: 1429235212:0;cd apps
+: 1429235214:0;ls
+: 1429235221:0;cd ..
+: 1429235228:0;...
+: 1429235237:0;cd ~
+: 1429235238:0;ls
+: 1429235257:0;cd .config/
+: 1429235259:0;ls
+: 1429235318:0;exit
+: 1429235866:0;ls
+: 1429235931:0;exit
+: 1429276313:0;zshrc
+: 1429276362:0;source ~/.zshrc
+: 1429276391:0;ls
+: 1429276439:0;cd /usr/local/share
+: 1429276440:0;ls
+: 1429276448:0;cd applications/
+: 1429276448:0;ls
+: 1429276458:0;vim finalterm.desktop
+: 1429276581:0;cat finalterm.desktop
+: 1429276945:0;vim /usr/local/share/applications/finalterm.desktop
+: 1429277098:0;sudo vim /usr/local/share/applications/finalterm.desktop
+: 1429277821:0;s
+: 1429278215:0;clear
+: 1429278216:0;cls
+: 1429278265:0;vim .warprc
+: 1429278283:0;mv .warprc ~/.dotfiles/
+: 1429278313:0;mv ~/.dotfiles/.warprc ~/.dotfiles/warprc
+: 1429278334:0;ln -s ~/.dotfiles/warprc ~/.warprc
+: 1429278340:0;wd list
+: 1429278347:0;cd xfonts
+: 1429278355:0;wd xfonts
+: 1429278356:0;ls
+: 1429278403:0;vim fonts.dir
+: 1429278451:0;fc-list : file
+: 1429278502:0;fc-cache -f -v
+: 1429278539:0;grep /fonts /var/log/Xorg.0.log
+: 1429278545:0;cd /var/log
+: 1429278546:0;ls
+: 1429278566:0;cd gdm/
+: 1429278567:0;ls
+: 1429278575:0;sudo ls
+: 1429278589:0;cd ../
+: 1429278590:0;ls
+: 1429278608:0;cls
+: 1429278618:0;wd fonts
+: 1429278624:0;wd xfonts
+: 1429278626:0;ls
+: 1429278639:0;cls
+: 1429278673:0;xset q
+: 1429278714:0;xset -fp /usr/local/lib/X11/fonts
+: 1429278732:0;xset q
+: 1429278764:0;xset fp+ /usr/local/lib/X11/fonts
+: 1429278770:0;xset q
+: 1429278781:0;fc-cache -f -v
+: 1429278821:0;xset -fp /usr/local/lib/X11/fonts
+: 1429278830:0;xset fp+ /usr/local/lib/X11/fonts/
+: 1429278834:0;xset q
+: 1429278840:0;fc-cache -f -v
+: 1429278925:0;xset -fp /usr/local/lib/X11/fonts/
+: 1429278930:0;xset +fp /usr/local/lib/X11/fonts/
+: 1429278936:0;xset q
+: 1429279006:0;fc-cache -f -v
+: 1429279060:0;cp * /home/cjd/.local/share/fonts/
+: 1429279081:0;ls
+: 1429279094:0;cd ~/.local/share/fonts
+: 1429279095:0;ls
+: 1429279104:0;wd ~fonts
+: 1429279121:0;wd add bitfonts
+: 1429279177:0;fc-cache -f -v
+: 1429279199:0;xset q
+: 1429279204:0;xlsfonts
+: 1429279254:0;ls
+: 1429279279:0;cd ~
+: 1429279280:0;ls
+: 1429279291:0;wd add 1
+: 1429279295:0;wd list
+: 1429279336:0;fc-list
+: 1429279352:0;fc-list | peco
+: 1429279368:0;clear
+: 1429279435:0;cd .cache
+: 1429279435:0;ls
+: 1429279446:0;cd fontconfig/
+: 1429279447:0;ls
+: 1429279459:0;cd ../
+: 1429279460:0;ls
+: 1429279463:0;cd ctrlp
+: 1429279464:0;ls
+: 1429279467:0;cd mru
+: 1429279467:0;ls
+: 1429279473:0;vim cache.txt
+: 1429279499:0;cd ../
+: 1429279500:0;ls
+: 1429279505:0;cd ...
+: 1429279507:0;...
+: 1429279508:0;ls
+: 1429279511:0;cd ~
+: 1429279512:0;ls
+: 1429279515:0;cd 1
+: 1429279518:0;wd 1
+: 1429279521:0;cls
+: 1429279565:0;echo $XDG_CONFIG_HOME
+: 1429279668:0;echo $PS1
+: 1429279688:0;_prompt -p
+: 1429279704:0;lsd
+: 1429279707:0;lsl
+: 1429279715:0;lsd
+: 1429279719:0;dir
+: 1429279725:0;treedir
+: 1429279733:0;cd dots
+: 1429279733:0;ls
+: 1429279750:0;aliasrc
+: 1429279790:0;ls zsh/funcs/
+: 1429279794:0;aliasrc
+: 1429279846:0;source zsh/aliases.zsh
+: 1429279850:0;treedir
+: 1429279868:0;vim zsh/funcs/misc-functions.zsh 
+: 1429280071:0;vimrc
+: 1429280161:0;f fonts.conf
+: 1429280182:0;findfn fonts.conf
+: 1429280238:0;findfn *name.conf
+: 1429280244:0;findfn \*name.conf
+: 1429280249:0;findfn name.conf
+: 1429280329:0;xlsfonts | peco
+: 1429280364:0;urxvt -fn '-gbdfed-creep-regular-r-normal--0-0-96-96-m-0-iso10646-1'
+: 1429280378:0;xlsfonts | peco
+: 1429280399:0;urxvt -fn '-gbdfed-creep-regular-r-normal--16-120-96-96-m-4-iso10646-1'
+: 1429280408:0;xlsfonts | peco
+: 1429280425:0;urxvt -fn '-jmk-dweep-medium-r-semicondensed--0-0-75-75-c-0-iso8859-1'
+: 1429280515:0;cd ..
+: 1429280516:0;ls
+: 1429280521:0;cd .config/
+: 1429280521:0;ls
+: 1429280530:0;ls -a
+: 1429280562:0;mv ranger ~/.dotfiles/ranger
+: 1429280586:0;ln -s ~/.dotfiles/ranger ~/.config/ranger
+: 1429280587:0;ls
+: 1429280624:0;cd sublime-text-3/
+: 1429280625:0;ls
+: 1429280626:0;cd ../
+: 1429280627:0;ls
+: 1429280654:0;mv sublime-text-3 ~/.dotfiles/.config/sublime-text-3
+: 1429280674:0;mkdir ~/.dotfiles/.config
+: 1429280677:0;mv sublime-text-3 ~/.dotfiles/.config/sublime-text-3
+: 1429280708:0;mv ~/.dotfiles/.config ~/dotfiles/config
+: 1429280716:0;mv ~/.dotfiles/.config/ ~/dotfiles/config
+: 1429280856:0;ln -s ~/.dotfiles/config/sublime-text-3/ ~/.config/sublime-text-3
+: 1429280858:0;ls
+: 1429280880:0;mv ~/.dotfiles/ranger/ ~/.dotfiles/config/ranger
+: 1429280881:0;ls
+: 1429280886:0;rm ranger
+: 1429280887:0;ls
+: 1429280904:0;ln -s ~/.dotfiles/config/ranger ~/.config/ranger
+: 1429280905:0;ls
+: 1429280919:0;cd menus
+: 1429280921:0;ls
+: 1429280933:0;cd ../
+: 1429280934:0;ls
+: 1429280936:0;cd ../
+: 1429280937:0;ls
+: 1429280956:0;mv .ls++.conf ~/.dotfiles/ls++.conf
+: 1429280975:0;ln -s ~/.dotfiles/ls++.conf ~/.ls++.conf
+: 1429280976:0;ls
+: 1429281020:0;vim .zcompdump
+: 1429281034:0;vim .lesshst
+: 1429281068:0;mv .irssi/ ~/.dotfiles/irssi
+: 1429281083:0;ln -s ~/.dotfiles/irssi ~/.irssi
+: 1429281084:0;ls
+: 1429281095:0;lsd
+: 1429281097:0;lsl
+: 1429281136:0;/usr/bin/ls
+: 1429281147:0;/usr/bin/ls --group-directories
+: 1429281152:0;/usr/bin/ls --group-directories-first
+: 1429281193:0;ls -la | grep "^d" && ls -la | grep "^-" && ls -la | grep "^l"
+: 1429281215:0;ls -la | grep "^d" && ls -la | grep -v "^d"
+: 1429281219:0;ls -la | grep "^d"
+: 1429281222:0;ls -la 
+: 1429281260:0;ls++ --group-directories-first
+: 1429281269:0;ls++ -A --group-directories-first
+: 1429281293:0;ls++ -Ah --group-directories-first
+: 1429281299:0;ls++ -A --group-directories-first
+: 1429281302:0;ls++ -Ah --group-directories-first
+: 1429281330:0;ls -al | sort -K1 -r
+: 1429281338:0;ls -al | sort -k1 -r
+: 1429281354:0;ls -al | sort -k1,1 -k9,9 -r
+: 1429281362:0;ls -Al | sort -k1,1 -k9,9 -r
+: 1429281430:0;command ls  --color=always $@ | egrep '^d|total'
+: 1429281436:0;ls  --color=always $@ | egrep '^d|total'
+: 1429281475:0;find . -d 1 -type d | ls -la | sort -r 
+: 1429281525:0;ls -lAX
+: 1429281532:0;ls -x
+: 1429281534:0;ls -X
+: 1429281561:0;/bin/ls -aX
+: 1429281565:0;/bin/ls -a
+: 1429281593:0;ranger
+: 1429281678:0;vim .config/ranger/rc.conf
+: 1429281754:0;ranger
+: 1429281802:0;vim .config/ranger/colorschemes/classytouch.py
+: 1429282307:0;vim .config/ranger/options.py.bak
+: 1429282326:0;cd .config/ranger/
+: 1429282327:0;ls
+: 1429282328:0;ls -a
+: 1429282337:0;cd rc.conf
+: 1429282338:0;ls
+: 1429282351:0;mv options.py.bak options.py
+: 1429282352:0;ls
+: 1429282355:0;ranger
+: 1429282371:0;mv options.py options.py.bak
+: 1429282374:0;ranger
+: 1429282380:0;ls
+: 1429282388:0;vim rc.conf
+: 1429282440:0;ls
+: 1429282445:0;touch scope.sh
+: 1429282446:0;ls
+: 1429282450:0;ranger
+: 1429282464:0;chmod a+x scope.sh
+: 1429282465:0;ls
+: 1429282468:0;ranger
+: 1429282476:0;ls
+: 1429282478:0;ranger
+: 1429282503:0;chmod -x scope.sh
+: 1429282504:0;ls
+: 1429282517:0;chmod +x scope.sh
+: 1429282518:0;ls
+: 1429282525:0;ranger
+: 1429282639:0;vim scope.sh 
+: 1429282657:0;ranger
+: 1429282717:0;vim scope.sh 
+: 1429282734:0;ranger
+: 1429283268:0;ls
+: 1429283270:0;cd colorschemes/
+: 1429283271:0;ls
+: 1429283278:0;vim rawine.py 
+: 1429283313:0;../
+: 1429283314:0;ls
+: 1429283320:0;vim rc.conf 
+: 1429283356:0;ranger
+: 1429283398:0;vim rc.conf 
+: 1429283410:0;ranger
+: 1429283528:0;vim
+: 1429283646:0;vimrc
+: 1429283753:0;vimvundle
+: 1429284040:0;vimrc
+: 1429284068:0;vimvundle
+: 1429284075:0;clear
+: 1429284077:0;c
+: 1429284081:0;vim
+: 1429284758:0;ls
+: 1429284760:0;cls
+: 1429284763:0;cd ...
+: 1429284765:0;cd ..
+: 1429284765:0;ls
+: 1429284767:0;cd ..
+: 1429284768:0;ls
+: 1429284787:0;vim
+: 1429286358:0;exit
+: 1429286593:0;gsettings set org.gnome.settings-daemon.plugins.power lid-close-ac-action blank
+: 1429286605:0;gsettings
+: 1429286624:0;gsettings get org.gnome.settings-daemon.plugins.power
+: 1429286638:0;gsettings get org.gnome.settings-daemon.plugins.power lid-close-ac-action
+: 1429286660:0;gsettings list-keys org.gnome.settings-daemon.plugins.power
+: 1429286852:0;cd /etc/systemd/
+: 1429286853:0;ls
+: 1429286858:0;vim logind.conf 
+: 1429298093:0;pacsearch archey
+: 1429298104:0;pacin archey
+: 1429298116:0;pacin archey3
+: 1429298130:0;archey
+: 1429298133:0;archey3
+: 1429298149:0;archey3 --he
+: 1429370582:0;pacin fontconfig 
+: 1429370615:0;ls
+: 1429370626:0;cd .config
+: 1429370629:0;ls
+: 1429370738:0;fc-cache -f -v
+: 1429370776:0;cd ../.cache/fontconfig/
+: 1429370780:0;ls
+: 1429370799:0;cd ../../
+: 1429370800:0;ls
+: 1429371044:0;vim .archey3.cfg
+: 1429371066:0;archey3 --h
+: 1429371090:0;archey3 -c=cyan
+: 1429371095:0;archey3 -c cyan
+: 1429371101:0;archey3
+: 1429371154:0;cd /etc/fonts/
+: 1429371155:0;ls
+: 1429371160:0;vim fonts.conf
+: 1429371991:0;cd conf.d
+: 1429371991:0;ls
+: 1429372026:0;rm 10-scale-bitmap-fonts.conf
+: 1429372031:0;sudo rm 10-scale-bitmap-fonts.conf
+: 1429372036:0;ls
+: 1429372164:0;vim ~/.Xresources
+: 1429373994:0;yaourt -S pro-font-git
+: 1429374026:0;yaourt --help
+: 1429374039:0;yaourt -Q pro-font
+: 1429374374:0;cd ~
+: 1429374375:0;ls
+: 1429374381:0;cd docs
+: 1429374385:0;wd docs
+: 1429374386:0;ls
+: 1429374400:0;vim gnome-term-transparency.sh
+: 1429374891:0;sh gnome-term-transparency.sh
+: 1429374901:0;pacin xwininfo
+: 1429374911:0;pacsearch xwininfo
+: 1429374916:0;pacin xorg-xwininfo
+: 1429374921:0;sh gnome-term-transparency.sh
+: 1429374931:0;sh gnome-term-transparency.sh 95
+: 1429374959:0;sh gnome-term-transparency.sh 100
+: 1429374978:0;tmux
+: 1429375450:0;cd ../
+: 1429375451:0;ls
+: 1429375454:0;cd Downloads
+: 1429375456:0;ls
+: 1429375555:0;mcd orp-font
+: 1429375566:0;git clone https://github.com/MicahElliott/Orp-Font.git
+: 1429375570:0;ls
+: 1429375586:0;mv Orp-Font/ ~down/orp-font
+: 1429375598:0;mv Orp-Font/* ~down/orp-font
+: 1429375600:0;ls
+: 1429375606:0;cd Orp-Font/
+: 1429375606:0;ls
+: 1429375615:0;mv .* ../
+: 1429375618:0;ls -a
+: 1429375620:0;cd ..
+: 1429375622:0;ls
+: 1429375628:0;rm Orp-Font/
+: 1429375636:0;rm -Rf Orp-Font/
+: 1429375637:0;ls
+: 1429375639:0;cls
+: 1429375873:0;cd misc
+: 1429375874:0;ls
+: 1429375888:0;extract orp-bold.pcf.gz
+: 1429375889:0;ls
+: 1429375976:0;extract orp-*
+: 1429376004:0;extract orp-* .pcf]
+: 1429376012:0;extract orp-* 
+: 1429376027:0;rm orp-bold.pcf 
+: 1429376030:0;extract orp-*
+: 1429376034:0;ls
+: 1429376060:0;extract profont.pcf.gz
+: 1429376060:0;ls
+: 1429376087:0;cd ../Downloads/
+: 1429376091:0;cd orp-font/
+: 1429376091:0;ls
+: 1429376095:0;cd ..
+: 1429376096:0;ls
+: 1429376118:0;mv orp-bold.pcf.gz orp-font/misc/
+: 1429376122:0;clear
+: 1429376126:0;ls
+: 1429376132:0;extract orp-bold.pcf.gz
+: 1429376133:0;ls
+: 1429376138:0;ls 
+: 1429376142:0;ls -a
+: 1429376144:0;cls
+: 1429376239:0;cp *..
+: 1429376241:0;ls
+: 1429376262:0;vim fonts.dir
+: 1429376269:0;rm fonts.dir
+: 1429376270:0;ls
+: 1429376290:0;cd ~
+: 1429376291:0;ls
+: 1429376295:0;cd .local/
+: 1429376296:0;ls
+: 1429376299:0;cd share
+: 1429376300:0;ls
+: 1429376311:0;cd fonts
+: 1429376312:0;ls
+: 1429376331:0;sudo mv * ~/.local/share/fonts/
+: 1429376339:0;mv * ~/.local/share/fonts/
+: 1429376381:0;cls
+: 1429376388:0;ls
+: 1429376392:0;fc-cache -f -v
+: 1429376416:0;xlsfonts
+: 1429376422:0;xlsfonts | peco
+: 1429376445:0;mkfontdir ~/.local/share/fonts
+: 1429376469:0;xset +fp ~/.local/share/fonts
+: 1429376478:0;fc-cache -f -v
+: 1429376486:0;xlsfonts | peco
+: 1429376550:0;urxvt -fn '-misc-orp-bold-r-semicondensed--0-0-75-75-c-0-iso10646-1'
+: 1429376556:0;ls
+: 1429376561:0;cd ../
+: 1429376562:0;ls
+: 1429376594:0;urxvt -fn '-misc-orp-bold-r-semicondensed--0-0-75-75-c-0-iso10646-1'
+: 1429376599:0;ls
+: 1429376601:0;../
+: 1429376602:0;ls
+: 1429377169:0;cls
+: 1429377172:0;clear
+: 1429377183:0;pacsearch dwb
+: 1429377190:0;pacin dwb
+: 1429456223:0;tmux ls
+: 1429456229:0;tmux attach 0
+: 1429456234:0;tmux attach-session 0
+: 1429456239:0;tmux attach-session -t 0
+: 1429456250:0;clear
+: 1429456252:0;c
+: 1429456281:0;pacsearch python
+: 1429456605:0;pacin gcc python2 make
+: 1429456657:0;c
+: 1429456680:0;cd /usr/bin
+: 1429456693:0;ln -sf python2 python
+: 1429456698:0;sudo ln -sf python2 python
+: 1429456757:0;chown -R $USER /usr/local/
+: 1429456781:0;ls -a /usr
+: 1429456787:0;lsl
+: 1429456798:0;/bin/ls -aX
+: 1429456806:0;lsd
+: 1429456815:0;ls
+: 1429456838:0;cd ~
+: 1429456845:0;cd /usr
+: 1429456846:0;ls
+: 1429456849:0;lsl
+: 1429456912:0;lsla
+: 1429456914:0;ls -la
+: 1429456932:0;sudo chown -R $USER /usr/local/
+: 1429456934:0;ls -la
+: 1429456944:0;chown -R $USER /usr/local/
+: 1429456947:0;ls
+: 1429456950:0;cd local
+: 1429456951:0;ls
+: 1429456953:0;cd ../
+: 1429456955:0;ls
+: 1429456990:0;mcd tmp
+: 1429456993:0;ks
+: 1429456995:0;ls
+: 1429456999:0;cd ~
+: 1429457000:0;ls
+: 1429457004:0;cd down
+: 1429457005:0;ls
+: 1429457010:0;mcd tmp
+: 1429457011:0;ls
+: 1429457017:0;cd ../
+: 1429457018:0;ls
+: 1429457025:0;mcd tmpnode
+: 1429457027:0;ls
+: 1429457042:0;git clone https://github.com/joyent/node.git
+: 1429457387:0;git checkout v0.12.2
+: 1429457396:0;ls
+: 1429457399:0;cd node
+: 1429457404:0;ls
+: 1429457409:0;git checkout v0.12.2
+: 1429457446:0;./configure && make && sudo make install
+: 1429459379:0;cd /usr/local
+: 1429459380:0;ls
+: 1429459387:0;cd bin
+: 1429459388:0;ls
+: 1429459393:0;cd ../
+: 1429459401:0;chown -R $USER /usr/local/
+: 1429459408:0;sudo chown -R $USER /usr/local/
+: 1429459412:0;chown -R $USER /usr/local/
+: 1429459418:0;cd /usr/bin
+: 1429459428:0;ln -sf python3 python
+: 1429459434:0;sudo ln -sf python3 python
+: 1429459498:0;which node
+: 1429459502:0;which npm
+: 1429459507:0;which python
+: 1429459644:0;aliasrc
+: 1429459715:0;source ~/.dotfiles/zsh/aliases.zsh
+: 1429459724:0;cd ~
+: 1429459725:0;ls
+: 1429459727:0;cd down
+: 1429459736:0;cd ../Documents/
+: 1429459742:0;mcd manpdf
+: 1429459744:0;ls
+: 1429459762:0;manpdf vim
+: 1429459765:0;ls
+: 1429459769:0;vim.pdf
+: 1429459785:0;vim.pdf | less
+: 1429459814:0;less vim.pdf
+: 1429459841:0;pdftotext vim.pdf | less
+: 1429459933:0;cat vim.txt
+: 1429459948:0;cat vim.pdf | less
+: 1429459953:0;clear
+: 1429460015:0;cls
+: 1429460072:0;manpdf zsh
+: 1429460085:0;manpdf zshparam
+: 1429460321:0;manpdf x11vnc
+: 1429460327:0;manpdf urxvt*
+: 1429460331:0;manpdf urxvt-*
+: 1429460333:0;manpdf urxvt
+: 1429460339:0;manpdf urxvt \*
+: 1429460342:0;ls
+: 1429460350:0;manpdf urxvt\*
+: 1429460366:0;manpdf urxvt-tabbed
+: 1429460371:0;manpdf urxvt-slection
+: 1429460375:0;manpdf urxvt-slection-pastebin
+: 1429460445:0;manpdf tree
+: 1429460448:0;manpdf tmux
+: 1429460454:0;manpdf tty
+: 1429460455:0;manpdf ttys
+: 1429460605:0;manpdf ssh
+: 1429460608:0;manpdf ranger
+: 1429460785:0;manpdf pacman
+: 1429460789:0;manpdf pacman.conf
+: 1429460792:0;manpdf pacman
+: 1429460793:0;ls
+: 1429460801:0;manpdf ls++
+: 1429460804:0;manpdf ls++.conf
+: 1429460847:0;manpdf bash
+: 1429460849:0;ls
+: 1429462369:0;which node
+: 1429463008:0;cls
+: 1429463024:0;rm urxvt*.pdf
+: 1429463048:0;rm urxvt-selection.pdf
+: 1429463057:0;ls
+: 1429463073:0;manpdf urxvt
+: 1429463075:0;ls
+: 1429463094:0;less ls++.pdf 
+: 1429463105:0;cls
+: 1429463107:0;c
+: 1429463631:0;ls -ls
+: 1429463633:0;ls -la
+: 1429463642:0;ls -l
+: 1429463645:0;ls -s
+: 1429463654:0;cls
+: 1429464755:0;pacsearch dmenu
+: 1429464766:0;pacsearch i3
+: 1429464794:0;pacin i3-wm i3status dmenu
+: 1429464814:0;pacupd
+: 1429464926:0;sudo pacman -Syu
+: 1429465560:0;pacin i3-wm i3status dmenu
+: 1429465570:0;i3
+: 1429465580:0;pacin lightdm
+: 1429465588:0;lightdm
+: 1429465592:0;i3
+: 1429528365:0;tmux attach-session -t 0
+: 1429528369:0;cls
+: 1429528451:0;cd ..
+: 1429528457:0;ls
+: 1429528492:0;mkdir fonts
+: 1429528500:0;mv EnvyCodeR-PR7.zip fonts/
+: 1429528516:0;mv profont-x11.zip fonts/
+: 1429528525:0;mv terminus-font-4.39.tar.gz fonts/
+: 1429528583:0;ls
+: 1429528590:0;cd fonts
+: 1429528590:0;ls
+: 1429528592:0;cls
+: 1429528597:0;extract *
+: 1429528599:0;ls
+: 1429528609:0;cd EnvyCodeR-PR7
+: 1429528610:0;ls
+: 1429528615:0;cd Envy\ Code\ R\ PR7/
+: 1429528616:0;ls
+: 1429528648:0;cls
+: 1429528662:0;rm Envy\ Code\ R\ Command\ Prompt.reg
+: 1429528665:0;ls
+: 1429528688:0;mv Envy\ Code\ R* ~/.fonts/
+: 1429528692:0;ls
+: 1429528694:0;cd ..
+: 1429528695:0;ls
+: 1429528697:0;cd ..
+: 1429528698:0;ls
+: 1429528703:0;cd profont-x11/
+: 1429528704:0;ls
+: 1429528707:0;cd pr
+: 1429528710:0;cd profont-x11
+: 1429528711:0;ls
+: 1429528735:0;mv ProFont_r400-* ~/.fonts/
+: 1429528737:0;ls
+: 1429528738:0;cd ../
+: 1429528740:0;ls
+: 1429528742:0;cd ..
+: 1429528743:0;ls
+: 1429528747:0;cd terminus-font-4.39/
+: 1429528748:0;ls
+: 1429528776:0;mv ter-u* ~/.fonts/
+: 1429528777:0;ls
+: 1429528779:0;cd ../
+: 1429528783:0;..
+: 1429528784:0;ls
+: 1429528799:0;cd .fonts/
+: 1429528799:0;ls
+: 1429528824:0;extract ter-powerline-x*
+: 1429528825:0;ls
+: 1429528859:0;mkfontdir ~/.fonts
+: 1429528861:0;ls
+: 1429528877:0;fc-cache -f -v
+: 1429528886:0;xlsfonts | peco
+: 1429528912:0;xset +fp ~/.fonts
+: 1429528918:0;xset -fp ~/.fonts
+: 1429528922:0;xset +fp ~/.fonts/
+: 1429528924:0;ls
+: 1429528929:0;fc-cache -f -v
+: 1429528935:0;ls
+: 1429528996:0;xlsfonts | peco
+: 1429529035:0;cls
+: 1429529037:0;c
+: 1429529672:0;cp /etc/i3status.conf  ~/.i3/i3status
+: 1429529684:0;mkdir ~/.i3/i3status
+: 1429529694:0;mkdir -p ~/.i3/i3status
+: 1429529698:0;cp /etc/i3status.conf  ~/.i3/i3status
+: 1429529703:0;cd ~/.i3
+: 1429529703:0;ls
+: 1429529707:0;cd i3status/
+: 1429529708:0;ls
+: 1429529710:0;cd ..
+: 1429529712:0;ls
+: 1429529728:0;mv .i3 ~/.dotfiles/i3
+: 1429529741:0;ln -s ~/.dotfiles/i3 ~/.i3
+: 1429529743:0;ls
+: 1429529749:0;cd .i3
+: 1429529750:0;ls
+: 1429529754:0;cd i3status
+: 1429529755:0;ls
+: 1429529762:0;vim i3status.conf
+: 1429529792:0;pacin xfonts-*
+: 1429529803:0;pacsearch xfont
+: 1429529817:0;pacin xorg-xfontsel
+: 1429529838:0;urxvt
+: 1429529846:0;urxvt -fn '-misc-orp-bold-r-semicondensed--0-0-75-75-c-0-iso10646-1'
+: 1429529860:0;c
+: 1429531524:0;findfn Xsession
+: 1429531621:0;cd /etc/gdm
+: 1429531621:0;ls
+: 1429531626:0;vim Xsession
+: 1429531836:0;vim custom.conf 
+: 1429531846:0;ls
+: 1429531849:0;cd init
+: 1429531853:0;cd Init/
+: 1429531853:0;ls
+: 1429531859:0;vim Default 
+: 1429531921:0;cd ..
+: 1429531921:0;ls
+: 1429531923:0;cd ..
+: 1429531924:0;ls
+: 1429531928:0;cd lightdm/
+: 1429531929:0;ls
+: 1429531933:0;vim Xsession
+: 1429531963:0;vim lightdm.conf
+: 1429531988:0;cd ..
+: 1429531989:0;ls
+: 1429532027:0;cd i3
+: 1429532028:0;ls
+: 1429532032:0;vim config
+: 1429532074:0;c
+: 1429532476:0;cd ..
+: 1429532477:0;ls
+: 1429532483:0;cd lightdm/
+: 1429532484:0;ls
+: 1429532489:0;ls -a
+: 1429532492:0;lsd
+: 1429532498:0;ls -d
+: 1429532504:0;ls -da
+: 1429532507:0;ls
+: 1429532508:0;cls
+: 1429532557:0;vim lightdm.conf
+: 1429532660:0;lightdm
+: 1429532669:0;sudo lightdm
+: 1429532679:0;lightdm --help
+: 1429532699:0;logout
+: 1429532742:0;cd /usr/share/xsessions/
+: 1429532743:0;ls
+: 1429532751:0;vim i3.desktop
+: 1429532799:0;vim gnome.desktop
+: 1429533000:0;gdm --help
+: 1429533226:0;sudo systemctl status lightdm.service
+: 1429533238:0;sudo systemctl status gdm.service
+: 1429533298:0;sudo systemctl lightdm.service start
+: 1429533311:0;sudo systemctl enable lightdm.service
+: 1429533318:0;sudo systemctl start lightdm.service
+: 1429533337:0;systemctl status lightdm.service
+: 1429533366:0;man lightdm
+: 1429533422:0;journalctl -xe
+: 1429534759:0;pacsearch fail2ban
+: 1429534767:0;pacin fail2ban
+: 1429534792:0;faillog 
+: 1429534798:0;sudo faillog
+: 1429535050:0;journalctl -xe
+: 1429535096:0;sudo systemctl stop sshd.service
+: 1429535101:0;journalctl -xe
+: 1429535130:0;sudo systemctl enable lightdm.service
+: 1429535137:0;sudo systemctl start lightdm.service
+: 1429535140:0;journalctl -xe
+: 1429535223:0;sudo systemctl status lightdm.service
+: 1429535280:0;cd /var/log
+: 1429535280:0;ls
+: 1429535286:0;cd lightdm/
+: 1429535287:0;ls
+: 1429535290:0;sudo ls
+: 1429535298:0;vim lightdm.log
+: 1429535306:0;vim lightdm.log.old
+: 1429535316:0;sudo vim lightdm.log
+: 1429535393:0;cd /etc/conf.d/
+: 1429535393:0;ls
+: 1429535396:0;ls -a
+: 1429535399:0;cd ..
+: 1429535400:0;ls
+: 1429535408:0;cd lightdm/
+: 1429535409:0;ls
+: 1429535489:0;pacsearch consolekit
+: 1429535496:0;pacsearch lightdm
+: 1429535513:0;pacin lightdm-gtk-greeter
+: 1429535534:0;sudo systemctl start lightdm.service
+: 1429535551:0;sudo systemctl mask gdm.service
+: 1429535566:0;ls
+: 1429535580:0;vim Xsession
+: 1429535708:0;vim lightdm.conf
+: 1429535816:0;sudo vim lightdm.conf
+: 1429535856:0;vim lightdm.conf
+: 1429535868:0;dm-tool --help
+: 1429537440:0;ls
+: 1429537884:0;tmux attach-session -t 0
+: 1429537890:0;tmux list
+: 1429537894:0;tmux list-sessions
+: 1429537897:0;tmux
+: 1429537922:0;exit
+: 1429537924:0;c
+: 1429537953:0;archey3
+: 1429538038:0;cd Documents/
+: 1429538039:0;ls
+: 1429538058:0;sh colorer.sh 2 && sh spacecolor.sh
+: 1429538072:0;archey3 && sh colorer.sh 2 && sh spacecolor.sh 
+: 1429538086:0;htop
+: 1429538095:0;ttyload
+: 1429538104:0;htop
+: 1429538224:0;vim
+: 1429538567:0;pacsearch scrot
+: 1429538582:0;pacin scrot
+: 1429538595:0;archey3 && sh colorer.sh 2 && sh spacecolor.sh && scrot
+: 1429538602:0;archey3 && sh colorer.sh 2 && sh spacecolor.sh && scrot 3
+: 1429538607:0;ls
+: 1429538626:0;scrot --help
+: 1429538656:0;archey3 && sh colorer.sh 2 && sh spacecolor.sh && scrot -c3
+: 1429538660:0;archey3 && sh colorer.sh 2 && sh spacecolor.sh && scrot -c
+: 1429538668:0;scrot --help
+: 1429538677:0;archey3 && sh colorer.sh 2 && sh spacecolor.sh && scrot -c=3
+: 1429538683:0;scrot --help
+: 1429538706:0;scrot -d 3 -c
+: 1429538717:0;archey3 && sh colorer.sh 2 && sh spacecolor.sh && scrot -d 3 -c
+: 1429539356:0;i3status reload
+: 1429540105:0;cd ../.config 
+: 1429540110:0;cd i3
+: 1429540118:0;cd ../.i3
+: 1429540309:0;ls
+: 1429540339:0;cd i3status/
+: 1429540340:0;ls
+: 1429540370:0;mv i3status.conf config
+: 1429540373:0;ls
+: 1429540377:0;cd ../
+: 1429540378:0;ls
+: 1429540389:0;mv i3status ../
+: 1429540391:0;ls
+: 1429540394:0;cd ../
+: 1429540395:0;ls
+: 1429540417:0;cd .i3
+: 1429540419:0;la
+: 1429540420:0;ls
+: 1429540423:0;cd ../
+: 1429540424:0;ls
+: 1429540436:0;cd /
+: 1429540437:0;ls
+: 1429540454:0;cd ~/.i3
+: 1429540454:0;ls
+: 1429540458:0;vim config
+: 1429543243:0;cd /etc
+: 1429543243:0;ls
+: 1429543259:0;cd i3
+: 1429543260:0;ls
+: 1429543262:0;cd ../
+: 1429543322:0;cp /etc/i3status.conf  ~/.dotfiles/i3status.conf
+: 1429543325:0;cd dots
+: 1429543326:0;ls
+: 1429543398:0;ln -s ~/.dotfiles/i3status.conf ~/.i3status.conf
+: 1429543399:0;ls
+: 1429543405:0;cd ../
+: 1429543406:0;ls
+: 1429544662:0;exit
+: 1429544725:0;c
+: 1429544731:0;ttyload
+: 1429544757:0;lynx
+: 1429548513:0;exit
+: 1429571302:0;history
+: 1429571321:0;tmux --attach-session -t 0
+: 1429571331:0;tmux -attach-session -t 0
+: 1429571343:0;tmux attach-session -t 0
+: 1429571354:0;gem install tmuxinator
+: 1429571378:0;which gem
+: 1429571382:0;which ruby
+: 1429571393:0;pacin locate
+: 1429571401:0;pacsearch locate
+: 1429571473:0;findfn tmuxinator
+: 1429571573:0;ruby -e 'print Gem.user_dir'
+: 1429571584:0;zshrc
+: 1429571664:0;source ~/.zshrc
+: 1429571681:0;zshrc
+: 1429571699:0;source ~/.zshrc
+: 1429571704:0;exit
+: 1429571724:0;gem list
+: 1429571736:0;tmuxinator
+: 1429571748:0;tmuxinator doctor
+: 1429571761:0;echo $SHELL
+: 1429571797:0;tmuxinator commands
+: 1429571806:0;tmuxinator new tmux
+: 1429572002:0;tmuxinator
+: 1429572007:0;tmuxinator start tmux
+: 1429572014:0;vim
+: 1429572014:0;bundle exec rails s
+: 1429572015:0;tail -f log/development.log
+: 1429572023:0;guard
+: 1429572035:0;exit
+: 1429572166:0;tmuxinator start tmux
+: 1429572173:0;vim
+: 1429572173:0;zsh
+: 1429572174:0;lynx
+: 1429572178:0;c
+: 1429572202:0;exit
+: 1429572382:0;cd .tmuxinator/
+: 1429572383:0;ls
+: 1429572389:0;vim tmux.yml
+: 1429572436:0;tmuxinator start tmux
+: 1429572445:0;vim
+: 1429572445:0;zsh
+: 1429572445:0;ttyload
+: 1429572446:0;lynx
+: 1429572452:0;ttyload
+: 1429572569:0;exit
+: 1429572738:0;c
+: 1429573279:0;vimrc
+: 1429573803:0;c
+: 1429573805:0;ls
+: 1429573807:0;c
+: 1429573821:0;ttyload
+: 1429573878:0;mv .tmuxinator .dotfiles/tmuxinator
+: 1429573896:0;ln -s ~/.dotfiles/tmuxinator ~/.tmuxinator
+: 1429573897:0;ls
+: 1429574279:0;vimrc
+: 1429574399:0;lynx
+: 1429574549:0;echo $MYVIMRC
+: 1429574916:0;exit
+: 1429575010:0;source .zshrc
+: 1429576714:0;cd docs
+: 1429576721:0;wd docs
+: 1429576722:0;ls
+: 1429576729:0;mcd vimdocs
+: 1429576730:0;ls
+: 1429576741:0;git clone https://github.com/nathangrigg/vimhelppdf.git
+: 1429576743:0;ls
+: 1429576760:0;cd vimhelppdf
+: 1429576761:0;ls
+: 1429576781:0;c
+: 1429576793:0;exit
+: 1429576883:0;mux start tmux
+: 1429576890:0;c
+: 1429576890:0;vim
+: 1429576890:0;c
+: 1429576891:0;lynx
+: 1429576946:0;c
+: 1429576947:0;vim
+: 1429576953:0;ttyload
+: 1429576995:0;wd docs
+: 1429576995:0;ls
+: 1429576998:0;cd vimdocs/
+: 1429576998:0;ls
+: 1429577004:0;cd vimhelppdf/
+: 1429577005:0;ls
+: 1429577098:0;c
+: 1429577102:0;vimvundle
+: 1429577107:0;vim
+: 1429577203:0;make ipad
+: 1429577673:0;ln -s /bin/python2 /bin/python
+: 1429577679:0;ln -sf /bin/python2 /bin/python
+: 1429577685:0;sudo ln -sf /bin/python2 /bin/python
+: 1429577690:0;make ipad
+: 1429577730:0;pacsearch xelatex
+: 1429577799:0;pacman -S --noconfirm texlive-most
+: 1429577805:0;sudo pacman -S --noconfirm texlive-most
+: 1429582939:0;make ipad
+: 1429583570:0;pacsearch file
+: 1429583723:0;pacsearch file | grep manager
+: 1429583775:0;pacsearch file | peco
+: 1429583811:0;pacin thunar
+: 1429583833:0;pacupd
+: 1429583850:0;sudo pacupd
+: 1429583858:0;sudo pacman -Syu
+: 1429583870:0;pacin thunar
+: 1429583925:0;pacsearch abs
+: 1429583931:0;pacsearch abs | peco
+: 1429583956:0;pacin abs
+: 1429583969:0;pacupd
+: 1429584356:0;c
+: 1429584393:0;git clone --recursive http://github.com/syl20bnr/spacemacs ~/.dotfiles/spacemacs.d
+: 1429584427:0;cd ~/.dotfiles
+: 1429584427:0;ls
+: 1429584431:0;cd spacemacs.d/
+: 1429584431:0;ls
+: 1429584436:0;cd ..
+: 1429584437:0;ls
+: 1429584447:0;mv spacemacs.d/ spacemacs/
+: 1429584448:0;ls
+: 1429584467:0;ln -s ~/.dotfiles/spacemacs/ ~/.emacs.d
+: 1429584470:0;cd ..
+: 1429584471:0;ls
+: 1429584476:0;cd .emacs.d/
+: 1429584476:0;ls
+: 1429584497:0;zsh
+: 1429584500:0;c
+: 1429584504:0;spacemacs
+: 1429584516:0;cd spacemacs
+: 1429584517:0;ls
+: 1429584520:0;cd ..
+: 1429584521:0;ls
+: 1429584669:0;irssi
+: 1429584813:0;source ~/.dotfiles/zsh/aliases.zsh
+: 1429584889:0;srcalias
+: 1429584903:0;c
+: 1429584927:0;irssi
+: 1429585035:0;zsh
+: 1429585038:0;c
+: 1429585040:0;irssi
+: 1429585298:0;cd ..
+: 1429585299:0;ls
+: 1429585311:0;mv .emacs.d .emacs.d.bak
+: 1429585797:0;pacin ttf-freefont
+: 1429585911:0;pacin emacs
+: 1429586006:0;ls
+: 1429586022:0;mv .emacs.d.bak .emacs.d
+: 1429586023:0;ls
+: 1429586027:0;cd .emacs.d/
+: 1429586028:0;ls
+: 1429586033:0;cd ..
+: 1429586055:0;spacemacs
+: 1429586236:0;irssi
+: 1429586481:0;emacs
+: 1429586661:0;c
+: 1429587951:0;pacin unclutter
+: 1429587959:0;unclutter
+: 1429588002:0;unclutter --help
+: 1429588068:0;unclutter -idle 2 -grab
+: 1429589040:0;unclutter -idle 5 -grab -reset -bg
+: 1429589043:0;unclutter -idle 5 -grab -reset -b
+: 1429624328:0;ls
+: 1429624355:0;rm .i3
+: 1429624363:0;rm .i3status.conf
+: 1429624364:0;ls
+: 1429624371:0;cd .config/
+: 1429624372:0;ls
+: 1429624377:0;cd i3
+: 1429624378:0;ls
+: 1429624383:0;cd ..
+: 1429624392:0;chmod 755 i3
+: 1429624393:0;ls
+: 1429624424:0;mkdir -p ~/.dotfiles/config
+: 1429624440:0;mv i3 ~/.dotfiles/config/i3
+: 1429624465:0;ln -s ~/.dotfiles/config/i3 ~/.config/i3
+: 1429624511:0;ls
+: 1429625072:0;pacin dzen
+: 1429625082:0;pacsearch dzen
+: 1429625092:0;pacin dzen2
+: 1429625207:0;acpi
+: 1429625211:0;pacin acpi
+: 1429625260:0;pacin alsamixer
+: 1429625266:0;pacsearch alsamixer
+: 1429625278:0;pacin gnome-alsamixer
+: 1429627224:0;emacs -nw
+: 1429633367:0;exit
+: 1429633448:0;shutdown
+: 1429633452:0;sudo shutdown
+: 1429633465:0;shutdown --help
+: 1429633477:0;shutdown -P 
+: 1429633484:0;sudo shutdown -P
+: 1429709776:0;mux start tmux
+: 1429709792:0;c
+: 1429709792:0;lynx
+: 1429709792:0;vim
+: 1429709793:0;c
+: 1429801523:0;ttyload
+: 1429801575:0;archey3 && sh colorer.sh 2 && sh spacecolor.sh
+: 1429801591:0;archey3
+: 1429801613:0;which python
+: 1429801619:0;which python2
+: 1429801621:0;which python3
+: 1429801627:0;c
+: 1429801693:0;mcd dev
+: 1429801731:0;touch ch6_ex2.htm
+: 1429802942:0;gvim -v
+: 1429802971:0;c
+: 1429802972:0;gvim
+: 1429803543:0;c
+: 1429803550:0;echo $TERM
+: 1429803708:0;tput colros
+: 1429803711:0;tput colors
+: 1429804410:0;gvim
+: 1429806147:0;c
+: 1429806155:0;cd ~/.vim
+: 1429806156:0;ls
+: 1429806159:0;cd bundle/
+: 1429806160:0;ls
+: 1429806165:0;cd csapprox/
+: 1429806166:0;ls
+: 1429806170:0;cd after
+: 1429806171:0;ls
+: 1429806174:0;cd plugin/
+: 1429806174:0;ls
+: 1429806214:0;vim
+: 1429806855:0;shutdown -P
+: 1429806859:0;sudo shutdown -
+: 1429806864:0;sudo shutdown -p
+: 1429806867:0;sudo shutdown
+: 1429885623:0;mux edit tmux
+: 1429886031:0;mux start tmux
+: 1429886041:0;c
+: 1429886041:0;lynx
+: 1429886041:0;ttyload
+: 1429886042:0;vim
+: 1429886068:0;c
+: 1429886078:0;ttyload
+: 1429886241:0;vim
+: 1429886874:0;ttyload
+: 1429886878:0;c
+: 1429888072:0;pacin rtorrent
+: 1429888231:0;mkdir ~/Downloads/torrent
+: 1429888565:0;ls
+: 1429888570:0;vim
+: 1429888580:0;cd Downloads/torrent/
+: 1429888580:0;ls
+: 1429888591:0;chmod +x magnet.sh
+: 1429888593:0;ls
+: 1429888730:0;./magnet.sh "MAGNET_URI"
+: 1429888734:0;rtorrent
+: 1429888830:0;cd ..
+: 1429888831:0;ls
+: 1429888850:0;mv *.torrent torrent/
+: 1429888851:0;ls
+: 1429888854:0;cd torrent
+: 1429888855:0;ls
+: 1429888860:0;./magnet.sh "MAGNET_URI"
+: 1429888864:0;rtorrent
+: 1429889067:0;cd down
+: 1429889068:0;ls
+: 1429889071:0;cd torrent
+: 1429889072:0;ls
+: 1429889173:0;rm You\ Don\'t\ Know\ JS_\ Async\ _amp\;\ Performance-Ascetic_trip-\[CPUL\].pdf/
+: 1429889180:0;rm You\ Don\'t\ Know\ JS_\ Async\ _amp\;\ Performance-Ascetic_trip-\[CPUL\].pdf
+: 1429889192:0;rm -R  You\ Don\'t\ Know\ JS_\ Async\ _amp\;\ Performance-Ascetic_trip-\[CPUL\].pdf
+: 1429889194:0;ls
+: 1429889697:0;pacin deluge
+: 1429889828:0;pacupd
+: 1429889914:0;cd ..
+: 1429889915:0;ls
+: 1429889925:0;ls -a
+: 1429889928:0;cls
+: 1429889999:0;wd docs
+: 1429890000:0;ls
+: 1429890024:0;wd down/torrent
+: 1429890028:0;wd down
+: 1429890031:0;cd torrent/
+: 1429890032:0;ls
+: 1429892207:0;pacin deluge
+: 1429892476:0;deluge
+: 1429892481:0;cd ..
+: 1429892704:0;cd down
+: 1429892705:0;ls
+: 1429892758:0;mv *.pdf ../Documents/
+: 1429892760:0;ls
+: 1429892794:0;cd ../Documents/
+: 1429892795:0;ls
+: 1429892819:0;mv You\ Don\'t\ Know\ JS_\ Async\ _amp\;\ Performance-Ascetic_trip-\[CPUL\].pdf/ ../Downloads/
+: 1429892834:0;exit
+: 1429893159:0;vim /etc/fstab
+: 1429893516:0;c
+: 1429893672:0;cd Documents/
+: 1429893673:0;ls
+: 1429893675:0;cd vimdocs/
+: 1429893676:0;ls
+: 1429893678:0;cd vimhelppdf/
+: 1429893679:0;ls
+: 1429893683:0;make
+: 1429893826:0;ls
+: 1429893832:0;vimhelp.pdf
+: 1429893954:0;shutdown
+: 1429893960:0;sudo shutdown
+: 1429983135:0;mux start tmux
+: 1429983145:0;c
+: 1429983145:0;lynx
+: 1429983145:0;ttyload
+: 1429983146:0;vim
+: 1429983146:0;c
+: 1429983159:0;ttyload
+: 1429983165:0;c
+: 1429983173:0;cd Down
+: 1429983175:0;cd down
+: 1429983176:0;ls
+: 1429983193:0;git clone https://github.com/limetext/lime.git limetext
+: 1429983205:0;cd limetext/
+: 1429983207:0;ls
+: 1429983217:0;cd tasks
+: 1429983217:0;ls
+: 1429983220:0;cd ci
+: 1429983221:0;ls
+: 1429983480:0;vim
+: 1429983521:0;c
+: 1429983523:0;cd ..
+: 1429983528:0;....
+: 1429983531:0;cd ~
+: 1429983533:0;ls
+: 1429983534:0;c
+: 1429983546:0;pacin go mercurial
+: 1429983981:0;yaourt -S oniguruma
+: 1429984077:0;sudo ln -sf /bin/python3 /bin/python
+: 1429984135:0;cd down
+: 1429984136:0;ls
+: 1429984142:0;mcd lime
+: 1429984148:0;go get github.com/limetext/lime/frontend/...
+: 1429986263:0;sudo pacman -Rs emacs
+: 1429986409:0;go env
+: 1429986455:0;cd ~
+: 1429986456:0;ls
+: 1429986464:0;rm .emacs.d
+: 1429986466:0;ls
+: 1429986475:0;rm .spacemacs~
+: 1429986476:0;ls
+: 1429986494:0;mv .spacemacs ~/.dotfiles/spacemacs
+: 1429986495:0;ls
+: 1429986505:0;c
+: 1429986539:0;fg
+: 1429986542:0;c
+: 1429986558:0;nvim
+: 1429986932:0;cd dev
+: 1429986933:0;ls
+: 1429986955:0;vim quickref.txt
+: 1430016357:0;pacsearch xclip
+: 1430016538:0;pacsearch clipit
+: 1430016546:0;pacin clipit
+: 1430016553:0;clipit
+: 1430016568:0;clipit --help
+: 1430016593:0;clipit -d
+: 1430061018:0;vimrc
+: 1430061055:0;vimvundle
+: 1430061061:0;vimrc
+: 1430063866:0;clipit -c
+: 1430063883:0;pacin emacs
+: 1430064004:0;pacin termite
+: 1430064010:0;pacsearch termite
+: 1430064198:0;yaourt -S termite-git
+: 1430064448:0;vimrc
+: 1430064464:0;c
+: 1430064467:0;cls
+: 1430064477:0;fg
+: 1430064593:0;vimrc
+: 1430064613:0;vimvundle
+: 1430064617:0;c
+: 1430064619:0;fg
+: 1430064651:0;ttyload
+: 1430064729:0;fg
+: 1430064732:0;vim
+: 1430064794:0;fg
+: 1430076142:0;mcd ~/Downloads/termite
+: 1430076148:0;git clone --recursive https://github.com/thestinger/termite.git
+: 1430076158:0;ls
+: 1430076165:0;mv termite ..
+: 1430076179:0;mv -R termite/* ..
+: 1430076181:0;ls
+: 1430076203:0;mv -R termite/* ~/Downloads/termite/
+: 1430076212:0;mv termite/* ~/Downloads/termite/
+: 1430076213:0;ls
+: 1430076217:0;cd ..
+: 1430076222:0;cd termite/
+: 1430076223:0;ls
+: 1430076226:0;cd ..
+: 1430076229:0;rm termite/
+: 1430076240:0;rm -Rf termite/
+: 1430076242:0;ls
+: 1430076252:0;git clone --recursive https://github.com/thestinger/termite.git
+: 1430076256:0;cd termite/
+: 1430076256:0;ls
+: 1430076321:0;vte
+: 1430076327:0;exit
+: 1430076349:0;vte --help
+: 1430076368:0;vte --version
+: 1430076381:0;vte --help-all
+: 1430076428:0;pacsearch vte
+: 1430076548:0;sudo pacman -Rns termite-git
+: 1430076698:0;make
+: 1430076778:0;sudo make install
+: 1430076839:0;ls
+: 1430076875:0;cd .config/
+: 1430076876:0;ls
+: 1430076911:0;cd clipit/
+: 1430076911:0;ls
+: 1430077008:0;vim clipitrc
+: 1430077065:0;wd docs
+: 1430077066:0;ls
+: 1430077078:0;sh colorer.sh 2 && sh colorer.sh 1 && sh spacecolor.sh
+: 1430077091:0;ls
+: 1430077106:0;perl colors.pl
+: 1430077114:0;ls
+: 1430077127:0;sh paccolor.sh
+: 1430077157:0;sh colortable2.sh
+: 1430077162:0;sh colortable.sh
+: 1430077190:0;c
+: 1430077193:0;cd ~
+: 1430077221:0;cd /etc/xdg/
+: 1430077222:0;ls
+: 1430077227:0;cd ..
+: 1430077245:0;find --help
+: 1430077315:0;sudo find / -name "termite"
+: 1430077416:0;cd ~down
+: 1430077417:0;ls
+: 1430077421:0;cd termite/
+: 1430077421:0;ls
+: 1430077521:0;exit
+: 1430077563:0;mkdir ~/.dotfiles/termite/
+: 1430077573:0;cd ~/.dotfiles/termite/
+: 1430077573:0;ls
+: 1430078443:0;cd ..
+: 1430078444:0;ls
+: 1430078466:0;mv termite config/
+: 1430078501:0;cd config
+: 1430078502:0;ls
+: 1430078536:0;ln -s ~/.dotfiles/config/termite ~/.config/termite
+: 1430078542:0;cd ~/.config
+: 1430078543:0;ls
+: 1430078545:0;cd termite/
+: 1430078546:0;ls
+: 1430078767:0;fg
+: 1430078769:0;c
+: 1430078831:0;wd docs
+: 1430078838:0;ls
+: 1430078876:0;sh colortable.sh
+: 1430078887:0;sh paccolor.sh
+: 1430078895:0;sh spacecolor.sh 
+: 1430078905:0;exit
+: 1430078913:0;vim
+: 1430079075:0;cd ..
+: 1430079078:0;cd dwb
+: 1430079078:0;ls
+: 1430079121:0;man termite.config
+: 1430079735:0;c
+: 1430079974:0;xlsfonts | peco
+: 1430080069:0;cd ~/.fonts
+: 1430080069:0;ls
+: 1430080098:0;fc-cache -f -v
+: 1430080147:0;mkfontscale
+: 1430080151:0;mkfontdir
+: 1430080156:0;xlsfonts | peco
+: 1430080165:0;fc-cache -f -v
+: 1430080173:0;xlsfonts | peco
+: 1430080379:0;xset -q
+: 1430080389:0;xset --help
+: 1430080632:0;xset q
+: 1430080665:0;xset +fp ~/.fonts/
+: 1430080672:0;xset +fp ~/.local/share/fonts
+: 1430080684:0;xset q
+: 1430080691:0;xlsfonts | peco
+: 1430081045:0;ls
+: 1430081176:0;exit
+: 1430081333:0;ls
+: 1430081346:0;exit
+: 1430081355:0;ks
+: 1430081356:0;ls
+: 1430081360:0;exit
+: 1430081376:0;ls
+: 1430081380:0;exit
+: 1430081610:0;ls
+: 1430081613:0;exit
+: 1430081656:0;ls
+: 1430081674:0;exit
+: 1430081681:0;ls
+: 1430081686:0;exit
+: 1430081711:0;ls
+: 1430081713:0;exit
+: 1430081848:0;ls
+: 1430081914:0;c
+: 1430081939:0;exit
+: 1430085241:0;cp --help
+: 1430085344:0;cp -iv
+: 1430085417:0;ls
+: 1430085440:0;cp -iv ter-u32n.bdf ter--32
+: 1430085443:0;ls
+: 1430085448:0;rm ter--32
+: 1430085501:0;dir --color=auto
+: 1430085599:0;dmesg --color
+: 1430085665:0;free -m
+: 1430085667:0;free
+: 1430085678:0;free -m
+: 1430085787:0;grep --color=tty -d skip
+: 1430085792:0;grep --color=tty -d skip ter
+: 1430085853:0;pacsearch vte | grep --color=tty -d skip vte
+: 1430085863:0;pacsearch vte | grep -d skip vte
+: 1430085871:0;pacsearch vte | grep vte
+: 1430085882:0;c
+: 1430085901:0;htop
+: 1430085924:0;c
+: 1430085997:0;/bin/ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F
+: 1430086023:0;c
+: 1430086106:0;ln -i
+: 1430086110:0;ln --help
+: 1430086328:0;/bin/ls -lah /dev/disk/by-id/
+: 1430086349:0;/bin/ls -lah --color=auto /dev/disk/by-id/
+: 1430086527:0;tree -dA
+: 1430086534:0;cd ..
+: 1430086535:0;ls
+: 1430086539:0;tree -dA
+: 1430086712:0;yaourt --help
+: 1430086883:0;pacsrc vte
+: 1430086898:0;pacman -Ss vte
+: 1430087103:0;pacinf vte3
+: 1430087151:0;lsd
+: 1430087503:0;c
+: 1430088209:0;vimvundle
+: 1430088394:0;vimrc
+: 1430089463:0;c
+: 1430089464:0;vim
+: 1430090145:0;npm install --global javascripting
+: 1430140599:0;javascripting
+: 1430141473:0;c
+: 1430141500:0;javascripting
+: 1430141524:0;cd Documents/
+: 1430141533:0;mcd javascripting
+: 1430141543:0;touch introduction.js
+: 1430141569:0;vim introduction.js
+: 1430141596:0;javascripting verify introduction.js
+: 1430141616:0;javascripting
+: 1430141655:0;touch variables.js
+: 1430141669:0;vim variables.js
+: 1430141761:0;javascripting verify variable.js
+: 1430141765:0;javascripting verify variables.js
+: 1430141846:0;javascripting
+: 1430142147:0;sudo pacman -S gconf base-devel git nodejs libgnome-keyring
+: 1430142197:0;sudo pacman -S gconf base-devel git libgnome-keyring
+: 1430142254:0;export PYTHON=/usr/bin/python2
+: 1430142268:0;cd ..
+: 1430142271:0;cd down
+: 1430142272:0;ls
+: 1430142275:0;git clone https://github.com/atom/atom
+: 1430142804:0;vimvundle
+: 1430142809:0;vim
+: 1430142969:0;cd atom/
+: 1430142970:0;ls
+: 1430143146:0;git fetch -p
+: 1430143189:0;git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
+: 1430143209:0;script/build
+: 1430143410:0;emacs -nw
+: 1430145457:0;sudo script/grunt install
+: 1430145491:0;cd ~
+: 1430145494:0;atom
+: 1430145927:0;vim
+: 1430145992:0;which go
+: 1430145995:0;go enc
+: 1430145997:0;go env
+: 1430146029:0;zsh
+: 1430146037:0;go env
+: 1430146043:0;cd down
+: 1430146046:0;cd lime
+: 1430146046:0;ls
+: 1430146049:0;cd ..
+: 1430146051:0;rm lime
+: 1430146055:0;rm -R lime
+: 1430146056:0;ls
+: 1430146059:0;cd limetext/
+: 1430146060:0;ls
+: 1430146063:0;vim
+: 1430146573:0;go get github.com/limetext/lime/frontend/...
+: 1430146587:0;cd frontend/
+: 1430146589:0;ls
+: 1430146607:0;go get github.com/limetext/lime/frontend/termbox
+: 1430146671:0;go get github.com/limetext/lime/frontend/html
+: 1430146701:0;cd ~/go
+: 1430146702:0;ls
+: 1430146705:0;cd src
+: 1430146705:0;ls
+: 1430146708:0;cd github.com/
+: 1430146709:0;ls
+: 1430146712:0;cd limetext/
+: 1430146712:0;ls
+: 1430146715:0;cd lime/
+: 1430146716:0;ls
+: 1430146721:0;cd ..
+: 1430146722:0;ls
+: 1430146726:0;rm -R lime
+: 1430146728:0;y
+: 1430146741:0;git clone https://github.com/limetext/lime.git
+: 1430146762:0;ls
+: 1430146764:0;cd lime
+: 1430146765:0;ls
+: 1430146771:0;ls -a
+: 1430146776:0;cd .git
+: 1430146777:0;ls
+: 1430146780:0;cd ..
+: 1430146781:0;ls
+: 1430146788:0;cat README.md
+: 1430148916:0;tput xterm-termite
+: 1430149059:0;mux start tmux
+: 1430149071:0;c
+: 1430149071:0;vim
+: 1430149071:0;c
+: 1430149072:0;lynx
+: 1430149072:0;ttyload
+: 1430149255:0;tput colors
+: 1430149397:0;c
+: 1430149405:0;findfn termite
+: 1430149418:0;findfn terminfo
+: 1430149456:0;ttyload
+: 1430149566:0;echo $TERMINFO
+: 1430149865:0;cd /usr/share/terminfo/
+: 1430149866:0;ls
+: 1430149872:0;cd z
+: 1430149873:0;ls
+: 1430149875:0;cd ..
+: 1430149891:0;cd t
+: 1430149894:0;ls
+: 1430149937:0;cd ../x
+: 1430149939:0;ls
+: 1430149979:0;cd ~/Downloads/
+: 1430149980:0;ls
+: 1430149989:0;cd termite/
+: 1430149991:0;ls
+: 1430150074:0;sudo cp termite.terminfo /usr/share/terminfo/x/
+: 1430150080:0;exit
+: 1430150118:0;cd /usr/share/terminfo/x
+: 1430150119:0;ls
+: 1430151263:0;mv termite.terminfo xterm-termite
+: 1430151270:0;sudo mv termite.terminfo xterm-termite
+: 1430151279:0;exit
+: 1430151410:0;zsh
+: 1430151502:0;vim
+: 1430151573:0;exit
+: 1430151588:0;vim
+: 1430151668:0;exie
+: 1430151673:0;exit
+: 1430151689:0;zsh
+: 1430151698:0;exit
+: 1430151705:0;zsh
+: 1430151718:0;echo $TERMINFO
+: 1430151756:0;echo $terminfo
+: 1430151759:0;9R1;2c
+: 1430151770:0;c
+: 1430151778:0;exit
+: 1430152170:0;c
+: 1430152176:0;echo $TERM
+: 1430152267:0;c
+: 1430152285:0;infocmp
+: 1430152295:0;c
+: 1430152422:0;cd ~
+: 1430152424:0;cd go
+: 1430152427:0;go get github.com/limetext/lime-backend/lib/...
+: 1430152603:0;cd $GOPATH/src/github.com/limetext/lime-backend
+: 1430152611:0;git submodule update --init --recursive
+: 1430152954:0;go test github.com/limetext/lime-backend/lib/...
+: 1430153232:0;zsh
+: 1430153244:0;echo $PROMPT
+: 1430153253:0;echo $LPROMPT
+: 1430153298:0;zsh
+: 1430153301:0;ls
+: 1430153306:0;cd .config
+: 1430153307:0;ls
+: 1430153504:0;zsh
+: 1430154841:0;c
+: 1430154842:0;ls
+: 1430154855:0;zsh
+: 1430154858:0;cls
+: 1430154966:0;zsh
+: 1430154989:0;cls
+: 1430154990:0;c
+: 1430155110:0;zsh
+: 1430155118:0;ls
+: 1430155120:0;c
+: 1430155240:0;zsh
+: 1430155491:0;exit
+: 1430155514:0;shutdown
+: 1430155519:0;sudo shutdown
+: 1430178536:0;ls
+: 1430178566:0;dirs -v
+: 1430181204:0;mux start tmux
+: 1430181212:0;c
+: 1430181213:0;lynx
+: 1430181213:0;ttyload
+: 1430181217:0;exit tmux
+: 1430181229:0;tmux detach-session
+: 1430181289:0;c
+: 1430181295:0;mux edit tmux
+: 1430181356:0;c
+: 1430181360:0;mux start tmux
+: 1430181366:0;mux edit tmux
+: 1430181402:0;c
+: 1430181404:0;mux start tmux
+: 1430181418:0;c
+: 1430181419:0;vim
+: 1430181419:0;irssi
+: 1430181419:0;nvim
+: 1430181419:0;emacs -nw
+: 1430181419:0;ttyload
+: 1430181419:0;lynx
+: 1430181419:0;c
+: 1430181460:0;lynx
+: 1430181464:0;ttyload
+: 1430181477:0;c
+: 1430181766:0;exit
+: 1430191113:0;vimvundle
+: 1430191434:0;vim
+: 1430191477:0;c
+: 1430191484:0;cd .vim/bundle/YouCompleteMe/
+: 1430191523:0;mkdir ~/.cache/zsh/
+: 1430191534:0;touch ~/.cache/zsh/dirs
+: 1430191539:0;ls
+: 1430191560:0;./install.sh --clang-completer
+: 1430192359:0;cd ~/.dotfiles/
+: 1430192372:0;git clone --depth 1 https://github.com/junegunn/fzf.git 
+: 1430192374:0;ls
+: 1430192382:0;cd fzf
+: 1430192383:0;ls
+: 1430192401:0;ln -s ~/.dotfiles/fzf ~/.fzf
+: 1430192407:0;cd ~/.fzf
+: 1430192408:0;ls
+: 1430192418:0;install
+: 1430192427:0;sh install
+: 1430192444:0;zsh
+: 1430192463:0;fzf --help
+: 1430192482:0;ls
+: 1430192498:0;fzf
+: 1430192537:0;fzf -x
+: 1430192597:0;fzf -color=light
+: 1430192609:0;fzf --color=light
+: 1430192665:0;fzf-tmux
+: 1430192694:0;vim
+: 1430192755:0;fzf-tmux
+: 1430192959:0;fzf
+: 1430193013:0;ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+: 1430193338:0;ranger
+: 1430193794:0;nvim
+: 1430194757:0;irssi
+: 1430197385:0;vim
+: 1430197412:0;cd ~/.irssi/
+: 1430197413:0;ls
+: 1430197421:0;mv config config.bak
+: 1430197428:0;mv config.new config
+: 1430197429:0;ls
+: 1430197439:0;irssi
+: 1430197481:0;vim
+: 1430197576:0;irssi
+: 1430199643:0;pacin weechat
+: 1430199658:0;c
+: 1430199692:0;ls
+: 1430199722:0;weechat
+: 1430199763:0;ls
+: 1430199777:0;findfn 'weechat'
+: 1430200894:0;exit
+: 1430201067:0;ttyload
+: 1430201076:0;htop
+: 1430201167:0;ttyload
+: 1430201204:0;c
+: 1430233619:0;weechat
+: 1430234590:0;cd ~
+: 1430234591:0;ls
+: 1430234598:0;cd .weechat/
+: 1430234599:0;ls
+: 1430234603:0;cd script
+: 1430234603:0;ls
+: 1430234606:0;cd ..
+: 1430234609:0;cd ruby
+: 1430234609:0;ls
+: 1430234612:0;cd ..
+: 1430234622:0;cd ~/Downloads/
+: 1430234623:0;ls
+: 1430234641:0;mv tmux_env.py ~/.weechat/python/autoload/
+: 1430234643:0;ls
+: 1430234658:0;mv iset.pl ~/.weechat/perl/autoload/
+: 1430234685:0;mv buffers.pl ~/.weechat/perl/autoload/
+: 1430234719:0;mv colorize_nicks.py ~/.weechat/python/autoload/
+: 1430234746:0;mv autoconnect.py ~/.weechat/python/autoload/
+: 1430234748:0;ls
+: 1430234907:0;mkdir ~/.weechat/themes
+: 1430234929:0;mv doebi.theme  ~/.weechat/themes/
+: 1430234935:0;weechat
+: 1430235468:0;weechat-curses -c
+: 1430235621:0;vim
+: 1430236327:0;weechat
+: 1430237127:0;pacsrc gpointing-device-settings
+: 1430237137:0;pacin gpointing-device-settings
+: 1430237634:0;shutdown --help
+: 1430237646:0;shutdown -r --no-wall
+: 1430237651:0;sudo shutdown -r --no-wall
+: 1430237684:0;shutdown -c
+: 1430237692:0;sudo shutdown -c
+: 1430237700:0;sudo shutdown -r --no-wall -t 10
+: 1430238018:0;tmux attach-session -t 0
+: 1430238029:0;mux edit tmux
+: 1430238033:0;c
+: 1430238177:0;mux help
+: 1430238182:0;mux commands
+: 1430238207:0;c
+: 1430238211:0;mux start tmux
+: 1430238229:0;vim
+: 1430238229:0;weechat
+: 1430238229:0;emacs -nw
+: 1430238230:0;c
+: 1430238230:0;nvim
+: 1430238230:0;lynx
+: 1430238230:0;bash
+: 1430238230:0;ttyload
+: 1430238847:0;c
+: 1430240229:0;echo $TERM
+: 1430240935:0;export $TERM='screen-256color' && weechat
+: 1430240947:0;export $TERM=screen-256color && weechat
+: 1430241110:0;export TERM=screen-256color && weechat
+: 1430241383:0;c
+: 1430241416:0;zsh
+: 1430241419:0;c
+: 1430241421:0;weechat
+: 1430241539:0;c
+: 1430241540:0;vim
+: 1430241567:0;weechat
+: 1430241977:0;tmux detach-session
+: 1430241982:0;tmux detach-session -t 0
+: 1430319624:0;ls
+: 1430319639:0;cd ~/.dotfiles
+: 1430319640:0;ls
+: 1430320574:0;pacin stow
+: 1430321027:0;sudo visudo
+: 1430321386:0;stow --help
+: 1430321995:0;ls
+: 1430322380:0;echo "# dotfiles" >> README.md
+: 1430322382:0;ls
+: 1430322396:0;git init
+: 1430322398:0;ls
+: 1430322406:0;git add *

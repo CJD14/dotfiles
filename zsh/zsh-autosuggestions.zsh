@@ -1,0 +1,1 @@
+/home/cjd/.dotfiles/antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-tarruda-SLASH-zsh-autosuggestions.git/autosuggestions.zsh

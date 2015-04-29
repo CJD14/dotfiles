@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+  <title>Chapter 6: Example 2</title>
+</head>
+<body>
+<script type="text/javascript">
+  switch (window.screen.colorDepth) {
+    case 1:
+    case 4:
+      document.bgColor = 'white';
+      break;
+    case 8:
+    case 15:
+    case 16:
+      document.bgColor = 'blue';
+      break;
+    case 24:
+    case 32:
+      document.bgColor = 'skyblue';
+      break;
+    default:
+      document.bgColor = 'white';
+  };
+
+  document.write("Your screen supports " + window.screen.ColorDepth + " bit color");
+</script>
+</body>
+</html>

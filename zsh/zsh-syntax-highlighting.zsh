@@ -1,0 +1,1 @@
+/home/cjd/.dotfiles/antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-zsh-users-SLASH-zsh-syntax-highlighting.git/zsh-syntax-highlighting.zsh

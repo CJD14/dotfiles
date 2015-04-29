@@ -1,0 +1,129 @@
+===========================================================
+CONTENTS                                    *RefContents*
+1.  Useful................................. |Useful|
+  2.  Movements............................ |Movements|
+  3.  Searches............................. |QuickRefSearches|
+  4.  Text Manipulation.................... |TextManip|
+
+===========================================================
+USEFUL                                      *Useful*
+
+
+MOVEMENTS   -----------------------------   *Movement*
+-----------------------------------------------------------
+N is an option count that can be given before command.
+-----------------------------------------------------------
+
+|0|       0       to first char on the line (same as home)
+|^|       ^       to first non-blank char in line
+|$|   N   $       to the last char of line (same as end)
+|g0|      g0      to first char in line (differ for wrap)
+|g^|      g^      to first non-blank char in line (wrap)
+|g$|  N   g$      to last char in line (differ in wrap)
+|gm|      gm      to middle of screen line
+|bar| N   |       to column N (default: 1)
+|f|   N   f{char} to Nth occurance of {char} to the right
+|F|   N   F{char} to Nth occurance of {char} to the left
+|t|   N   t{char} to before Nth occurance of {char} to right
+|T|   N   T{char} to before Nth occurance of {char} to left
+|-|   N   -       up N lines, on first non-blank char
+|+|   N   +       down N lines, on first non-blank char
+|G|   N   G       goto line N {default: last line} first char
+|gg|  N   gg      goto line N {default: first line} first char
+|N%|  N   %       goto N percentage down in file (N must be given)
+|w|   N   w       N words forward
+|W|   N   W       N blank-seperated words forward (dashes, comma, etc)
+|e|   N   e       forward to end of Nth word
+|E|   N   E       forward to end of Nth blank seperated word
+|b|   N   b       N words back (B same as above)
+|ge|  N   ge      backward to end of Nth word
+|)|   N   )       N sentences forward
+|(|   N   (       N sentences backward
+|}|   N   }       N paragraphs forward ({ obviously backward)
+
+
+===========================================================
+SEARCHES   ------------------------------  *QuickRefSearches*
+===========================================================
+
+|/|   N   /{pattern}[/[offset]]<CR>
+                  search forward for Nth occurance of {pattern}
+|?|   N   ?{pattern}[/[offset]]<CR>
+                  search backward for Nth occurance of {pattern}
+|/<CR>| N /<CR>   repeat last search forward
+|?<CR>| N ?<CR>   repeat last search backward
+|n|   N   n       repeat last search
+|N|   N   N       repeat last search in opposite direction
+|star|N   *       search forward for identifier under cursor
+|#|   N   #       search backward for identifier under cursor
+|gstar| N g*      like * but also partial (same for #)
+
+
+
+===========================================================
+TEXT MANIPULATION  -------------------------  *TextManip*
+===========================================================
+
+|a|   N   a     append text after cursor (N times)
+|A|   N   A     append text at end of line (N times)
+|I|   N   I     insert text at first non-blank in line (N times)
+|gI|  N   gI    insert text in column 1 (N times)
+|o|   N   o     open a new line below current and append text
+|O|   N   O     open a new line above current and append text
+
+|i_CTRL-T|  CTRL-T  insert one shiftwidth in front of current line
+|i_CTRL-D|  CTRL-D  delete one shiftwidth in front of current line
+|i_<Del>|   <Del>   delete word under cursor
+
+|:r|    :r {file}   insert file contents below cursor
+
+|x|   N   x     delete N chars under and after cursor (<Del> does same)
+|X|   N   X     delete N chars before the cursor
+|dd|  N   dd    delete N lines
+|D|   N   D     delete to end of line (and N-1 more)
+|J|   N   J     join N-1 lines
+|v_J|{vis}J     join highlighted lines
+|gJ|  N   gJ    like J without inserting spaces
+
+|:reg|    :reg  show contents of all registers
+|gr|  gr{char}  replace N chars wit {char}
+|gR|  N   gR    enter replace mode without effecting layout
+
+|v_u| {vis}u    make highlighted text lowercase (uppercase with U)
+|CTRL-A| CTRL-A add N to number at or after cursor
+|CTRL-X| CTRL-X subtract N to number at or after cursor
+|<<|  N   <<    move N lines one shiftwidth left (unindent)
+|>>|  N   >>    move N lines one shiftwidth right (indent)
+
+|:s|  :[range]s[ubstitute]/{pattern}/{string}/[g][c]
+                substitute {pattern} by {string} in [range] lines;
+                with [g], replace all occurances of {pattern};
+                with [c], confirm each replacement
+
+|.|   N   .     repeat last change (with count replaced with N)
+|q|     q{a-z}  record last typed characters into register {a-z}
+|q|     q       stop recording
+|@|   N @{a-z}  execute the contents of register {a-z} (N times)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vim:ft=help:syn=help:norl:ls=2:

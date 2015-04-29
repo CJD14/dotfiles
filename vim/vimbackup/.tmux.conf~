@@ -1,0 +1,154 @@
+#--------------------------------------
+# file:     ~/.tmux.conf
+# author:   cody diehl
+# vim:fenc=utf-8:nu:ai:si:et:ts=2:sw=2:fdm=indent:fdn=1:ft=tmux:
+# --------------------------------------
+
+# shell & term
+set -g default-shell /usr/bin/zsh
+set -g default-command /usr/bin/zsh
+set -g default-terminal 'screen-256color'
+set -g utf8
+set-window-option -g utf8 on
+set -g status-utf8 on
+
+# allow terminal scroll
+set -g terminal-overrides 'xtem*:smcup@:rmcup@'
+
+# history
+set -g history-limit 10000
+
+# prefix change
+unbind C-b
+set -g prefix C-a
+set -g prefix2 `
+bind-key C-a send-prefix
+
+# pane and window start at 1 instead of 0
+set -g base-index 1
+set -g pane-base-index 1
+
+# panes
+set -g mouse-select-pane on
+set -g mouse-resize-pane on
+set -g pane-border-fg colour234
+set -g pane-active-border-fg colour240 #base01
+bind x kill-pane
+# pane selection
+bind Left select-pane -L
+bind Right select-pane -R
+bind Up select-pane -U
+bind Down select-pane -D
+# alt vi pane selection
+#bind h select-pane -L
+#bind j select-pane -D
+#bind k select-pane -U
+#bind l select-pane -R
+# pane resizing
+bind-key C-H resize-pane -L 5
+bind-key C-J resize-pane -D 7
+bind-key C-K resize-pane -U 5
+bind-key C-L resize-pane -R 5
+# windows
+set -g mouse-select-window on
+bind-key C-b last-window
+set -g set-titles on
+set-window-option -g automatic-rename on
+set -g set-titles-string "tmux:#I [ #W ]"
+bind X next-layout
+bind Z previous-layout
+# window selection urxvt sytle (-n no prior esc)
+bind-key -n S-left prev
+bind-key -n S-right next
+bind-key -n C-left swap-window -t -1
+bind-key -n C-right swap-window -t +1
+
+# window/pane movement
+bind-key j command-prompt -p 'join pane from:' 'join-pane -s ":%%"'
+bind-key s command-prompt -p 'send pane to:' 'join-pane -t ":%%"'
+bind-key S command-prompt -p 'swap window with:' 'swap-window -t ":%%"'
+bind-key m command-prompt -p 'move window to:' 'move-window -t ":%%"'
+bind-key , command-prompt -p 'rename window to:' 'rename-window ":%%"'
+
+# confirm first
+bind-key k confirm kill-window
+bind-key K confirm kill-server
+
+# resizing
+setw -g aggressive-resize on
+
+# vim style keys
+setw -g mode-keys vi
+bind : command-prompt
+unbind [
+bind Escape copy-mode
+unbind p
+bind p paste-buffer
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-pipe 'xclip -in -selection clipboard'
+# copy to clipboard
+bind C-y run 'tmux show-buffer | xsel -b'
+# move x clipboard into tmux paste buffer
+bind C-p run 'tmux set-buffer \"$(xsel -o)\"; tmux paste-buffer'
+bind B run 'tmux capture-pane -S -2000; tmux save-buffer /tmp/tmux_buffer_\"$(date +%d%m%y)\"; tmux display-message \"  Buffer captured...\"'
+# vi keys command input
+# Note: ESC twice for command mode
+set -g status-keys vi
+bind-key -t vi-edit Up history-up
+bind-key -t vi-edit Down history-down
+# No escape time for vi mode
+set -sg escape-time 1
+
+# intuitive splitting
+unbind %
+bind h split-window -v
+unbind '"'
+bind v split-window -h
+
+# mouse mode
+setw -g mode-mouse on
+
+# toggle statusbar
+bind-key b set-option status
+# statusbar
+set -g status on
+set -g status-interval 5
+set -g status-justify centre # center window list
+#setw -g monitor-activity on
+set -g visual-activity on
+set -g status-fg colour30
+set -g status-bg colour233
+set -g status-attr dim
+
+# window list colors
+set-window-option -g window-status-fg colour29
+set-window-option -g window-status-bg colour233
+set-window-option -g window-status-attr dim
+set-window-option -g window-status-current-fg colour36
+set-window-option -g window-status-current-bg colour233
+set-window-option -g window-status-current-attr bright
+
+# show host and ip on left side of statusbar
+set -g status-left-length 70
+set -g status-left "#[fg=green]: #h : #[fg=brightblue]#(curl icanhazip.com) #[fg=yellow]#(ifconfig en0 | grep 'inet ' | awk '{print \"en0 \" $2}') #(ifconfig en1 | grep 'inet ' | awk '{print \"en1 \" $2}') #[fg=red]#(ifconfig tun0 | grep 'inet ' | awk '{print \"vpn \" $2}') "
+# show session name, window and pane number, date and time on right
+set -g status-right-length 60
+set -g status-right "#[fg=blue]#S #I:#P #[fg=yellow]:: %d %b %Y #[fg=green]:: %l:%M %p :: #(date -u | awk '{print $4}')::"
+
+# color related
+set-option -g message-fg colour26
+set-option -g message-bg colour233
+
+# misc
+# thanks Jason W Ryan ;)
+# quick process view
+bind '~' split-window "exec htop"
+# toggle sync between panes
+bind e setw synchronize-panes on
+bind E setw synchronize-panes off
+# listen for activity
+set -g bell-action any
+# source config
+bind r source-file ~/.tmux.conf \; \
+  display-message "source-file reloaded"
+

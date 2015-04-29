@@ -1,0 +1,136 @@
+#############################
+# file: ~/.irssi/config     #
+# author: cody diehl        #
+# vim:ft=config:            #
+#############################
+
+servers = (
+  {
+    address = "irc.freenode.net";
+    chatnet = "freenode";
+    port = "6697";
+    autoconnect = "yes";
+  }
+);
+
+channels = (
+  { name = "#archlinux"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#vim"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#zsh"; chatnet = "freenode"; autojoin = "Yes"; }
+);
+
+aliases = {
+  J = "join";
+  LEAVE = "part";
+  EXIT = "quit";
+  W = "window";
+  WC = "window close";
+  WK = "window kill";
+  WA = "window goto active";
+  RUN = "SCRIPT LOAD";
+  Q = "QUERY";
+};
+
+statusbar = {
+  items = {
+    time = "{sb $Z}     ";
+    window = ":: {sb [$winref] $tag $itemname} ";
+    window_empty = ":: {sb [$winref] $tag $itemname} ";
+
+    prompt = "{prompt}";
+    prompt_empty = "{prompt}";
+  };
+
+  default = {
+    window = {
+      type = "window";
+      placement = "top";
+      visible = "active";
+      items = { window = { }; window_empty = { }; typing_notice = { }; };
+    };
+
+    window_inact = {
+      type = "window";
+      placement = "top";
+      visible = "inactive";
+      items = { window = { }; window_empty = { }; };
+    };
+
+    prompt = {
+      type = "root";
+      placement = "bottom";
+      position = "100";
+      visible = "always";
+
+      items = {
+        time = { };
+        user = { };
+        prompt = { priority = "-1"; };
+        prompt_empty = { priority = "-1"; };
+
+        input = { priority = "10"; };
+      };
+    };
+
+    topic = {
+      type = "root";
+      placement = "bottom";
+      position = "1";
+      visible = "always";
+      items = { topic = { }; topic_empty = { }; };
+    };
+
+    awl_0 = {
+      items = {
+        barstart = { priority = "100"; };
+        awl_0 = { };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+    };
+  };
+};
+
+settings = {
+  core = {
+    real_name = "Cody Diehl";
+    user_name = "CJD14";
+    nick = "CJD14";
+    recode_autodetect_utf8 = "yes";
+  };
+  "fe-text" = { actlist_sort = "refnum"; };
+};
+
+ignores = ( { level = "JOINS PARTS QUITS NICKS"; } );
+
+windows = {
+  1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
+  2 = { name = "hilight"; sticky = "yes"; };
+  3 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#archlinux";
+        tag = "freenode";
+      }
+    );
+  };
+  4 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#vim";
+        tag = "freenode";
+      },
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#zsh";
+        tag = "freenode";
+      }
+    );
+  };
+};
+
+chatnets = { freenode = { type = "IRC"; }; };

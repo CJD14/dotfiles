@@ -1,0 +1,1 @@
+/home/cjd/.dotfiles/vim/bundle/gruvbox/colors/gruvbox.vim
