@@ -2862,3 +2862,783 @@
 : 1430322396:0;git init
 : 1430322398:0;ls
 : 1430322406:0;git add *
+: 1430322429:0;git commit -m "finally adding to repo"
+: 1430322448:0;git config --global user.email "Diehl14C@gmail.com"
+: 1430322461:0;git config --global user.name "CJD14"
+: 1430322465:0;git commit -m "finally adding to repo"
+: 1430322517:0;git remote add origin https://github.com/CJD14/dotfiles.git
+: 1430322538:0;git push -u origin master
+: 1430402062:0;df -h
+: 1430402085:0;pacsrc virtualbox
+: 1430402100:0;pacin virtualbox
+: 1430402135:0;pacupd
+: 1430402208:0;sudo visudo
+: 1430402312:0;pacin virtualbox
+: 1430402701:0;virtualbox
+: 1430402727:0;modprobe vboxdrv
+: 1430402729:0;virtualbox
+: 1430402844:0;pacin virtualbox-host-modules
+: 1430402860:0;virtualbox
+: 1430402885:0;modprobe vboxdrv
+: 1430402890:0;virtualbox
+: 1430402929:0;sudo /etc/rc.d/vboxdrv setup
+: 1430402955:0;ls /etc/vbox/
+: 1430403002:0;shutdown -t 5
+: 1430403010:0;sudo shutdown -t 3
+: 1430403269:0;virtualbox
+: 1430403272:0;modprobe vboxdrv
+: 1430403280:0;sudo modprobe vboxdrv
+: 1430403286:0;virtualbox
+: 1430403401:0;pacsrc libqgui4
+: 1430403405:0;pacsrc libqgui
+: 1430403408:0;pacsrc libq
+: 1430403434:0;pacin libqtxdg
+: 1430403758:0;pacsrc qt
+: 1430403798:0;pacin qt
+: 1430404720:0;virtualbox
+: 1430404997:0;pacin qt4
+: 1430405049:0;virtualbox
+: 1430406898:0;wifi-menu
+: 1430406903:0;sudo wifi-menu
+: 1430406967:0;sudo shutdown now
+: 1430407179:0;virtualbox
+: 1430407240:0;cd /tmp
+: 1430407241:0;ls
+: 1430407520:0;cd .vbox-cjd-ipc/
+: 1430407520:0;ls
+: 1430407524:0;cd ..
+: 1430407525:0;ls
+: 1430407532:0;rm -Rf .vbox-cjd-ipc/
+: 1430407533:0;ls
+: 1430407805:0;ls -ld /tmp
+: 1430407820:0;/bin/ls -ld /tmp
+: 1430407882:0;c
+: 1430407892:0;chown root.root /tmp
+: 1430407898:0;sudo chown root.root /tmp
+: 1430407915:0;chmod ug-s /tmp
+: 1430407921:0;sudo chmod ug-s /tmp
+: 1430407929:0;sudo chmod 1777 /tmp
+: 1430407935:0;/bin/ls -ld /tmp
+: 1430407951:0;virtualbox
+: 1430408015:0;ls
+: 1430408027:0;rm -Rf .vbox-cjd-ipc/
+: 1430408029:0;ls
+: 1430408035:0;/bin/ls -ld /tmp
+: 1430408082:0;lsmod
+: 1430408271:0;lsmod | peco
+: 1430408282:0;modprobe vboxdrv
+: 1430408286:0;sudo modprobe vboxdrv
+: 1430408291:0;lsmod | peco
+: 1430408413:0;cd /opt/
+: 1430408414:0;ls
+: 1430408417:0;cd ..
+: 1430408422:0;which virtualbox
+: 1430408437:0;which opt
+: 1430408444:0;findfn 'opt'
+: 1430408454:0;find -name opt
+: 1430408459:0;sudo find -name opt
+: 1430408549:0;cd /var/opt
+: 1430408549:0;ls
+: 1430408552:0;ls -a
+: 1430408554:0;cd ~
+: 1430408610:0;sudo find / -name init.d
+: 1430408650:0;sudo find -name init.d
+: 1430408688:0;cd /sbin/init
+: 1430408689:0;ls
+: 1430408691:0;cd /sbin
+: 1430408692:0;ls
+: 1430408940:0;pacsrc vbox
+: 1430408946:0;pacsrc virtualbox
+: 1430408988:0;pacin virtualbox-guest-modules
+: 1430409017:0;modprobe vboxguest 
+: 1430409020:0;sudo modprobe vboxguest
+: 1430409101:0;cd ~/VirtualBox/
+: 1430409101:0;ls
+: 1430409112:0;ls -a
+: 1430409120:0;rm *
+: 1430409129:0;ls
+: 1430409163:0;ls -a
+: 1430409164:0;cd ..
+: 1430409165:0;ls
+: 1430409167:0;ls -a
+: 1430409247:0;ls VirtualBox
+: 1430409247:0;ls
+: 1430409252:0;cd VirtualBox
+: 1430409252:0;ls
+: 1430409254:0;ls -a
+: 1430409257:0;mkdir osx
+: 1430409258:0;ls
+: 1430409267:0;cd osx
+: 1430409268:0;ls
+: 1430409274:0;touch osx.vdi
+: 1430409276:0;ls
+: 1430409320:0;cd ~/.
+: 1430409334:0;ls -a
+: 1430409348:0;cd VirtualBox/
+: 1430409349:0;ls
+: 1430409352:0;/bin/ls -ld /tmp
+: 1430409358:0;ls /tmp
+: 1430409369:0;cd /tmp/.vbox-cjd-ipc/
+: 1430409369:0;ls
+: 1430409431:0;ps aux | grep -i virtual
+: 1430409475:0;pacin strace
+: 1430409549:0;strace -s128 -f -o ~/Desktop/vbox.strace.20150430.log /usr/lib/virtualbox/VirtualBox
+: 1430409686:0;virtualbox --disable-hardening
+: 1430409722:0;sudo virtualbox
+: 1430409750:0;pacrem virtualbox
+: 1430409773:0;ls /tmp
+: 1430409786:0;rm -rf .vbox*
+: 1430409790:0;rm -rf .vbox\*
+: 1430409793:0;ls
+: 1430409796:0;ls /tmp
+: 1430409807:0;rm -rf /tmp/.vbox\*
+: 1430409810:0;ls /tmp
+: 1430409815:0;rm -rf /tmp/.vbox*
+: 1430409822:0;sudo rm -rf /tmp/.vbox*
+: 1430409825:0;ls /tmp
+: 1430409853:0;pacrem virtualbox-guest-modules
+: 1430409863:0;cd ..
+: 1430409871:0;rm -rf VirtualBox/
+: 1430409872:0;ls
+: 1430410293:0;pacin virtualbox virtualbox-host-modules
+: 1430410336:0;modprobe vboxdrv
+: 1430410439:0;virtualbox
+: 1430410579:0;ls /usr/lib/virtualbox/VirtualBox
+: 1430410605:0;chmod 4711 /usr/lib/virtualbox/VirtualBox
+: 1430410608:0;sudo chmod 4711 /usr/lib/virtualbox/VirtualBox
+: 1430410614:0;ls /usr/lib/virtualbox/VirtualBox
+: 1430410745:0;cd /boot/
+: 1430410746:0;ls
+: 1430410780:0;lsmod
+: 1430410798:0;lsmod | grep vbox
+: 1430410837:0;groups
+: 1430410859:0;chown root.wheel /tmp
+: 1430410863:0;sudo chown root.wheel /tmp
+: 1430410879:0;sudo rm -rf /tmp/.vbox*
+: 1430421079:0;cd ..
+: 1430421079:0;ls
+: 1430421086:0;rm .vbox-cjd-ipc/
+: 1430421092:0;rm -rf .vbox-cjd-ipc/
+: 1430421347:0;mux start tmux
+: 1430421364:0;c
+: 1430421364:0;nvim
+: 1430421364:0;ttyload
+: 1430421365:0;weechat
+: 1430421365:0;lynx
+: 1430421365:0;bash
+: 1430421365:0;emacs -nw
+: 1430421366:0;vim
+: 1430421409:0;ttyload
+: 1430421412:0;c
+: 1430422070:0;strace -s128 -f -o ~/Desktop/vbox.strace.20150430.log /usr/lib/virtualbox/VirtualBox --disable-hardening
+: 1430422167:0;ls /usr/lib/virtualbox/VirtualBox
+: 1430422175:0;cd /usr/lib/virtualbox/
+: 1430422176:0;ls
+: 1430422186:0;cd VirtualBox
+: 1430422187:0;ls
+: 1430422917:0;pacsrc libpng
+: 1430423221:0;cd ~/Downloads/
+: 1430423221:0;ls
+: 1430423258:0;VirtualBox-4.3.26-98988-Linux_amd64.run
+: 1430423347:0;chmod +x VirtualBox-4.3.26-98988-Linux_amd64.run
+: 1430423351:0;./VirtualBox-4.3.26-98988-Linux_amd64.run 
+: 1430423361:0;sudo ./VirtualBox-4.3.26-98988-Linux_amd64.run
+: 1430423648:0;date -u +%V$(uname)|sha256sum|sed 's/\W//g'
+: 1430423662:0;c
+: 1430423674:0;date -u +%V$(uname)|sha256sum|sed 's/\W//g'
+: 1430423695:0;c
+: 1430423699:0;pacin mutt
+: 1430423883:0;find -name vboxdrv
+: 1430423889:0;sudo find -name vboxdrv
+: 1430423894:0;sudo find vboxdrv
+: 1430423900:0;sudo locate vboxdrv
+: 1430423911:0;find -name "vboxdrv"
+: 1430423915:0;find --help
+: 1430423924:0;c
+: 1430423945:0;pacsrc linux-headers
+: 1430423955:0;pacin linux-headers
+: 1430424011:0;sudo ./VirtualBox-4.3.26-98988-Linux_amd64.run
+: 1430424038:0;pacrem virtualbox-host-modules virtualbox
+: 1430424047:0;sudo ./VirtualBox-4.3.26-98988-Linux_amd64.run
+: 1430424116:0;mutt
+: 1430424184:0;cd /etc/init.d
+: 1430424194:0;vboxdrv setup
+: 1430424201:0;find -name vboxdrv
+: 1430424213:0;find -file vboxdrv
+: 1430424249:0;export PYTHON=/usr/bin/python2
+: 1430424252:0;sudo ./VirtualBox-4.3.26-98988-Linux_amd64.run
+: 1430424343:0;export PYTHON=/usr/bin/python3
+: 1430424345:0;sudo ./VirtualBox-4.3.26-98988-Linux_amd64.run
+: 1430424551:0;ls
+: 1430424555:0;cd ..
+: 1430424556:0;ls
+: 1430424563:0;find -name .mutt
+: 1430424569:0;sudo find -name .mutt
+: 1430424596:0;virtualbox
+: 1430424933:0;pacin libmtp
+: 1430424978:0;pacin mtpfs
+: 1430424993:0;mtpfs
+: 1430425039:0;mtp-detect
+: 1430425045:0;sudo mtp-detect
+: 1430425070:0;sudo mtp-connect
+: 1430425160:0;mtpfs
+: 1430425164:0;sudo mtpfs
+: 1430425259:0;sudo mtpfs /mnt/n5
+: 1430425299:0;mkdir /mnt/n5
+: 1430425306:0;sudo mkdir /mnt/n5
+: 1430425311:0;sudo mtpfs /mnt/n5
+: 1430425703:0;pacsrc fuse
+: 1430425760:0;sudo mtpfs /mnt/n5
+: 1430426073:0;ps aux | grep libmtp
+: 1430426081:0;ps aux | peco
+: 1430426095:0;ps aux | grep mtp
+: 1430426147:0;sudo umount -l /mnt/n5
+: 1430426153:0;sudo mtpfs /mnt/n5
+: 1430426206:0;ls /mnt/n5
+: 1430426211:0;sudo /mnt/n5
+: 1430426216:0;sudo ls /mnt/n5
+: 1430426251:0;sudo umount -l /mnt/n5
+: 1430426392:0;pacrem mtpfs
+: 1430426410:0;pacin jmtpfs
+: 1430426527:0;pacsrc jmtpfs
+: 1430426531:0;pacsrc mtp
+: 1430426561:0;pacin aura
+: 1430426570:0;pacsrc aurora
+: 1430426862:0;pacin aura
+: 1430426892:0;yaourt -S Aura
+: 1430426897:0;yaourt -S aura
+: 1430427017:0;yaourt -S aura-bin
+: 1430427081:0;aura
+: 1430429372:0;pacin gparted
+: 1430429652:0;pacin ntfs-3g
+: 1430430562:0;vim
+: 1430430956:0;cd /.vim
+: 1430430959:0;cd ~
+: 1430430964:0;cd .vim/color
+: 1430430967:0;cd .vim/colors
+: 1430430968:0;ls
+: 1430430982:0;mv atom-dark-256.vim\\ atom-dark-256.vim
+: 1430430983:0;ls
+: 1430431210:0;ttyload
+: 1430431218:0;c
+: 1430431244:0;ttyload
+: 1430431360:0;c
+: 1430431846:0;sudo /etc/init.d/vboxdrv setup
+: 1430431858:0;which vboxdrv
+: 1430431871:0;findfn 'vboxdrv'
+: 1430431909:0;pacin libmtp
+: 1430431935:0;aura -S jmtpfs
+: 1430431942:0;sudo aura -S jmtpfs
+: 1430431955:0;aura -Ss mtp
+: 1430432004:0;aura -ASs mtp
+: 1430432016:0;aura -AS jmtpfs
+: 1430432020:0;sudo aura -AS jmtpfs
+: 1430432065:0;jmtpfs
+: 1430432084:0;aura -AS jmtpfs | peco
+: 1430432090:0;sudo aura -AS jmtpfs | peco
+: 1430432104:0;sudo aura -AS jmtpfs
+: 1430432123:0;aura -ASs jmtpfs | peco
+: 1430432140:0;aura -ASs jmtpfs
+: 1430432153:0;aura -AS jmtpfs
+: 1430432161:0;sudo aura -AS jmtpfs
+: 1430432211:0;sudo aura -A jmtpfs
+: 1430432254:0;jmtpfs
+: 1430432264:0;jmtpfs /mnt/n5
+: 1430432271:0;sudo jmtpfs /mnt/n5
+: 1430432379:0;sudo umount -l /mnt/n5
+: 1430432395:0;jmtpfs ~/Downloads/n5
+: 1430432404:0;mkdir ~/mnt
+: 1430432415:0;jmtpfs ~/mnt
+: 1430433239:0;ps aux | grep thunar
+: 1430433248:0;kill 22287
+: 1430433252:0;ps aux | grep thunar
+: 1430433273:0;kill 660640
+: 1430433280:0;kill 22287
+: 1430433285:0;c
+: 1430433346:0;ps aux | grep thunar
+: 1430433352:0;kill 11603
+: 1430433362:0;kill 10270
+: 1430433370:0;ps aux | grep thunar
+: 1430433378:0;kill 10270
+: 1430433417:0;c
+: 1430433428:0;awk '{FS=";"}{print $2}' ~/.zsh_history |peco |zsh
+: 1430433501:0;~
+: 1430433856:0;shutdown now
+: 1430437397:0;cd Downloads/
+: 1430437398:0;ls
+: 1430437401:0;cd ..
+: 1430437402:0;ls
+: 1430437406:0;cd Videos/
+: 1430437406:0;ls
+: 1430437516:0;cat Mac\ OS\ X\ Install\ DVD.dmg.* > MacOSXInstallDVD.dmg.full.zip
+: 1430437862:0;ls
+: 1430437884:0;zip -F MacOSXInstallDVD.dmg.full.zip
+: 1430437937:0;zip -F MacOSXInstallDVD.dmg.full.zip --out MacOSXInstallDVD.dmg.zip
+: 1430438011:0;zip -FF MacOSXInstallDVD.dmg.full.zip --out MacOSXInstallDVD.dmg.zip
+: 1430438031:0;c
+: 1430438033:0;ls
+: 1430438044:0;zip -FF
+: 1430438105:0;zip -FF MacOSXInstallDVD.dmg.full.zip --out FixMacOSXInstallDVD.dmg.full.zip 
+: 1430438132:0;zip -F MacOSXInstallDVD.dmg.full.zip --out FixMacOSXInstallDVD.dmg.full.zip 
+: 1430438168:0;zip -FF Mac\ OS\ X\ Install\ DVD.dmg.zip --out MacOSXInstallDVD.zip
+: 1430438228:0;ls
+: 1430438251:0;mkdir Mac
+: 1430438252:0;ls
+: 1430438264:0;mv Mac\ OS\* Mac/
+: 1430438274:0;mv Mac\ OS* Mac/
+: 1430438277:0;ls
+: 1430438288:0;cd Mac
+: 1430438295:0;ls
+: 1430438335:0;for z in *.zip; do unzip $z
+: 1430438402:0;zip -FF Mac\ OS\ X\ Install\ DVD.dmg.zip --out MacOSXInstallDVD.dmg.zip
+: 1430438458:0;cd Mac
+: 1430438482:0;ls
+: 1430445952:0;~
+: 1430445953:0;la
+: 1430447316:0;mux start tmux
+: 1430447338:0;c
+: 1430447339:0;lynx
+: 1430447339:0;bash
+: 1430447340:0;c
+: 1430447341:0;weechat
+: 1430447341:0;ttyload
+: 1430447341:0;nvim
+: 1430447341:0;vim
+: 1430447341:0;emacs -nw
+: 1430447879:0;wd docs
+: 1430447879:0;ls
+: 1430447917:0;chmod +x coloursnew.sh
+: 1430447924:0;./coloursnew.sh
+: 1430447990:0;chmod +x colour.sh
+: 1430447996:0;./colour.sh
+: 1430448427:0;echo #CYAN
+: 1430448432:0;echo #BLUE
+: 1430448445:0;echo #COLOR
+: 1430448453:0;echo $color
+: 1430448487:0;echo "\e[30m"
+: 1430448494:0;\e[30m
+: 1430448874:0;vim
+: 1430448894:0;c
+: 1430449051:0;vim
+: 1430449077:0;find / -name 'mutt'
+: 1430449084:0;sudo find / -name 'mutt'
+: 1430449603:0;cd /etc
+: 1430449604:0;ls
+: 1430449634:0;sudo /etc/rc.d/vboxdrv setup
+: 1430449756:0;cat mail.rc
+: 1430449771:0;ls
+: 1430449979:0;cat lynx.cfg
+: 1430450023:0;c
+: 1430450023:0;ls
+: 1430450048:0;cat Muttrc
+: 1430450061:0;cp Muttrc ~/.muttrc
+: 1430450068:0;c
+: 1430450070:0;ls
+: 1430450156:0;cat shells 
+: 1430450160:0;cat slsh
+: 1430450165:0;cat slsh.rc
+: 1430450184:0;c
+: 1430450243:0;modprobe vboxdrv
+: 1430450262:0;sudo modprobe vboxdrv 
+: 1430450276:0;pacin virtualbox-host-modules
+: 1430450300:0;modprobe vboxdrv
+: 1430450304:0;sudo modprobe vboxdrv
+: 1430450614:0;pacin dmg2img
+: 1430450623:0;pacsrc dmg
+: 1430450739:0;pacsrc poweriso
+: 1430450749:0;aurasrc poweriso
+: 1430450776:0;aurasrc dmg2iso
+: 1430450783:0;archsrc dmgiso
+: 1430450789:0;archsrc dmg2iso
+: 1430450806:0;which archsrc
+: 1430450849:0;aura -Ss dmg && aura -As dmg
+: 1430450880:0;aurasrc dmg2img
+: 1430450892:0;aurain dmg2img
+: 1430450927:0;cd ~/Downloads/
+: 1430450927:0;ls
+: 1430450933:0;cd torrent/
+: 1430450933:0;ls
+: 1430450936:0;cd ~
+: 1430450937:0;ls
+: 1430450980:0;cd Videos/
+: 1430451013:0;ld
+: 1430451014:0;ls
+: 1430451018:0;ls -a
+: 1430451020:0;cd 10.6/
+: 1430451021:0;ls
+: 1430451031:0;dmg2img Mac\ OS\ X\ Install\ DVD.dmg
+: 1430451684:0;ls
+: 1430451708:0;mv Mac\ OS\ X\ Install\ DVD.img Mac\ OS\ X\ Install\ DVD.iso
+: 1430451709:0;ls
+: 1430452183:0;cd ../../VirtualBox\ VMs/
+: 1430452184:0;ls
+: 1430452186:0;cd osx
+: 1430452187:0;ls
+: 1430452211:0;pacin gedit
+: 1430452252:0;df -h
+: 1430452260:0;ls
+: 1430452282:0;gedit osx.vbox
+: 1430453078:0;cd /etc/rc.d
+: 1430453079:0;ls
+: 1430456760:0;x11vnc -b
+: 1430456887:0;sudo systemctl enable sshd
+: 1430456898:0;sudo systemctl start sshd
+: 1430456906:0;sudo systemctl start
+: 1430456970:0;sudo systemctl start sshd.service
+: 1430457243:0;kill 6645
+: 1430457252:0;ps aux | grep vnc
+: 1430457271:0;ps aux
+: 1430457274:0;htop
+: 1430457390:0;ps aux | grep x11
+: 1430457400:0;x11vnc --help
+: 1430457446:0;x11vnc kill
+: 1430457464:0;ps aux | grep vnc
+: 1430457478:0;x11vnc -nopw -display :0 -localhost
+: 1430457956:0;pacin mosh
+: 1430458018:0;cd ~
+: 1430458036:0;mux start tmux
+: 1430495104:0;weechat
+: 1430498010:0;fc-cache -f -v
+: 1430498110:0;ls
+: 1430499162:0;vim
+: 1430556078:0;curl https://raw.githubusercontent.com/hchbaw/auto-fu.zsh/master/auto-fu.zsh ~/.dotfiles/zsh
+: 1430556082:0;ls
+: 1430556087:0;cd ~/.dotfiles/
+: 1430556089:0;ls
+: 1430556091:0;cd zsh
+: 1430556092:0;ls
+: 1430556104:0;wget https://raw.githubusercontent.com/hchbaw/auto-fu.zsh/master/auto-fu.zsh
+: 1430556106:0;ls
+: 1430556113:0;cd ..
+: 1430556114:0;ls
+: 1430556125:0;source zsh/auto-fu.zsh
+: 1430556733:0;zsh
+: 1430556818:0;cd zsh
+: 1430556818:0;ls
+: 1430556825:0;chmod +x auto-fu.zsh 
+: 1430556831:0;./auto-fu.zsh 
+: 1430612340:0;vim
+: 1430613268:0;cd ~/.vim
+: 1430613269:0;ls
+: 1430613281:0;mkdir tmp
+: 1430613283:0;ls
+: 1430613364:0;mkdir vimundo
+: 1430613366:0;ls
+: 1430613584:0;tmux list-sessions
+: 1430613620:0;tmux attach-session  -t tmux 
+: 1430613674:0;vim
+: 1430614419:0;cd ~/Downloads
+: 1430614420:0;ls
+: 1430614442:0;mv *.pcf ~/.fonts/
+: 1430614450:0;fc-cache -f -v
+: 1430614456:0;ls
+: 1430614505:0;cd fonts
+: 1430614505:0;ls
+: 1430614510:0;cd ..
+: 1430614521:0;cd tmp
+: 1430614521:0;ls
+: 1430614523:0;cd ..
+: 1430614524:0;ls
+: 1430614557:0;mv envypn-font-1.6.2.tar.gz fonts/
+: 1430614568:0;mv Input-Font* fonts/
+: 1430614577:0;mv orp-font/ fonts/
+: 1430614625:0;rm taghighlight_*
+: 1430614626:0;ls
+: 1430614631:0;rm iBoot-3.3.0.zip 
+: 1430614638:0;rm 652-BootCD.iso 
+: 1430614644:0;rm vertex*
+: 1430614657:0;rm vertex___*
+: 1430614658:0;ls
+: 1430614671:0;rm  base16-*
+: 1430614672:0;ls
+: 1430614687:0;rm Sublime\ Text\ 2\(2\).icns 
+: 1430614692:0;rm Sublime\ Text\ 2\(1\).icns 
+: 1430614703:0;rm sublime*
+: 1430614704:0;ls
+: 1430614714:0;rm Wombat.tmTheme
+: 1430614720:0;rm hukl-Smyck-Color-Scheme-fc16622.zip 
+: 1430614726:0;rm node-v0.12.2-linux-x64.tar.gz 
+: 1430614733:0;rm dr_who.pl 
+: 1430614736:0;rm fb
+: 1430614754:0;rm hukl-Smyck-Color-Scheme-fc16622/
+: 1430614761:0;rm -R hukl-Smyck-Color-Scheme-fc16622/
+: 1430614762:0;ls
+: 1430614772:0;rm limetext/
+: 1430614777:0;rm -R limetext/
+: 1430614781:0;ls
+: 1430614787:0;rm termite/
+: 1430614793:0;rm -R termite/
+: 1430614797:0;y
+: 1430614799:0;ls
+: 1430614810:0;rm -Rf termite/
+: 1430614811:0;ls
+: 1430614816:0;cd fonts
+: 1430614817:0;ls
+: 1430614824:0;extract *
+: 1430614844:0;ls
+: 1430614852:0;cd envypn-font-1.6.2/
+: 1430614853:0;ls
+: 1430614877:0;mv envypn7* ~/.fonts/
+: 1430614879:0;ls
+: 1430614887:0;cat fonts.alias 
+: 1430614899:0;cd ..
+: 1430614900:0;ls
+: 1430614917:0;rm -Rf envypn-font-1.6.2/ 
+: 1430614918:0;ls
+: 1430614939:0;cd Input-Font
+: 1430614939:0;ls
+: 1430614943:0;cd Input_Fonts/
+: 1430614944:0;ls
+: 1430614947:0;cd Input/
+: 1430614948:0;ls
+: 1430614953:0;cd .. .. ..
+: 1430614955:0;ls
+: 1430614958:0;cd ../../..
+: 1430614959:0;ls
+: 1430614965:0;cd Input-Font\ \(1\)/
+: 1430614966:0;ls
+: 1430614969:0;cd Input_Fonts/
+: 1430614970:0;ls
+: 1430614975:0;cd InputMono/
+: 1430614976:0;ls
+: 1430614984:0;cd InputMonoCondensed/
+: 1430614985:0;ls
+: 1430614998:0;mv InputMonoCondensed-* ~/.fonts/
+: 1430615000:0;ls
+: 1430615002:0;cd ..
+: 1430615003:0;ls
+: 1430615014:0;cd ../../
+: 1430615016:0;cd ..
+: 1430615016:0;ls
+: 1430615026:0;cd ..
+: 1430615027:0;ls
+: 1430615029:0;ls -a
+: 1430615034:0;fc-cache -f -v
+: 1430615081:0;tmux attach-session  -t tmux 
+: 1430615655:0;git clone https://github.com/phallus/fonts.git fonts/lemon
+: 1430615660:0;cd fonts/lemon/
+: 1430615660:0;ls
+: 1430615664:0;vim install
+: 1430615712:0;ls
+: 1430615714:0;install
+: 1430615719:0;./install
+: 1430615867:0;tmux attach-session  -t tmux 
+: 1430616127:0;vim
+: 1430621090:0;c
+: 1430621096:0;~
+: 1430621098:0;ls
+: 1430621108:0;aliasrc
+: 1430622345:0;c
+: 1430622375:0;source ~/.dotfiles/zsh/aliases.zsh
+: 1430622389:0;funcrc
+: 1430622762:0;c
+: 1430622765:0;la
+: 1430622800:0;ls
+: 1430622817:0;/bin/ls
+: 1430622826:0;/bin/ls -a
+: 1430622833:0;/bin/ls -A
+: 1430622837:0;c
+: 1430622840:0;/bin/ls -A
+: 1430622925:0;cd .weechat/
+: 1430622927:0;ls
+: 1430622942:0;tmux
+: 1430623032:0;tmux new
+: 1430623049:0;funcrc
+: 1430623116:0;export TERM=screen-256color && vim
+: 1430623137:0;export TERM=screen-256color && funcrc
+: 1430623173:0;ls
+: 1430623400:0;/bin/ls -A
+: 1430623405:0;cd ..
+: 1430623408:0;/bin/ls -A
+: 1430623443:0;cd .tmuxinator/
+: 1430623444:0;ls
+: 1430623462:0;cd ..
+: 1430623466:0;ls
+: 1430623627:0;	/ls -Ad
+: 1430623634:0;	\ls -Ad
+: 1430623641:0;	\ls -AD
+: 1430623738:0;fzf
+: 1430623792:0;\ls -Al | sort -k1,1 -k9,9 -r
+: 1430623805:0;\ls -As
+: 1430623972:0;\ls --almost-all
+: 1430624011:0;cd .emacs.d/
+: 1430624012:0;ls
+: 1430624016:0;ls -a
+: 1430624022:0;cd ..
+: 1430624024:0;ls
+: 1430624035:0;ls -Al | sort -k1,1 -k9,9 -r
+: 1430624045:0;\ls --almost-all
+: 1430624068:0;cd .config
+: 1430624070:0;ls
+: 1430624080:0;\ls -A
+: 1430624099:0;\ls -Als
+: 1430624195:0;\ls -LAX
+: 1430624203:0;\ls -LA
+: 1430624209:0;\ls -LAC
+: 1430624213:0;\ls -LAc
+: 1430624221:0;\ls -LAW
+: 1430624224:0;\ls -LAS
+: 1430624248:0;cd clipit/
+: 1430624250:0;ls
+: 1430624306:0;cd ..
+: 1430624308:0;ls
+: 1430624322:0;cd termite/
+: 1430624326:0;ls
+: 1430624384:0;cd ..
+: 1430624387:0;ls
+: 1430624427:0;cd ranger/
+: 1430624429:0;ls
+: 1430624486:0;cd ..
+: 1430624487:0;ls
+: 1430624491:0;cd i3
+: 1430624493:0;ls
+: 1430624517:0;cd ..
+: 1430624519:0;ls
+: 1430624533:0;cd htop/
+: 1430624535:0;ls
+: 1430626386:0;cd ..
+: 1430626388:0;ls
+: 1430626409:0;cd dwb
+: 1430626411:0;ls
+: 1430626428:0;cat settings 
+: 1430626432:0;ls
+: 1430626573:0;source ~/.dotfiles/zsh/aliases.zsh
+: 1430626580:0;conf vim
+: 1430626616:0;cd ~/.vim
+: 1430626618:0;ls
+: 1430626628:0;cd tmp
+: 1430626629:0;ls
+: 1430626641:0;cd ..
+: 1430626643:0;ls
+: 1430626658:0;cd vimbackup/
+: 1430626660:0;ls
+: 1430626686:0;cd ../vimundo/
+: 1430626687:0;ls
+: 1430626699:0;cd ..
+: 1430626711:0;conf i3
+: 1430626726:0;cd ~/.i3
+: 1430626734:0;funcrc
+: 1430626761:0;exit
+: 1430626767:0;ls
+: 1430626803:0;source ~/.dotfiles/zsh/aliases.zsh
+: 1430626843:0;conf ranger
+: 1430626909:0;pacin w3m
+: 1430626940:0;cd ~/Pictures/
+: 1430626943:0;ls
+: 1430626949:0;ranger
+: 1430627010:0;exit
+: 1430751105:0;cd ~/.dotfiles/
+: 1430751106:0;ls
+: 1430751110:0;cd zsh
+: 1430751111:0;ls
+: 1430751119:0;rm auto-fu.zsh
+: 1430751120:0;ls
+: 1430751213:0;git clone -q -n https://github.com/hchbaw/auto-fu.zsh.git
+: 1430751215:0;ls
+: 1430751222:0;cd auto-fu.zsh/
+: 1430751223:0;ls
+: 1430751241:0;git checkout -q origin/pu
+: 1430751243:0;ls
+: 1430751932:0;cat - <<'EOT' >> .zshrc\
+autoload -Uz compinit; compinit\
+. ./home/cjd/.dotfiles/zsh/auto-fu.zsh/auto-fu.zsh\
+zle-line-init () auto-fu-init; zle -N zle-line-init\
+EOT
+: 1430751935:0;ls
+: 1430751941:0;cat .zshrc
+: 1430751960:0;cat .zshrc >> ~/.zshrc
+: 1430751961:0;ls
+: 1430751963:0;cd ~
+: 1430751964:0;ls
+: 1430752092:0;zsh
+: 1430752110:0;exit
+: 1430752162:0;zsh
+: 1430752183:0;fzf
+: 1430752848:0;c
+: 1430752922:0;ttyload
+: 1430753267:0;vim
+: 1430754557:0;ls
+: 1430754573:0;colorconvert.py
+: 1430754581:0;ls
+: 1430754594:0;python colorconvert.py
+: 1430755182:0;terminal-colors.py
+: 1430755196:0;chmod +x terminal-colors.py
+: 1430755208:0;mv terminal-colors.py terminal-colors
+: 1430755214:0;terminal-colors
+: 1430755218:0;./terminal-colors 
+: 1430755228:0;./terminal-colors -e 3
+: 1430755232:0;./terminal-colors -e 32
+: 1430755253:0;./terminal-colors -r #B5D6FD
+: 1430755260:0;./terminal-colors -r B5D6FD
+: 1430755266:0;./terminal-colors -e B5D6FD
+: 1430755272:0;./terminal-colors -n
+: 1430755276:0;./terminal-colors -v
+: 1430755278:0;./terminal-colors -z
+: 1430755281:0;./terminal-colors -nv
+: 1430755285:0;./terminal-colors -s
+: 1430755287:0;./terminal-colors -l
+: 1430755312:0;./terminal-colors -v
+: 1430755320:0;./terminal-colors -nv
+: 1430755825:0;ls
+: 1430755844:0;source img.func.zsh 
+: 1430755849:0;cd ..
+: 1430755850:0;ls
+: 1430755853:0;cd Pictures/
+: 1430755854:0;ls
+: 1430755857:0;img sublime.png 
+: 1430755915:0;c
+: 1430755920:0;cd ~/Pictures/
+: 1430755927:0;cd ../Documents/
+: 1430755931:0;source img.func.zsh 
+: 1430755934:0;cd -
+: 1430755935:0;ls
+: 1430755940:0;img sublime.png 
+: 1430755951:0;ls
+: 1430755958:0;echo $TERM
+: 1430755960:0;c
+: 1430756851:0;zsh
+: 1430756859:0;cd ~
+: 1430756919:0;cd Downloads
+: 1430756925:0;ls
+: 1430756939:0;cd ../.weechat/
+: 1430756941:0;ls
+: 1430756965:0;mv weechat.conf weechat.conf.bak
+: 1430756969:0;cd -
+: 1430756981:0;mv weechat.conf ~/.weechat/
+: 1430756983:0;cd -
+: 1430757001:0;ls
+: 1430757007:0;vim
+: 1430757140:0;ls
+: 1430757141:0;c
+: 1430757144:0;weechat
+: 1430757477:0;c
+: 1430757820:0;export TERM=screen-256color
+: 1430757822:0;vim
+: 1430841735:0;echo $LS_COLORS
+: 1430841747:0;c
+: 1430843297:0;vim
+: 1430843454:0;exit 
+: 1430843504:0;pacin bspwm 
+: 1430843826:0;zsh
+: 1430843839:0;c
+: 1430844139:0;git clone https://github.com/hchbaw/list-colors.zsh.git ~/.dotfiles/zsh/list-colors
+: 1430844149:0;cd ~/.dotfiles/zsh/list-colors
+: 1430844150:0;ls
+: 1430844244:0;$SHELL -uc ". ./list-colors.zsh && list-colors-zcompile ~/.dir_colors ~/.dotfiles/zsh/"
+: 1430844264:0;$SHELL -uc ". ./list-colors.zsh && list-colors-zcompile ~/.dir_colors ~/zsh/"
+: 1430844303:0;cd ~/.zsh
+: 1430844309:0;mkdir ~/.zsh
+: 1430844319:0;$SHELL -uc ". ./list-colors.zsh && list-colors-zcompile ~/.dir_colors ~/.zsh/"
+: 1430844361:0;ls ../..
+: 1430844398:0;$SHELL -uc ". ./list-colors.zsh && list-colors-zcompile ~/.dotfiles/dircolors ~/.dotfiles/zsh/"
+: 1430844591:0;zsh
+: 1430844683:0;cd ~/.dotfiles/
+: 1430844685:0;ls
+: 1430844696:0;git add zshrc 
+: 1430844708:0;git push remote/origin
+: 1430844739:0;git ls-files 
+: 1430844762:0;git push 
+: 1430844785:0;git commit
+: 1430844873:0;git push 
+: 1430845068:0;git *
+: 1430845074:0;git add *

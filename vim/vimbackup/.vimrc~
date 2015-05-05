@@ -1,7 +1,7 @@
 "--------------------------------------
 " file:     ~/.vimrc
 " author:   cody diehl
-" vim:fenc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=vim
+" vim:fenc=utf-8:ft=vim:
 "--------------------------------------
 
 " vim instead of vi
@@ -17,6 +17,7 @@ set showcmd         " show partial cmd in status
 set laststatus=2    " persistant statusbar
 set cmdheight=2     " 2 lines for cmd height
 set encoding=utf-8  " UTF-8 by default
+set termencoding=utf-8 " UTF-8 term encoding
 set ffs=unix,dos,mac " unix as standard file type
 set hidden          " buffer not closed when abandoned
 set history=1000    " set history to 1000 line 2 lines for cmd height
@@ -30,7 +31,7 @@ set spellfile=$HOME/vim/spell/en.utf-8.add
 set noerrorbells    " no error ding
 set novisualbell    " no blinking indicator
 set t_vb=           " visual bell stop
-set timeoutlen=500  " delay timeout
+set timeoutlen=200  " delay timeout
 set winminheight=0  " window can be 0 lines high
 let g:is_posix=1    " POSIX shell scripts
 let g:is_bash=1     " bash syntax hilighting
@@ -53,6 +54,9 @@ set textwidth=500    " lines should not be longer than 500 chars
 set wildmenu        " enhanced tab-comp
 set wildmode=list:longest,full " full compl
 let &t_EI .= "\<Esc>[2 q" " cursor shape solid bar
+set scrolloff=5     " keep 5 lines below cursor on scroll
+set autochdir       " automatically open files directory
+
 
 " tabs and indentation
 set tabstop=2       " tabs appear as n number of columns
@@ -75,37 +79,20 @@ set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)  " a ruler on steroids"
 
 " auto format comment blocks
-set comments=sl:/\*,mb:\*,elx:\*/
+"set comments=sl:/\*,mb:\*,elx:\*/
 
 " colorscheme settings
-colorscheme gruvbox
+colorscheme pencil
 set background=dark
 hi cursorline ctermbg=237             " hilight bg color
 "hi CursorColumn ctermbg=236          " highlight cursor
 hi Search ctermbg=LightGreen          " highlight search
 hi Comment ctermfg=245 ctermbg=NONE   " comment color
 hi Identifier ctermbg=NONE            " identifier color
-hi Normal ctermbg=NONE                " fix colorscehmes in my term
-hi nonText ctermbg=NONE               " again fix bg
+"hi Normal ctermbg=NONE                " fix colorscehmes in my term
+"hi nonText ctermbg=NONE               " again fix bg
 "hi ErrorMsg ctermbg=White ctermfg=Red " error color
-
-" fix colors - add to autoload sometime
-hi Normal ctermbg=NONE
-hi Comment ctermbg=NONE
-hi Constant ctermbg=NONE
-hi Special ctermbg=NONE
-hi Identifier ctermbg=NONE
-hi Statement ctermbg=NONE
-hi PreProc ctermbg=NONE
-hi Type ctermbg=NONE
-hi Underlined ctermbg=NONE
-hi Todo ctermbg=NONE
-hi String ctermbg=NONE
-hi Function ctermbg=NONE
-hi Conditional ctermbg=NONE
-hi Repeat ctermbg=NONE
-hi Operator ctermbg=NONE
-hi Structure ctermbg=NONE
+hi Conceal ctermbg=NONE               " no dot background colors
 
 " enable mouse if available
 if has ('mouse')
@@ -145,10 +132,10 @@ inoremap <Nul> <C-x><C-o>
 :noremap <silent> <Space> :silent noh<Bar>echo<CR>
 
 " write with root priveledge to handle perm-denied
-cmap w!! w !sudo tee % > /dev/null
+command w!! w !sudo tee % > /dev/null
 
 " sane indentation on pastes
-set pastetoggle=<F12>
+set pastetoggle=<F2>
 
 " source vimrc while in vim
 map <leader>r :so $MYVIMRC<cr>
@@ -156,7 +143,7 @@ map <leader>r :so $MYVIMRC<cr>
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 " source rmbackground.vim
-map <leader>g :so ~/.vim/autoload/rmbackground.vim<CR>
+map <leader>b :so ~/.vim/autoload/rmbackground.vim<CR>
 
 " keep cursor centered
 :nnoremap j jzz
@@ -165,6 +152,21 @@ map <leader>g :so ~/.vim/autoload/rmbackground.vim<CR>
 " treat wrapped/long lines as line breaks when moving
 map j gj
 map k gk
+
+map K <C-u>   " ^K scroll up
+map J <C-d>   " ^J scroll down
+map L W       " ^L back by word
+map H B       " ^H forward by word
+
+imap jk <ESC><ESC>  " use jk to exit insert 
+imap kj <ESC><ESC>  " same as above for kj
+imap jj <ESC><ESC>  " even faster
+
+nnoremap <leader><space> a
+imap <leader><space> <Esc>
+
+nnoremap < << " a little faster block unindent
+nnoremap > >> " a little faster block indent
 
 " like C & D make Y yank to end of line
 nnoremap Y y$
@@ -220,28 +222,31 @@ setl conceallevel=2 concealcursor=nc
 autocmd InsertEnter,InsertLeave,BufReadPost * :syn match WhiteSpace / / containedin=ALL conceal cchar=·
 " }
 
-" set up backup system {
+" alternative backup attempt {
 set backup
-set backupdir=~/.vim/vimbackup//    " but not when they clog .
-set directory=~/.vim/vimswap//      " same for swap files
-set viewdir=~/.vim/vimviews//       " same for view files
-" create directories if they don't exist
-silent execute '!mkdir -p ~/.vim/vimbackup'
-silent execute '!mkdir -p ~/.vim/vimswap'
-silent execute '!mkdir -p ~/.vim/vimviews'
-au BufWinLeave \* silent! mkview   " make vim save view (state) (folds, cursor, etc)
-au BufWinEnter \* silent! loadview " make vim load view (state) (folds, cursor, etc)
+set backupdir=~/.vim/vimbackup,/tmp
+set directory=~/.vim/tmp
 " }
 
-" persistent undo to keep history across sessions {
-if has('persistent_undo')
-  silent execute '!mkdir -p ~/.vim/undo > /dev/null 2>&1'
-  set undodir=~/.vim/undo
-  set undofile
-  set noswapfile    " do i need this?
-endif
+" persistent undo history attempt {
+set undofile " save undo's even after file close
+set undodir=~/.vim/vimundo,/tmp " where to save undo hist
+set undolevels=1000 " how many undo's to save
+set undoreload=1000 " number of lines to save for undo
 " }
 
+" cursorline {
+augroup CursorLine
+    au!
+    au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
+augroup END
+" }
+
+" stop auto comment insertion {
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+set formatoptions-=cro
+" }
 
 " vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -287,13 +292,23 @@ endif
 " nerdtree
 map <leader>n :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDTreeShowHidden = 1
+let g:NERDTreeWinSize = 15
+let NERDTreeWinPos = "right"
+let NERDTreeMouseMode = 2
+let NERDTreeStatusLine = '-1'
+let NERDChristmasTree = 1
+let NERDTreeMinimalUI = 0
+let NERDTreeIgnore=['\.png$', '\.jpg$', '\.gif$', '\.tmp$', '\.swp$']
 
 " gundo
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <leader>g :GundoToggle<CR>
 let g:gundo_width = 35
 
 " statline
-"hi StatusLine guifg=#000000 guibg=#FFFFFF ctermfg=0 ctermbg=15
+hi StatusLine ctermfg=15 ctermbg=245
 "hi StatusLineNC guifg=#808080 guibg=#000000 ctermfg=8 ctermbg=0
 
 " minibufexpl settings
@@ -304,7 +319,14 @@ map <Leader>f :MBEFocus<CR>
 " automatically open MBE
 let g:miniBufExplorerAutoStart = 1
 let g:miniBufExplBuffersNeeded = 0
+let g:miniBufExplUseSingleClick = 1
+let g:miniBufExplShowBufNumbers = 0
+hi MBENormal ctermfg=243
+hi MBEChanged ctermfg=211
+hi MBEVisibleNormal ctermfg=31
+hi MBEVisibleActiveNormal ctermfg=61
+hi MBEVisibleActiveChanged ctermfg=97
 
 " lightline
 let g:lightline = {}
-let g:lightline.colorscheme = 'gruvbox'
+let g:lightline_theme = "pencil"

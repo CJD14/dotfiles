@@ -1,0 +1,87 @@
+"updating ZSHRC file"
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   zshrc
+#
+# Changes not staged for commit:
+#	modified:   antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-RobSis-SLASH-zsh-completion-generator.git (modified content, untracked content)
+#	modified:   config/ranger/bookmarks
+#	modified:   config/ranger/history
+#	modified:   config/ranger/rc.conf
+#	modified:   config/sublime-text-3/Cache/Default/Startup.cache
+#	modified:   config/sublime-text-3/Local/Session.sublime_session
+#	modified:   config/sublime-text-3/Packages/User/Package Control.cache/01524fae79697630d0454ba3fabd9414
+#	modified:   config/sublime-text-3/Packages/User/Package Control.cache/01524fae79697630d0454ba3fabd9414.info
+#	modified:   config/sublime-text-3/Packages/User/Package Control.last-run
+#	modified:   etc/ls-- (untracked content)
+#	modified:   spacemacs (untracked content)
+#	modified:   vim/bundle/YouCompleteMe (modified content)
+#	modified:   vim/bundle/csapprox (modified content)
+#	modified:   vim/bundle/lightline.vim (untracked content)
+#	modified:   vim/undo/%home%cjd%.dotfiles%vimrc
+#	modified:   vim/undo/%home%cjd%.dotfiles%zsh%aliases.zsh
+#	modified:   vim/vimbackup/.vimrc~
+#	modified:   vim/vimbackup/.zshrc~
+#	modified:   vim/vimbackup/aliases.zsh~
+#	modified:   vim/vimbackup/misc-functions.zsh~
+#	modified:   vim/vimbackup/rc.conf~
+#	modified:   vimrc
+#	modified:   zsh/aliases.zsh
+#	modified:   zsh/funcs/misc-functions.zsh
+#	modified:   zsh/zsh_history
+#
+# Untracked files:
+#	.vimrc.swp
+#	antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-hchbaw-SLASH-auto-fu.zsh.git/
+#	config/sublime-text-3/Packages/Colorsublime-Themes/FlatlandDark.tmTheme
+#	config/sublime-text-3/Packages/Colorsublime-Themes/FlatlandMonokai.tmTheme
+#	config/sublime-text-3/Packages/User/FlatlandDark.sublime-theme
+#	vim/colors/Tomorrow-Night-Bright.vim
+#	vim/colors/Tomorrow-Night-Eighties.vim
+#	vim/colors/atom-dark-256.vim
+#	vim/colors/atom-dark.vim
+#	vim/colors/babymate256.vim
+#	vim/colors/beekai.vim
+#	vim/colors/bubblegum-256-dark.vim
+#	vim/colors/codeschool.vim
+#	vim/colors/darth.vim
+#	vim/colors/elda.vim
+#	vim/colors/flatland.vim
+#	vim/colors/flatlandia.vim
+#	vim/colors/flattr.vim
+#	vim/colors/hemisu.vim
+#	vim/colors/herokudoc-gvim.vim
+#	vim/colors/herokudoc.vim
+#	vim/colors/holokai.vim
+#	vim/colors/iceberg.vim
+#	vim/colors/last256.vim
+#	vim/colors/lilypink.vim
+#	vim/colors/lizard.vim
+#	vim/colors/lizard256.vim
+#	vim/colors/mirodark.vim
+#	vim/colors/mopkai.vim
+#	vim/colors/mustang.vim
+#	vim/colors/nefertiti.vim
+#	vim/colors/pencil.vim
+#	vim/colors/railscasts.vim
+#	vim/colors/rdark.vim
+#	vim/colors/seoul256.vim
+#	vim/colors/sexy-railscasts.vim
+#	vim/colors/sorcerer.vim
+#	vim/colors/vydark.vim
+#	vim/colors/wolfpack.vim
+#	vim/tmp/
+#	vim/undo/%home%cjd%Documents%colour.sh
+#	vim/undo/%home%cjd%Documents%coloursnew.sh
+#	vim/vimbackup/colorconvert.py~
+#	vim/vimbackup/install~
+#	vim/vimundo/
+#	zsh/auto-fu.zsh/
+#	zsh/list-colors-init
+#	zsh/list-colors-init.zwc
+#	zsh/list-colors/
+#

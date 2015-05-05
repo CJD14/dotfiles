@@ -1,7 +1,6 @@
 ###################################################
 # file: ~/.zshrc                                  #
 # author: cody diehl                              #
-# vim:syn=zsh                                     #
 ###################################################
 
 DOTDIR=$HOME/.dotfiles
@@ -36,6 +35,8 @@ antigen bundle extract
 antigen theme candy
 antigen apply
 
+source ~/.dotfiles/zsh/myprompt.zsh-theme
+
 export TERM="xterm-256color"
 setopt RM_STAR_WAIT
 setopt interactivecomments
@@ -69,7 +70,7 @@ source ~/.dotfiles/zsh/aliases.zsh
 
 man() {
     env \
-        LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+  LESS_TERMCAP_mb=$(printf "\e[1;31m") \
 	LESS_TERMCAP_md=$(printf "\e[1;31m") \
 	LESS_TERMCAP_me=$(printf "\e[0m") \
 	LESS_TERMCAP_se=$(printf "\e[0m") \
@@ -100,5 +101,9 @@ setopt pushdignoredups
 
 ## This reverts the +/- operators.
 setopt pushdminus
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source ~/.dotfiles/zsh/myprompt.zsh-theme
+# auto-fu init
+autoload -Uz compinit; compinit
+source ~/.dotfiles/zsh/auto-fu.zsh/auto-fu.zsh
+zle-line-init () auto-fu-init; zle -N zle-line-init

@@ -177,7 +177,7 @@
 			],
 			"find":
 			{
-				"height": 24.0
+				"height": 21.0
 			},
 			"find_in_files":
 			{
@@ -239,8 +239,8 @@
 								"selection":
 								[
 									[
-										5065,
-										5065
+										5066,
+										5066
 									]
 								],
 								"settings":
@@ -250,7 +250,7 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 1551.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -261,7 +261,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 24.0
+				"height": 21.0
 			},
 			"input":
 			{
@@ -295,11 +295,11 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,0,37,1366,768,1366,768",
+			"position": "0,0,0,0,0,911,19,1365,768,1366,768",
 			"project": "",
 			"replace":
 			{
-				"height": 44.0
+				"height": 38.0
 			},
 			"save_all_on_build": true,
 			"select_file":
