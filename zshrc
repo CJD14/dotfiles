@@ -1,7 +1,6 @@
 ###################################################
 # file: ~/.zshrc                                  #
 # author: cody diehl                              #
-# vim:syn=zsh                                     #
 ###################################################
 
 DOTDIR=$HOME/.dotfiles
@@ -103,3 +102,16 @@ setopt pushdignoredups
 ## This reverts the +/- operators.
 setopt pushdminus
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# auto-fu init
+autoload -Uz compinit; compinit
+source ~/.dotfiles/zsh/auto-fu.zsh/auto-fu.zsh
+zle-line-init () auto-fu-init; zle -N zle-line-init
+
+# list color completion
+fpath+=/home/cjd/.dotfiles/zsh 
+autoload -Uz list-colors-init; list-colors-init
+zstyle -e ':completion:*:default' list-colors list-colors list-colors-aux
+# zstyle ':completion:*' group-name ''
+# If you want to make it to respect directory-type color setting, you need
+# to uncomment above line, please.
