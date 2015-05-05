@@ -1,0 +1,127 @@
+2015-05-01 13:15:44	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #neovim
+2015-05-01 13:15:44	--	Topic for #neovim is "Vim's rebirth for the 21st century -- https://github.com/neovim/neovim -- Gitter.im chat: https://gitter.im/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim"
+2015-05-01 13:15:44	--	Topic set by tarruda on Fri, 17 Apr 2015 14:35:38
+2015-05-01 13:15:44	--	Channel #neovim: 235 nicks (0 ops, 0 voices, 235 normals)
+2015-05-01 13:15:46	--	Channel created on Fri, 31 Jan 2014 11:44:47
+2015-05-01 13:16:45	DIEHLC	dumb question but to add my existing vim config to work with nvim do I just mv ~/.vim ~/.nvim && mv ~/.vimrc ~/.nvimrc ?
+2015-05-01 13:20:16	<--	mikl (~mikl@drupal.org/user/56879/view) has quit (Quit: Connection reset by Peer Gynt)
+2015-05-02 04:29:14	--	irc: disconnected from server
+2015-05-02 04:29:40	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #neovim
+2015-05-02 04:29:40	--	Topic for #neovim is "Vim's rebirth for the 21st century -- https://github.com/neovim/neovim -- Gitter.im chat: https://gitter.im/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim"
+2015-05-02 04:29:40	--	Topic set by tarruda on Fri, 17 Apr 2015 14:35:38
+2015-05-02 04:29:40	--	Channel #neovim: 224 nicks (0 ops, 0 voices, 224 normals)
+2015-05-02 04:29:40	--	Notice(orwell.freenode.net): [freenode-info] channel flooding and no channel staff around to help? Please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2015-05-02 04:29:42	--	Channel created on Fri, 31 Jan 2014 11:44:47
+2015-05-02 04:41:25	<--	sinkensabe (~sinkensab@78-70-232-111-no163.tbcn.telia.com) has quit (Remote host closed the connection)
+2015-05-02 04:46:26	<--	ktosiek (~quassel@main.ktosiek.com) has quit (Ping timeout: 246 seconds)
+2015-05-02 04:49:22	-->	endiruna (~endiendir@poisson.phc.unipi.it) has joined #neovim
+2015-05-02 04:51:16	-->	raichoo (~raichoo@mue-88-130-16-228.dsl.tropolys.de) has joined #neovim
+2015-05-02 04:52:11	-->	ktosiek (~quassel@main.ktosiek.com) has joined #neovim
+2015-05-02 04:57:42	<--	nnyk (~nnyk@unaffiliated/nnyk) has quit (Ping timeout: 256 seconds)
+2015-05-02 20:16:03	--	irc: disconnected from server
+2015-05-02 20:16:26	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #neovim
+2015-05-02 20:16:26	--	Topic for #neovim is "Vim's rebirth for the 21st century -- https://github.com/neovim/neovim -- Gitter.im chat: https://gitter.im/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim"
+2015-05-02 20:16:26	--	Topic set by tarruda on Fri, 17 Apr 2015 14:35:38
+2015-05-02 20:16:26	--	Channel #neovim: 221 nicks (0 ops, 0 voices, 221 normals)
+2015-05-02 20:16:29	--	Channel created on Fri, 31 Jan 2014 11:44:47
+2015-05-02 20:33:29	<--	fmoralesc (~fmoralesc@186-78-167-115.baf.movistar.cl) has quit (Ping timeout: 265 seconds)
+2015-05-02 20:34:49	<--	ontologiae_ (~ontologia@crb44-6-83-155-75-126.fbx.proxad.net) has quit (Ping timeout: 245 seconds)
+2015-05-02 20:40:37	-->	GitHub54 (~GitHub54@192.30.252.41) has joined #neovim
+2015-05-02 20:40:37	GitHub54	[neovim] justinmk pushed 1 new commit to master: http://git.io/vJE83
+2015-05-02 20:40:37	GitHub54	neovim/master 28ad7b5 Justin M. Keyes: scripts/legacy2luatest.pl: remove modeline #2536...
+2015-05-02 20:40:37	<--	GitHub54 (~GitHub54@192.30.252.41) has left #neovim
+2015-05-02 20:40:42	-->	GitHub50 (~GitHub50@192.30.252.41) has joined #neovim
+2015-05-02 20:40:42	GitHub50	[neovim] justinmk closed pull request #2536: scripts/legacy2luatest.pl: remove modeline (master...legacy2lua) http://git.io/vJeMt
+2015-05-02 20:40:42	<--	GitHub50 (~GitHub50@192.30.252.41) has left #neovim
+2015-05-02 20:45:22	-->	fmoralesc (~fmoralesc@186-78-222-48.baf.movistar.cl) has joined #neovim
+2015-05-02 20:47:46	-->	turtil (~turtil@unaffiliated/kylescottmcgill) has joined #neovim
+2015-05-02 20:55:14	<--	jottr_ (~jottr@unaffiliated/jottr) has quit (Ping timeout: 256 seconds)
+2015-05-02 20:58:57	-->	glindste (~glindste@222.71.40.174) has joined #neovim
+2015-05-02 21:05:16	-->	raichoo1 (~raichoo@i59F6C442.versanet.de) has joined #neovim
+2015-05-02 21:07:16	<--	raichoo (~raichoo@mue-88-130-16-228.dsl.tropolys.de) has quit (Ping timeout: 272 seconds)
+2015-05-02 21:29:29	<--	raichoo1 (~raichoo@i59F6C442.versanet.de) has quit (Ping timeout: 264 seconds)
+2015-05-02 21:42:55	<--	glindste (~glindste@222.71.40.174) has quit (Quit: WeeChat 1.1.1)
+2015-05-02 21:58:06	<--	nashley (~nashley@unaffiliated/nashley) has quit (Ping timeout: 276 seconds)
+2015-05-02 22:13:03	<--	fmoralesc (~fmoralesc@186-78-222-48.baf.movistar.cl) has quit (Ping timeout: 265 seconds)
+2015-05-02 22:13:37	-->	fmoralesc (~fmoralesc@186-78-222-48.baf.movistar.cl) has joined #neovim
+2015-05-02 22:41:18	--	irc: disconnected from server
+2015-05-02 22:41:43	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #neovim
+2015-05-02 22:41:43	--	Topic for #neovim is "Vim's rebirth for the 21st century -- https://github.com/neovim/neovim -- Gitter.im chat: https://gitter.im/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim"
+2015-05-02 22:41:43	--	Topic set by tarruda on Fri, 17 Apr 2015 14:35:38
+2015-05-02 22:41:43	--	Channel #neovim: 219 nicks (0 ops, 0 voices, 219 normals)
+2015-05-02 22:41:45	--	Channel created on Fri, 31 Jan 2014 11:44:47
+2015-05-02 22:49:04	<--	jfredett (~Adium@pool-98-118-88-72.bstnma.fios.verizon.net) has quit (Quit: Leaving.)
+2015-05-02 22:52:50	<--	stefan991 (~stefan991@p579BAFB1.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2015-05-02 22:54:19	-->	stefan991 (~stefan991@p4FFB8987.dip0.t-ipconnect.de) has joined #neovim
+2015-05-02 23:12:31	<--	noctual (~noctual@host-92-18-22-111.as13285.net) has quit (Ping timeout: 256 seconds)
+2015-05-02 23:16:18	<--	turtil (~turtil@unaffiliated/kylescottmcgill) has quit (Ping timeout: 264 seconds)
+2015-05-02 23:19:39	-->	abra_ (~abra@178.46.5.97) has joined #neovim
+2015-05-02 23:23:04	<--	abra (~abra@5.141.214.75) has quit (Ping timeout: 255 seconds)
+2015-05-02 23:36:47	-->	jonas_buet (~jonas_bue@180.211.153.157) has joined #neovim
+2015-05-02 23:43:25	-->	davidosomething (~davidosom@2604:2000:1443:a21a:224:d7ff:fe18:bb64) has joined #neovim
+2015-05-02 23:50:27	-->	SolarAquarion (~solaraqua@unaffiliated/solaraquarion) has joined #neovim
+2015-05-02 23:58:23	-->	mikl (~mikl@drupal.org/user/56879/view) has joined #neovim
+2015-05-03 00:04:36	<--	ianks (~ianks@64.58.13.110) has quit (Quit: WeeChat 1.1.1)
+2015-05-03 00:04:42	<--	awreece (~awreece@unaffiliated/awreece) has quit (Ping timeout: 265 seconds)
+2015-05-03 00:07:35	-->	jfredett (~Adium@pool-98-118-88-72.bstnma.fios.verizon.net) has joined #neovim
+2015-05-03 00:08:28	<--	osa1 (~omer@2601:f:400:a8b1:2ab2:bdff:fedf:fa66) has quit (Ping timeout: 256 seconds)
+2015-05-03 00:09:47	-->	osa1 (~omer@2601:f:400:a8b1:2ab2:bdff:fedf:fa66) has joined #neovim
+2015-05-03 00:16:47	<--	melter (~Melter@2001:4930:116:0:146:2f0f:c4c3:247c) has quit (Ping timeout: 265 seconds)
+2015-05-03 00:18:49	<--	SolarAquarion (~solaraqua@unaffiliated/solaraquarion) has quit (Ping timeout: 256 seconds)
+2015-05-03 00:44:28	<--	nashley (~nashley@unaffiliated/nashley) has quit (Quit: Leaving.)
+2015-05-04 10:48:58	--	irc: disconnected from server
+2015-05-04 10:49:21	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #neovim
+2015-05-04 10:49:21	--	Topic for #neovim is "Vim's rebirth for the 21st century -- https://github.com/neovim/neovim -- Gitter.im chat: https://gitter.im/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim"
+2015-05-04 10:49:21	--	Topic set by tarruda on Fri, 17 Apr 2015 14:35:38
+2015-05-04 10:49:21	--	Channel #neovim: 233 nicks (0 ops, 0 voices, 233 normals)
+2015-05-04 10:49:23	--	Channel created on Fri, 31 Jan 2014 11:44:47
+2015-05-04 10:54:30	-->	vparad0x (~vparad0x@unaffiliated/vparad0x) has joined #neovim
+2015-05-04 10:54:56	Wildefyr	define autocompletion
+2015-05-04 10:58:50	<--	jolux (~jolux@unaffiliated/jolux) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2015-05-04 11:00:36	<--	deekej (~deekej@151.237.227.20) has quit (Ping timeout: 256 seconds)
+2015-05-04 11:01:23	<--	raichoo (~raichoo@2001:470:b626:11:f2de:f1ff:fe42:776b) has quit (Quit: Leaving.)
+2015-05-04 11:07:37	<--	wirrbel (~Thunderbi@85.115.23.42) has quit (Quit: wirrbel)
+2015-05-04 11:10:12	<--	nashley (~nashley@unaffiliated/nashley) has quit (Quit: Leaving.)
+2015-05-04 11:12:36	-->	wirrbel (~Thunderbi@85.115.23.42) has joined #neovim
+2015-05-04 11:13:34	<--	wirrbel (~Thunderbi@85.115.23.42) has quit (Client Quit)
+2015-05-04 11:14:10	-->	raichoo (~raichoo@i59F6D2A0.versanet.de) has joined #neovim
+2015-05-04 11:20:07	<--	kewah (~kewah@h-157-110.a137.corp.bahnhof.se) has quit
+2015-05-04 11:35:08	<--	Gabri (~Gabri@ip-80-113-175-227.ip.prioritytelecom.net) has quit (Quit: WeeChat 1.1.1)
+2015-05-04 11:41:07	<--	odie (~odie@62-2-77-204.static.cablecom.ch) has quit (Quit: Leaving.)
+2015-05-04 11:42:04	-->	deekej (~deekej@151.237.227.20) has joined #neovim
+2015-05-04 11:46:51	-->	GitHub81 (~GitHub81@192.30.252.40) has joined #neovim
+2015-05-04 11:46:51	GitHub81	[neovim] Yamakaky opened pull request #2578: Refactor os_unix_defs.h to os/ (master...feature/os_uni_defs-split) http://git.io/vJokE
+2015-05-04 11:46:51	<--	GitHub81 (~GitHub81@192.30.252.40) has left #neovim
+2015-05-04 11:50:30	-->	jerojasro (~jerojasro@sulaco.devnull.li) has joined #neovim
+2015-05-04 11:53:05	-->	lumo_e (~enrico@2.224.158.23) has joined #neovim
+2015-05-04 11:55:28	<--	zmack (~zmack@82-210-138-99.home.aster.pl) has quit (Remote host closed the connection)
+2015-05-04 11:57:18	-->	infandum (~gw@n1-36-82.dhcp.drexel.edu) has joined #neovim
+2015-05-04 11:59:25	infandum	This is a longshot: Let's say I have nvim open and I'm using it as a multiplexer. Now I have a few terminals in nvim open, along with text files. If I want to open a file where I am in a terminal, it opens up a nested nvim within nvim. Is it possible to instead open it in the host nvim in a new buffer (or separate window)?
+2015-05-04 11:59:42	infandum	So I never have a nested nvim but can open files through the terminal in nvim?
+2015-05-04 12:00:39	<--	noxd (~noxd@c213-89-175-191.bredband.comhem.se) has quit (Ping timeout: 245 seconds)
+2015-05-04 12:03:11	-->	Cyphus (~cyphus@71-212-242-239.hlrn.qwest.net) has joined #neovim
+2015-05-04 12:04:22	-->	jceb (~jceb@2001:6f8:900:8e46:8a53:2eff:fe91:4709) has joined #neovim
+2015-05-04 12:05:32	-->	nashley (~nashley@unaffiliated/nashley) has joined #neovim
+2015-05-04 12:08:59	<--	{AS} (uid45026@gateway/web/irccloud.com/x-hyqkeqvmcqopfkey) has quit (Quit: Connection closed for inactivity)
+2015-05-04 12:09:04	<--	jceb (~jceb@2001:6f8:900:8e46:8a53:2eff:fe91:4709) has quit (Ping timeout: 265 seconds)
+2015-05-04 12:09:18	<--	Erer (~Erer@2001:981:9691:1:cc28:67db:f3ba:6e32) has quit (Remote host closed the connection)
+2015-05-04 12:09:43	-->	zmack (~zmack@82-210-138-99.home.aster.pl) has joined #neovim
+2015-05-04 12:10:18	-->	nnyk_ (~nnyk@unaffiliated/nnyk) has joined #neovim
+2015-05-04 12:11:48	<--	zmack (~zmack@82-210-138-99.home.aster.pl) has quit (Remote host closed the connection)
+2015-05-04 12:13:11	lumo_e	infandum: I think it can be done, there was something on reddit some time ago
+2015-05-04 12:13:30	infandum	lumo_e: Really? A working solution?
+2015-05-04 12:13:40	infandum	The neovim subreddit?
+2015-05-04 12:15:49	lumo_e	infandum: yes, let me see if I find it
+2015-05-04 12:16:00	infandum	lumo_e: Is this it?
+2015-05-04 12:16:07	infandum	http://www.reddit.com/r/neovim/comments/30kvl3/ive_been_using_the_experimental_terminal_mode_and/
+2015-05-04 12:16:13	-->	happy-dude (uid62780@gateway/web/irccloud.com/x-htzewpwkzwwjfkev) has joined #neovim
+2015-05-04 12:17:34	-->	GitHub73 (~GitHub73@192.30.252.42) has joined #neovim
+2015-05-04 12:17:34	GitHub73	[neovim] Yamakaky opened pull request #2579: Remove last FALSE and TRUE (master...refactor/stdbool) http://git.io/vJoli
+2015-05-04 12:17:34	<--	GitHub73 (~GitHub73@192.30.252.42) has left #neovim
+2015-05-04 12:18:24	lumo_e	infandum: yes
+2015-05-04 12:18:25	-->	lolwat (~lolwat@ip5b43bc69.dynamic.kabel-deutschland.de) has joined #neovim
+2015-05-04 12:18:45	infandum	Hmm, how did I miss that? There seems to be many scripts there, one even by tarruda
+2015-05-04 12:23:14	-->	GitHub4 (~GitHub4@192.30.252.40) has joined #neovim
+2015-05-04 12:23:14	GitHub4	[neovim] Yamakaky closed pull request #2579: Remove last FALSE and TRUE (master...refactor/stdbool) http://git.io/vJoli
+2015-05-04 12:23:14	<--	GitHub4 (~GitHub4@192.30.252.40) has left #neovim
+2015-05-04 12:29:59	-->	perry_ (~perry@50.250.6.142) has joined #neovim

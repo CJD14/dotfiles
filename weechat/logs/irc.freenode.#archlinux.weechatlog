@@ -1,0 +1,1135 @@
+2015-04-28 12:51:02	-->	DIEHLC (~cjd@50-108-99-114.adr01.mskg.mi.frontiernet.net) has joined #archlinux
+2015-04-28 12:51:02	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> Be patient with those willing to learn and be kind to those willing to teach. <+> Hubble is 25, all hail our science overlord: https://www.youtube.com/watch?v=t2oiaa1tdRE"
+2015-04-28 12:51:02	--	Topic set by Mion on Thu, 23 Apr 2015 16:00:38
+2015-04-28 12:51:03	--	Channel #archlinux: 2057 nicks (0 ops, 0 voices, 2057 normals)
+2015-04-28 12:51:04	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-04-28 12:51:23	-->	sebastianlutter (~sebastian@37.120.118.108) has joined #archlinux
+2015-04-28 12:51:25	tsbtmn	youngwolf: I think there is a sunset period.  You have six months or something to get your code off of there.
+2015-04-28 12:51:33	<--	c0m0 (~c0m0@94.229.78.59) has quit (Ping timeout: 248 seconds)
+2015-04-28 12:51:35	tsbtmn	Don't quote me on the six months.
+2015-04-28 12:51:47	-->	snakeye (~snakeye@S0106602ad0980d30.vs.shawcable.net) has joined #archlinux
+2015-04-28 12:52:02	-->	VCoolio (~martinkoe@ip4da4bf93.direct-adsl.nl) has joined #archlinux
+2015-04-28 12:52:23	crazedpsyc	there's a button for exporting to github
+2015-04-28 12:52:43	tsbtmn	Pentadactyl probably pressed said button.
+2015-04-28 12:53:07	<--	humpf (~humpf@95.91.229.136) has quit (Quit: WeeChat 1.1.1)
+2015-04-28 12:53:26	-->	qunu (~qunu@AStrasbourg-552-1-12-73.w92-130.abo.wanadoo.fr) has joined #archlinux
+2015-04-28 12:53:56	-->	pid1 (~pid1@50.28.144.121) has joined #archlinux
+2015-04-28 12:54:04	<--	Yayi (~Yayi@unaffiliated/yayi) has quit (Quit: Leaving.)
+2015-04-28 12:54:05	-->	hashman (~trucmar@2a02:908:e280:fc0:a2a8:cdff:fe7b:e40e) has joined #archlinux
+2015-04-28 12:54:23	-->	bsdtux (~jstephens@169.130.124.38) has joined #archlinux
+2015-04-28 12:54:27	<--	v{}id (~david@2a02:810d:a80:bb0::3) has quit (Quit: Bye.)
+2015-04-28 12:55:05	<--	qunu (~qunu@AStrasbourg-552-1-12-73.w92-130.abo.wanadoo.fr) has quit (Excess Flood)
+2015-04-28 12:55:05	<--	Alexendoo (~Alex@macleod.tk) has left #archlinux ("Leaving")
+2015-04-28 12:56:07	s00pcan	upload speed on at&t uverse is beyond awful
+2015-04-28 12:56:21	hashman	hi, I'm getting crazy trying to get archlinux to boot into my new mobo. CSM is disabled, EFI enabled, I have 1 partition of 1Mb (Type BIOS Boot) and 1 512M partition vfat32 for /boot
+2015-04-28 12:57:13	<--	RichM76 (~richard@97-96-35-129.res.bhn.net) has quit (Quit: Konversation terminated!)
+2015-04-28 12:57:31	hashman	grub-install refuses to install telling me that /boot/grub/device.map cannot be found, later tells me cnnot find EFI directory, if I use target=i386-pc It works, but when I reboot I can't see my partition listed in the bios, so It won't boot, please advice
+2015-04-28 12:57:36	<--	Awesomesaurus (~Bobby@MLTNON2526W-LP130-04-845477189.dsl.bell.ca) has quit (Ping timeout: 240 seconds)
+2015-04-28 12:57:38	<--	tolstoi (~tolstoi@unaffiliated/tolstoi) has quit (Quit: This computer has gone to sleep)
+2015-04-28 12:57:48	-->	toogy (~toogy@2001:41d0:8:796e::1) has joined #archlinux
+2015-04-28 12:57:49	<--	irgendwie (~alex@n046.tum.vpn.lrz.de) has quit (Quit: leaving)
+2015-04-28 12:57:53	Namarrgon	for uefi you don't need the bios-boot partition and you can't use that target for uefi either
+2015-04-28 12:57:56	Tekken	s00pcan: Are you a fellow AT&T user?
+2015-04-28 12:57:59	Tekken	I'm sorry for you.
+2015-04-28 12:58:04	-->	irgendwie (~alex@n046.tum.vpn.lrz.de) has joined #archlinux
+2015-04-28 12:58:05	toogy	any script that returns my internet ip?
+2015-04-28 12:58:14	-->	nope3000 (~nope3000@64.132.6.162) has joined #archlinux
+2015-04-28 12:58:20	toogy	(not my ip on the local net but my ip from internet's point of view)
+2015-04-28 12:58:23	-->	zotherstupidguy (~zotherstu@41.32.18.143) has joined #archlinux
+2015-04-28 12:58:36	Namarrgon	hashman: with grub-install you have to use the --efi-directory option
+2015-04-28 12:58:59	hashman	Namarrgon, I tried yesterday with no bios partition and grub-install was complaining
+2015-04-28 12:59:11	-->	nefs (~nefs@162.100-201-80.adsl-dyn.isp.belgacom.be) has joined #archlinux
+2015-04-28 12:59:44	ius	hashman: considered gummiboot for uefi boot?
+2015-04-28 12:59:48	-->	HugoJH (~HugoJH@46.Red-81-32-97.dynamicIP.rima-tde.net) has joined #archlinux
+2015-04-28 12:59:51	<--	jleclanche (~adys@unaffiliated/adys) has quit (Quit: No Ping reply in 90 seconds.)
+2015-04-28 12:59:54	<--	nefs (~nefs@162.100-201-80.adsl-dyn.isp.belgacom.be) has quit (Remote host closed the connection)
+2015-04-28 13:00:05	<--	Strum_ (~Strum@139.216.176.37) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2015-04-28 13:00:14	-->	matiaslina (~matias@proxy3.psi.unc.edu.ar) has joined #archlinux
+2015-04-28 13:00:35	<--	tessellated (~mih@178.115.131.1.wireless.dyn.drei.com) has quit (Ping timeout: 264 seconds)
+2015-04-28 13:00:49	<--	timothy (~quassel@archlinux/trusteduser/DrizztBSD) has quit (Remote host closed the connection)
+2015-04-28 13:01:04	<--	mmh (~mmh@wvp3114.vpn.uni-wuerzburg.de) has quit (Quit: WeeChat 1.1.1)
+2015-04-28 13:01:05	-->	jleclanche (~adys@unaffiliated/adys) has joined #archlinux
+2015-04-28 13:01:05	s00pcan	I'm streaming mpd and it's like 50KB/s and still having problems
+2015-04-28 13:01:06	-->	savantgarde (~savantgar@p5B3743F9.dip0.t-ipconnect.de) has joined #archlinux
+2015-04-28 13:01:13	 *	hashman is looking at the documentation... looks like what I'm doing is wrong from the beginning
+2015-04-28 13:01:27	<--	rettori (rettori@nat/redhat/x-sswgumdxldvdlync) has quit (Remote host closed the connection)
+2015-04-28 13:01:36	kartapux	Hi everyone.
+2015-04-28 13:01:41	<--	nerfquark (~nerfquark@wsip-72-210-92-130.tu.ok.cox.net) has quit (Quit: Zzzz Air Zonk!)
+2015-04-28 13:01:52	-->	Saturn812 (~Saturn812@128-73-202-8.broadband.corbina.ru) has joined #archlinux
+2015-04-28 13:01:59	-->	rettori (rettori@nat/redhat/x-iuvwxemkdztsudnk) has joined #archlinux
+2015-04-28 13:02:05	-->	MrPeacock (~MrPeacock@p4FD2FD13.dip0.t-ipconnect.de) has joined #archlinux
+2015-04-28 13:02:18	s00pcan	5-15 second pauses every minute ugh...
+2015-04-28 13:02:27	Namarrgon	hashman: make sure you booted in uefi-mode and that the ESP is mounted, don't use --target but use --efi-directory
+2015-04-28 13:02:31	<--	turtil (~turtil@unaffiliated/kylescottmcgill) has quit (Ping timeout: 255 seconds)
+2015-04-28 13:02:35	-->	kyusaki (~dreameh@62.119.166.9) has joined #archlinux
+2015-04-28 13:02:43	<--	Saturn812 (~Saturn812@128-73-202-8.broadband.corbina.ru) has quit (Read error: Connection reset by peer)
+2015-04-28 13:02:49	-->	mcescher (~mcescher@ip5b41e7a9.dynamic.kabel-deutschland.de) has joined #archlinux
+2015-04-28 13:02:53	kyusaki	Hello everyone o/
+2015-04-28 13:02:57	-->	Saturn812 (~Saturn812@128-73-202-8.broadband.corbina.ru) has joined #archlinux
+2015-04-28 13:03:04	-->	Emhu (~Emhu@ARennes-656-1-195-70.w2-2.abo.wanadoo.fr) has joined #archlinux
+2015-04-28 13:03:18	SubaruSVX	hi kyusaki
+2015-04-28 13:03:18	kartapux	I have a problem migrating to plasma5. kded5 keeps asking for kwallet password. When provided, it says that there is an error. I believe I'm not the only one having this problem but I can't find a solution. Could you please help me ?
+2015-04-28 13:03:20	SubaruSVX	o/
+2015-04-28 13:03:39	kyusaki	:D
+2015-04-28 13:03:44	<--	terlar (~terje@h-37-123-145-122.na.cust.bahnhof.se) has quit (Ping timeout: 272 seconds)
+2015-04-28 13:03:57	-->	DPini (~dpini@216.37.14.37.dynamic.jazztel.es) has joined #archlinux
+2015-04-28 13:04:19	<--	wyre (~LHCJF@81.172.90.37.dyn.user.ono.com) has quit (Ping timeout: 256 seconds)
+2015-04-28 13:05:13	<--	herrera (~herrera@190.172.21.218) has quit (Ping timeout: 255 seconds)
+2015-04-28 13:05:19	 *	hashman 's partition is being detected by the bios
+2015-04-28 13:05:31	 *	hashman 's system boot for the first time
+2015-04-28 13:05:36	hashman	THANKS GUYS!!!
+2015-04-28 13:06:01	<--	savantgarde (~savantgar@p5B3743F9.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2015-04-28 13:06:04	-->	chirag011 (~irc@blogninja.asia) has joined #archlinux
+2015-04-28 13:06:28	<--	rettori (rettori@nat/redhat/x-iuvwxemkdztsudnk) has quit (Ping timeout: 250 seconds)
+2015-04-28 13:06:30	<--	witquicked|L (~witquicke@c-50-161-43-43.hsd1.ca.comcast.net) has quit (Ping timeout: 252 seconds)
+2015-04-28 13:06:39	wint	toogy: http://unix.stackexchange.com/questions/22615/how-can-i-get-my-external-ip-address-in-bash
+2015-04-28 13:06:40	phrik	Title: linux - How can I get my external IP address in bash? - Unix & Linux Stack Exchange (at unix.stackexchange.com)
+2015-04-28 13:06:49	-->	AlejandroNiebla (~Alejandro@85.136.71.32.dyn.user.ono.com) has joined #archlinux
+2015-04-28 13:07:01	-->	_CommandeR_ (~commander@217.115.47.174) has joined #archlinux
+2015-04-28 13:07:05	-->	nerfquark (~nerfquark@wsip-72-210-92-130.tu.ok.cox.net) has joined #archlinux
+2015-04-28 13:07:12	-->	tequir00t (~tequir00t@ip1f13b6c0.dynamic.kabel-deutschland.de) has joined #archlinux
+2015-04-28 13:07:12	<--	tequir00t (~tequir00t@ip1f13b6c0.dynamic.kabel-deutschland.de) has quit (Changing host)
+2015-04-28 13:07:12	-->	tequir00t (~tequir00t@unaffiliated/tequir00t) has joined #archlinux
+2015-04-28 13:07:17	<--	mwpher (~mwpher@pool-173-71-39-166.dllstx.fios.verizon.net) has quit (Quit: mwpher)
+2015-04-28 13:07:20	<--	nando293921 (~fernando@173.224.93.6) has quit (Ping timeout: 250 seconds)
+2015-04-28 13:07:39	<--	tequir00t (~tequir00t@unaffiliated/tequir00t) has quit (Client Quit)
+2015-04-28 13:07:41	<--	_CommandeR_ (~commander@217.115.47.174) has quit (Client Quit)
+2015-04-28 13:07:51	-->	jsrn_ (~jsrn@host31-52-197-176.range31-52.btcentralplus.com) has joined #archlinux
+2015-04-28 13:07:53	<--	chirag011 (~irc@blogninja.asia) has left #archlinux ("WeeChat 0.4.3")
+2015-04-28 13:07:55	<--	Justice (~commander@c-82-209-157-169.cust.bredband2.com) has quit (Ping timeout: 255 seconds)
+2015-04-28 13:07:56	<--	muchweb (~Thunderbi@host81-148-162-7.in-addr.btopenworld.com) has quit (Quit: muchweb)
+2015-04-28 13:08:06	-->	AndrevS (~andrevs@2001:982:27e5:1:221:6aff:fe65:94a6) has joined #archlinux
+2015-04-28 13:08:16	<--	sin3t (~sin3t@77.47.209.98) has quit (Quit: Залишаю)
+2015-04-28 13:08:59	<--	matiaslina (~matias@proxy3.psi.unc.edu.ar) has quit (Ping timeout: 264 seconds)
+2015-04-28 13:09:12	-->	Ixzat (~textual@c83-191-243-87.cust.tele2.se) has joined #archlinux
+2015-04-28 13:09:17	-->	Paradisee (~quassel@2.239.28.120) has joined #archlinux
+2015-04-28 13:09:18	kyusaki	does someone know a great minimal theme for xfce?
+2015-04-28 13:09:41	<--	jezeniel (~jezeniel@112.206.107.29) has quit (Ping timeout: 248 seconds)
+2015-04-28 13:09:59	<--	rejerson69_ (~rejerson6@169.53.134.171-static.reverse.softlayer.com) has quit (Ping timeout: 256 seconds)
+2015-04-28 13:10:39	th0rne	Are they different from gtk themes?
+2015-04-28 13:11:00	-->	ziocroc (~ziocroc3@151.74.54.196) has joined #archlinux
+2015-04-28 13:11:03	pid1	kyusaki, Numix is nice.
+2015-04-28 13:11:08	kyusaki	ohh
+2015-04-28 13:11:23	<--	caselogic (~caselogic@unaffiliated/redsparrow) has quit (Ping timeout: 244 seconds)
+2015-04-28 13:11:26	pid1	I have my terminator backgroudn color match the #2D2D2D of the titlebar, which gives it a nice seamless feel.
+2015-04-28 13:11:38	pid1	Same thing with my Hexchat window.
+2015-04-28 13:11:45	kyusaki	:D
+2015-04-28 13:12:23	<--	roentgen (~roentgen@openvpn/community/support/roentgen) has quit (Quit: leaving)
+2015-04-28 13:12:30	SysGh0st	Yay!... new channel TRipple 2D ... oh.. umh.. sorry... couldn't hold myself. =S
+2015-04-28 13:13:08	kyusaki	o_o
+2015-04-28 13:13:15	<--	manizzle (~manizzle@c-69-181-7-109.hsd1.ca.comcast.net) has quit (Ping timeout: 276 seconds)
+2015-04-28 13:13:24	 *	SysGh0st hides in a wall.
+2015-04-28 13:13:34	-->	Elish (~x@unaffiliated/elish) has joined #archlinux
+2015-04-28 13:13:47	<--	nerfquark (~nerfquark@wsip-72-210-92-130.tu.ok.cox.net) has quit (Quit: Zzzz Air Zonk!)
+2015-04-28 13:13:48	 *	Junka peek-a-boo
+2015-04-28 13:13:54	kyusaki	What is that? o_o
+2015-04-28 13:14:03	 *	kyusaki hides under a giant stone
+2015-04-28 13:14:33	<--	zotherstupidguy (~zotherstu@41.32.18.143) has quit (Ping timeout: 276 seconds)
+2015-05-04 12:37:38	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #archlinux
+2015-05-04 12:37:38	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> Be patient with those willing to learn and be kind to those willing to teach. <+> Hubble is 25, all hail our science overlord: https://www.youtube.com/watch?v=t2oiaa1tdRE"
+2015-05-04 12:37:38	--	Topic set by Mion on Thu, 23 Apr 2015 16:00:38
+2015-05-04 12:37:39	--	Channel #archlinux: 2099 nicks (1 op, 0 voices, 2098 normals)
+2015-05-04 12:37:40	ZAKhan	i have installed KDE and i am still getting the same error .. 
+2015-05-04 12:37:40	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-05-04 12:37:51	<--	Shoe15 (uid40690@gateway/web/irccloud.com/x-fhzmrxmupkoiawms) has quit
+2015-05-04 12:37:52	Arch-TK	install errorfixer.exe
+2015-05-04 12:37:56	<--	gsingh93 (~gulshan@c-68-55-60-95.hsd1.mi.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-05-04 12:38:00	Arch-TK	it will fix your error
+2015-05-04 12:38:02	<--	andreaugusto (~Adium@186.192.87.80) has quit (Ping timeout: 246 seconds)
+2015-05-04 12:38:14	<--	ssalenik (~smuxi@mtl.savoirfairelinux.net) has quit (Remote host closed the connection)
+2015-05-04 12:38:16	-->	Binero (~Binero@2a02:1810:952f:9300:c646:19ff:fea3:5c76) has joined #archlinux
+2015-05-04 12:38:29	-->	Silmarilion (~Silmarili@cable-94-189-209-87.dynamic.sbb.rs) has joined #archlinux
+2015-05-04 12:38:33	-->	jottr (~jottr@unaffiliated/jottr) has joined #archlinux
+2015-05-04 12:38:36	ZAKhan	Arch-TK: are yuo talking to me?
+2015-05-04 12:38:37	<--	stianhj (~stian@80.91.33.135) has quit (Quit: WeeChat 1.1.1)
+2015-05-04 12:38:41	Arch-TK	ZAKhan: Of course.
+2015-05-04 12:38:46	ZAKhan	.exe?
+2015-05-04 12:38:52	xamindar	lol
+2015-05-04 12:38:55	Namarrgon	it's a virus!
+2015-05-04 12:39:02	-->	sinshiva (~sinshiva@2002:d1d0:41dd::) has joined #archlinux
+2015-05-04 12:39:02	<--	ptalbot (~ptalbot@2001:660:3004:64:52ca:6016:6c2b:40e6) has quit (Ping timeout: 265 seconds)
+2015-05-04 12:39:03	<--	c0m0 (~c0m0@94.229.78.59) has quit (Ping timeout: 244 seconds)
+2015-05-04 12:39:09	xamindar	all .exe files are viri
+2015-05-04 12:39:17	-->	tomty89 (~user@014199149146.ctinets.com) has joined #archlinux
+2015-05-04 12:39:21	ZAKhan	i have a problem here and you are making fun 
+2015-05-04 12:39:23	Arch-TK	ZAKhan: yes .exe
+2015-05-04 12:39:25	qubitnerd	!g plural of virus
+2015-05-04 12:39:26	phrik	qubitnerd: Plural form of words ending in -us - Wikipedia, the free encyclopedia: <http://en.wikipedia.org/wiki/Plural_form_of_words_ending_in_-us>
+2015-05-04 12:39:33	Namarrgon	ZAKhan: 'lscpu'
+2015-05-04 12:39:36	Earnestly	is viruses
+2015-05-04 12:39:38	Earnestly	not viri
+2015-05-04 12:39:39	-->	OxDB (~dennis@allegro/user/Dennis) has joined #archlinux
+2015-05-04 12:39:42	-->	j_mcnally (~textual@c-67-167-5-62.hsd1.il.comcast.net) has joined #archlinux
+2015-05-04 12:39:43	Earnestly	learn2latin
+2015-05-04 12:39:47	<--	chandan_ (~chandan@122.172.16.94) has quit (Ping timeout: 246 seconds)
+2015-05-04 12:39:52	-->	_mel_ (~melvin@ham.e-7.com) has joined #archlinux
+2015-05-04 12:39:58	xamindar	viruseseseses
+2015-05-04 12:40:09	eleventh	Earnestly is learn2latin in the AUR?
+2015-05-04 12:40:11	tomty89	hmm wonder when will 30-dbus.sh be necessary
+2015-05-04 12:40:19	Earnestly	eleventh: Maybe
+2015-05-04 12:40:29	-->	kr4n3 (~kr4n3@65.pool62-37-214.dynamic.orange.es) has joined #archlinux
+2015-05-04 12:40:35	homerj	oh what is this nonsense now....KDE 5.3, my battery applet is going bonkers
+2015-05-04 12:40:45	eleventh	figured it would packaged with dos2unix
+2015-05-04 12:40:48	sudokode	Earnestly: sometimes it's tough when the language doesn't always agree with itself
+2015-05-04 12:41:01	_mel_	Hi. I#m using cinnamon. gedit 3.16 looks a lot like gnome. can i somehow change it to make gedit look more "classic"?
+2015-05-04 12:41:04	Earnestly	sudokode: virus is already plural though, in latin
+2015-05-04 12:41:15	sudokode	this isn't latin
+2015-05-04 12:41:16	xamindar	learn to btrfs then you can just roll back to a working snapshot ;)
+2015-05-04 12:41:18	Earnestly	sudokode: Basically, it's simple, don't invent latin
+2015-05-04 12:41:28	Namarrgon	_mel_: apart from the theme, not really
+2015-05-04 12:41:29	Ingar	homerj: how is 5 compared to 4? I still need to upgrade, but I'm scared becayse I haven't forgotten 4.0
+2015-05-04 12:41:36	homerj	I like it
+2015-05-04 12:41:36	Earnestly	octopi is also wrongish
+2015-05-04 12:41:43	sudokode	radius -> radii, cactus -> cacti, virus -> viruses, octopus -> actually, it's octopuses most of the time but some do say octopi
+2015-05-04 12:41:52	sudokode	exactly, it's wrongISH
+2015-05-04 12:41:53	Earnestly	Both are acceptable
+2015-05-04 12:41:53	<--	CyberDems (~dems@srv.webintuitive.co.za) has quit (Ping timeout: 246 seconds)
+2015-05-04 12:41:56	qubitnerd	Earnestly: The English plural of virus is viruses.[1] In most speaking communities, this is non-controversial and speakers would not attempt to use the non-standard plural in -i. However, in computer enthusiast circles in the late 20th century and early 21st, the non-standard viri form (sometimes even virii) was well-attested, generally in the context of computer viruses
+2015-05-04 12:42:02	Earnestly	Just not octopideas
+2015-05-04 12:42:04	sudokode	irregardless
+2015-05-04 12:42:08	Earnestly	Is wrong ;p
+2015-05-04 12:42:11	sudokode	no it's not
+2015-05-04 12:42:12	xamindar	but viri sounds better so i use it
+2015-05-04 12:42:14	_mel_	Namarrgon: it keeps having the close button on the right side even if any other windos has it on the left (my preferred)
+2015-05-04 12:42:17	sudokode	it's also a word now in colloquial use
+2015-05-04 12:42:21	sudokode	that's how words work :D
+2015-05-04 12:42:24	xamindar	i don't care what's right or wrong
+2015-05-04 12:42:27	-->	jack_rabbit (~jack_rabb@c-50-148-112-117.hsd1.il.comcast.net) has joined #archlinux
+2015-05-04 12:42:31	Earnestly	xamindar: You're just a neolatin hipster
+2015-05-04 12:42:39	wasamasa	lol
+2015-05-04 12:42:41	xamindar	oh no you didn't!
+2015-05-04 12:42:45	xamindar	lol
+2015-05-04 12:42:50	-->	nighty^ (~nighty@hokuriku.rural-networks.com) has joined #archlinux
+2015-05-04 12:42:52	sudokode	literally semantics right now
+2015-05-04 12:42:56	sudokode	it's great
+2015-05-04 12:42:58	homerj	to quote an English major I used to date, using things like "virii" or "octopi" isn't a rule, it's more of a guide
+2015-05-04 12:43:10	<--	franzer (~Franzer__@c-76-18-79-220.hsd1.nm.comcast.net) has quit (Ping timeout: 255 seconds)
+2015-05-04 12:43:10	-->	Jon-- (~Jon--@50.72.69.3) has joined #archlinux
+2015-05-04 12:43:12	wasamasa	homerj: octopi is crappy software
+2015-05-04 12:43:13	sudokode	lets talk about the oxford comma next
+2015-05-04 12:43:16	wasamasa	homerj: and that's a rule!
+2015-05-04 12:43:17	homerj	there's not rule that says you have to put an "i" plural
+2015-05-04 12:43:18	Earnestly	It's needed
+2015-05-04 12:43:23	xamindar	more like guidelines
+2015-05-04 12:43:25	xamindar	arrr!
+2015-05-04 12:43:26	homerj	it's latin, not English
+2015-05-04 12:43:39	_mel_	is there any cinnamon editor equal to gedit?
+2015-05-04 12:43:39	Earnestly	homerj: virii is not latin
+2015-05-04 12:43:52	homerj	or whatever
+2015-05-04 12:43:54	Earnestly	homerj: virus is latin and already a plural
+2015-05-04 12:43:54	sudokode	virii wouldn't even be the proper pluralization
+2015-05-04 12:44:06	qubitnerd	whats the singular ?
+2015-05-04 12:44:11	<--	Cust0sL1men (~CustosLim@unaffiliated/cust0slim3n) has quit (Quit: Leaving)
+2015-05-04 12:44:11	sudokode	that's a mistake people make because they only have one other -us word in their vocab
+2015-05-04 12:44:12	Earnestly	_mel_: Yes, gedit
+2015-05-04 12:44:23	sudokode	another word I take issue with is data
+2015-05-04 12:44:24	Earnestly	_mel_: Or does cinnamon use some wacky toolkit now?
+2015-05-04 12:44:32	<--	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has quit
+2015-05-04 12:44:33	<--	v{}id (~david@2a02:810d:a80:bb0::3) has quit (Quit: Bye.)
+2015-05-04 12:44:40	sudokode	data is plural, but it sounds so stupid when you use it like a plural word
+2015-05-04 12:44:44	ZAKhan	Namarrgon: http://hastebin.com/niqubocune.coffee
+2015-05-04 12:44:46	phrik	Title: hastebin (at hastebin.com)
+2015-05-04 12:44:48	xamindar	cinnamon is gtk so i would assume gedit would be fine
+2015-05-04 12:44:51	homerj	it's like of like pierogi
+2015-05-04 12:44:53	_mel_	Earnestly: gedit looks like gnome3 theme
+2015-05-04 12:44:55	homerj	it's already plural
+2015-05-04 12:45:01	homerj	but people still say pierogis
+2015-05-04 12:45:03	Earnestly	_mel_: adwaita is a gtk3 theme
+2015-05-04 12:45:12	homerj	pierog is the singular in polish
+2015-05-04 12:45:14	Arch-TK	homerj: pierogis?
+2015-05-04 12:45:18	xamindar	i can't use gtk too much on this laptop, it always ends in screen corruption. qt all work fine
+2015-05-04 12:45:18	Arch-TK	homerj: not in poland they don't
+2015-05-04 12:45:25	Earnestly	homerj: sheep :P
+2015-05-04 12:45:28	<--	fredp__ (~fredp@unaffiliated/fredp) has quit (Read error: Connection reset by peer)
+2015-05-04 12:45:28	Namarrgon	ZAKhan: pacman -Q intel-ucode
+2015-05-04 12:45:32	Arch-TK	homerj: pierogis wtf really?
+2015-05-04 12:45:37	sudokode	heh, my parents call them pierogis
+2015-05-04 12:45:42	sudokode	they love those things
+2015-05-04 12:45:43	homerj	Arch-TK, I love some pierogis
+2015-05-04 12:45:47	sudokode	I have never had one
+2015-05-04 12:45:50	 *	Arch-TK shoots everyone
+2015-05-04 12:45:54	Arch-TK	IT'S PRONOUNCED PIE
+2015-05-04 12:45:56	Arch-TK	RO
+2015-05-04 12:45:58	Arch-TK	GI
+2015-05-04 12:46:02	_mel_	can i change the gnome3 window decoration to put the close button on the left side?
+2015-05-04 12:46:06	Arch-TK	and it's PLURAL
+2015-05-04 12:46:13	homerj	Arch-TK, yes
+2015-05-04 12:46:21	homerj	people in the US will use an s
+2015-05-04 12:46:22	ZAKhan	Namarrgon: paackage not found
+2015-05-04 12:46:25	Namarrgon	!give ZAKhan tsx
+2015-05-04 12:46:26	phrik	ZAKhan: Intel's TSX instruction causes various thread segfaults on haswell and newer cpus, get the microcode update that disables it. https://wiki.archlinux.org/index.php/Microcode
+2015-05-04 12:46:35	-->	fredp__ (~fredp@unaffiliated/fredp) has joined #archlinux
+2015-05-04 12:46:36	Arch-TK	homerj: people in the US are noobs
+2015-05-04 12:46:38	Earnestly	_mel_: I believe so, or one was able to
+2015-05-04 12:46:43	Earnestly	Not sure now actually
+2015-05-04 12:46:44	Arch-TK	homerj: they need to L2P
+2015-05-04 12:46:44	xamindar	_mel_: maybe try geany?
+2015-05-04 12:46:48	Arch-TK	homerj: Learn to Pierogi
+2015-05-04 12:46:54	sudokode	or learn2polish
+2015-05-04 12:47:03	Earnestly	Eat polish
+2015-05-04 12:47:14	Arch-TK	Hey, I'll pronounce it for you
+2015-05-04 12:47:17	homerj	Arch-TK, that's what I mean, borrowed works and what to do with them, the original language rules are more of a guide, kind of like the pirate's code
+2015-05-04 12:47:20	Earnestly	Polish my polish shoes
+2015-05-04 12:47:26	sudokode	how many polish guys does it take to screw in a lightbulb?
+2015-05-04 12:47:32	homerj	s/works/words
+2015-05-04 12:47:50	<--	elgatov_ (~elgatov@71.Red-83-44-26.dynamicIP.rima-tde.net) has quit (Ping timeout: 244 seconds)
+2015-05-04 12:47:53	_mel_	xamindar: geany is a ide right?
+2015-05-04 12:48:03	-->	psychedelicious (~psychedel@host86-162-70-67.range86-162.btcentralplus.com) has joined #archlinux
+2015-05-04 12:48:04	<--	andyrtr (~andyrtr_l@archlinux/developer/andyrtr) has quit (Quit: Ex-Chat)
+2015-05-04 12:48:11	<--	helasraizam (~helasraiz@nagini-136.dynamic.rpi.edu) has quit (Remote host closed the connection)
+2015-05-04 12:48:18	sudokode	depends on how you define IDE
+2015-05-04 12:48:25	xamindar	yeah a simple one
+2015-05-04 12:48:29	-->	Holy_Proton (uid82924@gateway/web/irccloud.com/x-nfockqmynushcllx) has joined #archlinux
+2015-05-04 12:48:30	sudokode	well then vim is an iDE
+2015-05-04 12:48:35	xamindar	works really well as a text edotor though
+2015-05-04 12:48:39	_mel_	more than just an editor :) 
+2015-05-04 12:48:42	sudokode	hey vim too
+2015-05-04 12:48:43	tomty89	is emacs an ide?
+2015-05-04 12:48:45	xamindar	editor*
+2015-05-04 12:48:49	sudokode	tomty89: seems so
+2015-05-04 12:48:57	eleventh	emacs == OS
+2015-05-04 12:49:04	xamindar	lol
+2015-05-04 12:49:06	tomty89	emacs == tiling wm
+2015-05-04 12:49:19	<--	NolanSyKinsley (~paco@cpe-45-48-161-92.socal.res.rr.com) has quit (Remote host closed the connection)
+2015-05-04 12:49:20	_mel_	emacs? you mean the operating system? :-)
+2015-05-04 12:49:25	qubitnerd	why do people use == ?
+2015-05-04 12:49:26	tomty89	we should make emacs a wayland compositor
+2015-05-04 12:49:32	e^0_	tomty89: hey :) how you doin..
+2015-05-04 12:49:37	tomty89	hi o/
+2015-05-04 12:49:45	ZAKhan	Namarrgon: Installed intel-ucode 
+2015-05-04 12:49:47	<--	`Eddie (~dedword@unaffiliated/eddie/x-2286721) has quit (Quit: the mac is asleep)
+2015-05-04 12:49:48	-->	franzer (~Franzer__@c-76-18-79-220.hsd1.nm.comcast.net) has joined #archlinux
+2015-05-04 12:49:49	xamindar	because only one "=" would be assigning to that variable
+2015-05-04 12:49:56	Scimmia	qubitnerd, because that's the comparison operator
+2015-05-04 12:50:04	tomty89	xamindar: it depends
+2015-05-04 12:50:14	qubitnerd	so when you use == there should be a question mark at the end of the line
+2015-05-04 12:50:30	qubitnerd	emacs == OS ? and someone replies TRUE
+2015-05-04 12:50:35	xamindar	lol
+2015-05-04 12:50:52	<--	Holy_Proton (uid82924@gateway/web/irccloud.com/x-nfockqmynushcllx) has quit (Quit: Updating details, brb)
+2015-05-04 12:51:07	<--	jack_rabbit (~jack_rabb@c-50-148-112-117.hsd1.il.comcast.net) has quit (Ping timeout: 265 seconds)
+2015-05-04 12:51:13	-->	Holy_Proton (uid82924@gateway/web/irccloud.com/x-rgjmhnkhncrwjemf) has joined #archlinux
+2015-05-04 12:51:14	tomty89	should we introduce brackets and parenthesis
+2015-05-04 12:51:29	tomty89	*ses
+2015-05-04 12:51:59	<--	absynthe_faery (~absynthe_@unaffiliated/absynthe-faery/x-6447756) has quit (Quit: "But winds will vary, and wise and wary the patient fairy of water waits" (A.C. Swinburne))
+2015-05-04 12:52:01	<--	kr4n3 (~kr4n3@65.pool62-37-214.dynamic.orange.es) has quit (Remote host closed the connection)
+2015-05-04 12:52:05	xamindar	we shouls all only post in code hahaha
+2015-05-04 12:52:20	CharlesAtum	In which language?
+2015-05-04 12:52:33	eleventh	Fortran
+2015-05-04 12:52:39	-->	agjacome (~agjacome@66.158.216.87.dynamic.jazztel.es) has joined #archlinux
+2015-05-04 12:52:39	Ingar	time to learn brainfuck then
+2015-05-04 12:52:40	Scimmia	take your pick. More fun that way
+2015-05-04 12:52:44	<--	codemac (~codemac@archlinux/fellow/codemac) has quit (Ping timeout: 245 seconds)
+2015-05-04 12:52:49	-->	Lisured (~jtojnar@auth47-176.fi.muni.cz) has joined #archlinux
+2015-05-04 12:53:10	<--	Lisured (~jtojnar@auth47-176.fi.muni.cz) has left #archlinux
+2015-05-04 12:53:21	-->	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has joined #archlinux
+2015-05-04 12:53:26	-->	akiva (~akiva@96.54.175.108) has joined #archlinux
+2015-05-04 12:53:31	-->	longpants (~longpants@d-24-233-247-222.cpe.metrocast.net) has joined #archlinux
+2015-05-04 12:53:32	Scimmia	one person posting in python, one posting in asm
+2015-05-04 12:53:38	Scimmia	could get interesting
+2015-05-04 12:53:56	tomty89	if i-see-you is ture:
+2015-05-04 12:54:05	tomty89	    hi
+2015-05-04 12:54:18	<--	dissonant (~dissonant@131.94.186.14) has quit (Ping timeout: 272 seconds)
+2015-05-04 12:54:25	eleventh	sounds double plus good
+2015-05-04 12:54:30	<--	speaking1ode (~unknown@173-12-244-146-memphis.hfc.comcastbusiness.net) has quit (Ping timeout: 256 seconds)
+2015-05-04 12:54:38	wasamasa	tomty89: I've looked at xwem's code and decided to not make emacs my window manager
+2015-05-04 12:54:48	Arch-TK	Pierogi bitch, this is how you pronounce it: https://a.pomf.se/wcjuht.ogg
+2015-05-04 12:55:02	Arch-TK	homerj: ^
+2015-05-04 12:55:04	<--	eefvx (~Zzadx@41.140.107.91) has quit (Ping timeout: 244 seconds)
+2015-05-04 12:55:10	Arch-TK	homerj: Show it to all your USA people who need to L2P
+2015-05-04 12:55:11	tomty89	wasamasa: "Take the best and make it better."
+2015-05-04 12:55:18	wasamasa	Arch-TK: I don't know why, but I find this hilarious
+2015-05-04 12:55:32	-->	elgatov (~elgatov@71.Red-83-44-26.dynamicIP.rima-tde.net) has joined #archlinux
+2015-05-04 12:55:34	Earnestly	wasamasa: Did you see that pony language?
+2015-05-04 12:55:53	wasamasa	Arch-TK: "What is the meaning of life?" - "Pierogi" (resignated tone)
+2015-05-04 12:55:55	-->	DevGrohl (~miguel@189-212-84-37.static.axtel.net) has joined #archlinux
+2015-05-04 12:56:28	wasamasa	Earnestly: I did glance over it
+2015-05-04 12:56:46	Arch-TK	wasamasa: It's the first track of the album "Pierogi"
+2015-05-04 12:56:52	Earnestly	wasamasa: I packaged it, was pretty easy.  Either way, their research actually seems credible
+2015-05-04 12:56:55	_mel_	anyone ever tried medit as replacement for gedit?
+2015-05-04 12:57:05	<--	narendraj9 (~narendraj@106.78.52.102) has quit (Quit: WeeChat 1.1.1)
+2015-05-04 12:57:06	Arch-TK	wasamasa: check the file tags
+2015-05-04 12:57:16	<--	dalarmmst (~dalarmmst@c83-250-95-50.bredband.comhem.se) has quit (Ping timeout: 240 seconds)
+2015-05-04 12:57:43	Namarrgon	ZAKhan: configured the bootloader and rebooted?
+2015-05-04 12:57:55	<--	SysGh0st (~sysghost@212.181.100.66) has quit (Quit: Konversation terminated!)
+2015-05-04 12:57:57	-->	Repentinus (~repentinu@cpc4-broo8-2-0-cust273.14-2.cable.virginm.net) has joined #archlinux
+2015-05-04 12:58:51	<--	orbifx (~orbifx@w-202.cust-20351.ip.static.uno.uk.net) has quit (Quit: WeeChat 1.1.1)
+2015-05-04 12:59:22	-->	zugbug (~zugbug@5751e4e6.skybroadband.com) has joined #archlinux
+2015-05-04 12:59:29	-->	jack_rabbit (~jack_rabb@c-50-148-112-117.hsd1.il.comcast.net) has joined #archlinux
+2015-05-04 12:59:41	-->	murray (~murray@p5DC4DEFD.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-04 12:59:47	<--	rabit (~rabit@12.237.93.126) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-05-04 13:00:01	<--	fredp__ (~fredp@unaffiliated/fredp) has quit
+2015-05-04 13:00:11	-->	beatboxchad (~cassady@50-206-82-151-static.hfc.comcastbusiness.net) has joined #archlinux
+2015-05-04 13:00:13	-->	mario-goulart (~user@email.parenteses.org) has joined #archlinux
+2015-05-04 13:00:50	-->	rabit (~rabit@12.237.93.126) has joined #archlinux
+2015-05-04 13:01:18	-->	Yeowang (Yeowang@unaffiliated/jellicent) has joined #archlinux
+2015-05-04 13:01:23	<--	JackWinter (~jack@vodsl-4965.vo.lu) has quit (Quit: Konversation terminated!)
+2015-05-04 13:01:27	<--	cmiles74 (~cmiles74@50.250.16.1) has quit (Ping timeout: 256 seconds)
+2015-05-04 13:01:42	zugbug	quick question, anyone here uses tdm? Got a question on it
+2015-05-04 13:01:43	-->	zsandu (~alex@82.84.85.5) has joined #archlinux
+2015-05-04 13:01:59	-->	ayylemayo (~ayylemayo@194.255.84.3) has joined #archlinux
+2015-05-04 13:02:08	-->	speakingcode (~unknown@173-12-244-146-memphis.hfc.comcastbusiness.net) has joined #archlinux
+2015-05-04 13:02:31	Namarrgon	just ask
+2015-05-04 13:02:34	holomorph	!ask
+2015-05-04 13:02:35	phrik	Don't ask to ask, if anyone is here or alive, or uses something. Just ask, and we'll get moving along. Thanks.
+2015-05-04 13:02:41	-->	loadsas (~loadsas@p2003006B0A12EB00541B9185DFA7CCB3.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-04 13:02:48	_mel_	i come from debian. i read that udev behavior changed and no name network devices different. can i change it back to eth0,wlan0 etc?
+2015-05-04 13:02:49	ZAKhan	Namarrgon: still same error 
+2015-05-04 13:03:11	<--	scientes (~scientes@unaffiliated/scientes) has quit (Ping timeout: 248 seconds)
+2015-05-04 13:03:11	ZAKhan	Namarrgon: it says "oh no somthing has gone wrong"
+2015-05-04 13:03:14	-->	caldog20 (~caldog20@66.199.31.1) has joined #archlinux
+2015-05-04 13:03:18	Namarrgon	ZAKhan: dmesg | grep microcode
+2015-05-04 13:03:18	zugbug	argh keep on forgetting. basically is there a way to switch the session after starting one? Currently I run i3 and want to start bspwm on a different tty, without logging off
+2015-05-04 13:03:36	holomorph	!oldiface
+2015-05-04 13:03:37	phrik	The predictable network naming logic may now be turned off with a new kernel command line switch: net.ifnames=0 (systemd>=199)
+2015-05-04 13:03:49	zsandu	Hey guys, it's been a while since I haven't used arch but I want to get back into it. Again here with some newbie questions: how exactly can one add in or use that keyserver option? https://bpaste.net/show/85c91693cdf9
+2015-05-04 13:03:50	phrik	Title: show at bpaste (at bpaste.net)
+2015-05-04 13:03:51	Earnestly	zugbug: Open a new tty, login, blah
+2015-05-04 13:04:10	<--	day (~yashi@unaffiliated/day) has quit (Ping timeout: 265 seconds)
+2015-05-04 13:04:19	zugbug	Earnestly: it doesn't send you to the selection ui when logging again second time, only on first, as far as I figured
+2015-05-04 13:04:33	Earnestly	What?
+2015-05-04 13:04:46	<--	rabit (~rabit@12.237.93.126) has quit (Max SendQ exceeded)
+2015-05-04 13:04:51	Namarrgon	zsandu: man gpg
+2015-05-04 13:04:53	-->	day (~yashi@unaffiliated/day) has joined #archlinux
+2015-05-04 13:04:59	Earnestly	Well, if you want to make things harder for yourself I guess
+2015-05-04 13:05:18	tomty89	zugbug: .xinitrc
+2015-05-04 13:05:28	Namarrgon	zsandu: either use the commandline option or add it to gpg.conf
+2015-05-04 13:05:29	tomty89	if you `startx`
+2015-05-04 13:05:31	-->	MonkZ (~monkz@unaffiliated/monkz) has joined #archlinux
+2015-05-04 13:05:33	ZAKhan	Namarrgon: http://hastebin.com/uxuzetemey.sm
+2015-05-04 13:05:34	phrik	Title: hastebin (at hastebin.com)
+2015-05-04 13:05:56	zugbug	tomty89: tdm asks to put itself into xinit, it starts the session itself
+2015-05-04 13:05:59	Namarrgon	ZAKhan: which bootloader are you using?
+2015-05-04 13:06:04	ZAKhan	grub
+2015-05-04 13:06:13	Namarrgon	ZAKhan: post your grub.cfg
+2015-05-04 13:06:16	<--	CorpusCallosum (~textual@92.44.25.116) has quit (Ping timeout: 240 seconds)
+2015-05-04 13:06:23	tomty89	_mel_: http://www.freedesktop.org/wiki/Software/systemd/PredictableNetworkInterfaceNames/
+2015-05-04 13:06:24	-->	dantob (~daniel@CPE-121-214-1-68.lnse3.win.bigpond.net.au) has joined #archlinux
+2015-05-04 13:06:24	phrik	Title: PredictableNetworkInterfaceNames (at www.freedesktop.org)
+2015-05-04 13:06:29	zsandu	Namarrgon, i've never done so before. does the link to the server require any special syntax when added in there?
+2015-05-04 13:06:35	<--	cfricke (~cfricke@unaffiliated/cfricke) has quit (Ping timeout: 265 seconds)
+2015-05-04 13:06:42	tomty89	_mel_: "solution" included
+2015-05-04 13:06:47	zugbug	eh I guess I can just make a copy xinitrc
+2015-05-04 13:06:58	-->	Popsikle-Work (~popsikle@rrcs-24-103-41-58.nyc.biz.rr.com) has joined #archlinux
+2015-05-04 13:07:14	Namarrgon	zsandu: /usr/share/doc/gnupg/examples/gpgconf.conf
+2015-05-04 13:07:14	_mel_	tomaw: thx!
+2015-05-04 13:07:24	<--	a3Dman (~3Dman@unaffiliated/a3dman) has quit (Max SendQ exceeded)
+2015-05-04 13:07:28	<--	gnoze5 (~gnoze5@a79-168-118-84.cpe.netcabo.pt) has quit (Ping timeout: 272 seconds)
+2015-05-04 13:07:32	<--	terlar (~terje@h-37-123-145-122.na.cust.bahnhof.se) has quit (Ping timeout: 256 seconds)
+2015-05-04 13:07:48	ZAKhan	Namarrgon: http://hastebin.com/ulerudayaz.coffee
+2015-05-04 13:07:49	phrik	Title: hastebin (at hastebin.com)
+2015-05-04 13:07:51	-->	Florin (~florin@188.26.249.127) has joined #archlinux
+2015-05-04 13:07:51	tomty89	zugbug: if you know about xinit that might be a way making more sense, instead of keep changing your .xinitrc
+2015-05-04 13:08:08	-->	JackWinter (~jack@vodsl-4965.vo.lu) has joined #archlinux
+2015-05-04 13:08:14	--	Florin is now known as Guest39099
+2015-05-04 13:08:38	<--	Guest39099 (~florin@188.26.249.127) has quit (Client Quit)
+2015-05-04 13:08:40	oats	oh god
+2015-05-04 13:08:43	oats	solarized dark
+2015-05-04 13:08:51	Namarrgon	ZAKhan: you have rebooted, right?
+2015-05-04 13:09:07	ZAKhan	yes i will reboot again just to recheck 
+2015-05-04 13:09:19	<--	kikas (~kikas@cable-227-148.cgates.lt) has quit
+2015-05-04 13:09:42	-->	fabian__ (~fabian@c-a014e455.030-536-73746f7.cust.bredbandsbolaget.se) has joined #archlinux
+2015-05-04 13:09:42	-->	kikas (~kikas@cable-227-148.cgates.lt) has joined #archlinux
+2015-05-04 13:10:03	<--	day (~yashi@unaffiliated/day) has quit (Ping timeout: 244 seconds)
+2015-05-04 13:10:12	<--	ParadoxSpiral (~ParadoxSp@p508BA6C2.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2015-05-04 13:10:21	<--	kikas (~kikas@cable-227-148.cgates.lt) has left #archlinux
+2015-05-04 13:10:23	<--	savantgarde_ (~savantgar@178.74.27.203) has quit (Remote host closed the connection)
+2015-05-04 13:10:32	<--	flavi0 (~anon@134.61.74.83) has quit (Quit: leaving)
+2015-05-04 13:10:38	<--	Popsikle (~popsikle@rrcs-24-103-41-58.nyc.biz.rr.com) has quit (Ping timeout: 272 seconds)
+2015-05-04 13:10:43	-->	cfricke (~cfricke@unaffiliated/cfricke) has joined #archlinux
+2015-05-04 13:10:50	tomty89	dmesg | grep microcode
+2015-05-04 13:10:52	-->	rettori_argh (rettori@nat/redhat/x-bvewkhxxoaythrvt) has joined #archlinux
+2015-05-04 13:10:52	--	rettori_argh is now known as rettori
+2015-05-04 13:10:56	<--	zugbug (~zugbug@5751e4e6.skybroadband.com) has quit (Quit: Lost terminal)
+2015-05-04 13:11:03	-->	a3Dman (~3Dman@unaffiliated/a3dman) has joined #archlinux
+2015-05-04 13:11:06	Namarrgon	tomty89: http://hastebin.com/raw/uxuzetemey
+2015-05-04 13:11:27	ZAKhan	Namarrgon: yes it works . thanks .. what was the issue can you tell me please?
+2015-05-04 13:11:40	-->	sammyf (~sammyf@unaffiliated/sammyf) has joined #archlinux
+2015-05-04 13:11:53	<--	Zupoman (~mistrzmag@unaffiliated/zupoman) has quit (Read error: Connection reset by peer)
+2015-05-04 13:11:56	Namarrgon	ZAKhan: your broken cpu needed a microcode update, google for the tsx bug in haswell cpus
+2015-05-04 13:12:03	<--	sammyf (~sammyf@unaffiliated/sammyf) has quit (Read error: Connection reset by peer)
+2015-05-04 13:12:22	ZAKhan	Namarrgon: thanks ... i will check it .. 
+2015-05-04 13:12:31	<--	fabian__ (~fabian@c-a014e455.030-536-73746f7.cust.bredbandsbolaget.se) has left #archlinux
+2015-05-04 13:12:41	<--	alexander_alzate (~alexander@191.98.57.15) has quit (Ping timeout: 246 seconds)
+2015-05-04 13:12:42	-->	gsingh93 (~gulshan@c-68-55-60-95.hsd1.mi.comcast.net) has joined #archlinux
+2015-05-04 13:13:01	-->	prinsen (~fabian@c-a014e455.030-536-73746f7.cust.bredbandsbolaget.se) has joined #archlinux
+2015-05-04 13:13:05	prinsen	I experience a strange behaviour with netctl and multiple interfaces. I have created naming rules as stated in the wiki, and the devices get correct names. But one of the netctl profiles always fails saying that net-subsystem timed out until i reenable the profile
+2015-05-04 13:13:16	-->	free_beard (~mircea@unaffiliated/free-beard/x-6152516) has joined #archlinux
+2015-05-04 13:13:20	-->	Zupoman (~Zupoman@unaffiliated/zupoman) has joined #archlinux
+2015-05-04 13:13:24	-->	Laerten (~Laerten@host243-188-dynamic.50-82-r.retail.telecomitalia.it) has joined #archlinux
+2015-05-04 13:13:41	-->	bosnjak (~bosnjak@dh207-34-154.xnet.hr) has joined #archlinux
+2015-05-04 13:13:45	<--	camerin (~camerin@elite.bshellz.net) has quit (Ping timeout: 240 seconds)
+2015-05-04 13:14:05	-->	Cirrus_Minor (~Cirrus_Mi@CAcert/Cirrus-Minor) has joined #archlinux
+2015-05-04 13:14:11	tomty89	Namarrgon: that must be before the ucode then
+2015-05-04 13:14:21	<--	rotcpy (~rotcpy@carbon.cesnet.cz) has left #archlinux
+2015-05-04 13:14:36	tomty89	!next
+2015-05-04 13:14:37	phrik	Another satisfied customer! NEXT!
+2015-05-04 13:14:57	<--	justin8 (~quassel@14-202-188-46.tpgi.com.au) has quit (Ping timeout: 240 seconds)
+2015-05-04 13:15:01	-->	baldfat (~marc@unaffiliated/mtelesha) has joined #archlinux
+2015-05-04 13:15:16	holomorph	!netctl
+2015-05-04 13:15:17	<--	jottr (~jottr@unaffiliated/jottr) has quit (Ping timeout: 265 seconds)
+2015-05-04 13:15:17	phrik	Users having issues with netctl are advised to try alternatives such as systemd-networkd, NetworkManager, or connman.
+2015-05-04 13:15:20	<--	skunkos (~Martin_Ro@94-74-207-55.client.rionet.cz) has quit (Read error: Connection reset by peer)
+2015-05-04 13:15:29	Namarrgon	!nextctl
+2015-05-04 13:15:32	Namarrgon	aww
+2015-05-04 13:15:34	<--	vicenteH (~user@195.235.96.150) has quit (Ping timeout: 255 seconds)
+2015-05-04 13:15:42	tomty89	!badctl
+2015-05-04 13:15:50	-->	bizarro_1 (~bizarro_1@94.Red-88-14-185.dynamicIP.rima-tde.net) has joined #archlinux
+2015-05-04 13:15:56	<--	typh00nz (~typh00nz@pc185-239.solaris.ds.polsl.pl) has quit (Quit: Leaving)
+2015-05-04 13:16:02	kremlin-	!netctl
+2015-05-04 13:16:02	phrik	Users having issues with netctl are advised to try alternatives such as systemd-networkd, NetworkManager, or connman.
+2015-05-04 13:16:05	ZAKhan	Namarrgon: can you tell me how to switch form gnome to plasma .. i have installed plasma already 
+2015-05-04 13:16:18	-->	camerin (hoax@elite.bshellz.net) has joined #archlinux
+2015-05-04 13:16:20	Namarrgon	ZAKhan: which DM?
+2015-05-04 13:16:22	-->	skunkos (~martin@94-74-207-55.client.rionet.cz) has joined #archlinux
+2015-05-04 13:16:29	ZAKhan	KDE plasma
+2015-05-04 13:16:31	tomty89	there's a button in gdm
+2015-05-04 13:16:33	-->	day (~yashi@unaffiliated/day) has joined #archlinux
+2015-05-04 13:16:56	Namarrgon	yes but which dm? gdm? sddm? (is kdm still a thing?)
+2015-05-04 13:17:03	-->	usrc (~Thunderbi@193.170.133.137) has joined #archlinux
+2015-05-04 13:17:21	ZAKhan	Namarrgon: i have no idea 
+2015-05-04 13:17:25	colbyf	question, when building your Arch distro up, do most people end up with everything on it anyways? 
+2015-05-04 13:17:56	colbyf	(controversial question lol)
+2015-05-04 13:18:03	holomorph	define everything
+2015-05-04 13:18:15	<--	k3asd` (~k3asd@unaffiliated/k3asd/x-0305612) has quit (Ping timeout: 276 seconds)
+2015-05-04 13:18:28	holomorph	i'd call it a meaningless question, but w/e
+2015-05-04 13:18:31	colbyf	pretty close to ubuntu/mint that sort of thing
+2015-05-04 13:18:39	Ingar	colbyf: after a while, you know what stuff you need. I can't be bothered with installing everything
+2015-05-04 13:18:40	Namarrgon	ZAKhan: well, there is no DM by default. which one did you set up?
+2015-05-04 13:18:43	tomty89	pacman -S $(pacman -Qqs)
+2015-05-04 13:18:49	-->	kinghol (~markus@dslb-088-071-012-077.088.071.pools.vodafone-ip.de) has joined #archlinux
+2015-05-04 13:19:07	ZAKhan	Namarrgon: got it thanks 
+2015-05-04 13:19:22	<--	rtb (~rtb@unaffiliated/rtb) has quit (Quit: Leaving)
+2015-05-04 13:19:22	-->	Ebcore (~Ebcore@unaffiliated/ebcore) has joined #archlinux
+2015-05-04 13:20:00	<--	kinghol (~markus@dslb-088-071-012-077.088.071.pools.vodafone-ip.de) has quit (Client Quit)
+2015-05-04 13:20:00	colbyf	coll was just curious, how others built up there system
+2015-05-04 13:20:09	colbyf	coll/cool
+2015-05-04 13:20:13	<--	sebastianlutter (~sebastian@pd95cdee4.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2015-05-04 13:20:28	<--	semeion (~semeion@unaffiliated/semeion) has quit (Quit: WeeChat 1.1.1)
+2015-05-04 13:20:32	<--	Namarrgon (~glei@55d408f1.access.ecotel.net) has quit (Remote host closed the connection)
+2015-05-04 13:20:34	holomorph	their
+2015-05-04 13:20:38	<--	gimbel (~seb@p4FC84E32.dip0.t-ipconnect.de) has quit (Quit: Leaving.)
+2015-05-04 13:20:39	<--	ikb (~ikb@151.54.111.158) has quit (Quit: Konversation terminated!)
+2015-05-04 13:21:22	-->	Cust0sL1men (~CustosLim@unaffiliated/cust0slim3n) has joined #archlinux
+2015-05-04 13:21:35	GodGinrai	colbyf: define "everything"
+2015-05-04 13:21:41	<--	dantob (~daniel@CPE-121-214-1-68.lnse3.win.bigpond.net.au) has quit (Quit: dantob)
+2015-05-04 13:21:47	GodGinrai	oh wait
+2015-05-04 13:21:49	-->	leon112 (~leon112@95.161.239.75) has joined #archlinux
+2015-05-04 13:21:50	qubitnerd	holomorph you're grammar is good 
+2015-05-04 13:21:53	GodGinrai	just saw that holomorph said the same thing
+2015-05-04 13:22:07	-->	justin8 (~quassel@14-202-188-46.tpgi.com.au) has joined #archlinux
+2015-05-04 13:22:34	--	pmattern_afk is now known as pmattern
+2015-05-04 13:22:36	<--	giab (~giard_b@ip-176-146.evc.net) has quit (Ping timeout: 240 seconds)
+2015-05-04 13:22:46	colbyf	I get it, it is a pointless question, cause you built it how you want, and if you want "everything" you do it.
+2015-05-04 13:22:49	GodGinrai	colbyf: I would say that most people on Arch tend to have a lot of different software than is default on ubuntu/mint
+2015-05-04 13:22:57	-->	Namarrgon (~Namarrgon@55d408f1.access.ecotel.net) has joined #archlinux
+2015-05-04 13:23:13	<--	tomty89 (~user@014199149146.ctinets.com) has quit (Quit: ERC (IRC client for Emacs 24.5.1))
+2015-05-04 13:23:15	-->	strayArch (~strayArch@50.247.183.10) has joined #archlinux
+2015-05-04 13:23:49	<--	diegoviola (~diego@unaffiliated/diegoviola) has quit (Ping timeout: 264 seconds)
+2015-05-04 13:24:13	-->	diegoviola (~diego@177.103.109.16) has joined #archlinux
+2015-05-04 13:24:14	-->	ParadoxSpiral (~ParadoxSp@p508B951A.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-04 13:24:20	<--	Aziroshin (~aziroshin@83.150.6.80) has quit (Read error: Connection reset by peer)
+2015-05-04 13:24:25	-->	kuia (~kuia@cpc6-lewi16-2-0-cust624.2-4.cable.virginm.net) has joined #archlinux
+2015-05-04 13:25:01	<--	kuia (~kuia@cpc6-lewi16-2-0-cust624.2-4.cable.virginm.net) has left #archlinux
+2015-05-04 13:25:02	<--	ParadoxSpiral (~ParadoxSp@p508B951A.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2015-05-04 13:25:04	<--	Binero (~Binero@2a02:1810:952f:9300:c646:19ff:fea3:5c76) has quit (Quit: Binero)
+2015-05-04 13:25:14	<--	Jon-- (~Jon--@50.72.69.3) has quit (Ping timeout: 245 seconds)
+2015-05-04 13:25:28	<--	aajjbb (~aajjbb@177.193.226.200) has quit (Ping timeout: 255 seconds)
+2015-05-04 13:25:37	-->	Kylix (~mario@dslb-088-066-066-003.088.066.pools.vodafone-ip.de) has joined #archlinux
+2015-05-04 13:25:38	-->	manuka (~kuia@cpc6-lewi16-2-0-cust624.2-4.cable.virginm.net) has joined #archlinux
+2015-05-04 13:25:56	-->	chandan (~chandan@122.172.16.94) has joined #archlinux
+2015-05-04 13:26:32	<--	proudzhu (~proudzhu@116.24.148.228) has quit (Ping timeout: 264 seconds)
+2015-05-04 13:26:34	<--	ZAKhan (~ZAKhan@2.49.86.230) has quit
+2015-05-04 13:27:10	<--	DogPolice (~RJones@unaffiliated/rjones) has quit (Ping timeout: 252 seconds)
+2015-05-04 13:27:39	-->	cmiles74 (~cmiles74@24-151-139-144.dhcp.oxfr.ma.charter.com) has joined #archlinux
+2015-05-04 13:27:54	-->	Guest26 (~textual@93-50-233-80.ip154.fastwebnet.it) has joined #archlinux
+2015-05-04 13:28:16	<--	badagent (~badagent@p5DDF5288.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2015-05-04 13:28:37	-->	murkx (~st@unaffiliated/murkx) has joined #archlinux
+2015-05-04 13:29:16	-->	Quicken2k (~Q2K@23.91.129.118) has joined #archlinux
+2015-05-04 13:29:29	-->	MrPeacock (~MrPeacock@p57940147.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-04 13:29:30	-->	jottr (~jottr@unaffiliated/jottr) has joined #archlinux
+2015-05-04 13:29:36	-->	chandan_ (~chandan@122.172.16.94) has joined #archlinux
+2015-05-04 13:30:12	murkx	hi, i have problems using netctl-auto, it shows no profile on `netctl-auto list`, although netctl list shows my profiles, do i have to link them somewhere?
+2015-05-04 13:30:19	holomorph	!netctl
+2015-05-04 13:30:20	phrik	Users having issues with netctl are advised to try alternatives such as systemd-networkd, NetworkManager, or connman.
+2015-05-04 13:30:21	-->	wget (~wget@unaffiliated/wget) has joined #archlinux
+2015-05-04 13:30:32	holomorph	today is netctl day, it seems
+2015-05-04 13:30:45	<--	chandan (~chandan@122.172.16.94) has quit (Ping timeout: 265 seconds)
+2015-05-04 13:30:51	GodGinrai	holomorph: the most feared day of all
+2015-05-04 13:30:56	murkx	oh, so i'm not the first one? ^^, what would you recommend?
+2015-05-04 13:31:07	-->	Aeterne (~quassel@1x-193-157-206-44.uio.no) has joined #archlinux
+2015-05-04 13:31:17	zsandu	I literally cannot figure out how to add in a keyserver (https://pgp.mit.edu/) and search for this key 1EB2638FF56C0C53 . Can someone please just show me how the commandline syntax must be built?
+2015-05-04 13:31:18	phrik	Title: MIT PGP Key Server (at pgp.mit.edu)
+2015-05-04 13:31:34	Arch-TK	"the commandline syntax must be built"
+2015-05-04 13:31:36	Arch-TK	what?
+2015-05-04 13:31:44	GodGinrai	murkx: I'd recommend anything that phrik just spit out
+2015-05-04 13:31:50	<--	cfricke (~cfricke@unaffiliated/cfricke) has quit (Quit: leaving)
+2015-05-04 13:31:52	Arch-TK	zsandu: read the gnupg manpage
+2015-05-04 13:31:53	murkx	wow, thx ;)
+2015-05-04 13:31:54	-->	bitschift (~bitschift@128-193-154-2.ptpg.oregonstate.edu) has joined #archlinux
+2015-05-04 13:32:07	murkx	i'll go with NetworkManager then, thx :)
+2015-05-04 13:32:07	-->	cfricke (~cfricke@unaffiliated/cfricke) has joined #archlinux
+2015-05-04 13:32:18	grawity	zsandu: for pacman, or for your regular keyring?
+2015-05-04 13:32:28	<--	bellbreaker (~husker@82.211.210.239) has quit (Quit: leaving)
+2015-05-04 13:32:28	-->	mtn (~mtn@dpc6744164088.direcpc.com) has joined #archlinux
+2015-05-04 13:32:50	<--	diegoviola (~diego@177.103.109.16) has quit (Changing host)
+2015-05-04 13:32:50	-->	diegoviola (~diego@unaffiliated/diegoviola) has joined #archlinux
+2015-05-04 13:32:54	zsandu	grawity, I am trying to install come aur package but it's telling me some key is missing. I guess it's for pacman
+2015-05-04 13:32:58	<--	dguitarbite (~dguitarbi@unaffiliated/dguitarbite) has quit (Quit: Leaving)
+2015-05-04 13:33:00	zsandu	some aur*
+2015-05-04 13:33:01	Quicken2k	kdm won't run for some reason here is the Xorg Log https://dpaste.de/ughV any ideas?
+2015-05-04 13:33:02	phrik	Title: dpaste.de: Snippet #313804 (at dpaste.de)
+2015-05-04 13:33:02	grawity	it's not
+2015-05-04 13:33:04	-->	sco` (~ross@unaffiliated/sco/x-3425046) has joined #archlinux
+2015-05-04 13:33:08	-->	Aziroshin (~aziroshin@83.150.6.80) has joined #archlinux
+2015-05-04 13:33:16	<--	rowi (znc@pD9EEDF8B.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2015-05-04 13:33:36	zsandu	Damn I feel so useless. I literally have no idea what I'm doing or dealing with.
+2015-05-04 13:33:36	Arch-TK	zsandu: not for pacman buddy
+2015-05-04 13:33:47	grawity	gpg --recv-key 1EB2638FF56C0C53
+2015-05-04 13:34:00	-->	muhkuh (~muhkuh@p579D30C7.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-04 13:34:05	zsandu	gpg: keyserver receive failed: No keyserver available
+2015-05-04 13:34:07	-->	rowi (~rowi@p20030057FF042600BA27EBFFFEF14B65.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-04 13:34:12	Arch-TK	zsandu: man gpg
+2015-05-04 13:34:13	zsandu	I tried that a while ago
+2015-05-04 13:34:15	bitschift	oops sorry about that
+2015-05-04 13:34:23	<--	zegervdv (~zegervdv@nata231.ugent.be) has quit (Ping timeout: 246 seconds)
+2015-05-04 13:34:29	<--	Guest26 (~textual@93-50-233-80.ip154.fastwebnet.it) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-05-04 13:34:29	zsandu	how hell does one use that --keyserver option I cannot understand.
+2015-05-04 13:34:40	<--	muhkuh (~muhkuh@p579D30C7.dip0.t-ipconnect.de) has quit (Client Quit)
+2015-05-04 13:34:55	GrapeApe	how hell, indeed!
+2015-05-04 13:34:57	GrapeApe	:)
+2015-05-04 13:35:04	-->	pinkiesOut (~user@75-22-119-19.lightspeed.wevloh.sbcglobal.net) has joined #archlinux
+2015-05-04 13:35:15	grawity	--keyserver *might* be broken in current gnupg
+2015-05-05 12:00:23	--	irc: disconnected from server
+2015-05-05 12:00:47	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #archlinux
+2015-05-05 12:00:47	--	Topic for #archlinux is "Welcome to Arch Linux World Domination, Inc. <+> Read: https://bbs.archlinux.org/viewtopic.php?id=57205 <+> Be patient with those willing to learn and be kind to those willing to teach. <+> Hubble is 25, all hail our science overlord: https://www.youtube.com/watch?v=t2oiaa1tdRE"
+2015-05-05 12:00:47	--	Topic set by Mion on Thu, 23 Apr 2015 16:00:38
+2015-05-05 12:00:49	--	Channel #archlinux: 2079 nicks (2 ops, 0 voices, 2077 normals)
+2015-05-05 12:00:49	--	Channel created on Sun, 15 Feb 2004 00:08:31
+2015-05-05 12:00:51	-->	CCfan (~ccfan@78.56.154.238) has joined #archlinux
+2015-05-05 12:00:57	wolter	Namarrgon: useradd -m -G wheel -s /bin/bash wolter
+2015-05-05 12:01:01	-->	gragh (~E877408@auth47-250.fi.muni.cz) has joined #archlinux
+2015-05-05 12:01:07	tomty89	red-lichtie: or install a directory and copy all the sound file only
+2015-05-05 12:01:13	red-lichtie	tomty89: I'm new to Arch so it'll take a few weeks to get up to speed
+2015-05-05 12:01:15	-->	harha_ (harha_@d639.ip16.netikka.fi) has joined #archlinux
+2015-05-05 12:01:16	<--	gwash (~gwash@197.38.55.20) has quit (Ping timeout: 244 seconds)
+2015-05-05 12:01:21	-->	iksf (~iksf@host86-152-140-70.range86-152.btcentralplus.com) has joined #archlinux
+2015-05-05 12:01:23	wolter	But with zsh instead
+2015-05-05 12:01:39	-->	gwash (~gwash@197.38.53.80) has joined #archlinux
+2015-05-05 12:01:50	Namarrgon	wolter: grep zsh /etc/shells
+2015-05-05 12:02:02	-->	tomracing79 (~smuxi@54693A20.cm-12-2a.dynamic.ziggo.nl) has joined #archlinux
+2015-05-05 12:02:03	-->	HNIakahaven (~Haven@nat7335.hnt.ru) has joined #archlinux
+2015-05-05 12:02:15	<--	prinsen (~fabian@host-95-192-172-95.mobileonline.telia.com) has quit (Ping timeout: 256 seconds)
+2015-05-05 12:02:41	<--	ptrxyz (~json@2a00:1398:4:0:ea39:35ff:fe59:5c98) has quit (Quit: Leaving.)
+2015-05-05 12:02:50	red-lichtie	tomty89: I already copied them out to /usr/share/sounds/mint-artwork-cinnamon on my system. Is making a "partial" AUR of the upstream OK?
+2015-05-05 12:03:09	wolter	No output. Changing my shell to  bash worked
+2015-05-05 12:03:19	Namarrgon	you don't have zsh installed?
+2015-05-05 12:03:20	wolter	How do I enable zsh?
+2015-05-05 12:03:21	SysGh0st	How do I change which file manager that is the default in x.org? Every time an application calls the default app for opening directories, it opens an mp3 tag software. I guess I have to find the proper mime for this, but where?
+2015-05-05 12:03:29	red-lichtie	And calling it "mint-audio-cinnamon" or something?
+2015-05-05 12:03:38	red-lichtie	Not sure on the conventions
+2015-05-05 12:03:50	-->	nss357 (~x@60.54.50.64) has joined #archlinux
+2015-05-05 12:04:01	grawity	SysGh0st: xdg-mime or something, see wiki article
+2015-05-05 12:04:06	tomty89	red-lichtie: when i said cp/mv i didn't mean by doing it in the actual system
+2015-05-05 12:04:13	-->	avinashrbhat (~Avinash@106.51.242.20) has joined #archlinux
+2015-05-05 12:04:14	grawity	SysGh0st: specifically for the "inode/directory" pseudo-mimetype
+2015-05-05 12:04:32	tomty89	red-lichtie: but from $srcdir to $pkgdir in a PKGBUILD
+2015-05-05 12:04:41	wolter	Ah I thought I had installed it but I only copied some files over from the install media, I need to do it the pacman way
+2015-05-05 12:04:46	-->	admin| (~admin@37.254.215.157) has joined #archlinux
+2015-05-05 12:04:59	MrElendig	what files did you copy?
+2015-05-05 12:05:04	tomty89	red-lichtie: if you want to manage those files as a package, you have to undo what you've done 
+2015-05-05 12:05:05	<--	jqs7 (~jqs7@125.90.49.166) has quit (Ping timeout: 256 seconds)
+2015-05-05 12:05:13	<--	ashnur (~rak@unaffiliated/ashnur) has quit (Read error: Connection reset by peer)
+2015-05-05 12:05:21	<--	supersym (~supersym@5418F772.cm-5-1d.dynamic.ziggo.nl) has quit (Ping timeout: 240 seconds)
+2015-05-05 12:05:25	tomty89	red-lichtie: then write a PKGBUILD and make a package, then install it
+2015-05-05 12:05:25	<--	Smx (Elite8556@gateway/shell/elitebnc/x-deworsyycxkwwxgz) has quit (Excess Flood)
+2015-05-05 12:05:26	red-lichtie	tomty89: I haven't looked into making a PKGBUILD yet, that will be next
+2015-05-05 12:05:36	-->	ashnur (~rak@unaffiliated/ashnur) has joined #archlinux
+2015-05-05 12:05:41	red-lichtie	I just wanted to get my sounds working :-)
+2015-05-05 12:06:00	SysGh0st	grawity: Ah. right.. xdg-mime might be able to do the job, and yes. it's inode/directory that is set to prefer my MP3 tagging software in first hand. (How did that happen???)
+2015-05-05 12:06:15	red-lichtie	I'm suprised that it isn't part of the core cinnamon installation tbh
+2015-05-05 12:06:22	<--	camerin (~camerin@elite.bshellz.net) has quit (Ping timeout: 272 seconds)
+2015-05-05 12:06:25	-->	Cthulu201 (~Cthulu201@unaffiliated/cthulu201) has joined #archlinux
+2015-05-05 12:06:33	tomty89	i'm suprised how crazy cinnamon is lol
+2015-05-05 12:06:50	MrElendig	cinnamon devs only cares about mint
+2015-05-05 12:06:51	<--	marsue (~markus@p578FE5D1.dip0.t-ipconnect.de) has quit (Quit: leaving)
+2015-05-05 12:07:18	<--	lokesh (~lokesh@117.195.225.91) has quit (Read error: Connection reset by peer)
+2015-05-05 12:07:24	tomty89	hence mint is crazy as well :P
+2015-05-05 12:07:29	-->	Smx (Elite8556@gateway/shell/elitebnc/x-kgkduykonppxotem) has joined #archlinux
+2015-05-05 12:07:43	tomty89	nvm
+2015-05-05 12:07:51	<--	HuMu (~Huub@212.168.182.206) has quit (Remote host closed the connection)
+2015-05-05 12:07:57	<--	poljar1 (~poljar@89-172-27-110.adsl.net.t-com.hr) has quit (Quit: WeeChat 1.1)
+2015-05-05 12:08:05	red-lichtie	It looks as though it was historically added to the existing "theme" stuff at some point, for that special "mint" flavour
+2015-05-05 12:08:07	<--	proshot (~agentsmit@5354A239.cm-6-5c.dynamic.ziggo.nl) has quit (Ping timeout: 272 seconds)
+2015-05-05 12:08:15	demize	Earnestly: Before when you asked about why it was base64, did you mean instead of hex ar just instead of leaving it unbase64'd?
+2015-05-05 12:08:16	red-lichtie	tomty89: agreed :-D
+2015-05-05 12:08:25	demize	Actually, the answer is the same I guess
+2015-05-05 12:08:26	tomty89	red-lichtie: if you don't want to make a package yet, i don't suggest you moving all stuff in the package to your system
+2015-05-05 12:08:30	-->	namorzyn (~a@c-dc6fe555.034-191-6e6b701.cust.bredbandsbolaget.se) has joined #archlinux
+2015-05-05 12:08:41	-->	ZeReEbRiL (~ZeReEbRiL@192.237.162.92) has joined #archlinux
+2015-05-05 12:08:44	tomty89	red-lichtie: cause it will be a hassle to remove them
+2015-05-05 12:08:46	<--	eeelvis (~elvis@x1-6-2c-b0-5d-d3-e8-a9.cpe.webspeed.dk) has quit (Quit: leaving)
+2015-05-05 12:09:04	Earnestly	demize: Leaving it unbased ;p
+2015-05-05 12:09:05	tomty89	red-lichtie: so if it will work once the oga/ogg is there, then only copy those audio file
+2015-05-05 12:09:10	<--	dreams (~dreams@host-92-22-182-197.as13285.net) has left #archlinux ("WeeChat 1.1.1")
+2015-05-05 12:09:12	<--	Hwkiller (~Hwkiller@cpe-72-178-129-167.hot.res.rr.com) has quit (Ping timeout: 250 seconds)
+2015-05-05 12:09:15	red-lichtie	tomty89: It's a simple "rm -r" as I only copied the oga files
+2015-05-05 12:09:24	demize	Earnestly: Basically, it doesn't do a normal hash like you'd get from sha256sums
+2015-05-05 12:09:27	-->	shinnya (~shinnya@23.22.100.220.dy.bbexcite.jp) has joined #archlinux
+2015-05-05 12:09:34	tomty89	red-lichtie: so does it work now?
+2015-05-05 12:09:37	<--	dambuster (~matt@62.172.74.98) has quit (Quit: Konversation terminated!)
+2015-05-05 12:09:42	Earnestly	demize: Evidently now
+2015-05-05 12:09:44	demize	Earnestly: with md5 they used a hexdigest, now with sha256 they just use a regular digest
+2015-05-05 12:09:49	-->	camerin (hoax@elite.bshellz.net) has joined #archlinux
+2015-05-05 12:09:51	demize	Earnestly: which is binary.
+2015-05-05 12:10:08	demize	And the base64'd digest is shorter than the hexdigest would be
+2015-05-05 12:10:09	red-lichtie	tomty89: Yes, unpacked and manually copied the files already to where I thought they should be
+2015-05-05 12:10:29	demize	6b8e8635eada1105c9d8563a962bae9d1315b00f2b8683ad3edecf15c8702de8 vs 
+2015-05-05 12:10:31	demize	a46GNeraEQXJ2FY6liuunRMVsA8rhoOtPt7PFchwLeg
+2015-05-05 12:10:32	-->	Zum0 (~bsuj@x1-6-10-0d-7f-f9-81-72.cpe.webspeed.dk) has joined #archlinux
+2015-05-05 12:11:02	tomty89	red-lichtie: but do you hear them? :P
+2015-05-05 12:11:07	<--	mattkrea (~textual@harbortouch04.h.subnet.rcn.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-05-05 12:11:20	red-lichtie	tomty89: Yes :P
+2015-05-05 12:11:21	-->	Tarsle (62f821a3@gateway/web/freenode/ip.98.248.33.163) has joined #archlinux
+2015-05-05 12:11:23	SysGh0st	This is strange: "xdg-mime query default inode/directory" gives: dolphin.desktop. As expected. But whener any java application calls for the default folder browser, the MP3 tagging software opens instead.
+2015-05-05 12:11:45	red-lichtie	I had to point to each one in the sound settings first though
+2015-05-05 12:11:49	tomty89	red-lichtie: well, that's a good news
+2015-05-05 12:11:54	-->	bluebrain (~bluebrain@abwu195.neoplus.adsl.tpnet.pl) has joined #archlinux
+2015-05-05 12:11:56	-->	Cahu (~cahu@stm59-3-78-248-13-186.fbx.proxad.net) has joined #archlinux
+2015-05-05 12:11:58	tomty89	wat
+2015-05-05 12:12:01	<--	sanga (~Thunderbi@59.89.136.169) has quit (Quit: sanga)
+2015-05-05 12:12:04	<--	irgendwie (~alex@182.214.eduroam.dynamic.rbg.tum.de) has quit (Remote host closed the connection)
+2015-05-05 12:12:16	tomty89	red-lichtie: no default path mentioned in the settings?
+2015-05-05 12:13:00	<--	Tarsle (62f821a3@gateway/web/freenode/ip.98.248.33.163) has left #archlinux
+2015-05-05 12:13:07	-->	infides (~infides@dslb-178-002-052-218.178.002.pools.vodafone-ip.de) has joined #archlinux
+2015-05-05 12:13:14	red-lichtie	Default path is /usr/share/mint-artwork-cinnamon/sounds
+2015-05-05 12:13:27	polyzen	any archhaskell people here? looking to install gitit. the wiki page for AH says it should be in haskell-happstack, but it doesn't seem to be there
+2015-05-05 12:13:29	-->	HarbingTarbl (62f821a3@gateway/web/freenode/ip.98.248.33.163) has joined #archlinux
+2015-05-05 12:13:35	HarbingTarbl	Is there a way to install packages from a group that are missing? For example 'pacman -S base' but only install whatever is missing?
+2015-05-05 12:13:40	-->	helasraizam (~helasraiz@nagini-89.dynamic.rpi.edu) has joined #archlinux
+2015-05-05 12:13:45	polyzen	also, i expected cabal and ghc to be packaged in the official repos
+2015-05-05 12:13:52	-->	bakednotfried (~Yeezus@unaffiliated/bakednotfried) has joined #archlinux
+2015-05-05 12:13:55	tomty89	red-lichtie: you didn't put them there?
+2015-05-05 12:14:00	red-lichtie	tomty89: Sorry, I misunderstood you, no there wasn't but that might have been because the files were missing
+2015-05-05 12:14:02	<--	dguitarbite (dguitarbit@nat/novell/x-szwxywqsnavqdzel) has quit (Quit: Leaving)
+2015-05-05 12:14:07	tomty89	oh
+2015-05-05 12:14:17	tomty89	SIGH
+2015-05-05 12:14:25	<--	bakednotfried (~Yeezus@unaffiliated/bakednotfried) has quit (Max SendQ exceeded)
+2015-05-05 12:14:26	<--	Lihis (~Lihis@kone98131177.ippnet.fi) has quit (Remote host closed the connection)
+2015-05-05 12:14:30	red-lichtie	tomty89: I put them in /usr/share/sounds/mint-artwork-cinnamon
+2015-05-05 12:14:31	-->	Fizzlerr (~fizzlerr@70-127-42-102.res.bhn.net) has joined #archlinux
+2015-05-05 12:14:37	<--	LMNOP__ (~LMNOP@unaffiliated/ea08ba8f51) has quit (Read error: Connection reset by peer)
+2015-05-05 12:14:47	tomty89	i never liked those gnome forks anyway
+2015-05-05 12:15:00	-->	LMNOP__ (~LMNOP@unaffiliated/ea08ba8f51) has joined #archlinux
+2015-05-05 12:15:24	red-lichtie	cinnamon is a eally nice integration, I think it gets everything right
+2015-05-05 12:15:27	grawity	they never liked you either
+2015-05-05 12:15:40	<--	Shinryuu (~shn@85-76-168-188-nat.elisa-mobile.fi) has quit (Quit: bowling da boners)
+2015-05-05 12:15:46	red-lichtie	s/eally/really/
+2015-05-05 12:15:57	-->	Lihis (~Lihis@kone98131177.ippnet.fi) has joined #archlinux
+2015-05-05 12:15:58	tomty89	i'm used to be hated
+2015-05-05 12:16:27	Fizzlerr	can anyone tell me if the debian package "Python-opencv" is equivelant to the arch package "opencv"? many thanks.
+2015-05-05 12:16:41	-->	bakednotfried (~Yeezus@unaffiliated/bakednotfried) has joined #archlinux
+2015-05-05 12:16:45	MrElendig	-Ql it and see what it contins
+2015-05-05 12:16:46	tomty89	doesn't sound so
+2015-05-05 12:16:49	MrElendig	or use the web interface
+2015-05-05 12:16:57	<--	gsingh93 (~gulshan@c-68-55-60-95.hsd1.mi.comcast.net) has quit (Ping timeout: 264 seconds)
+2015-05-05 12:16:59	holomorph	Fizzlerr: pacman -Ss opencv
+2015-05-05 12:17:28	holomorph	oh. nvm
+2015-05-05 12:17:30	yuvadm	can systemd user units be completely daemonized? i.e remain active even if user has logged out?
+2015-05-05 12:17:33	<--	Chais (~Chais@unaffiliated/chais) has quit (Ping timeout: 256 seconds)
+2015-05-05 12:18:00	yuvadm	or do they have to be system units for that?
+2015-05-05 12:18:16	HarbingTarbl	Anyone have experience with OVH? Using an arch server from them and it seems all kinds of screwed up.
+2015-05-05 12:18:29	tomty89	maybe opencv here is the superset
+2015-05-05 12:18:30	-->	hyo0301 (~weechat@c-72d4e253.55-1-64736c10.cust.bredbandsbolaget.se) has joined #archlinux
+2015-05-05 12:18:30	MrElendig	how is it screwed up?
+2015-05-05 12:18:41	-->	sigmundv (~sigmundv@178.167.176.228.threembb.ie) has joined #archlinux
+2015-05-05 12:18:43	 *	MrElendig bets they are just giving you a 4 year old arch install
+2015-05-05 12:18:50	<--	jsrn_ (~jsrn@host213-120-101-76.in-addr.btopenworld.com) has quit (Quit: Leaving)
+2015-05-05 12:18:50	<--	toombs (~eric@d67-193-154-192.home3.cgocable.net) has quit (Ping timeout: 276 seconds)
+2015-05-05 12:18:54	-->	proshot (~agentsmit@5354A239.cm-6-5c.dynamic.ziggo.nl) has joined #archlinux
+2015-05-05 12:18:56	hyo0301	Yo
+2015-05-05 12:18:58	tomty89	sigh python2
+2015-05-05 12:19:14	HarbingTarbl	Missing ldns, missing half the packages in base. It has a bunch of packages installed (files present in the FS) without a record in pacman that they're actually installed.
+2015-05-05 12:19:19	tomty89	Fizzlerr: https://www.archlinux.org/packages/extra/x86_64/opencv/files/
+2015-05-05 12:19:20	phrik	Title: Arch Linux - opencv 2.4.10-2 (x86_64) - File List (at www.archlinux.org)
+2015-05-05 12:19:24	hyo0301	is arch linux kernel 2.6.x or 3.x?
+2015-05-05 12:19:28	-->	trodis (~trodis@i577B85BD.versanet.de) has joined #archlinux
+2015-05-05 12:19:32	-->	LMNOP_ (~LMNOP@unaffiliated/ea08ba8f51) has joined #archlinux
+2015-05-05 12:19:33	MrElendig	pacman -Si opencv
+2015-05-05 12:19:33	demize	Earnestly: Oh, I found out the differece between the digest and the hex digest
+2015-05-05 12:19:34	HarbingTarbl	hyo0301: 3.14
+2015-05-05 12:19:35	MrElendig	see the optdep
+2015-05-05 12:19:44	tomty89	Fizzlerr: we are newer btw, so not equivalent
+2015-05-05 12:19:50	-->	cork_ (~cork@pool-98-114-48-61.phlapa.fios.verizon.net) has joined #archlinux
+2015-05-05 12:20:09	tomty89	hyo0301: neither
+2015-05-05 12:20:17	demize	Earnestly: the former is backed into a byte string, so eg 7a is turned into the byte \x7a
+2015-05-05 12:20:22	tomty89	hyo0301: unless you are talking about -lts
+2015-05-05 12:20:23	demize	packed*
+2015-05-05 12:20:29	hyo0301	tomty89: how do I install it to vMware then
+2015-05-05 12:20:30	<--	Guest20 (~textual@my0373.plus.com) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-05-05 12:20:35	<--	MadHatter42 (~MadHatter@unaffiliated/madhatter42) has quit (Read error: Connection reset by peer)
+2015-05-05 12:20:47	MrElendig	hyo0301: don't use vmware
+2015-05-05 12:20:47	<--	aajjbb (~aajjbb@177.193.226.200) has quit (Ping timeout: 276 seconds)
+2015-05-05 12:20:55	Fizzlerr	tomty89: darn. i will be needing the python 2 version. thanks
+2015-05-05 12:20:57	MrElendig	vmware supports 3.14 btw
+2015-05-05 12:21:00	-->	mijenix (~mijenix@212-51-146-200.fiber7.init7.net) has joined #archlinux
+2015-05-05 12:21:03	MrElendig	and newer
+2015-05-05 12:21:05	hyo0301	It does
+2015-05-05 12:21:07	MrElendig	there is patches for 4.0
+2015-05-05 12:21:11	-->	Elish (~x@unaffiliated/elish) has joined #archlinux
+2015-05-05 12:21:18	hyo0301	that's why I said 3.x or 2.6.x
+2015-05-05 12:21:25	<--	LMNOP__ (~LMNOP@unaffiliated/ea08ba8f51) has quit (Ping timeout: 264 seconds)
+2015-05-05 12:21:26	tomty89	Fizzlerr: isn't there only python2 version for it
+2015-05-05 12:21:27	MrElendig	but vmware is evil and should not be used
+2015-05-05 12:21:37	hyo0301	So I'll just use oracle
+2015-05-05 12:21:40	MrElendig	Fizzlerr: ....
+2015-05-05 12:21:47	tomty89	Fizzlerr: I mean we got opencv 2.4 here
+2015-05-05 12:21:49	wolter	Ahh one more thing I guess: I can't get my internet interface (WiFi device that uses b43) and I don't have b43 fwcutter, what can I do? Can I extract it from my install media?
+2015-05-05 12:21:58	tomty89	Fizzlerr: unlike 2.3 in debian
+2015-05-05 12:22:03	<--	HarbingTarbl (62f821a3@gateway/web/freenode/ip.98.248.33.163) has quit (Quit: Page closed)
+2015-05-05 12:22:08	Namarrgon	wolter: "install media"?
+2015-05-05 12:22:09	tomty89	or is it the wrong release i was looking at
+2015-05-05 12:22:18	MrElendig	wolter: pacman -U
+2015-05-05 12:22:35	-->	poljar (~poljar@89-172-29-57.adsl.net.t-com.hr) has joined #archlinux
+2015-05-05 12:22:40	MrElendig	just download the fwcutter package and the broadcom blob
+2015-05-05 12:22:48	wolter	Namarrgon: my install USB
+2015-05-05 12:22:50	<--	trodis_ (~trodis@i577B94E0.versanet.de) has quit (Ping timeout: 272 seconds)
+2015-05-05 12:22:53	MrElendig	pacman -U the fwcutter, extract the firmware
+2015-05-05 12:23:02	Namarrgon	wolter: yeah but which one? the official iso doesn't have b43-firmware inculuded
+2015-05-05 12:23:07	MrElendig	wolter: the install image does have fwcutter on it
+2015-05-05 12:23:10	eyche	I'm having troubles with my gtk2 not using the icon theme in its _NET_WM_ICON.
+2015-05-05 12:23:11	grawity	oh, on a related note, if I'm planning to buy a new laptop, which wifi manufacturers should I avoid like hell?
+2015-05-05 12:23:16	-->	js9600 (~jsdk@87-57-20-106-dynamic.dk.customer.tdc.net) has joined #archlinux
+2015-05-05 12:23:20	<--	Tyrantbit (~Raist@unaffiliated/raist) has quit (Remote host closed the connection)
+2015-05-05 12:23:23	 *	grawity wants working AP & monitor modes
+2015-05-05 12:23:27	MrElendig	grawity: all of them suck sadly
+2015-05-05 12:23:31	tomty89	Fizzlerr: oh seems debian stable has 2.4 as well
+2015-05-05 12:23:31	grawity	atheros doesn't
+2015-05-05 12:23:31	wolter	Namarrgon but it has b43 fwcutter, I have the blob already
+2015-05-05 12:23:35	MrElendig	specially if you want aC
+2015-05-05 12:23:43	MrElendig	atheros do suck
+2015-05-05 12:23:51	MrElendig	half their chips are buggy as fuck
+2015-05-05 12:23:53	<--	camerin (hoax@elite.bshellz.net) has quit (Ping timeout: 265 seconds)
+2015-05-05 12:23:55	dunp	aur/b43-firmware
+2015-05-05 12:23:56	wolter	MrElendig how can I mount the install media?
+2015-05-05 12:24:02	polyzen	ah... arch arm doesn't compile ghc and cabal-install.... cool.....
+2015-05-05 12:24:02	Fizzlerr	tomty89: ah yes. i was thinking this package only contained the cpp files. i see there are the python files as well
+2015-05-05 12:24:05	<--	skunkos (~Martin_Ro@94-74-207-55.client.rionet.cz) has quit (Read error: Connection reset by peer)
+2015-05-05 12:24:05	MrElendig	wolter: just boot it
+2015-05-05 12:24:06	red-lichtie	atheros gets a -1 from me too
+2015-05-05 12:24:20	MrElendig	sadly there isn't a single actually good wifi chip maker
+2015-05-05 12:24:39	tomty89	ethernet hurray
+2015-05-05 12:24:43	grawity	I don't care enough about ac, I want it to work reliably and be able to do fancy stuff, which my current ath9k does (including even spectral scan features), and I might just put the old card into my new laptop
+2015-05-05 12:24:43	<--	darkbasic (~quassel@niko.linuxsystems.it) has quit (Quit: No Ping reply in 180 seconds.)
+2015-05-05 12:24:48	wolter	MrElendig oh and I send the firmware to my system partition, clever, will do
+2015-05-05 12:24:48	MrElendig	polyzen: ghc on arm is a bit troublesome
+2015-05-05 12:24:50	Fizzlerr	tomty89: so it looks like all they did was strip out the cpp files and package the python seperately
+2015-05-05 12:24:50	-->	gimbel (~seb@p4FE17097.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-05 12:25:00	red-lichtie	Get a WiFi cable, they are awesome!
+2015-05-05 12:25:00	polyzen	MrElendig, fantastic
+2015-05-05 12:25:08	-->	darkbasic (~quassel@niko.linuxsystems.it) has joined #archlinux
+2015-05-05 12:25:15	<--	tpowa (~tpowa@archlinux/developer/tpowa) has quit (Ping timeout: 240 seconds)
+2015-05-05 12:25:28	-->	skunkos (~martin@94-74-207-55.client.rionet.cz) has joined #archlinux
+2015-05-05 12:25:35	tomty89	4glte
+2015-05-05 12:25:46	polyzen	a what
+2015-05-05 12:25:49	tomty89	usb tethering
+2015-05-05 12:25:50	MrElendig	polyzen: it works, but might require some sledgehammer usage due to linking mess
+2015-05-05 12:25:52	-->	c_korn (~c_korn@2001:a60:10a2:2301:fd07:8a5c:9eac:f8d1) has joined #archlinux
+2015-05-05 12:26:10	MrElendig	also you must use llvm
+2015-05-05 12:26:25	polyzen	:|
+2015-05-05 12:26:50	MrElendig	polyzen: http://smart-cactus.org/~ben/posts/2014-11-28-state-of-llvm-backend.html  etc
+2015-05-05 12:26:51	phrik	Title: bgamari.github.com - GHC and LLVM: A status update (at smart-cactus.org)
+2015-05-05 12:27:09	-->	OxDB (~dennis@allegro/user/Dennis) has joined #archlinux
+2015-05-05 12:27:20	<--	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2015-05-05 12:27:29	<--	proshot (~agentsmit@5354A239.cm-6-5c.dynamic.ziggo.nl) has quit (Quit: Leaving)
+2015-05-05 12:27:32	MrElendig	changed a bit with 7.10
+2015-05-05 12:27:42	MrElendig	there is another blog post about that by a different dev
+2015-05-05 12:27:51	-->	irgendwie (~alex@n245.tum.vpn.lrz.de) has joined #archlinux
+2015-05-05 12:28:08	-->	tpowa (~tpowa@archlinux/developer/tpowa) has joined #archlinux
+2015-05-05 12:28:13	-->	Hwkiller (~Hwkiller@cpe-72-178-129-167.hot.res.rr.com) has joined #archlinux
+2015-05-05 12:28:21	 *	MrElendig is too lazy to find it
+2015-05-05 12:28:48	-->	bu5hm4n (~androirc@ip-109-42-1-1.web.vodafone.de) has joined #archlinux
+2015-05-05 12:29:10	<--	tty1 (~quassel@static-108-16-236-52.phlapa.fios.verizon.net) has quit (Ping timeout: 272 seconds)
+2015-05-05 12:29:53	<--	free_beard (~mircea@unaffiliated/free-beard/x-6152516) has quit (Quit: Leaving.)
+2015-05-05 12:30:09	bu5hm4n	Hi does someone have experience working with udisk2 dbus api ?
+2015-05-05 12:30:21	hyo0301	Installing Arch is harder than creating a new programming language
+2015-05-05 12:30:26	MrElendig	no, specially not the gnome/kde devs etc
+2015-05-05 12:30:29	MrElendig	bu5hm4n: ^
+2015-05-05 12:30:36	sheep	hyo0301: really?
+2015-05-05 12:30:50	hyo0301	yup
+2015-05-05 12:30:51	MrElendig	installing arch is easy
+2015-05-05 12:30:52	bu5hm4n	MrElendig thx :)
+2015-05-05 12:30:57	<--	FR^2 (~frquadrat@farsquare.de) has quit (Quit: Connection reset by peer)
+2015-05-05 12:31:00	sheep	installing arch takes 5 minutes
+2015-05-05 12:31:06	keenerd	hyo0301: Try both and get back to us.
+2015-05-05 12:31:11	sheep	minus the time needed for downloading the packages
+2015-05-05 12:31:14	holomorph	5 valve minutes amirite
+2015-05-05 12:31:17	<--	_ashbreeze_ (~mark@207-119-228-94.dyn.centurytel.net) has quit (Remote host closed the connection)
+2015-05-05 12:31:26	<--	emperiz (~emperiz@unaffiliated/emperiz) has quit (Quit: Leaving)
+2015-05-05 12:31:32	wasamasa	I also spend 5 valve minutes on each achievement in my games
+2015-05-05 12:31:42	wasamasa	it's totally awesome
+2015-05-05 12:31:44	grawity	I'm curious how the hell does one partition, mkfs, edit locale.conf, set hostname, etc. in 5 minutes
+2015-05-05 12:31:53	hyo0301	keenerd:  try both what?
+2015-05-05 12:31:53	-->	alex1a (~alex1a@bl14-251-59.dsl.telepac.pt) has joined #archlinux
+2015-05-05 12:31:57	Ingar	sheep: every 5-minute job takes at least half an hour
+2015-05-05 12:32:00	sheep	grawity: you wreite down what you need before
+2015-05-05 12:32:04	sheep	*write
+2015-05-05 12:32:10	wasamasa	grawity: simple, you're asian
+2015-05-05 12:32:19	-->	jaco60 (~jaco@titine.jacoboni.fr) has joined #archlinux
+2015-05-05 12:32:22	MrElendig	grawity: that is not that hard, how one download 5GiB in the same time also on the other hand...
+2015-05-05 12:32:24	wasamasa	grawity: let's publish arch install speedruns on youtube
+2015-05-05 12:32:33	-->	_ashbreeze_ (~mark@207-119-228-94.dyn.centurytel.net) has joined #archlinux
+2015-05-05 12:32:33	grawity	!grab wasamasa 
+2015-05-05 12:32:34	phrik	grawity: Tada!
+2015-05-05 12:32:35	-->	SecAddict (~SecAddict@unaffiliated/al3xg/x-3906219) has joined #archlinux
+2015-05-05 12:32:42	-->	mattkrea (~textual@harbortouch04.h.subnet.rcn.com) has joined #archlinux
+2015-05-05 12:32:46	wasamasa	I'd watch these
+2015-05-05 12:32:48	MrElendig	you need some pretty impressive hardware for that
+2015-05-05 12:32:52	<--	AlphaAtom (~textual@cpc9-bath5-2-0-cust113.aztw.cable.virginm.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-05-05 12:32:55	-->	deusardor (~daeam@173.209.211.206) has joined #archlinux
+2015-05-05 12:33:00	<--	coldbyte (~coldbyte@bl12-1-75.dsl.telepac.pt) has quit (Quit: Leaving)
+2015-05-05 12:33:01	<--	kurkale6ka (~kurkale6k@84.19.53.25) has quit (Quit: WeeChat 1.1.1)
+2015-05-05 12:33:09	keenerd	hyo0301: Try creating a new programming language.
+2015-05-05 12:33:10	wasamasa	or read the "Fuck you and your TAS" comments
+2015-05-05 12:33:10	grawity	every single time I had to install Arch, the configuration took much longer than the download
+2015-05-05 12:33:23	-->	johnny-runner (~raimundo@88.157.194.238) has joined #archlinux
+2015-05-05 12:33:28	<--	deusardor (~daeam@173.209.211.206) has left #archlinux
+2015-05-05 12:33:35	grawity	MrElendig: that's just ~128 Mbps though
+2015-05-05 12:33:37	hyo0301	keenerd: sure, then I can make my own OS, which will be easy to install and no confusing WIKI
+2015-05-05 12:33:43	wasamasa	lol
+2015-05-05 12:33:50	wasamasa	if you find the arch wiki confusing...
+2015-05-05 12:33:52	keenerd	hyo0301: Like I said, try it already.
+2015-05-05 12:33:55	wasamasa	that leaves no useful wiki
+2015-05-05 12:34:10	grawity	MrElendig: many mirrors do 100 Mbps, so that's less than 10 minutes
+2015-05-05 12:34:19	-->	UberLambda (~uber@dynamic-adsl-94-36-10-208.clienti.tiscali.it) has joined #archlinux
+2015-05-05 12:34:24	<--	autrilla_ (~autrilla@unaffiliated/autrilla) has quit (Ping timeout: 245 seconds)
+2015-05-05 12:34:24	MrElendig	grawity: in the same time
+2015-05-05 12:34:25	<--	salexan (~quassel@134.76.218.252) has quit (Remote host closed the connection)
+2015-05-05 12:34:30	-->	aajjbb (~aajjbb@177.193.226.200) has joined #archlinux
+2015-05-05 12:34:40	MrElendig	so if you spend 3 minutes partitioning and writing configs etc
+2015-05-05 12:34:41	demize	grawity: wonder how hard it would be to add ecdsa/ed25519 support to https://gist.github.com/tombh/f66de84fd3a63e670ad9
+2015-05-05 12:34:42	grawity	but anyway, the whole "Arch in 5 minutes, just add water" thing is bullshit
+2015-05-05 12:34:42	phrik	Title: Convert OpenSSH public key to OpenSSL public key using ruby (at gist.github.com)
+2015-05-05 12:34:58	MrElendig	20 mins though is perfectly realistic
+2015-05-05 12:35:09	MrElendig	from boot of install image to desktop
+2015-05-05 12:35:12	-->	tty1 (~quassel@static-108-16-236-52.phlapa.fios.verizon.net) has joined #archlinux
+2015-05-05 12:35:16	sheep	well openssl doesn't have ed25519 support yet
+2015-05-05 12:35:30	<--	cduez (~cduez@nor75-18-82-241-237-212.fbx.proxad.net) has quit (Ping timeout: 265 seconds)
+2015-05-05 12:35:37	-->	grassass (grass@gateway/vpn/mullvad/x-wsctqrvufpiqgilm) has joined #archlinux
+2015-05-05 12:35:45	<--	boombanana (~jorick@78-22-70-154.access.telenet.be) has quit (Ping timeout: 276 seconds)
+2015-05-05 12:35:50	-->	camerin (hoax@elite.bshellz.net) has joined #archlinux
+2015-05-05 12:35:52	grawity	demize: cheat: Kernel.spawn("ssh-keygen -yf id_ed25519")
+2015-05-05 12:36:15	grawity	sheep: doesn't have to – it's just a matter of data structures, not actual crypto
+2015-05-05 12:36:21	-->	skapunker (~skapunker@69.146.224.66) has joined #archlinux
+2015-05-05 12:36:23	<--	lonewulf` (~lone@unaffiliated/lonewulf/x-3292126) has quit (Quit: Lost terminal)
+2015-05-05 12:36:31	grawity	especially given that OpenSSH uses a completely new storage format for ed25519
+2015-05-05 12:36:39	grawity	so openssl would not help either way
+2015-05-05 12:36:54	-->	neckutrek (~neckutrek@h-88-107.a163.priv.bahnhof.se) has joined #archlinux
+2015-05-05 12:36:55	sudokode	haha
+2015-05-05 12:37:23	-->	AlphaAtom (~textual@cpc9-bath5-2-0-cust113.aztw.cable.virginm.net) has joined #archlinux
+2015-05-05 12:38:23	-->	diegoviola (~diego@unaffiliated/diegoviola) has joined #archlinux
+2015-05-05 12:38:24	demize	grawity: -y?
+2015-05-05 12:38:36	hyo0301	Meh it's because I don't get the same as the turials wasamasa 
+2015-05-05 12:38:53	tomty89	!man
+2015-05-05 12:38:53	phrik	tomty89: http://www.mankier.com/?q=urlquote <text>
+2015-05-05 12:38:56	grawity	demize: yes
+2015-05-05 12:39:04	wasamasa	hyo0301: if you actually wish for help, ask better questions than that
+2015-05-05 12:39:20	grawity	demize: owait, in the opposite direction
+2015-05-05 12:39:29	demize	Well
+2015-05-05 12:39:32	-->	toombs (~eric@d67-193-154-192.home3.cgocable.net) has joined #archlinux
+2015-05-05 12:39:34	<--	tty1 (~quassel@static-108-16-236-52.phlapa.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2015-05-05 12:39:39	demize	I want public key -> pem
+2015-05-05 12:39:52	diegoviola	when I startx I already have ssh-agent, any ideas what triggers that?
+2015-05-05 12:39:52	-->	tty1 (~quassel@static-108-16-236-52.phlapa.fios.verizon.net) has joined #archlinux
+2015-05-05 12:39:55	-->	CaSpivey (~caspivey@2606:a000:b440:bc00:ba97:5aff:fe90:4b0c) has joined #archlinux
+2015-05-05 12:40:00	grawity	pretty sure there's no 'standard' pem structure for ed25519 yet
+2015-05-05 12:40:02	sheep	diegoviola: maube it
+2015-05-05 12:40:06	hyo0301	wasamasa: ok then, go boot archlinux, I type cfdisk, I create an sda1, sda2, and sda3, I have to flag sda1 as boot
+2015-05-05 12:40:07	grawity	nor pkcs#8 either
+2015-05-05 12:40:08	demize	Or well, *something* that openssl can parse.
+2015-05-05 12:40:10	demize	Mmm...
+2015-05-05 12:40:13	diegoviola	sheep: ?
+2015-05-05 12:40:19	sheep	diegoviola: wait.  that depends on what process is providing the ssh-agent functionality
+2015-05-05 12:40:24	hyo0301	wasamasa: but I don't have the "bootable" button at the bottom
+2015-05-05 12:40:33	-->	raziellight (~fdf@S0106002191dec0ca.cg.shawcable.net) has joined #archlinux
+2015-05-05 12:40:40	-->	gsingh93 (~gulshan@c-68-55-60-95.hsd1.mi.comcast.net) has joined #archlinux
+2015-05-05 12:40:54	-->	gocyclic249 (~eleventh@208.167.254.55) has joined #archlinux
+2015-05-05 12:40:57	<--	throstur (~throstur@unaffiliated/throstur) has quit (Ping timeout: 276 seconds)
+2015-05-05 12:41:22	demize	grawity: what it's for is basically a script that does `ssh-keygen -lf <key> -E md5` and then the same with -Esha256
+2015-05-05 12:41:24	wasamasa	hyo0301: http://i.imgur.com/MFTq1fN.png
+2015-05-05 12:41:24	-->	Chais (~Chais@unaffiliated/chais) has joined #archlinux
+2015-05-05 12:41:31	<--	redeemed (~redeemed@82.208.188.40) has quit (Ping timeout: 256 seconds)
+2015-05-05 12:41:39	<--	torpet_ (~torpet@84-115-42-228.dynamic.surfer.at) has quit
+2015-05-05 12:41:43	demize	grawity: No real reason for it, I was firstly just interested in the format.
+2015-05-05 12:41:43	wasamasa	hyo0301: it is a thing (for existing partitions obviously)
+2015-05-05 12:42:00	tomty89	gpt?
+2015-05-05 12:42:05	-->	stalwart729 (~andy@152.224.125.91.dyn.plus.net) has joined #archlinux
+2015-05-05 12:42:05	-->	Engys (~Engys@p4FC97A7E.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-05 12:42:13	-->	Cirrus_Minor (~Cirrus_Mi@CAcert/Cirrus-Minor) has joined #archlinux
+2015-05-05 12:42:19	sheep	diegoviola: run this: ps -q $SSH_AGENT_PID au
+2015-05-05 12:42:27	sheep	diegoviola: what command does it return?
+2015-05-05 12:42:38	-->	youngwolf (~youngwolf@117.217.189.143) has joined #archlinux
+2015-05-05 12:42:39	<--	sudnam (~mel@h84n2-raas-a13.ias.bredband.telia.com) has quit (Ping timeout: 256 seconds)
+2015-05-05 12:42:48	grawity	demize: find PROTOCOL.key in the openssh source tree
+2015-05-05 12:42:49	youngwolf	Any one here use ttytter ??
+2015-05-05 12:43:08	grawity	demize: describes the new format
+2015-05-05 12:43:14	grawity	PuTTY supports it in -git
+2015-05-05 12:43:23	hyo0301	wasamasa: I know, but I odn't have the "bootable" button
+2015-05-05 12:43:26	-->	deusardor (~daeam@173.209.211.206) has joined #archlinux
+2015-05-05 12:43:27	demize	err, I meant the fingerprint formats, sorry.
+2015-05-05 12:43:29	<--	Longlius (~longlius@2602:301:7767:6df0:a64e:31ff:fe19:d320) has quit (Remote host closed the connection)
+2015-05-05 12:43:34	<--	stalwart829 (~andy@109.114.189.80.dyn.plus.net) has quit (Ping timeout: 245 seconds)
+2015-05-05 12:43:34	sudokode	ah
+2015-05-05 12:43:39	diegoviola	  PID TTY          TIME CMD
+2015-05-05 12:43:39	polyzen	good to know grawity> PuTTY supports it in -git
+2015-05-05 12:43:39	hyo0301	http://puu.sh/hBDtx/46b7b27fbd.png wasamasa 
+2015-05-05 12:43:41	diegoviola	  337 ?        00:00:00 ssh-agent
+2015-05-05 12:43:53	sudokode	demize: ssh-keygen -f ssh.pub -em pem > ssh.pem
+2015-05-05 12:43:53	deusardor	ignore this
+2015-05-05 12:43:59	wasamasa	hyo0301: great, you're using gpt
+2015-05-05 12:44:04	<--	tty1 (~quassel@static-108-16-236-52.phlapa.fios.verizon.net) has quit (Ping timeout: 255 seconds)
+2015-05-05 12:44:04	-->	monkey9999 (~monkey^2@cpe-23-241-252-147.socal.res.rr.com) has joined #archlinux
+2015-05-05 12:44:08	demize	sudokode: I wanted it in ruby.
+2015-05-05 12:44:10	wasamasa	hyo0301: use cgdisk, you sillyhat
+2015-05-05 12:44:12	<--	eleventh (~eleventh@129.10.9.213) has quit (Ping timeout: 276 seconds)
+2015-05-05 12:44:22	grawity	hyo0301: GPT and MBR partition tables have different settings
+2015-05-05 12:44:24	hyo0301	it was gpt, sun, dos or some other sht
+2015-05-05 12:44:28	polyzen	doesn't gpt not have a bootable flag
+2015-05-05 12:44:30	hyo0301	Ohhhhhh
+2015-05-05 12:44:40	hyo0301	But I didn't hae a MBR option
+2015-05-05 12:44:43	hyo0301	fck this
+2015-05-05 12:44:43	tomty89	polyzen: well legacy boot
+2015-05-05 12:44:48	-->	tty1 (~quassel@static-108-16-236-52.phlapa.fios.verizon.net) has joined #archlinux
+2015-05-05 12:44:51	grawity	hyo0301: "dos" is MBR
+2015-05-05 12:44:52	polyzen	hm
+2015-05-05 12:45:16	polyzen	tomty89, i shouldn't pipe in on things i've hardly used :p
+2015-05-05 12:45:17	<--	eyche (~eyche@cpe-75-80-57-155.san.res.rr.com) has quit (Read error: Connection reset by peer)
+2015-05-05 12:45:20	sheep	diegoviola: check /etc/profile.d
+2015-05-05 12:45:29	<--	admin| (~admin@37.254.215.157) has quit (Ping timeout: 256 seconds)
+2015-05-05 12:45:32	grawity	polyzen: it does, among other flags, but apparently cfdisk is missing it?
+2015-05-05 12:45:39	sheep	hyo0301: is that cgdisk?
+2015-05-05 12:45:49	-->	rcr (~rcr@zymeworks.com) has joined #archlinux
+2015-05-05 12:45:54	-->	ech0s7 (~ech0s7@198.208.72.254) has joined #archlinux
+2015-05-05 12:46:02	diegoviola	sheep: what exactly should I look there?
+2015-05-05 12:46:06	<--	irgendwie (~alex@n245.tum.vpn.lrz.de) has quit (Quit: leaving)
+2015-05-05 12:46:11	sheep	diegoviola: something that starts ssh-agent
+2015-05-05 12:46:12	hyo0301	grawity: oh god... I'll redo it
+2015-05-05 12:46:18	hyo0301	sheep:  nope, it's gpt
+2015-05-05 12:46:20	tomty89	probably there's already a gpt there before
+2015-05-05 12:46:21	-->	irgendwie (~alex@n245.tum.vpn.lrz.de) has joined #archlinux
+2015-05-05 12:46:31	grawity	hyo0301: GPT is fine, but instructions for it will be a little different
+2015-05-05 12:46:37	<--	Chais (~Chais@unaffiliated/chais) has quit (Ping timeout: 264 seconds)
+2015-05-05 12:46:39	demize	grawity: Anyway, thanks, I'll look at that too.
+2015-05-05 12:46:43	<--	Engys (~Engys@p4FC97A7E.dip0.t-ipconnect.de) has quit (Client Quit)
+2015-05-05 12:46:48	<--	irgendwie (~alex@n245.tum.vpn.lrz.de) has quit (Client Quit)
+2015-05-05 12:46:54	-->	autrilla_ (~autrilla@unaffiliated/autrilla) has joined #archlinux
+2015-05-05 12:46:56	sudokode	demize: https://github.com/bensie/sshkey
+2015-05-05 12:46:56	sheep	hyo0301: I meant, are you using cgdisk to set up the partition?
+2015-05-05 12:46:57	phrik	Title: bensie/sshkey · GitHub (at github.com)
+2015-05-05 12:47:12	sudokode	looks like that implements the functions of ssh-keygen
+2015-05-05 12:47:17	-->	irgendwie (~alex@n245.tum.vpn.lrz.de) has joined #archlinux
+2015-05-05 12:47:18	-->	leafybas_ (~leafybasi@88.211.72.10) has joined #archlinux
+2015-05-05 12:47:31	tomty89	sadly cfdisk doesn't have a "o"
+2015-05-05 12:47:33	hyo0301	sheep, no because the tutorial I'm using is for MBR
+2015-05-05 12:47:40	sheep	oh ok
+2015-05-05 12:47:42	demize	sudokode: emphasis on wanted.
+2015-05-05 12:47:49	<--	f4cl3y (~f4cl3y@unaffiliated/f4cl3y) has quit (Ping timeout: 264 seconds)
+2015-05-05 12:47:49	sudokode	pfft
+2015-05-05 12:47:51	hyo0301	grawity: Apparently it is
+2015-05-05 12:47:52	tomty89	shred your disk
+2015-05-05 12:48:06	sudokode	too many technicalities
+2015-05-05 12:48:07	<--	Cust0sL1men (~CustosLim@unaffiliated/cust0slim3n) has quit (Ping timeout: 255 seconds)
+2015-05-05 12:48:07	demize	sudokode: I've had RSA/DSA working ages now.
+2015-05-05 12:48:15	-->	Engys (~Engys@p4FC97A7E.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-05 12:48:27	polyzen	grawity ¯\(º_o)/¯
+2015-05-05 12:48:31	<--	kelnoky (~shao@95.91.228.105) has quit (Quit: WeeChat 1.1.1)
+2015-05-05 12:48:45	<--	nando293921 (~fernando@173.224.93.6) has quit (Ping timeout: 264 seconds)
+2015-05-05 12:48:59	tomty89	diegoviola: pstree?
+2015-05-05 12:49:00	<--	Engys (~Engys@p4FC97A7E.dip0.t-ipconnect.de) has quit (Client Quit)
+2015-05-05 12:49:04	-->	jceb (~jceb@2001:6f8:900:8e46:8a53:2eff:fe91:4709) has joined #archlinux
+2015-05-05 12:49:08	<--	tty1 (~quassel@static-108-16-236-52.phlapa.fios.verizon.net) has quit (Ping timeout: 246 seconds)
+2015-05-05 12:49:10	<--	irgendwie (~alex@n245.tum.vpn.lrz.de) has quit (Client Quit)
+2015-05-05 12:49:18	-->	_Raiz (~raiz@unaffiliated/raiz/x-5279858) has joined #archlinux
+2015-05-05 12:49:32	<--	jjgedney|Damn (~jjgedney@2604:a880:1:20::ab:1001) has left #archlinux
+2015-05-05 12:49:38	grawity	diegoviola: grep -r ssh-agent /etc/gdm /etc/X11
+2015-05-05 12:49:39	-->	Engys (~Engys@p4FC97A7E.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-05 12:50:13	<--	matiaslina (~matias@190.11.172.207) has quit (Remote host closed the connection)
+2015-05-05 12:50:24	<--	leafybasil (~leafybasi@88.211.72.10) has quit (Ping timeout: 252 seconds)
+2015-05-05 12:50:33	diegoviola	http://sprunge.us/fKNZ
+2015-05-05 12:50:37	diegoviola	^ pstree
+2015-05-05 12:50:40	-->	creek_ (~creek@78-69-29-137-no206.tbcn.telia.com) has joined #archlinux
+2015-05-05 12:50:50	<--	d0gb0ne (~d0gb0ne@ip249-146-210-87.adsl2.static.versatel.nl) has quit (Quit: Leaving)
+2015-05-05 12:50:56	sheep	tomty89: ssh-agent daemonizes
+2015-05-05 12:51:14	-->	tty1 (~quassel@static-108-16-236-52.phlapa.fios.verizon.net) has joined #archlinux
+2015-05-05 12:51:16	diegoviola	grawity: I don't have gdm
+2015-05-05 12:51:16	<--	leafybas_ (~leafybasi@88.211.72.10) has quit (Ping timeout: 240 seconds)
+2015-05-05 12:51:26	diegoviola	nothing in /etc/X11
+2015-05-05 12:51:58	-->	sklv (~sklv@80.229.16.48) has joined #archlinux
+2015-05-05 12:51:59	-->	admin| (~admin@gw.vpn.autistici.org) has joined #archlinux
+2015-05-05 12:52:00	sklv	gentoo
+2015-05-05 12:52:01	<--	c0m0 (~c0m0@94.229.78.60) has quit (Ping timeout: 264 seconds)
+2015-05-05 12:52:05	<--	jobewan (~jobewan@69.179.206.39) has quit (Quit: Leaving)
+2015-05-05 12:52:10	<--	neonpinkcrayon (~ultraviol@42-144-17-152.rev.home.ne.jp) has quit (Ping timeout: 255 seconds)
+2015-05-05 12:52:11	<--	sklv (~sklv@80.229.16.48) has quit (Client Quit)
+2015-05-05 12:52:25	sheep	that was the lamest troll I've ever seen in this channel
+2015-05-05 12:52:32	wasamasa	s/lamest/tamest/
+2015-05-05 12:52:35	-->	frankyboy_ (~franky@ppp109-252-17-4.pppoe.spdop.ru) has joined #archlinux
+2015-05-05 12:52:38	diegoviola	lol
+2015-05-05 12:52:43	sudokode	sheep: would've been better if he was in #gentoo
+2015-05-05 12:52:48	sudokode	I was gonna say arch to him there
+2015-05-05 12:52:51	<--	petterk_ (~petterk@gateway/vpn/privateinternetaccess/petterk) has quit (Ping timeout: 256 seconds)
+2015-05-05 12:52:56	-->	neonpinkcrayon (~ultraviol@42-144-17-152.rev.home.ne.jp) has joined #archlinux
+2015-05-05 12:52:57	-->	ambsace (~holoirc@172.56.22.150) has joined #archlinux
+2015-05-05 12:53:07	<--	neckutrek (~neckutrek@h-88-107.a163.priv.bahnhof.se) has quit (Remote host closed the connection)
+2015-05-05 12:53:24	-->	Chais (~Chais@unaffiliated/chais) has joined #archlinux
+2015-05-05 12:54:14	-->	munumnu (~munumnunu@x4d0ceb9c.dyn.telefonica.de) has joined #archlinux
+2015-05-05 12:54:15	<--	pirithous (~pirithous@unaffiliated/pirithous) has left #archlinux ("Konversation terminated!")
+2015-05-05 12:54:39	<--	erkin (~erkin@unaffiliated/erkin) has quit (Quit: Ouch! Got SIGABRT, dying...)
+2015-05-05 12:54:52	<--	eyvindandersen (~eyvind@80-71-131-193.u.parknet.dk) has quit (Ping timeout: 255 seconds)
+2015-05-05 12:54:56	-->	Jackneill (~Jackneill@unaffiliated/jackneill) has joined #archlinux
+2015-05-05 12:55:02	-->	Laerten (~Laerten@host126-186-dynamic.52-82-r.retail.telecomitalia.it) has joined #archlinux
+2015-05-05 12:55:05	-->	erkin (~erkin@unaffiliated/erkin) has joined #archlinux
+2015-05-05 12:55:14	tomty89	diegoviola: it's there right after login?
+2015-05-05 12:55:21	tomty89	or startx?
+2015-05-05 12:55:36	<--	monkey9999 (~monkey^2@cpe-23-241-252-147.socal.res.rr.com) has left #archlinux
+2015-05-05 12:55:40	-->	eric_lagergren (~barsonme@c-71-231-122-10.hsd1.wa.comcast.net) has joined #archlinux
+2015-05-05 12:56:21	-->	sudnam (~mel@h84n2-raas-a13.ias.bredband.telia.com) has joined #archlinux
+2015-05-05 12:56:37	hyo0301	should I pacstrap base base-devel or just base?
+2015-05-05 12:56:52	<--	HansE (~HansE@tlf030.ka.hist.no) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2015-05-05 12:57:15	tomty89	i prefer both
+2015-05-05 12:57:28	<--	typh00nz (~typh00nz@pc185-239.solaris.ds.polsl.pl) has quit (Quit: Leaving)
+2015-05-05 12:57:39	Fizzlerr	yeah i do both
+2015-05-05 12:57:45	hyo0301	i gusee just base then
+2015-05-05 12:58:26	Fizzlerr	base-devel is for users who will be developing software and using AUR packages
+2015-05-05 12:58:37	<--	Chais (~Chais@unaffiliated/chais) has quit (Ping timeout: 264 seconds)
+2015-05-05 12:58:42	-->	Porkepix (~Porkepix@89.202.203.52) has joined #archlinux
+2015-05-05 12:58:50	-->	deh (~raiz@93.126.198.210) has joined #archlinux
+2015-05-05 12:59:17	tomty89	heh developing software
+2015-05-05 12:59:17	hyo0301	I'm as new to arch as an amish grandfather is to HTML
+2015-05-05 12:59:39	-->	f4cl3y (~f4cl3y@jh.rocket-internet.de) has joined #archlinux
+2015-05-05 12:59:40	<--	f4cl3y (~f4cl3y@jh.rocket-internet.de) has quit (Changing host)
+2015-05-05 12:59:40	-->	f4cl3y (~f4cl3y@unaffiliated/f4cl3y) has joined #archlinux
+2015-05-05 12:59:58	tomty89	sudo is in base-devel btw 
+2015-05-05 13:00:02	d_garbage	heh, shall I do A or B. Do B. Do B. Ok, i'll do A
+2015-05-05 13:00:09	d_garbage	}:]
+2015-05-05 13:00:16	<--	tpowa (~tpowa@archlinux/developer/tpowa) has quit (Quit: Verlassend)
+2015-05-05 13:00:18	holomorph	flawless reasoning
+2015-05-05 13:00:19	<--	baggar11 (generic@static-50-53-7-181.bvtn.or.frontiernet.net) has quit (Quit: leaving)
+2015-05-05 13:00:20	<--	_Raiz (~raiz@unaffiliated/raiz/x-5279858) has left #archlinux ("Leaving")
+2015-05-05 13:00:31	Fizzlerr	hyo0301: base-devel contains packages that make compiling packages easier. fakeroot and a few other tools
+2015-05-05 13:00:39	<--	Kelzier (~duka@77.105.55.162) has quit (Ping timeout: 245 seconds)
+2015-05-05 13:00:39	tomty89	irc is full of lies
+2015-05-05 13:00:42	<--	CaSpivey (~caspivey@2606:a000:b440:bc00:ba97:5aff:fe90:4b0c) has quit (Remote host closed the connection)
+2015-05-05 13:00:51	tomty89	he's the smarter one
+2015-05-05 13:00:59	-->	spechide (0e8bb972@gateway/web/freenode/ip.14.139.185.114) has joined #archlinux
+2015-05-05 13:00:59	sudokode	I wouldn't trust us either
+2015-05-05 13:01:19	hyo0301	I'll do A and B then -.-
+2015-05-05 13:01:25	-->	usrc (~Thunderbi@193.170.133.137) has joined #archlinux
+2015-05-05 13:01:27	-->	Kelzier (~duka@77.105.55.162) has joined #archlinux
+2015-05-05 13:01:34	<--	usrc (~Thunderbi@193.170.133.137) has quit (Client Quit)
+2015-05-05 13:01:46	-->	phre4k (~phre4k@55d42950.access.ecotel.net) has joined #archlinux
+2015-05-05 13:01:52	sudokode	that's not possible
+2015-05-05 13:02:04	<--	xoui (~xoui@unaffiliated/xoui) has quit (Ping timeout: 255 seconds)
+2015-05-05 13:02:05	-->	MrPeacock (~MrPeacock@p579402A7.dip0.t-ipconnect.de) has joined #archlinux
+2015-05-05 13:02:06	sudokode	I mean it is, but it has no net effect
+2015-05-05 13:02:07	<--	deh (~raiz@93.126.198.210) has quit (Client Quit)
+2015-05-05 13:02:18	<--	Elish (~x@unaffiliated/elish) has quit (Quit: Elish)

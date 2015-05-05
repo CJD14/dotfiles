@@ -3642,3 +3642,15 @@ EOT
 : 1430844873:0;git push 
 : 1430845068:0;git *
 : 1430845074:0;git add *
+: 1430845081:0;git commit
+: 1430845134:0;git push 
+: 1430845240:0;zsh
+: 1430845257:0;c
+: 1430845262:0;cd ..
+: 1430845263:0;ls
+: 1430845325:0;mv .weechat ~/.dotfiles/weechat
+: 1430845369:0;ln -s /home/cjd/.dotfiles/weechat/ /home/cjd/.weechat
+: 1430845371:0;ls
+: 1430845383:0;cd dots/
+: 1430845385:0;ls
+: 1430845392:0;git add *

@@ -1,0 +1,343 @@
+2015-04-30 15:17:54	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #vbox
+2015-04-30 15:17:54	--	Topic for #vbox is "VirtualBox 4.3.26 released! --- Forum: http://forums.virtualbox.org/ --- Bugtracker: http://www.virtualbox.org/wiki/Bugtracker --- User Manual: http://www.virtualbox.org/manual/UserManual.html"
+2015-04-30 15:17:54	--	Topic set by michael-vb (~michael-v@ip-109-42-1-86.web.vodafone.de) on Tue, 17 Mar 2015 03:25:50
+2015-04-30 15:17:54	--	Channel #vbox: 320 nicks (6 ops, 0 voices, 314 normals)
+2015-04-30 15:17:56	--	Channel created on Sun, 26 Nov 2006 01:52:00
+2015-04-30 15:21:54	<--	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has quit (Ping timeout: 245 seconds)
+2015-04-30 15:24:52	--	amalloy_ is now known as amalloy
+2015-04-30 15:25:10	<--	KuLbrez (KuLbrez@173-171-10-141.res.bhn.net) has quit (Ping timeout: 255 seconds)
+2015-04-30 15:27:25	DIEHLC	Anyone mind helping me out with something? I seem to have some permission problem that was caused by Arch Linux pacman install aparently is what I am finding out in my research. I get the error: NS_ERROR_FACTORY_NOT_REGISTERED (0x80040154) as soon as I go to create a new hard drive image and press okay. So its just a failing session creation I believe. Ive seen it could be a permission issue in the tmp
+2015-04-30 15:27:25	DIEHLC	directory but it is set up perfect. Not sure what else to try. Been researching the forums, documentation, other forums, bugreports, and google in general for hours and not a single one has given me a result sadly.
+2015-04-30 15:27:44	-->	last_staff (~Thunderbi@102-6-232.connect.netcom.no) has joined #vbox
+2015-04-30 15:29:16	DIEHLC	$ strace -s128 -f -o ~/Desktop/vbox.strace.20150430.log /usr/lib/virtualbox/VirtualBox --disable-hardening  gives the output:   VirtualBox: Effective UID is not root (euid=1000 egid=100 uid=1000 gid=100)
+2015-04-30 15:29:42	-->	Nach0z_ (~nach0z@99-39-250-138.lightspeed.tukrga.sbcglobal.net) has joined #vbox
+2015-04-30 15:30:19	-->	niddle (~niddle@23.94.247.157) has joined #vbox
+2015-04-30 15:30:51	DIEHLC	it then recommends to reinstall, so I tried and didnt help.
+2015-04-30 15:32:26	-->	elfy_ (~elfy@176.221.120.30) has joined #vbox
+2015-04-30 15:33:25	<--	a1|away (~jelle1@62.27.85.48) has quit (Ping timeout: 256 seconds)
+2015-04-30 15:33:26	<--	markovh (~myident@unaffiliated/markovh) has quit (Ping timeout: 256 seconds)
+2015-04-30 15:33:26	<--	spvensko (~spvensko@unaffiliated/spvensko) has quit (Max SendQ exceeded)
+2015-04-30 15:33:26	<--	Landswellsong (~elfy@176.221.120.30) has quit (Read error: Connection reset by peer)
+2015-04-30 15:33:26	<--	nemysis (~nemysis@freebsd/developer/pcbsd.nemysis) has quit (Ping timeout: 256 seconds)
+2015-04-30 15:33:26	<--	Nach0z (~nach0z@unaffiliated/nach0z) has quit (Ping timeout: 256 seconds)
+2015-04-30 15:33:44	<--	wakatana (~marek@magura.sinet.sk) has quit (Ping timeout: 256 seconds)
+2015-04-30 15:33:44	<--	typh00nz (~typh00nz@pc185-239.solaris.ds.polsl.pl) has quit (Ping timeout: 256 seconds)
+2015-04-30 15:33:49	-->	thomas (~thomas@freenode/staff/thomas) has joined #vbox
+2015-04-30 15:34:12	-->	spvensko (~spvensko@unaffiliated/spvensko) has joined #vbox
+2015-04-30 15:34:21	-->	a1|away (~jelle1@62.27.85.48) has joined #vbox
+2015-04-30 15:34:39	-->	markovh (zncuser@unaffiliated/markovh) has joined #vbox
+2015-04-30 15:35:02	-->	typh00nz (~typh00nz@pc185-239.solaris.ds.polsl.pl) has joined #vbox
+2015-04-30 15:35:07	rfm	DIEHLC: the Arch packaging isn't part of the official VBox distributions, so there's unlikely to be anybody here who can help.   I believe  Arch is odd enough that even the official "any distro" Linux package doesn't work either, but I could be wrong, I haven't tried.  (From that message it sounds like the VirtualBox binary wasn't installed setuid, which it needs to be, which does sound like a packaging bug.)
+2015-04-30 15:35:17	-->	nemysis (~nemysis@freebsd/developer/pcbsd.nemysis) has joined #vbox
+2015-04-30 15:35:47	<--	spvensko (~spvensko@unaffiliated/spvensko) has quit (Max SendQ exceeded)
+2015-04-30 15:35:55	<--	c0mrad3 (uid26809@gateway/web/irccloud.com/x-oexgbdtbtffwched) has quit (Quit: Connection closed for inactivity)
+2015-04-30 15:36:19	-->	wakatana (~marek@magura.sinet.sk) has joined #vbox
+2015-04-30 15:36:21	-->	spvensko (~spvensko@unaffiliated/spvensko) has joined #vbox
+2015-04-30 15:37:56	<--	spvensko (~spvensko@unaffiliated/spvensko) has quit (Max SendQ exceeded)
+2015-04-30 15:38:32	-->	spvensko (~spvensko@unaffiliated/spvensko) has joined #vbox
+2015-04-30 15:38:50	-->	SchrodingersScat (~Schroding@unaffiliated/schrodingersscat) has joined #vbox
+2015-04-30 15:39:33	DIEHLC	@rfm I figured as much, thank you. Is there a way to manually correct that setuid issue? I suppose I will go to Archs forums and give this another try. 
+2015-04-30 15:40:24	SchrodingersScat	Using virtualbox on a win8 host, client is xubuntu15.04, Getting weird opengl issues, can't play videos back in mpv or vlc, they play maybe a couple seconds then freeze.  OpenGL Warning: Unknown program 0 comes up in mpv
+2015-04-30 15:45:30	<--	Nach0z_ (~nach0z@99-39-250-138.lightspeed.tukrga.sbcglobal.net) has quit (Quit: leaving)
+2015-04-30 15:45:45	-->	Nach0z (~nach0z@unaffiliated/nach0z) has joined #vbox
+2015-04-30 15:59:48	-->	variable (~variable@freebsd/developer/variable) has joined #vbox
+2015-04-30 16:03:09	-->	Noteirak_ (~Noteirak@62-165-221-94.pool.digikabel.hu) has joined #vbox
+2015-04-30 16:03:47	-->	Noteirak__ (~Noteirak@62-165-221-94.pool.digikabel.hu) has joined #vbox
+2015-04-30 16:06:33	--	variable is now known as trout
+2015-04-30 16:06:57	<--	Noteirak (~Noteirak@62-165-221-94.pool.digikabel.hu) has quit (Ping timeout: 244 seconds)
+2015-04-30 16:07:55	<--	Noteirak_ (~Noteirak@62-165-221-94.pool.digikabel.hu) has quit (Ping timeout: 255 seconds)
+2015-04-30 16:07:57	<--	pentagonik (~nooneknow@inet-aumc04-o.oracle.com) has quit (Remote host closed the connection)
+2015-04-30 16:11:35	DIEHLC	just fyi for everyone, if anyone has the problem I listed above, suprisingly I finally got it working by removing the pacman installation of virtual box and usng the all linux distribution .run file. worked great on Arch Linux 64. Thanks for the assistance rfm
+2015-04-30 16:14:42	<--	michael-vb (~michael-v@p4FCCF296.dip0.t-ipconnect.de) has quit (Quit: Leaving.)
+2015-04-30 16:15:10	-->	pauled (~pauled@unaffiliated/pauled) has joined #vbox
+2015-04-30 16:21:59	-->	`Cam (~textual@60-241-86-210.static.tpgi.com.au) has joined #vbox
+2015-04-30 16:22:11	<--	`Cam (~textual@60-241-86-210.static.tpgi.com.au) has quit (Max SendQ exceeded)
+2015-04-30 16:22:48	-->	`Cam (~textual@60-241-86-210.static.tpgi.com.au) has joined #vbox
+2015-04-30 16:22:54	-->	Matool (~irc@97-91-173-19.dhcp.stls.mo.charter.com) has joined #vbox
+2015-04-30 16:23:21	<--	`Cam (~textual@60-241-86-210.static.tpgi.com.au) has quit (Max SendQ exceeded)
+2015-04-30 16:24:01	-->	`Cam (~textual@60-241-86-210.static.tpgi.com.au) has joined #vbox
+2015-04-30 16:24:02	-->	JethroTroll (GenteelBen@cpc70137-lutn12-2-0-cust564.9-3.cable.virginm.net) has joined #vbox
+2015-04-30 16:24:27	<--	JethroTroll (GenteelBen@cpc70137-lutn12-2-0-cust564.9-3.cable.virginm.net) has quit (Client Quit)
+2015-04-30 16:28:10	-->	Djelibeybi (~Djelibeyb@luv/committee/djeli) has joined #vbox
+2015-04-30 16:29:15	<--	vvuja (vvuja@unaffiliated/vvuja) has quit (Ping timeout: 256 seconds)
+2015-04-30 16:36:44	-->	FireBeard (~FireBeard@unaffiliated/firebeard) has joined #vbox
+2015-04-30 16:36:53	FireBeard	hello
+2015-04-30 16:38:30	FireBeard	how many of VB's users are casual users, who just like to run some OS'ses out of nostalgia, to try out something different, or to try that new linux distro to see what it's about?
+2015-04-30 16:38:37	<--	Jackneill (~Jackneill@unaffiliated/jackneill) has quit (Ping timeout: 252 seconds)
+2015-04-30 16:39:01	<--	elgatov (~elgatov@246.Red-83-49-41.dynamicIP.rima-tde.net) has quit (Read error: Connection reset by peer)
+2015-04-30 16:39:31	DIEHLC	count me as one. Im running Snow Leopard on an intel windows/linux laptop. just for fun
+2015-04-30 16:40:14	FireBeard	yea, that's why I use VB, just for fun and to see what distro I might like next
+2015-04-30 16:41:29	FireBeard	I have Win98/2K/XP running, plus a good few of 'misc' os'ses [warp, kolibrios, menuet, etc] just for fun
+2015-04-30 16:41:46	DIEHLC	yeah Id like to try some Solaris/Open Solaris and BSD distros next. oh and ive been meaning to try MINIX
+2015-04-30 16:42:25	FireBeard	Minix gives me MAJOR problems, haven't been able to get it fully up and running yet, not even with the supplied pre-built drive
+2015-04-30 16:43:54	FireBeard	solaris and bsd are both boring to me, because they're essentially the same as linux, as in they use the same graphical drivers, DE's etc
+2015-04-30 16:44:22	FireBeard	although, I have never tried Solaris
+2015-04-30 16:44:48	DIEHLC	thats unfortunate about minix. I just recently saw that it is actually older than Linux. 
+2015-04-30 16:45:11	FireBeard	well, it's a unix system
+2015-04-30 16:45:21	-->	pnhlantau1 (~Thunderbi@n11212075064.netvigator.com) has joined #vbox
+2015-04-30 16:45:33	FireBeard	no idea why Minix won't work, I'll figure it out tho :)
+2015-04-30 16:45:49	FireBeard	I did get Warp to work, and after that, everything is easy ;)
+2015-04-30 16:46:45	FireBeard	there's no pre-built version of warp, so you have to install it yourself, which is a challenge-ish
+2015-04-30 16:46:49	<--	pnhlantau (~Thunderbi@n11212075064.netvigator.com) has quit (Ping timeout: 256 seconds)
+2015-04-30 16:47:08	DIEHLC	never heard of it, going to have to look into it.
+2015-04-30 16:47:22	FireBeard	it's OS/2
+2015-04-30 16:47:28	FireBeard	the IBM thing
+2015-04-30 16:47:57	FireBeard	if you want to try it, get OS/2 Warp 4.52
+2015-04-30 16:48:33	FireBeard	it's not officially abandonware, just saying :)
+2015-04-30 16:49:08	Djelibeybi	Solaris works fine in VirtualBox.
+2015-04-30 16:49:15	FireBeard	well duh :D
+2015-04-30 16:49:19	Djelibeybi	:)
+2015-04-30 16:49:27	FireBeard	I just never tried it
+2015-04-30 16:49:37	S_SubZero	um OS/2 works fine in Vbox.
+2015-04-30 16:49:48	FireBeard	S_SubZero: it does, yes
+2015-04-30 16:49:56	Djelibeybi	Meh, Solaris to me is like a different distro of Linux -- close enough to feel familiar but different enough to make me stab things with a pitchfork. :)
+2015-04-30 16:50:09	--	bakingbread is now known as icedp
+2015-04-30 16:50:09	FireBeard	but it's quite a challenge if you're installing it for the first time, because it's such an illogical install process
+2015-04-30 16:50:22	S_SubZero	in the 90's that was normal.
+2015-04-30 16:50:31	Djelibeybi	I'm told the Solaris 11 installer is supposed to be a lot more sane, but I haven't tried it
+2015-04-30 16:50:37	FireBeard	listen, kiddie, I'm probably older than you ;)
+2015-04-30 16:50:56	FireBeard	no, I've never seen such a strange install as Warp
+2015-04-30 16:51:20	Djelibeybi	Ah, OS/2 Warp. I actually bought that, back in the day.
+2015-04-30 16:51:34	FireBeard	especially the partitioning part is OUT there :D
+2015-04-30 16:51:45	FireBeard	Djelibeybi: I never did, I went the Windows way
+2015-04-30 16:51:56	Djelibeybi	FireBeard: I resisted for as long as possible
+2015-04-30 16:51:57	S_SubZero	i went to OS/2 launch parties.  Back in the day.
+2015-04-30 16:52:01	FireBeard	haha
+2015-04-30 16:52:18	Djelibeybi	FireBeard: I went DOS -> DESQview -> OS/2 (Warp/Merlin) and eventually to Windows 95
+2015-04-30 16:52:20	FireBeard	no, for me, it was DOS and Windows all the way
+2015-04-30 16:52:25	<--	caravel (~caravel@unaffiliated/caravel) has quit (Quit: Konversation terminated!)
+2015-04-30 16:52:26	Djelibeybi	Then switched to OS X when it arrived
+2015-04-30 16:52:46	FireBeard	I went basic, dos. windows, linux
+2015-04-30 16:52:47	Djelibeybi	I ran Windows NT servers though. Just hated it on the desktop
+2015-04-30 16:53:01	FireBeard	I LOVED W2K with a passion
+2015-04-30 16:53:17	Djelibeybi	Ha! My first server stuff was DEC Alphas running Windows NT or HP-UX
+2015-04-30 16:53:18	FireBeard	ran it for at least 8 years :/
+2015-04-30 16:53:54	S_SubZero	i remember sitting outside my cave counting small piles of rocks to do my finances.  I R OLD MAN
+2015-04-30 16:53:54	FireBeard	the day they stopped supporting it, I ran for Linux
+2015-04-30 16:54:06	FireBeard	S_SubZero: haha
+2015-04-30 16:54:27	FireBeard	ok, I'm 44, you?
+2015-04-30 16:54:28	FireBeard	:P
+2015-04-30 16:54:36	Djelibeybi	FireBeard: I turn 40 in 18 days. :)
+2015-04-30 16:54:46	FireBeard	welcome to the fossil club...
+2015-04-30 16:54:55	Djelibeybi	FireBeard: I'm really enjoying my mid-life crisis too.
+2015-04-30 16:55:04	Djelibeybi	FireBeard: I bought myself a ridiculous car for my 40th birthday.
+2015-04-30 16:55:09	FireBeard	hah
+2015-04-30 16:55:16	FireBeard	I bought myself a boatload of LEGO :D
+2015-04-30 16:55:25	Djelibeybi	I already have a boatload of LEGO.
+2015-04-30 16:55:39	FireBeard	yea, I did too, but then I bought even more
+2015-04-30 16:55:43	Djelibeybi	Ah, nice
+2015-04-30 16:55:49	Djelibeybi	You can never have too much LEGO
+2015-04-30 16:55:53	Djelibeybi	Have you played with the new Mindstorms?
+2015-04-30 16:55:54	-->	Amkei (~Amkei@unaffiliated/amkei) has joined #vbox
+2015-04-30 16:55:56	FireBeard	nope, impossible
+2015-04-30 16:56:02	FireBeard	Djelibeybi: too expensive :/
+2015-04-30 16:56:06	Djelibeybi	yeah
+2015-04-30 16:56:12	FireBeard	I wish I could
+2015-04-30 16:56:12	Djelibeybi	I played with some at a LEGO store. it's awesome
+2015-04-30 16:56:21	Djelibeybi	I had the original Mindstorms about 10 years ago
+2015-04-30 16:56:26	FireBeard	wow, awesome
+2015-04-30 16:56:36	Djelibeybi	Was a birthday present from my ex. :)
+2015-04-30 16:56:37	FireBeard	the black brick, right?
+2015-04-30 16:56:40	Djelibeybi	Yep
+2015-04-30 16:56:43	FireBeard	good ex you have !!
+2015-04-30 16:56:49	Djelibeybi	I made a robot to terrorize/exercise the cats
+2015-04-30 16:56:50	FireBeard	buying LEGO for an adult person
+2015-04-30 16:56:56	FireBeard	LOL
+2015-04-30 16:57:10	Djelibeybi	It would race around with a cork behind it. When the cat caught it, it would stop for a random amount of time, then race off again
+2015-04-30 16:57:12	Djelibeybi	HOURS of fun
+2015-04-30 16:57:12	-->	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has joined #vbox
+2015-04-30 16:57:30	DIEHLC	i need one for mine
+2015-04-30 16:57:36	FireBeard	dude, an adult woman who gives her adult bf/husband a LEGO set is one to KEEP... :/
+2015-04-30 16:57:44	Djelibeybi	FireBeard: almost correct. :)
+2015-04-30 16:58:04	FireBeard	or the other way around :D
+2015-04-30 16:58:11	Djelibeybi	FireBeard: almost correct! :D
+2015-04-30 16:58:43	Djelibeybi	Or as I like to say, "being gay means you have someone else to play LEGO with."
+2015-04-30 16:59:02	SchrodingersScat	vlc threw this error, maybe related to why mpv doesn't play? libGL error: failed to load driver: vboxvideo
+2015-04-30 16:59:17	FireBeard	Djelibeybi: hahaha
+2015-04-30 16:59:22	FireBeard	I was gonna say :D
+2015-04-30 16:59:38	<--	amalloy (~amalloy@li231-96.members.linode.com) has left #vbox
+2015-04-30 17:00:12	FireBeard	what does Mindstorms actually run on?
+2015-04-30 17:00:28	FireBeard	[hey, to keep things at least a *little* bit on topic :D ]
+2015-04-30 17:01:40	Djelibeybi	FireBeard: the language is NXT. Not sure what the hardware in the new EV3 brick is
+2015-04-30 17:01:53	Djelibeybi	Lots of ports: http://en.wikipedia.org/wiki/Lego_Mindstorms#Lego_Mindstorms_EV3
+2015-04-30 17:01:55	<--	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has quit (Client Quit)
+2015-04-30 17:01:56	epictetus	 I think it's ARM
+2015-04-30 17:01:58	FireBeard	it has to run some kind of OS, right?
+2015-04-30 17:02:13	-->	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has joined #vbox
+2015-04-30 17:02:35	Djelibeybi	Yep. ARM9 running Linux: http://en.wikipedia.org/wiki/Lego_Mindstorms_EV3
+2015-04-30 17:02:54	Djelibeybi	"My robot is also my web server."
+2015-04-30 17:02:55	FireBeard	awww, I could've googled myself
+2015-04-30 17:03:13	FireBeard	it stands to reason it uses linux
+2015-04-30 17:03:25	Djelibeybi	I was googling anyway
+2015-04-30 17:03:31	FireBeard	haha
+2015-04-30 17:04:27	FireBeard	it's not really a problem opening up a tab with google tho ;)
+2015-04-30 17:05:19	FireBeard	I actually thought it might've been QNX's microkernel tho
+2015-04-30 17:06:01	<--	Amkei (~Amkei@unaffiliated/amkei) has quit (Quit: Verlassend)
+2015-04-30 17:07:31	<--	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2015-04-30 17:07:44	-->	nathanleclaire_ (~nathanlec@199-83-220-202.PUBLIC.monkeybrains.net) has joined #vbox
+2015-04-30 17:09:19	<--	towo_nb (~towo@ipb21920e8.dynamic.kabel-deutschland.de) has quit (Quit: Leaving)
+2015-04-30 17:10:14	<--	nathanleclaire (~nathanlec@199-83-220-202.PUBLIC.monkeybrains.net) has quit (Ping timeout: 245 seconds)
+2015-04-30 17:10:15	--	nathanleclaire_ is now known as nathanleclaire
+2015-04-30 17:16:37	<--	towo` (~towo@ipb21920e8.dynamic.kabel-deutschland.de) has quit (Quit: Leaving)
+2015-04-30 17:20:29	-->	BandC (~BandC@cpe-173-172-111-70.kc.res.rr.com) has joined #vbox
+2015-04-30 17:21:07	<--	nathanleclaire (~nathanlec@199-83-220-202.PUBLIC.monkeybrains.net) has quit (Quit: nathanleclaire)
+2015-04-30 17:23:44	-->	nathanleclaire (~nathanlec@199-83-220-202.PUBLIC.monkeybrains.net) has joined #vbox
+2015-04-30 17:24:26	<--	nitdega (~nitdega@2602:306:2420:9fa1:d047:20ec:5ec1:24b8) has quit (Ping timeout: 272 seconds)
+2015-04-30 17:26:24	<--	Cancel (~cancel@FUSE-DEDICATED-69-61-254-226.fuse.net) has quit (Quit: mi colloquy es su colloquy)
+2015-04-30 17:28:04	SchrodingersScat	the weird thing is it was working with video earlier :/
+2015-04-30 17:28:28	<--	Nyctophilia (~IamHereFo@unaffiliated/nyctophilia) has quit (Ping timeout: 252 seconds)
+2015-04-30 17:28:37	<--	Matool (~irc@97-91-173-19.dhcp.stls.mo.charter.com) has quit (Ping timeout: 264 seconds)
+2015-04-30 17:29:03	bekks	fix the guest additions though.
+2015-04-30 17:29:32	<--	djmutex (~djmutex@p5B3D5395.dip0.t-ipconnect.de) has quit (Quit: Leaving.)
+2015-04-30 17:30:16	SchrodingersScat	I thought I just did
+2015-04-30 17:31:48	<--	yangm (~yangm@187.180.214.87) has left #vbox ("Textual IRC Client: www.textualapp.com")
+2015-04-30 17:31:55	FireBeard	oh guest additions...
+2015-04-30 17:32:06	FireBeard	that should work better than it does now too !
+2015-04-30 17:32:14	FireBeard	Hey Larry, fix it, will ya
+2015-04-30 17:32:18	bekks	they work fine here.
+2015-04-30 17:32:49	bekks	If I'd not need this host for production, I'd update to the 5.0beta right now.
+2015-04-30 17:32:53	FireBeard	it does, but it should be easier to use with linux guests
+2015-04-30 17:33:23	<--	nathanleclaire (~nathanlec@199-83-220-202.PUBLIC.monkeybrains.net) has quit (Quit: nathanleclaire)
+2015-04-30 17:33:30	SchrodingersScat	ok, didn't do anything, it's working for one video now O_o
+2015-04-30 17:33:33	Djelibeybi	The 5.0 beta is really nice.
+2015-04-30 17:33:39	FireBeard	it took me about 15 mins, PLUS a walkthrough to help me with the guest additions install on Kali
+2015-04-30 17:34:48	SchrodingersScat	only thing I did was toggle compositing, i hope that wasn't the solution.
+2015-04-30 17:35:01	<--	Hobbyboy (Hobbyboy@2001:41d0:2:3bb3::103) has quit (Quit: I think the BNC broke.)
+2015-04-30 17:37:11	-->	Hobbyboy (Hobbyboy@hobbyboy.co.uk) has joined #vbox
+2015-04-30 17:39:20	<--	dstarh (~dstarh@50-196-75-26-static.hfc.comcastbusiness.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-30 17:39:41	<--	`Cam (~textual@60-241-86-210.static.tpgi.com.au) has quit (Quit: ZZZ)
+2015-04-30 17:41:40	<--	mihi (~mihi@p5B079BD8.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2015-04-30 17:42:05	<--	Noteirak__ (~Noteirak@62-165-221-94.pool.digikabel.hu) has quit (Read error: Connection reset by peer)
+2015-04-30 17:49:02	-->	nathanleclaire (~nathanlec@198.151.206.196) has joined #vbox
+2015-04-30 17:51:17	-->	mazzy_ (~textual@host113-2-dynamic.10-79-r.retail.telecomitalia.it) has joined #vbox
+2015-04-30 17:52:44	<--	seekr (~seekr@unaffiliated/seekr) has quit (Ping timeout: 245 seconds)
+2015-04-30 18:07:05	<--	nathanleclaire (~nathanlec@198.151.206.196) has quit (Quit: nathanleclaire)
+2015-04-30 18:07:32	<--	AlexPortable (uid7568@gateway/web/irccloud.com/x-orstrvlqbeazfsfk) has quit (Quit: Connection closed for inactivity)
+2015-04-30 18:08:24	-->	s8321414 (~s8321414@140.127.73.100) has joined #vbox
+2015-04-30 18:08:37	-->	punmc (~mythosMC@123.sub-70-215-84.myvzw.com) has joined #vbox
+2015-04-30 18:08:50	-->	nathanleclaire (~nathanlec@198.151.206.196) has joined #vbox
+2015-04-30 18:09:26	<--	punmc (~mythosMC@123.sub-70-215-84.myvzw.com) has quit (Read error: Connection reset by peer)
+2015-04-30 18:12:28	<--	pun84 (~mythosMC@pool-108-24-149-9.cmdnnj.fios.verizon.net) has quit (Ping timeout: 252 seconds)
+2015-04-30 18:16:08	<--	graphitemaster_ (~graphitem@198.52.199.148) has quit (Changing host)
+2015-04-30 18:16:08	-->	graphitemaster_ (~graphitem@unaffiliated/graphitemaster) has joined #vbox
+2015-04-30 18:16:16	--	graphitemaster_ is now known as graphitemaster
+2015-04-30 18:16:49	-->	pamaury (~quassel@rockbox/developer/pamaury) has joined #vbox
+2015-04-30 18:19:00	-->	seekr (~seekr@unaffiliated/seekr) has joined #vbox
+2015-04-30 18:19:42	<--	hivearts (~textual@cable-188-2-56-189.dynamic.sbb.rs) has quit (Read error: Connection reset by peer)
+2015-04-30 18:23:46	gamename	hi guys.  What ostype should I use for centos 7.1 x64?
+2015-04-30 18:24:34	bekks	Doesnt matter actually.
+2015-04-30 18:24:47	bekks	The ostypes are just settings for default values.
+2015-04-30 18:25:41	<--	parasite (~parasite@mar75-4-82-230-46-11.fbx.proxad.net) has quit (Quit: Leaving)
+2015-04-30 18:27:04	FireBeard	redhat 64bit
+2015-04-30 18:27:17	gamename	FireBeard: Thanks.
+2015-04-30 18:27:22	FireBeard	centos is based on redhat
+2015-04-30 18:27:26	FireBeard	yw
+2015-04-30 18:27:31	bekks	The ostype is irrelevant.
+2015-04-30 18:27:43	FireBeard	just answer the question...
+2015-04-30 18:28:05	FireBeard	redhat is what he should select, done
+2015-04-30 18:28:33	bekks	The ostype is just a bunch of default values, nothing else. It is irrelevant.
+2015-04-30 18:29:18	-->	Matool (~irc@97-91-173-19.dhcp.stls.mo.charter.com) has joined #vbox
+2015-04-30 18:29:31	FireBeard	I think those default values might matter
+2015-04-30 18:29:42	bekks	They dont.
+2015-04-30 18:29:45	FireBeard	maybe not, but why not enter the relevant info anyway?
+2015-04-30 18:29:59	FireBeard	centos is based on RHEL
+2015-04-30 18:30:21	FireBeard	so why not just enter that into VB?
+2015-04-30 18:30:55	-->	hivearts (~textual@cable-188-2-56-189.dynamic.sbb.rs) has joined #vbox
+2015-04-30 18:31:19	bekks	Again, for the third time, just for you: the ostype is just a summary of of default values.
+2015-04-30 18:32:16	<--	JacksonIsaac (uid13084@gateway/web/irccloud.com/x-txmijxhcuxcsgnxs) has quit (Quit: Connection closed for inactivity)
+2015-04-30 18:36:02	<--	pamaury (~quassel@rockbox/developer/pamaury) has quit (Ping timeout: 264 seconds)
+2015-04-30 18:39:14	-->	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #vbox
+2015-04-30 18:39:38	<--	mazzy_ (~textual@host113-2-dynamic.10-79-r.retail.telecomitalia.it) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-30 18:41:26	<--	gamename (~gamename@c-67-177-166-184.hsd1.tn.comcast.net) has quit (Remote host closed the connection)
+2015-04-30 18:42:01	-->	gamename (~gamename@c-67-177-166-184.hsd1.tn.comcast.net) has joined #vbox
+2015-04-30 18:43:28	<--	Demetria (~Demetria@201.163.98.68) has quit (Quit: Goodbye Linux World | Richard Stallman in you we trust.)
+2015-04-30 22:29:26	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #vbox
+2015-04-30 22:29:26	--	Topic for #vbox is "VirtualBox 4.3.26 released! --- Forum: http://forums.virtualbox.org/ --- Bugtracker: http://www.virtualbox.org/wiki/Bugtracker --- User Manual: http://www.virtualbox.org/manual/UserManual.html"
+2015-04-30 22:29:26	--	Topic set by michael-vb (~michael-v@ip-109-42-1-86.web.vodafone.de) on Tue, 17 Mar 2015 03:25:50
+2015-04-30 22:29:26	--	Channel #vbox: 298 nicks (3 ops, 0 voices, 295 normals)
+2015-04-30 22:29:26	--	Channel created on Sun, 26 Nov 2006 01:52:00
+2015-04-30 22:52:42	--	Vampire0_ is now known as Vampire0
+2015-04-30 22:53:59	<--	CheckDavid (uid14990@gateway/web/irccloud.com/x-htftddarlwqsaobd) has quit (Quit: Connection closed for inactivity)
+2015-04-30 22:55:51	<--	WeblionX (~WeblionXX@c-73-212-85-216.hsd1.md.comcast.net) has quit (Quit: Leaving)
+2015-04-30 22:59:56	<--	nathanleclaire (~nathanlec@199-83-220-202.PUBLIC.monkeybrains.net) has quit (Ping timeout: 240 seconds)
+2015-04-30 23:10:53	<--	hivearts (~textual@178-223-70-158.dynamic.isp.telekom.rs) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-04-30 23:13:17	-->	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has joined #vbox
+2015-04-30 23:14:54	-->	j12t_ (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has joined #vbox
+2015-04-30 23:15:24	<--	FireBeard (~FireBeard@unaffiliated/firebeard) has quit (Quit: [00:43:54] <tacoinanus> I like you drunk)
+2015-04-30 23:18:07	<--	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has quit (Ping timeout: 255 seconds)
+2015-04-30 23:20:02	<--	jost (~jost@p548307B4.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2015-04-30 23:21:09	<--	j12t_ (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2015-04-30 23:21:26	-->	j12t (~j12t@c-107-3-142-14.hsd1.ca.comcast.net) has joined #vbox
+2015-04-30 23:22:43	-->	jookiyaya (clt@unaffiliated/jookiyaya) has joined #vbox
+2015-04-30 23:22:56	jookiyaya	does vbox support bluray ?
+2015-04-30 23:26:29	<--	pauled (~pauled@unaffiliated/pauled) has quit (Quit: pauled)
+2015-04-30 23:30:33	<--	herrbischoff (~herrbisch@port-7108.pppoe.wtnet.de) has quit (Ping timeout: 246 seconds)
+2015-04-30 23:30:51	<--	MastriusTab (~AndChat51@71.21.132.11) has quit (Ping timeout: 256 seconds)
+2015-04-30 23:32:22	-->	herrbischoff (~herrbisch@port-22017.pppoe.wtnet.de) has joined #vbox
+2015-04-30 23:34:13	-->	Nautilus (~me@d4-50-106-116.nap.wideopenwest.com) has joined #vbox
+2015-04-30 23:35:04	-->	MastriusTab (~AndChat51@71.21.132.11) has joined #vbox
+2015-04-30 23:35:27	Nautilus	I'm installing vbox but always get worried when an app wants to set file associations. Is there a page that tells me what extensions it wants to associate?
+2015-04-30 23:35:57	Nautilus	this google gets me junk: virtualbox "register file association"
+2015-04-30 23:37:50	Chex	Nautilus: what OS?
+2015-04-30 23:38:07	Nautilus	Windows, sorry
+2015-04-30 23:39:38	<--	ircuser-1 (~ircuser-1@158.183-62-69.ftth.swbr.surewest.net) has quit (Quit: ircuser-1)
+2015-04-30 23:41:26	Nautilus	what is the extension for a vbox? I have another app that uses .box, so it makes me careful
+2015-04-30 23:42:18	BigBobbyTable	.vdi is normal harddrive one, Nautilus
+2015-04-30 23:43:33	Nautilus	Is there a complete list somewhere?
+2015-04-30 23:44:21	BigBobbyTable	http://gyazo.com/87dce8d6f44c382c91f64b141c03bd28
+2015-04-30 23:45:57	Nautilus	thanks for that effort, I don't think that's the Q I was asking, but something I will want to know
+2015-04-30 23:46:15	Nautilus	I just mean... the VM is a file on the HD yes, what is IT's extension?
+2015-04-30 23:46:53	Nautilus	maybe that's the only file association it will do at this time.
+2015-04-30 23:47:05	Nautilus	.box? .vbx? .something?
+2015-04-30 23:48:32	BigBobbyTable	Those that I just gave.
+2015-04-30 23:48:39	BigBobbyTable	That is the virtual machine.
+2015-04-30 23:49:23	 *	Nautilus looking at http://fileinfo.com/extension/vbox
+2015-04-30 23:50:10	Nautilus	so the good news is it doesn't seem to conflict with my app that uses .box
+2015-04-30 23:50:47	Nautilus	.vbox and a disk image
+2015-04-30 23:53:13	Nautilus	ok, installer says it'll drop my net connection, bbl
+2015-04-30 23:53:18	<--	Nautilus (~me@d4-50-106-116.nap.wideopenwest.com) has left #vbox ("Leaving")
+2015-04-30 23:57:39	jookiyaya	what does "passthrough" do on "optical drive" setting
+2015-05-01 00:00:23	-->	Nautilus (~me@d4-50-106-116.nap.wideopenwest.com) has joined #vbox
+2015-05-01 00:02:18	Nautilus	at VM create time it's asking for a name and OS, but it's only showing 32 bit OSs?
+2015-05-01 00:03:07	-->	Polynomial-C (~Poly-C@gentoo/developer/Polynomial-C) has joined #vbox
+2015-05-01 00:03:11	jookiyaya	what does "passthrough" do on "optical drive" setting
+2015-05-01 00:04:37	<--	MastriusTab (~AndChat51@71.21.132.11) has quit (Ping timeout: 264 seconds)
+2015-05-01 00:04:37	<--	Poly-C (~Poly-C@gentoo/developer/Polynomial-C) has quit (Ping timeout: 264 seconds)
+2015-05-01 00:07:09	jookiyaya	i cannot run powerdvd on vbox: any know how to fix this
+2015-05-01 00:09:05	jookiyaya	what does "passthrough" do on "optical drive" setting
+2015-05-01 00:11:02	Nautilus	just wild guessing, it may pass the drive commands more directly to the host OS?
+2015-05-01 00:12:09	Nautilus	unless you're having a problem it's probably not a big deal
+2015-05-01 00:18:09	jookiyaya	so what does it do when you don't enable passthrough then?
+2015-05-01 00:19:11	Nautilus	unsure exactly, just trying to give a general idea.
+2015-05-01 00:19:37	Nautilus	Could also be that I have it backwards, passthrough skips the host OS.
+2015-05-01 00:20:41	Nautilus	sorry, didn't mean to confuse you, hopefully someone else speaks up
+2015-05-01 00:21:03	 *	Nautilus is rebooting, night
+2015-05-01 00:21:10	<--	Nautilus (~me@d4-50-106-116.nap.wideopenwest.com) has left #vbox ("Leaving")
+2015-05-01 00:31:33	<--	Haswell (~broaderba@unaffiliated/haswell) has quit (Quit: Saliendo)
+2015-05-01 00:35:18	<--	FreezingCold (~FreezingC@135.0.41.14) has quit (Ping timeout: 256 seconds)
+2015-05-01 00:43:55	<--	spvensko (~spvensko@unaffiliated/spvensko) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2015-05-01 00:48:51	-->	pnhlantau (~Thunderbi@m121-202-12-132.smartone.com) has joined #vbox
+2015-05-01 00:49:42	-->	JacksonIsaac (uid13084@gateway/web/irccloud.com/x-tcmfpjtitizpqucv) has joined #vbox
+2015-05-01 00:52:58	<--	pnhlantau1 (~Thunderbi@n11212075064.netvigator.com) has quit (Ping timeout: 272 seconds)
+2015-05-01 00:59:21	-->	Gnomethrower (~Gnomethro@exchange.officeautomator.com.au) has joined #vbox
+2015-05-01 00:59:28	Gnomethrower	Hey there
+2015-05-01 00:59:37	Gnomethrower	How do I get DNS working within the NAT Network mode of networking?
+2015-05-01 01:00:31	Gnomethrower	I've got 6 machines each connected to a NAT network and I want to have basic DNS letting me, for example, pinging glasslab0
+2015-05-01 01:07:16	-->	TimeVirus (~timevirus@rrcs-97-76-121-82.se.biz.rr.com) has joined #vbox
+2015-05-01 01:11:20	<--	pun84 (~mythosMC@pool-108-24-149-9.cmdnnj.fios.verizon.net) has quit (Ping timeout: 272 seconds)
+2015-05-01 01:12:03	-->	pun84 (~mythosMC@pool-108-24-149-9.cmdnnj.fios.verizon.net) has joined #vbox
+2015-05-01 01:22:07	rfm	Gnomethrower: well, NAT network is supposed to provide a DNS server that basically forwards to whatever the host is using, so if DNS is working on the host it should work on the guests (assuming the guests config with DHCP, or statically with the same info.)    Do note https://www.virtualbox.org/manual/ch06.html#network_nat_service says DNS servers from loopback aren't passed to the NAT network, so make sure host has some others.
+2015-05-01 01:23:29	Gnomethrower	rfm: If I set the DNS to, for example, Google DNS
+2015-05-01 01:23:35	Gnomethrower	it wouldn't be aware of my local machines, would it?
+2015-05-01 01:24:07	Gnomethrower	I guess what I'm asking is is it necessary for me to set up a DNS service like dnsmasq or BIND myself, or is there a simpler way to do it? I'm on the verge of installing pfSense to provide DNS and DHCP.../
+2015-05-01 01:25:16	rfm	Gnomethrower: not unless your local machines are in the worldwide DNS.   If you want to have a "local zone" where names that only you know get resolved, you are going to have to run a local BIND inside the NAT network (and I'm not going to be able to help you, I gave up.)
+2015-05-01 01:25:54	Gnomethrower	rfm: Thanks, that's all the clarification I need. I'll start with pfSense and "upgrade" to BIND/SAMBA4/AD later. :)
+2015-05-01 01:27:38	rfm	Gnomethrower: don't forget the good old 1980's solution of  copying /etc/hosts files around, which is what I (mostly) use
+2015-05-01 01:27:52	Gnomethrower	rfm: I'm trying to build a homelab for automating with Ansible
+2015-05-01 01:27:58	Gnomethrower	I need something sort-of nice
+2015-05-01 11:44:33	--	irc: disconnected from server
+2015-05-01 11:44:59	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #vbox
+2015-05-01 11:44:59	--	Topic for #vbox is "VirtualBox 4.3.26 released! --- Forum: http://forums.virtualbox.org/ --- Bugtracker: http://www.virtualbox.org/wiki/Bugtracker --- User Manual: http://www.virtualbox.org/manual/UserManual.html"
+2015-05-01 11:44:59	--	Topic set by michael-vb (~michael-v@ip-109-42-1-86.web.vodafone.de) on Tue, 17 Mar 2015 03:25:49
+2015-05-01 11:44:59	--	Channel #vbox: 310 nicks (4 ops, 0 voices, 306 normals)
+2015-05-01 11:44:59	--	Channel created on Sun, 26 Nov 2006 01:52:00

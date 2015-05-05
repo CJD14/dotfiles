@@ -1,0 +1,164 @@
+2015-04-28 12:51:16	-->	DIEHLC (~cjd@50-108-99-114.adr01.mskg.mi.frontiernet.net) has joined #emacs
+2015-04-28 12:51:16	--	Topic for #emacs is "Emacs is 100% gluten-free, organic, and free of GMOs. |  | Ask questions, treat others with respect, stop off-topic discussions for emacs questions, make puns, be snarky | No public logging! What happens in #emacs stays in #emacs. | Don't use nicks for /away status | No sexism, homophobia or other asshattery"
+2015-04-28 12:51:16	--	Topic set by JordiGH (~jordi@octave/developer/JordiGH) on Tue, 28 Apr 2015 10:29:42
+2015-04-28 12:51:16	--	Channel #emacs: 873 nicks (0 ops, 0 voices, 873 normals)
+2015-04-28 12:51:16	--	URL for #emacs: http://www.emacswiki.org/EmacsChannel
+2015-04-28 12:51:18	--	Channel created on Sun, 26 Nov 2006 01:42:33
+2015-04-28 12:51:32	<--	vampolo (~vampolo@2601:c:a201:5e00:2c44:404e:31ee:d3aa) has quit (Ping timeout: 265 seconds)
+2015-04-28 12:51:32	fledermaus	forcer: remove-hook uses equal.
+2015-04-28 12:51:50	forcer	fledermaus: Great. I never remember that function :-D
+2015-04-28 12:51:51	catern	myeffort: lambda in $1?
+2015-04-28 12:52:30	<--	marsam (~mario@unaffiliated/marsam) has quit (Remote host closed the connection)
+2015-04-28 12:52:42	forcer	fledermaus: Oh, right, because there's add-to-list, but not remove-from-list...
+2015-04-28 12:53:02	-->	marsam (~mario@2001:1388:1447:6d33:5017:e3d3:8f87:2386) has joined #emacs
+2015-04-28 12:53:05	<--	marsam (~mario@2001:1388:1447:6d33:5017:e3d3:8f87:2386) has quit (Changing host)
+2015-04-28 12:53:05	-->	marsam (~mario@unaffiliated/marsam) has joined #emacs
+2015-04-28 12:53:10	schweers	what does $1 do?
+2015-04-28 12:53:30	-->	_maddy (~pekka@dsl-tkubrasgw2-50ddd1-80.dhcp.inet.fi) has joined #emacs
+2015-04-28 12:53:57	<--	pnkfelix (~pnkfelix@2001:450:1e:224:a4df:102f:b422:af63) has quit (Ping timeout: 265 seconds)
+2015-04-28 12:54:03	<--	bradwright (uid43@pdpc/supporter/active/intranation) has quit (Quit: Connection closed for inactivity)
+2015-04-28 12:54:16	-->	edusty1 (edusty1@nat/google/x-wrlijqjixnxymcob) has joined #emacs
+2015-04-28 12:54:26	_maddy	hi
+2015-04-28 12:54:30	fledermaus	nothing. it's just a funny looking variable name.
+2015-04-28 12:54:36	-->	cestdiego (~user@181.66.238.84) has joined #emacs
+2015-04-28 12:54:54	cestdiego	good morning! :D
+2015-04-28 12:55:12	wasamasa	cestdiego: hi
+2015-04-28 12:55:22	<--	rmsilva (~ruisilva@a95-92-118-66.cpe.netcabo.pt) has quit (Ping timeout: 244 seconds)
+2015-04-28 12:55:26	catern	myeffort: I could also just use, you know, "let"
+2015-04-28 12:55:31	cestdiego	wasamasa: hey! :D trying the ERC layer? :P
+2015-04-28 12:55:44	<--	roang (~user@p4FDE2315.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2015-04-28 12:55:48	<--	edusty (edusty@nat/google/x-pxwqhtcdmcqqidzb) has left #emacs ("Bye")
+2015-04-28 12:55:54	myeffort	catern: to accomplish what?
+2015-04-28 12:55:57	wasamasa	cestdiego: I don't use spacemacs
+2015-04-28 12:56:01	schweers	fledermaus:ah, ok
+2015-04-28 12:56:08	cestdiego	wasamasa:;_;
+2015-04-28 12:56:26	catern	myeffort: (let (foo (lambda () ...)) (add-hook ... foo) foo)
+2015-04-28 12:56:26	wasamasa	cestdiego: in fact, I only visited its channel since someone chose to investigate in eyebrowse as component of it
+2015-04-28 12:56:47	wasamasa	cestdiego: and you guys were apparently too scared of irc to just have your own channel on freenode
+2015-04-28 12:56:55	cestdiego	wasamasa: I really like eyebrowse
+2015-04-28 12:57:16	catern	so
+2015-04-28 12:57:16	myeffort	catern: The point of it was to have a reference to lambda in order to be able to remove it later
+2015-04-28 12:57:42	catern	myeffort: yeah, that's what mine does - you have the lambda value
+2015-04-28 12:57:46	catern	so
+2015-04-28 12:57:46	forcer	You could use `defun' to keep a reference to the lambda both for adding *and* removing!
+2015-04-28 12:57:49	cestdiego	wasamasa: I think most people just prefer gitter, you can do rly fast searches on it. And gitter has irc channel too btw.
+2015-04-28 12:58:05	catern	I hate this lisp2 nonsense
+2015-04-28 12:58:16	forcer	catern: Who doesn't.
+2015-04-28 12:58:17	cestdiego	anyway. I was hanging around here to see if some of you guys knew if there was a package that did language injection
+2015-04-28 12:58:18	myeffort	catern: not in the same command, remove half an hour later maybe
+2015-04-28 12:58:20	cestdiego	like this
+2015-04-28 12:58:23	catern	can I do (add-hook ... 'foo) when foo is a variable containing a closure?
+2015-04-28 12:58:24	<--	AlphaOmega82 (~Alfa@CPEbc140153e513-CMbc140153e510.cpe.net.cable.rogers.com) has quit (Read error: Connection reset by peer)
+2015-04-28 12:58:30	cestdiego	http://www.reddit.com/r/emacs/comments/344we6/is_there_language_injection_in_emacs_video_example/
+2015-04-28 12:58:35	-->	e_svedang (~erik@c83-254-7-124.bredband.comhem.se) has joined #emacs
+2015-04-28 12:58:35	wasamasa	cestdiego: certainly not with that name
+2015-04-28 12:58:35	rudybot	http://tinyurl.com/npxjj5j
+2015-04-28 12:58:36	catern	will that work? if not, how do I get the closure in to the function namespace?
+2015-04-28 12:58:39	myeffort	catern: indiect function
+2015-04-28 12:58:44	myeffort	indirect function
+2015-04-28 12:58:47	-->	AlphaOmega82 (~Alfa@CPEbc140153e513-CMbc140153e510.cpe.net.cable.rogers.com) has joined #emacs
+2015-04-28 12:58:51	cestdiego	rudybot: sry :(
+2015-04-28 12:58:52	wasamasa	cestdiego: I also didn't manage figuring out what that video was supposed to demonstrate
+2015-04-28 12:58:53	rudybot	cestdiego: dim sry, was on the phone, trying now
+2015-04-28 12:58:59	<--	DrGreven` (~user@2.70.90.176.mobile.tre.se) has quit (Remote host closed the connection)
+2015-04-28 12:59:12	wasamasa	rudybot: you passed the turing test!
+2015-04-28 12:59:13	rudybot	wasamasa: I don't really understand turing completeness though, because the definition seems to be based on single-taped Turing Machines?
+2015-04-28 12:59:16	<--	cj3kim (~cj3kim@unaffiliated/cj3kim) has quit (Ping timeout: 265 seconds)
+2015-04-28 12:59:23	forcer	cestdiego: I think the term for that feature, if I understand correctly, is "multiple modes", and it's one of the weak spots of Emacs
+2015-04-28 12:59:26	<--	IbrahimA (~yes@173.193.174.109) has left #emacs
+2015-04-28 13:00:04	cestdiego	forcer: :( I think org makes it work but I don't know how it's really implemented in src blocks
+2015-04-28 13:00:14	forcer	cestdiego: There are some modes that try to get that - e.g. multiple-major-modes (mumamo) - but they are all just limited work-arounds for something Emacs really does not do well.
+2015-04-28 13:00:25	wasamasa	cestdiego: org just copies fontified sources from a temporary buffer
+2015-04-28 13:00:31	wasamasa	cestdiego: that's why it breaks for web-mode!
+2015-04-28 13:00:38	cestdiego	web-mode also makes it kinda possible. but it implements it's own way of modes. We need to use the modes that we have already installed
+2015-04-28 13:00:43	wasamasa	cestdiego: because it's doing its own trickery for font-locking and multimodes and whatnot
+2015-04-28 13:00:53	catern	myeffort: how does that help me?
+2015-04-28 13:01:02	catern	myeffort: I want the function cell to point at the variable cell
+2015-04-28 13:01:12	catern	myeffort: this: https://www.gnu.org/software/emacs/manual/html_node/elisp/Function-Indirection.html just points it at another function cell
+2015-04-28 13:01:13	rudybot	http://tinyurl.com/kop6pzo
+2015-04-28 13:01:29	cestdiego	wasamasa: yep that's the problem, org mode is mostly just fontify, you don't have the feature of the mode, like having completion and syntax checking
+2015-04-28 13:01:36	<--	Ephexeve (~Ephexeve@179.223.133.129) has quit (Quit: WeeChat 1.1.1)
+2015-04-28 13:01:41	wasamasa	cestdiego: I don't believe this is solvable given the way modes are implemented in emacs
+2015-04-28 13:01:53	myeffort	catern: Yes, that the only case when symbol is callable. IIRC
+2015-04-28 13:02:06	-->	Cust0dian (~Cust0dian@91.215.121.245) has joined #emacs
+2015-04-28 13:02:08	myeffort	Actually if I'm not speaking of my ass, which i probably do
+2015-04-28 13:02:11	cestdiego	wasamasa: ;_;
+2015-04-28 13:02:19	-->	Judge_Dredd (~Judge_Dre@176.193.228.60) has joined #emacs
+2015-04-28 13:02:22	wasamasa	cestdiego: they're basically a bunch of buffer-local variables and keybindings to functions that mode defined
+2015-04-28 13:02:32	wasamasa	cestdiego: you can't even rely on a common subset for modes
+2015-04-28 13:02:36	cestdiego	wasamasa: are modes implemented rly that unflexible?
+2015-04-28 13:02:40	wasamasa	cestdiego: unlike with an IDE from jetbrains
+2015-04-28 13:02:50	wasamasa	cestdiego: it's rather that they're *too* flexible
+2015-04-28 13:02:58	cestdiego	wasamasa: .-.
+2015-04-28 13:03:01	wasamasa	cestdiego: http://blog.jetbrains.com/blog/2014/05/27/nitra-goes-open-source/
+2015-04-28 13:03:03	-->	vampolo (~vampolo@2601:c:a201:5e00:2c44:404e:31ee:d3aa) has joined #emacs
+2015-04-28 13:03:07	forcer	No structure at all, yep
+2015-04-28 13:03:11	-->	Milkweed (~Milkweeds@cpc69833-shep12-2-0-cust153.8-3.cable.virginm.net) has joined #emacs
+2015-04-28 13:03:14	wasamasa	cestdiego: that's from the makers of phpstorm
+2015-04-28 13:03:41	cestdiego	 I'll give it a read
+2015-04-28 13:03:49	wasamasa	cestdiego: you know, the editor demonstrated in that video
+2015-04-28 13:04:10	wasamasa	s/editor/IDE?
+2015-04-28 13:04:28	wasamasa	blech
+2015-04-28 13:04:45	cestdiego	yes, it's jetBrains. It works in WebStorm too
+2015-04-28 13:04:46	wasamasa	cestdiego: there's btw other alternatives proposed for editor integration
+2015-04-28 13:04:59	-->	ddellacosta (~ddellacos@softbank126114212003.bbtec.net) has joined #emacs
+2015-04-28 13:05:17	cestdiego	wasamasa: oh lime mumano? or is there an `emacs` way
+2015-04-28 13:05:22	-->	bubu^ (~bubu@2a01:e35:2ef5:3d10:5f1a:b827:5fe:d1d6) has joined #emacs
+2015-04-28 13:05:22	wasamasa	cestdiego: the thing's just that nobody bothered making these work as well as the IDE counterparts (if even at all)
+2015-04-28 13:05:36	wasamasa	cestdiego: no, integration of https://github.com/facebook/pfff for instance
+2015-04-28 13:06:04	wasamasa	cestdiego: mumamo is just an ugly hack :P
+2015-04-28 13:06:20	-->	favetelinguis (~favetelin@90-227-138-205-no186.tbcn.telia.com) has joined #emacs
+2015-04-28 13:06:50	-->	jtmoulia (~user@24-182-63-154.static.reno.nv.charter.com) has joined #emacs
+2015-04-28 13:07:03	cestdiego	huh? I don't get it. So emacs could use this external programs for integration?
+2015-04-28 13:07:03	wasamasa	cestdiego: steve yegge proposed a more inclusive tool, but no life signs from him for years
+2015-04-28 13:07:04	schweers	Is there anything that prevents emacs from becoming a complete IDE?  As in: if, say, the eclipse guys had decided to use emacs as a base for their stuff.
+2015-04-28 13:07:14	wasamasa	schweers: laziness
+2015-04-28 13:07:20	<--	nando293921 (~fernando@173.224.93.6) has quit (Ping timeout: 250 seconds)
+2015-04-28 13:07:21	schweers	wasamasa: I sometimes wonder if he’s still alive
+2015-04-28 13:07:27	schweers	wasamasa: apart from it being work, that is
+2015-04-28 13:07:34	-->	jchochli (~jchochli@c-71-234-80-196.hsd1.ct.comcast.net) has joined #emacs
+2015-04-28 13:07:34	wasamasa	schweers: I bet google would keep him alive
+2015-04-28 13:07:38	-->	alexyz (~alexyz@12.111.84.106) has joined #emacs
+2015-04-28 13:07:49	<--	alexyz (~alexyz@12.111.84.106) has left #emacs ("Textual IRC Client: www.textualapp.com")
+2015-04-28 13:07:54	-->	alexyz (~alexyz@12.111.84.106) has joined #emacs
+2015-04-28 13:07:57	schweers	I wouldn’t exactly call it lazy, I’d suspect it to be less work using emacs, than having to write the whole dang thing from scratch
+2015-04-28 13:08:00	alexyz	Is there a way to filter tasks with a DEADLINE this week?
+2015-04-28 13:08:13	alexyz	I can do "DEADLINE<=\"<+1w>\", but that's a week from now
+2015-04-28 13:08:23	-->	vrishab (~vrishab@122.172.241.74) has joined #emacs
+2015-04-28 13:08:38	<--	rand000 (~rand@riber.amagerkollegiet.dk) has quit (Ping timeout: 250 seconds)
+2015-04-28 13:08:39	wasamasa	schweers: emacs does have a pretty byzantine codebase
+2015-04-28 13:08:56	wasamasa	schweers: it doesn't even follow modern UI guidelines or anything
+2015-04-28 13:09:19	schweers	ok, that may be true, but the functionality may be better, right?
+2015-04-28 13:09:24	wasamasa	schweers: the reason people are using it is because they like just extending it to their wishes with less ceremony behind it
+2015-04-28 13:09:36	<--	ddellacosta (~ddellacos@softbank126114212003.bbtec.net) has quit (Ping timeout: 240 seconds)
+2015-04-28 13:09:36	-->	claw (~quassel@95.89.74.84) has joined #emacs
+2015-04-28 13:09:41	<--	jezeniel (~jezeniel@112.206.107.29) has quit (Ping timeout: 248 seconds)
+2015-04-28 13:09:49	forcer	Emacs is easy to extend somewhat, but hard to customize completely.
+2015-04-28 13:09:50	<--	nkar` (~user@ppp91-76-65-213.pppoe.mtu-net.ru) has quit (Remote host closed the connection)
+2015-04-28 13:09:59	<--	rejerson69_ (~rejerson6@169.53.134.171-static.reverse.softlayer.com) has quit (Ping timeout: 256 seconds)
+2015-04-28 13:10:01	schweers	I sometimes get the impression that each month there are more new packages for emacs, than there are total plugins for eclipse -.-
+2015-04-28 13:10:04	schweers	which is sad
+2015-04-28 13:10:25	wasamasa	yet there's still nothing providing fast and fuzzy search like in sublime :P
+2015-04-28 13:10:27	cestdiego	schweers: why is it sad?
+2015-04-28 13:10:41	 *	wasamasa mumbles something about low-hanging fruit
+2015-04-28 13:10:42	schweers	forcer: hm, I’m not quite sure I know what you mean, but it does has its problems
+2015-04-28 13:10:55	schweers	cestdiego:because eclipse is all-popular
+2015-04-28 13:11:10	schweers	I would have expected there to be more people adding eclipse stuff
+2015-04-28 13:11:16	<--	dcl (~dcl@freecode-project/hacker/spiderbyte) has quit (Ping timeout: 240 seconds)
+2015-04-28 13:11:33	cestdiego	not if emacs is more easy to customize
+2015-04-28 13:11:35	schweers	and it speaks volumes of how easy or difficult it /seems/ to be to extend eclipse, compared to emacs
+2015-04-28 13:11:54	forcer	schweers: When trying to implement stuff, you get the weirdest problems. Like, "I'd like a ruler at column 80" - no easy way, just lots of hacks. "How about I want to keep the buffer at the bottom of the window, and not scroll past the end of the buffer"? Nope, sorry, the display engine does not allow that.
+2015-04-28 13:12:02	wasamasa	yet eclipse gives me overall a smoother user experience than emacs
+2015-04-28 13:12:18	forcer	schweers: You can do a lot of things in Emacs, but there's also quite a lot of stuff that just doesn't work. You can work around it, but it's annoying.
+2015-04-28 13:12:19	<--	jchochli (~jchochli@c-71-234-80-196.hsd1.ct.comcast.net) has quit (Ping timeout: 265 seconds)
+2015-04-28 13:12:20	wasamasa	it just doesn't break apart on me
+2015-04-28 13:12:51	wasamasa	schweers: anyhow, if you believe you can do it, do it!
+2015-04-28 13:12:56	catern	so
+2015-04-28 13:13:12	wasamasa	schweers: presenting a prototype or poc or anything at all makes for more interesting discussion than seeking for flaws in emacs
+2015-04-28 13:13:14	catern	is it okay to do (fset 'foo (lambda () blah blah))
+2015-04-28 13:13:22	wasamasa	schweers: it also makes for more progress :P
+2015-04-28 13:13:57	<--	rogorido (~user@nat-wlan2.uni-erfurt.de) has quit (Ping timeout: 256 seconds)
+2015-04-28 13:14:01	schweers	that’s actually what I wanted to know: what are the limts
+2015-04-28 13:14:25	wasamasa	find out yourself, like by playing with the display engine
+2015-04-28 13:14:26	-->	Mon_Ouie (~Mon_Ouie@subtle/user/MonOuie) has joined #emacs
+2015-04-28 13:14:29	wasamasa	that's what I'm at currently

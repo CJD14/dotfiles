@@ -1,0 +1,251 @@
+2015-04-28 12:51:40	-->	DIEHLC (~cjd@50-108-99-114.adr01.mskg.mi.frontiernet.net) has joined #weechat
+2015-04-28 12:51:40	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 1.1.1 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2015-04-28 12:51:40	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sun, 25 Jan 2015 03:06:17
+2015-04-28 12:51:40	--	Channel #weechat: 661 nicks (4 ops, 1 voice, 656 normals)
+2015-04-28 12:51:40	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2015-04-28 12:51:40	--	URL for #weechat: https://weechat.org/
+2015-04-28 12:51:42	--	Channel created on Sun, 26 Nov 2006 01:42:51
+2015-04-28 12:52:00	<--	AndyRez (~andyrez@41.67.137.60) has quit (Remote host closed the connection)
+2015-04-28 12:52:51	DIEHLC	hello everyone, is there a way to get Weechat and Tmux to work together right? I need to refresh the screen constantly.. tmux makes it so the whole page doesnt scroll, and when switching buffers it leaves text from the last buffer.
+2015-04-28 12:53:12	Yaniel	hmm?
+2015-04-28 12:53:19	Yaniel	page up/page down scrolls weechat just fine
+2015-04-28 12:53:36	Kunsi	DIEHLC: weechat and tmux work fine here
+2015-04-28 12:53:41	Yaniel	what terminal are you using?
+2015-04-28 12:53:50	DIEHLC	not for me for whatever reason. Idk why. hmmm weird... im using Gnome-terminal
+2015-04-28 12:54:35	Yaniel	I sometimes get old chars not cleared when using mosh in fingerterm to connect to the machine with weechat/tmux
+2015-04-28 12:54:43	DIEHLC	it works for the most part but when i join a channel, I still have the MTOD on the screen from the last. But after I refress it works until the screen fills. its strange
+2015-04-28 12:54:54	DIEHLC	*refresh
+2015-04-28 12:55:26	DIEHLC	well anyway to make the window refresh command run every so often or something?
+2015-04-28 12:56:45	Yaniel	check your $TERM
+2015-04-28 12:57:34	DIEHLC	its xterm-256color. Strangely. though it is set in tmux.conf
+2015-04-28 12:57:54	DIEHLC	set to screen-256color i mean
+2015-04-28 12:58:17	Yaniel	tmux always sets it to screen or screen-256color based on what it was when tmux was started
+2015-04-28 12:58:25	Yaniel	you shouldn't touch it in tmux.conf
+2015-04-28 12:59:35	DIEHLC	well since it is showing xterm-256color in tmux, could that be the cause you think?
+2015-04-28 13:01:39	-->	g-f0rc3_ (~garrett.k@38.98.148.18) has joined #weechat
+2015-04-28 13:01:55	-->	pencilandpaper (~penciland@unaffiliated/pencilandpaper) has joined #weechat
+2015-04-28 13:01:58	<--	RoBo_V (~RoBo@117.197.160.196) has quit (Quit: Sky is the limit, Bye)
+2015-04-28 13:04:45	Miblo	Weird, I didn't realise tmux changed "$TERM". urxvt has it as "rxvt-256color" but tmux, launched from the same terminal, has it as "screen".
+2015-04-28 13:04:52	Kunsi	DIEHLC: may be. try it
+2015-04-28 13:06:02	<--	g-f0rc3_ (~garrett.k@38.98.148.18) has quit (Ping timeout: 250 seconds)
+2015-04-28 13:06:13	<--	yegle (yegle@nat/google/x-yglrqvdqljyomcby) has quit (Quit: WeeChat 1.1.1)
+2015-04-28 13:06:43	-->	yegle (yegle@nat/google/x-vcdovnhtzxadnwic) has joined #weechat
+2015-04-28 13:07:45	-->	extnct (extnct@unaffiliated/extnct) has joined #weechat
+2015-04-28 13:09:27	@FlashCode	DIEHLC: check faq here:
+2015-04-28 13:09:33	@FlashCode	!faq charset
+2015-04-28 13:09:34	+weebot	Charset FAQ: https://weechat.org/doc/faq#charset
+2015-04-28 13:09:44	@FlashCode	it should help ;)
+2015-04-28 13:09:59	<--	rejerson69_ (~rejerson6@169.53.134.171-static.reverse.softlayer.com) has quit (Ping timeout: 256 seconds)
+2015-04-28 13:10:21	-->	Nnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has joined #weechat
+2015-04-28 13:12:36	<--	StolenToast (~stolentoa@cnut.resist.cc) has quit (Ping timeout: 240 seconds)
+2015-04-28 13:14:17	DIEHLC	thanks folks. thats helpful. i searched a bunch but aparently just worded it wrong. 
+2015-04-30 17:01:18	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #weechat
+2015-04-30 17:01:18	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 1.1.1 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2015-04-30 17:01:18	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sun, 25 Jan 2015 03:06:17
+2015-04-30 17:01:19	--	Channel #weechat: 655 nicks (4 ops, 1 voice, 650 normals)
+2015-04-30 17:01:19	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2015-04-30 17:01:19	--	URL for #weechat: https://weechat.org/
+2015-04-30 17:01:20	--	Channel created on Sun, 26 Nov 2006 01:42:51
+2015-04-30 17:05:48	--	\b is now known as benonsoftware
+2015-04-30 17:05:52	-->	blackmesa (~blackmesa@f050105073.adsl.alicedsl.de) has joined #weechat
+2015-04-30 17:07:45	<--	Kaare (~Kaare@wikipedia/pdpc.professional.kaare) has quit (Remote host closed the connection)
+2015-04-30 17:08:26	-->	Nnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has joined #weechat
+2015-04-30 17:10:43	-->	Kaare (~Kaare@wikipedia/pdpc.professional.kaare) has joined #weechat
+2015-04-30 17:13:15	<--	Nnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has quit (Ping timeout: 276 seconds)
+2015-04-30 17:16:39	<--	Defaultti (defaultti@lakka.kapsi.fi) has quit (Quit: Quitting.)
+2015-04-30 17:18:01	-->	Defaultti (defaultti@lakka.kapsi.fi) has joined #weechat
+2015-04-30 17:19:07	<--	jig4 (~jig`@static-74-104-143-157.bstnma.fios.verizon.net) has quit (Quit: Nettalk6 - www.ntalk.de)
+2015-04-30 17:28:45	<--	it0a (~it0a@rrcs-24-56-88-130.ma.biz.rr.com) has quit (Ping timeout: 250 seconds)
+2015-04-30 17:28:47	-->	Starky (~Starky@unaffiliated/starky) has joined #weechat
+2015-04-30 17:29:47	-->	Havenoimaginatio (~Haven@nat7335.hnt.ru) has joined #weechat
+2015-04-30 17:30:07	<--	_alejandro (~alejandro@199.167.126.126) has quit (Ping timeout: 265 seconds)
+2015-04-30 17:31:31	<--	Starky (~Starky@unaffiliated/starky) has quit (Client Quit)
+2015-04-30 17:32:18	<--	pencilandpaper (~penciland@unaffiliated/pencilandpaper) has quit (Quit: WeeChat 1.2-rc1)
+2015-04-30 17:33:10	-->	Starky (~Starky@unaffiliated/starky) has joined #weechat
+2015-04-30 17:33:27	<--	Kaare (~Kaare@wikipedia/pdpc.professional.kaare) has quit (Quit: I'm off ...)
+2015-04-30 17:35:01	<--	Hobbyboy (Hobbyboy@2001:41d0:2:3bb3::103) has quit (Quit: I think the BNC broke.)
+2015-04-30 17:35:17	-->	Kaare (~Kaare@wikipedia/pdpc.professional.kaare) has joined #weechat
+2015-04-30 17:36:18	<--	StingRay` (~StingRay`@39.53.56.57) has quit (Quit: WeeChat 1.1-dev)
+2015-04-30 17:36:44	-->	Ploppz (~ploppz@2001:700:303:b:52e5:49ff:fecb:59e) has joined #weechat
+2015-04-30 17:37:11	-->	Hobbyboy (Hobbyboy@hobbyboy.co.uk) has joined #weechat
+2015-04-30 17:44:57	-->	codebam_ (codebam@gateway/shell/yourbnc/x-lvmltyixiyrvijzy) has joined #weechat
+2015-04-30 17:45:08	-->	gsingh93 (~gulshan@c-68-55-60-95.hsd1.mi.comcast.net) has joined #weechat
+2015-04-30 17:45:09	<--	codebam (codebam@gateway/shell/yourbnc/x-jplgtowfzhcssfyz) has quit (Quit: Seeya. Thanks :))
+2015-04-30 17:45:35	--	codebam_ is now known as codebam
+2015-04-30 17:47:47	<--	mayday757 (~mayday757@209.97.6.55) has quit (Quit: WeeChat 1.1.1)
+2015-04-30 17:53:46	<--	g-f0rc3_ (~garrett.k@38.98.148.18) has quit (Ping timeout: 252 seconds)
+2015-04-30 18:02:10	<--	jushur (~jushur@unaffiliated/jushur) has quit (Quit: relocating)
+2015-04-30 18:02:33	-->	singalaut- (~mami@unaffiliated/tomoe-mami/x-1769741) has joined #weechat
+2015-04-30 18:02:37	-->	Nnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has joined #weechat
+2015-04-30 18:03:59	<--	singalaut (~mami@unaffiliated/tomoe-mami/x-1769741) has quit (Ping timeout: 245 seconds)
+2015-04-30 18:04:00	-->	habanany (~lazaro@cpe-142-255-42-254.nyc.res.rr.com) has joined #weechat
+2015-04-30 18:05:13	-->	_alejandro (~alejandro@199.167.126.126) has joined #weechat
+2015-04-30 18:06:56	<--	Nnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has quit (Ping timeout: 240 seconds)
+2015-04-30 18:12:56	<--	jkyle (~jkyle@unaffiliated/jkyle) has quit (Ping timeout: 240 seconds)
+2015-04-30 18:13:47	<--	Havenoimaginatio (~Haven@nat7335.hnt.ru) has quit
+2015-04-30 18:14:05	-->	Havenoimaginatio (~Haven@nat7335.hnt.ru) has joined #weechat
+2015-04-30 18:15:41	-->	ampzamp (~ampzamp@cpe-23-243-94-174.socal.res.rr.com) has joined #weechat
+2015-04-30 18:16:08	<--	graphitemaster_ (~graphitem@198.52.199.148) has quit (Changing host)
+2015-04-30 18:16:08	-->	graphitemaster_ (~graphitem@unaffiliated/graphitemaster) has joined #weechat
+2015-04-30 18:16:16	--	graphitemaster_ is now known as graphitemaster
+2015-04-30 18:16:40	<--	ampzamp (~ampzamp@cpe-23-243-94-174.socal.res.rr.com) has quit (Changing host)
+2015-04-30 18:16:41	-->	ampzamp (~ampzamp@unaffiliated/ampzamp) has joined #weechat
+2015-04-30 18:19:25	-->	singalaut (~mami@unaffiliated/tomoe-mami/x-1769741) has joined #weechat
+2015-04-30 18:20:34	<--	singalaut (~mami@unaffiliated/tomoe-mami/x-1769741) has quit (Read error: Connection reset by peer)
+2015-04-30 18:20:44	<--	singalaut- (~mami@unaffiliated/tomoe-mami/x-1769741) has quit (Ping timeout: 256 seconds)
+2015-04-30 18:21:16	<--	Miron (supermiron@unaffiliated/supermiron) has quit (Ping timeout: 252 seconds)
+2015-04-30 18:23:16	<--	Havenoimaginatio (~Haven@nat7335.hnt.ru) has quit
+2015-04-30 18:24:28	-->	Miron (supermiron@unaffiliated/supermiron) has joined #weechat
+2015-04-30 18:25:41	<--	parasite (~parasite@mar75-4-82-230-46-11.fbx.proxad.net) has quit (Quit: Leaving)
+2015-04-30 18:26:40	<--	mythmon (~mythmon@osuosl/staff/Mythmon) has quit (Remote host closed the connection)
+2015-04-30 18:27:38	-->	Nnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has joined #weechat
+2015-04-30 18:27:54	-->	mythmon (~mythmon@192.241.197.120) has joined #weechat
+2015-04-30 18:28:10	--	mythmon is now known as Guest80207
+2015-04-30 18:28:38	<--	Ploppz (~ploppz@2001:700:303:b:52e5:49ff:fecb:59e) has quit (Quit: WeeChat 1.1.1)
+2015-04-30 18:28:40	--	Guest80207 is now known as mythmon_
+2015-04-30 18:29:14	<--	mythmon_ (~mythmon@192.241.197.120) has quit (Client Quit)
+2015-04-30 18:29:29	-->	mythmon_ (~mythmon@192.241.197.120) has joined #weechat
+2015-04-30 18:29:47	mythmon_	FlashCode: back again with lag issues.
+2015-04-30 18:29:52	mythmon_	FlashCode: the server is irc.mozilla.org
+2015-04-30 18:30:03	mythmon_	or rather, the network is.
+2015-04-30 18:30:12	mythmon_	the server is belew.mozilla.org.
+2015-04-30 18:30:29	mythmon_	i've tried connecting to it from other systems and from another client on this system, and none of them have the lag issue.
+2015-04-30 18:31:49	-->	jushur (jushur@unaffiliated/jushur) has joined #weechat
+2015-04-30 18:34:39	<--	mythmon_ (~mythmon@192.241.197.120) has quit (Changing host)
+2015-04-30 18:34:39	-->	mythmon_ (~mythmon@osuosl/staff/Mythmon) has joined #weechat
+2015-04-30 18:34:53	--	mythmon_ is now known as mythmon
+2015-04-30 18:38:31	<--	JnNy (~JnNy@209-6-70-70.c3-0.abr-ubr1.sbo-abr.ma.cable.rcn.com) has quit (Quit: WeeChat 1.1.1)
+2015-04-30 18:38:52	-->	sidion_weeChat_t (~sidion@S0106b8a386662198.vc.shawcable.net) has joined #weechat
+2015-04-30 18:39:18	sidion_weeChat_t	hello weeChat channel!  I am just getting into the client
+2015-04-30 18:40:00	sidion_weeChat_t	and not unexpectedly i have a question:  I cannot find a setting to only highlight from a list of nicks in the chat window as opposed to the default of coloring all nicks
+2015-04-30 18:40:24	gb	sidion_weeChat_t: you might want to upgrade before doing anything
+2015-04-30 18:40:32	gb	!debian
+2015-04-30 18:40:32	+weebot	Debian/Raspbian builds: https://weechat.org/download/debian/
+2015-04-30 18:42:24	gb	till you upgrade it will be very difficult to assist you with most things
+2015-04-30 18:42:45	sidion_weeChat_t	noted, i thought i had grabbed the most recent stable, i guess i didn't
+2015-04-30 18:43:17	gb	the repositries in most distributions are ancient
+2015-04-30 18:43:59	gb	but weechat website has backports, etc for some of them
+2015-04-30 22:29:26	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #weechat
+2015-04-30 22:29:26	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 1.1.1 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2015-04-30 22:29:26	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sun, 25 Jan 2015 03:06:17
+2015-04-30 22:29:26	--	Channel #weechat: 651 nicks (4 ops, 1 voice, 646 normals)
+2015-04-30 22:29:26	--	Notice(card.freenode.net): [freenode-info] channel flooding and no channel staff around to help? Please check with freenode support: http://freenode.net/faq.shtml#gettinghelp
+2015-04-30 22:29:26	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2015-04-30 22:29:26	--	URL for #weechat: https://weechat.org/
+2015-04-30 22:29:28	--	Channel created on Sun, 26 Nov 2006 01:42:51
+2015-04-30 22:30:26	Caleb	Speed: make sure its not your terminal causing it
+2015-04-30 22:31:19	<--	singalaut- (~mami@unaffiliated/tomoe-mami/x-1769741) has quit (Ping timeout: 255 seconds)
+2015-04-30 22:32:13	<--	ArturShaik (~ArturShai@37.218.174.111) has quit (Ping timeout: 255 seconds)
+2015-04-30 22:33:55	Speed	It was the LC_ALL setting, figured it out
+2015-04-30 22:34:14	Speed	for some reason it also broke my separator (─ to ?)
+2015-04-30 22:34:22	Speed	needed to update the config file
+2015-04-30 22:35:32	<--	lazaro (~lazaro@cpe-142-255-42-254.nyc.res.rr.com) has quit (Ping timeout: 272 seconds)
+2015-04-30 22:39:21	<--	Starky (~Starky@unaffiliated/starky) has quit (Quit: WeeChat 1.1.1)
+2015-04-30 22:40:03	Clinteger	euh
+2015-04-30 22:40:33	<--	LSI (~LSI@201.75.26.187) has quit (Ping timeout: 240 seconds)
+2015-04-30 22:41:01	<--	Speed (~Speed@unaffiliated/speeda) has left #weechat ("WeeChat 1.1.1")
+2015-04-30 22:43:55	<--	DarkDefender (~zed@c-2489e555.05-89-6c6b7013.cust.bredbandsbolaget.se) has quit (Quit: WeeChat 1.1.1)
+2015-04-30 22:47:20	-->	gsingh93 (~gulshan@c-68-55-60-95.hsd1.mi.comcast.net) has joined #weechat
+2015-04-30 22:47:26	-->	drbean (~drbean@124.219.83.139) has joined #weechat
+2015-04-30 22:49:47	-->	jkyle (~jkyle@unaffiliated/jkyle) has joined #weechat
+2015-04-30 22:52:51	<--	drbean (~drbean@124.219.83.139) has quit (Ping timeout: 264 seconds)
+2015-04-30 22:54:35	-->	ArturShaik (~ArturShai@212.97.29.60) has joined #weechat
+2015-04-30 23:03:48	-->	clonak_ (~clonak@101.98.161.210) has joined #weechat
+2015-04-30 23:04:04	<--	mgue (~mgue@p54B35E63.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2015-04-30 23:04:09	-->	dkoby (~dmitry@37.21.159.140) has joined #weechat
+2015-04-30 23:05:09	DIEHLC	anyone know a way I can make a custom color scheme for weechat? also how I can edit the status bar items and its colors
+2015-04-30 23:05:26	<--	clonak (~clonak@101.98.139.171) has quit (Ping timeout: 272 seconds)
+2015-04-30 23:15:51	-->	g-f0rc3_ (~garrett.k@38.98.148.18) has joined #weechat
+2015-04-30 23:17:16	-->	mgue (~mgue@p548A627A.dip0.t-ipconnect.de) has joined #weechat
+2015-04-30 23:18:16	<--	sleo (~sleo@unaffiliated/sleo) has quit (Ping timeout: 240 seconds)
+2015-04-30 23:20:09	<--	g-f0rc3_ (~garrett.k@38.98.148.18) has quit (Ping timeout: 240 seconds)
+2015-04-30 23:20:17	-->	kalpik (~kalpik@122.180.36.49) has joined #weechat
+2015-04-30 23:20:17	<--	kalpik (~kalpik@122.180.36.49) has quit (Changing host)
+2015-04-30 23:20:17	-->	kalpik (~kalpik@unaffiliated/kalpik) has joined #weechat
+2015-04-30 23:21:53	<--	ampzamp (~ampzamp@unaffiliated/ampzamp) has quit
+2015-04-30 23:23:12	jdhore	Is there a way to do /buffer set across all open buffers?
+2015-04-30 23:29:16	gb	DIEHLC: there is a themes script but it's very alpha still
+2015-04-30 23:30:16	gb	most just /set their own color settings after setting up screen-256color term, etc
+2015-04-30 23:30:54	gb	unfortunately colours are dependant on a combination of things not just weechat
+2015-04-30 23:31:38	gb	one term might display magenta correctly and abother might display it as brown
+2015-04-30 23:31:46	gb	another
+2015-04-30 23:32:20	gb	so be careful about setting up weechat for only one term
+2015-04-30 23:32:52	gb	especially if like me you ssh in from several architectures/versions of software
+2015-04-30 23:40:02	-->	Deltafire (~chris@82-71-44-155.dsl.in-addr.zen.co.uk) has joined #weechat
+2015-04-30 23:41:49	<--	df0 (~chris@82-71-44-155.dsl.in-addr.zen.co.uk) has quit (Ping timeout: 264 seconds)
+2015-04-30 23:42:18	-->	drbean (~drbean@124.219.83.228) has joined #weechat
+2015-04-30 23:42:18	<--	Guest39499 (~newt@209.222.53.8) has quit (Quit: WeeChat 1.0)
+2015-04-30 23:42:43	<--	jkyle (~jkyle@unaffiliated/jkyle) has quit (Ping timeout: 250 seconds)
+2015-04-30 23:53:16	<--	drbean (~drbean@124.219.83.228) has quit (Ping timeout: 240 seconds)
+2015-04-30 23:56:46	<--	gsingh93 (~gulshan@c-68-55-60-95.hsd1.mi.comcast.net) has quit (Ping timeout: 256 seconds)
+2015-05-01 00:01:27	<--	RoBo_V2 (~RoBo@117.197.166.210) has quit (Ping timeout: 256 seconds)
+2015-05-01 00:03:18	-->	StingRay` (~StingRay`@39.53.56.57) has joined #weechat
+2015-05-01 00:04:04	<--	spectromas (~spectroma@201.198.50.70) has quit (Ping timeout: 272 seconds)
+2015-05-01 00:05:27	-->	chandan (~chandan@122.171.77.245) has joined #weechat
+2015-05-01 00:07:02	-->	drbean (~drbean@124.219.83.200) has joined #weechat
+2015-05-01 00:14:44	<--	Joschasa (~andre@p2003007F6F121200021FC6FFFE865D84.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2015-05-01 00:14:49	<--	moetunes (~Jean-luc@14-202-64-98.static.tpgi.com.au) has quit (Ping timeout: 245 seconds)
+2015-05-01 00:15:07	-->	diniwed (~gavron@pool-108-41-217-30.nycmny.fios.verizon.net) has joined #weechat
+2015-05-01 00:17:41	-->	moetunes (~Jean-luc@14-202-64-98.static.tpgi.com.au) has joined #weechat
+2015-05-01 00:22:04	TheKK	If I want to help translate Weechat's site or docs, where should I go?
+2015-05-01 00:22:34	TheKK	ahhh, I found it...
+2015-05-01 00:23:06	gb	no idea what you are asking
+2015-05-01 00:24:35	TheKK	never mind
+2015-05-01 00:27:52	-->	Joschasa (~andre@p2003007F6F32EB00021FC6FFFE865D84.dip0.t-ipconnect.de) has joined #weechat
+2015-05-01 00:29:07	-->	RoBo_V2 (~RoBo@117.197.166.210) has joined #weechat
+2015-05-01 00:29:09	<--	drbean (~drbean@124.219.83.200) has quit (Ping timeout: 244 seconds)
+2015-05-01 00:29:17	<--	semeion (~semeion@unaffiliated/semeion) has quit (Quit: WeeChat 1.1.1)
+2015-05-01 00:30:08	-->	roidal (~roidal@193-154-142-164.adsl.highway.telekom.at) has joined #weechat
+2015-05-01 00:31:01	<--	nwf (~nwf@unaffiliated/nwf) has quit (Ping timeout: 264 seconds)
+2015-05-01 00:31:42	<--	aji (~alex@unaffiliated/aji) has quit (Remote host closed the connection)
+2015-05-01 00:31:54	-->	aNnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has joined #weechat
+2015-05-01 00:32:18	-->	aji (~alex@unaffiliated/aji) has joined #weechat
+2015-05-01 00:33:17	<--	Nnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has quit (Ping timeout: 244 seconds)
+2015-05-01 00:34:09	-->	drbean (~drbean@124.219.82.42) has joined #weechat
+2015-05-01 00:35:15	-->	nwf_ (~nwf@unaffiliated/nwf) has joined #weechat
+2015-05-01 00:35:33	-->	spectromas (~spectroma@201.198.50.70) has joined #weechat
+2015-05-01 00:36:41	--	nwf_ is now known as nwf
+2015-05-01 00:43:16	<--	drbean (~drbean@124.219.82.42) has quit (Ping timeout: 240 seconds)
+2015-05-01 00:46:07	<--	spectromas (~spectroma@201.198.50.70) has quit (Quit: WeeChat 1.1.1)
+2015-05-01 00:47:23	HeXiLeD	i dont see a cmd to /list only X results in the /list help output. Anything available for that type of functionality ?
+2015-05-01 00:51:56	gb	i believe sumone was working on truncating /list results but no clue really
+2015-05-01 00:52:15	gb	you really should use alis on freenode
+2015-05-01 00:52:18	<--	chandan (~chandan@122.171.77.245) has quit (Ping timeout: 256 seconds)
+2015-05-01 00:52:42	gb	try /query alis help
+2015-05-01 00:55:56	<--	aNnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has quit (Ping timeout: 240 seconds)
+2015-05-01 00:56:49	<--	ArturShaik (~ArturShai@212.97.29.60) has quit (Ping timeout: 250 seconds)
+2015-05-01 01:04:33	-->	g-f0rc3_ (~garrett.k@38.98.148.18) has joined #weechat
+2015-05-01 01:05:54	-->	gsingh93 (~gulshan@c-68-55-60-95.hsd1.mi.comcast.net) has joined #weechat
+2015-05-01 01:06:27	-->	drbean (~drbean@124.219.82.88) has joined #weechat
+2015-05-01 01:07:49	<--	lrvick (~weechat_u@192.99.67.111) has quit (Quit: WeeChat 1.2-dev)
+2015-05-01 01:08:53	<--	g-f0rc3_ (~garrett.k@38.98.148.18) has quit (Ping timeout: 256 seconds)
+2015-05-01 01:10:08	-->	ArturShaik (~ArturShai@212.241.22.3) has joined #weechat
+2015-05-01 01:10:15	<--	Dan39 (~ddan39@unaffiliated/dan39) has quit (Ping timeout: 265 seconds)
+2015-05-01 01:11:58	-->	Abbott` (~Drew@unaffiliated/abbott) has joined #weechat
+2015-05-01 01:12:21	-->	lrvick (~weechat_u@192.99.67.111) has joined #weechat
+2015-05-01 01:12:38	Abbott`	I'm having trouble connecting to anything with SSL. Right now I'm trying to connect to my znc server and it's telling me that the host names don't match and the certificate isn't trusted. Is there some way I can get weechat to connect anyway?
+2015-05-01 01:14:44	<--	chishiki (~chishiki@unaffiliated/chishiki) has quit (Quit: WeeChat 1.1.1)
+2015-05-01 01:15:42	-->	chandan (~chandan@122.171.87.149) has joined #weechat
+2015-05-01 01:16:49	<--	drbean (~drbean@124.219.82.88) has quit (Ping timeout: 256 seconds)
+2015-05-01 01:18:11	-->	chishiki (~chishiki@unaffiliated/chishiki) has joined #weechat
+2015-05-01 01:19:44	<--	chishiki (~chishiki@unaffiliated/chishiki) has quit (Client Quit)
+2015-05-01 01:20:51	@nils_2	/set irc.server.<servername>.ssl_fingerprint
+2015-05-01 01:21:16	-->	chishiki (~chishiki@unaffiliated/chishiki) has joined #weechat
+2015-05-01 01:21:20	-->	LSI (~LSI@201.75.26.187) has joined #weechat
+2015-05-01 01:21:36	@nils_2	you can try: /set irc.server.<servername>.ssl_verify off
+2015-05-01 01:22:40	-->	aNnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has joined #weechat
+2015-05-01 01:26:12	<--	noh (~noh@177.18.70.48) has quit (Ping timeout: 265 seconds)
+2015-05-01 01:26:26	gb	ha you get more then i did when i tried to do an ssl cert connection
+2015-05-01 01:26:41	gb	all i kept getting was a tls error
+2015-05-01 01:26:57	gb	but ssl is way over rated anyhow :)
+2015-05-01 01:27:54	<--	aNnel (~Nnel@host86-187-65-221.range86-187.btcentralplus.com) has quit (Ping timeout: 276 seconds)
+2015-05-01 01:28:06	gb	i like being able to /upgrade without being disconnected anyhow
+2015-05-01 01:29:06	gb	no doubt for some they get that warm secure feeling
+2015-05-01 11:44:33	--	irc: disconnected from server
+2015-05-01 11:44:59	-->	DIEHLC (~DIEHLC@static-50-108-29-116.mskg.mi.frontiernet.net) has joined #weechat
+2015-05-01 11:44:59	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 1.1.1 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint for gpg key used to sign packages: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2015-05-01 11:44:59	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sun, 25 Jan 2015 03:06:17
+2015-05-01 11:44:59	--	Channel #weechat: 656 nicks (4 ops, 1 voice, 651 normals)
+2015-05-01 11:44:59	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2015-05-01 11:44:59	--	URL for #weechat: https://weechat.org/
+2015-05-01 11:45:01	--	Channel created on Sun, 26 Nov 2006 01:42:51

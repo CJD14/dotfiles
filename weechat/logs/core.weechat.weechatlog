@@ -1,0 +1,571 @@
+2015-04-28 01:42:02	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-04-28 01:42:02	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-04-28 01:42:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 01:42:10	=!=	You can not write text in this buffer
+2015-04-28 01:42:13		[core]
+2015-04-28 01:42:13		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2015-04-28 01:42:13		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2015-04-28 01:42:13		[python]
+2015-04-28 01:42:13		  python
+2015-04-28 01:42:13		[irc]
+2015-04-28 01:42:13		  admin       connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2015-04-28 01:42:13		  allchan     ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2015-04-28 01:42:13		  allpv       cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2015-04-28 01:42:13		  allserv     dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2015-04-28 01:42:13		  ban         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2015-04-28 01:42:13		[exec]
+2015-04-28 01:42:13		  exec
+2015-04-28 01:42:13		[lua]
+2015-04-28 01:42:13		  lua
+2015-04-28 01:42:13		[perl]
+2015-04-28 01:42:13		  perl
+2015-04-28 01:42:13		[logger]
+2015-04-28 01:42:13		  logger
+2015-04-28 01:42:13		[charset]
+2015-04-28 01:42:13		  charset
+2015-04-28 01:42:13		[aspell]
+2015-04-28 01:42:13		  aspell
+2015-04-28 01:42:13		[script]
+2015-04-28 01:42:13		  script
+2015-04-28 01:42:13		[alias]
+2015-04-28 01:42:13		  AAWAY    AME      ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       unalias  W        WI       WW     
+2015-04-28 01:42:13		  alias    AMSG     BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    V        WC       WII    
+2015-04-28 01:42:13		[trigger]
+2015-04-28 01:42:13		  trigger
+2015-04-28 01:42:13		[xfer]
+2015-04-28 01:42:13		  me  xfer
+2015-04-28 01:42:13		[guile]
+2015-04-28 01:42:13		  guile
+2015-04-28 01:42:13		[relay]
+2015-04-28 01:42:13		  relay
+2015-04-28 01:42:13		[ruby]
+2015-04-28 01:42:13		  ruby
+2015-04-28 02:09:42		fifo: pipe closed
+2015-04-28 11:06:59	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-04-28 11:06:59	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-04-28 11:06:59		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 11:07:10		[core]
+2015-04-28 11:07:10		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2015-04-28 11:07:10		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2015-04-28 11:07:10		[python]
+2015-04-28 11:07:10		  python
+2015-04-28 11:07:10		[irc]
+2015-04-28 11:07:10		  admin       connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2015-04-28 11:07:10		  allchan     ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2015-04-28 11:07:10		  allpv       cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2015-04-28 11:07:10		  allserv     dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2015-04-28 11:07:10		  ban         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2015-04-28 11:07:10		[exec]
+2015-04-28 11:07:10		  exec
+2015-04-28 11:07:10		[lua]
+2015-04-28 11:07:10		  lua
+2015-04-28 11:07:10		[perl]
+2015-04-28 11:07:10		  perl
+2015-04-28 11:07:10		[logger]
+2015-04-28 11:07:10		  logger
+2015-04-28 11:07:10		[charset]
+2015-04-28 11:07:10		  charset
+2015-04-28 11:07:10		[aspell]
+2015-04-28 11:07:10		  aspell
+2015-04-28 11:07:10		[script]
+2015-04-28 11:07:10		  script
+2015-04-28 11:07:10		[alias]
+2015-04-28 11:07:10		  AAWAY    AME      ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       unalias  W        WI       WW     
+2015-04-28 11:07:10		  alias    AMSG     BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    V        WC       WII    
+2015-04-28 11:07:10		[trigger]
+2015-04-28 11:07:10		  trigger
+2015-04-28 11:07:10		[xfer]
+2015-04-28 11:07:10		  me  xfer
+2015-04-28 11:07:10		[guile]
+2015-04-28 11:07:10		  guile
+2015-04-28 11:07:10		[relay]
+2015-04-28 11:07:10		  relay
+2015-04-28 11:07:10		[ruby]
+2015-04-28 11:07:10		  ruby
+2015-04-28 11:12:47		Option changed: weechat.look.mouse = on  (default: off)
+2015-04-28 11:12:53		Mouse enabled
+2015-04-28 11:19:30		[script]  /script  list [-o|-i]
+2015-04-28 11:19:30		                   search <text>
+2015-04-28 11:19:30		                   show <script>
+2015-04-28 11:19:30		                   load|unload|reload <script> [<script>...]
+2015-04-28 11:19:30		                   autoload|noautoload|toggleautoload <script> [<script>...]
+2015-04-28 11:19:30		                   install|remove|installremove|hold [-q] <script> [<script>...]
+2015-04-28 11:19:30		                   upgrade
+2015-04-28 11:19:30		                   update
+2015-04-28 11:19:30		WeeChat scripts manager
+2015-04-28 11:19:30		          list: list loaded scripts (all languages)
+2015-04-28 11:19:30		            -o: send list of loaded scripts to buffer
+2015-04-28 11:19:30		            -i: copy list of loaded scripts in command line (for sending to buffer)
+2015-04-28 11:19:30		        search: search scripts by tags or text and display result on scripts buffer
+2015-04-28 11:19:30		          show: show detailed info about a script
+2015-04-28 11:19:30		          load: load script(s)
+2015-04-28 11:19:30		        unload: unload script(s)
+2015-04-28 11:19:30		        reload: reload script(s)
+2015-04-28 11:19:30		      autoload: autoload the script
+2015-04-28 11:19:30		    noautoload: do not autoload the script
+2015-04-28 11:19:30		toggleautoload: toggle autoload
+2015-04-28 11:19:30		       install: install/upgrade script(s)
+2015-04-28 11:19:30		        remove: remove script(s)
+2015-04-28 11:19:30		 installremove: install or remove script(s), depending on current state
+2015-04-28 11:19:30		          hold: hold/unhold script(s) (a script held will not be upgraded any more and cannot be removed)
+2015-04-28 11:19:30		            -q: quiet mode: do not display messages
+2015-04-28 11:19:30		       upgrade: upgrade all installed scripts which are obsolete (new version available)
+2015-04-28 11:19:30		        update: update local scripts cache
+2015-04-28 11:19:30		Without argument, this command opens a buffer with list of scripts.
+2015-04-28 11:19:30		On script buffer, the possible status for each script are:
+2015-04-28 11:19:30		  * i a H r N
+2015-04-28 11:19:30		  | | | | | |
+2015-04-28 11:19:30		  | | | | | obsolete (new version available)
+2015-04-28 11:19:30		  | | | | running (loaded)
+2015-04-28 11:19:30		  | | | held
+2015-04-28 11:19:30		  | | autoloaded
+2015-04-28 11:19:30		  | installed
+2015-04-28 11:19:30		  popular script
+2015-04-28 11:19:30		Keys on script buffer:
+2015-04-28 11:19:30		  alt+i  install script
+2015-04-28 11:19:30		  alt+r  remove script
+2015-04-28 11:19:30		  alt+l  load script
+2015-04-28 11:19:30		  alt+L  reload script
+2015-04-28 11:19:30		  alt+u  unload script
+2015-04-28 11:19:30		  alt+A  autoload script
+2015-04-28 11:19:30		  alt+h  (un)hold script
+2015-04-28 11:19:30		  alt+v  view script
+2015-04-28 11:19:30		Input allowed on script buffer:
+2015-04-28 11:19:30		  i/r/l/L/u/h  action on script (same as keys above)
+2015-04-28 11:19:30		  q            close buffer
+2015-04-28 11:19:30		  $            refresh buffer
+2015-04-28 11:19:30		  s:x,y        sort buffer using keys x and y (see /help script.look.sort)
+2015-04-28 11:19:30		  s:           reset sort (use default sort)
+2015-04-28 11:19:30		  word(s)      filter scripts: search word(s) in scripts (description, tags, ...)
+2015-04-28 11:19:30		  *            remove filter
+2015-04-28 11:19:30		Mouse actions on script buffer:
+2015-04-28 11:19:30		  wheel         scroll list
+2015-04-28 11:19:30		  left button   select script
+2015-04-28 11:19:30		  right button  install/remove script
+2015-04-28 11:19:30		Examples:
+2015-04-28 11:19:30		  /script search url
+2015-04-28 11:19:30		  /script install iset.pl buffers.pl
+2015-04-28 11:19:30		  /script remove iset.pl
+2015-04-28 11:19:30		  /script hold urlserver.py
+2015-04-28 11:19:30		  /script reload urlserver
+2015-04-28 11:19:30		  /script upgrade
+2015-04-28 11:20:19		script: downloading list of scripts...
+2015-04-28 11:20:20		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 11:23:07		fifo: pipe closed
+2015-04-28 11:28:56		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 11:28:56	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-04-28 11:28:56	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-04-28 11:28:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 11:29:02	=!=	Error: unknown command "/scripts" (type /help for help)
+2015-04-28 11:29:06		Scripts loaded:
+2015-04-28 11:29:06		 * ia   buffers.pl 5.0 (Sidebar with list of buffers)
+2015-04-28 11:29:06		 * ia   iset.pl 3.6 (Interactive Set for configuration options)
+2015-04-28 11:29:06		   ia   autoconnect.py 0.2.3 (reopens servers and channels opened last time weechat closed)
+2015-04-28 11:29:06		   ia   colorize_nicks.py 20 (Use the weechat nick colors in the chat area)
+2015-04-28 11:29:06		  ?     theme.py 0.1-dev (WeeChat theme manager)
+2015-04-28 11:29:06		   ia   tmux_env.py 2 (Update weechat environment from tmux)
+2015-04-28 11:29:17		script: script "theme.py" not found
+2015-04-28 11:29:36	=!=	irc: unable to create temporary server "irc.freenode.net" because the creation of temporary servers with command /connect is currently disabled
+2015-04-28 11:29:36	=!=	irc: if you want to create a standard server, use the command "/server add" (see /help server); if you really want to create a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2015-04-28 11:30:48	=!=	Error: unknown command "/weeget" (type /help for help)
+2015-04-28 11:31:09	=!=	WARNING: the script weeget.py is obsolete since WeeChat 0.3.9 (it is replaced by command /script)
+2015-04-28 11:31:09	=!=	To uninstall weeget.py: /weeget remove weeget.py
+2015-04-28 11:31:13		script: script "weeget.py" is already installed and up-to-date
+2015-04-28 11:31:14		script: script "weeget.py" is already installed and up-to-date
+2015-04-28 11:31:14		script: script "weeget.py" is already installed and up-to-date
+2015-04-28 11:31:14		script: script "weeget.py" is already installed and up-to-date
+2015-04-28 11:31:30		[python/weeget]  /weeget  list|listinstalled [<text>|<tag>]
+2015-04-28 11:31:30		                          show <script>
+2015-04-28 11:31:30		                          install|remove <script> [<script>...]
+2015-04-28 11:31:30		                          check|update|upgrade
+2015-04-28 11:31:30		WeeChat scripts manager
+2015-04-28 11:31:30		         list: list scripts (search text if given)
+2015-04-28 11:31:30		listinstalled: list installed scripts (search text if given)
+2015-04-28 11:31:30		         show: show detailed information about a script (in repository)
+2015-04-28 11:31:30		      install: install/upgrade script(s)
+2015-04-28 11:31:30		        check: check if local scripts needs upgrade
+2015-04-28 11:31:30		       update: update local scripts cache
+2015-04-28 11:31:30		      upgrade: upgrade all local scripts if they are obsolete
+2015-04-28 11:31:30		       remove: remove script(s)
+2015-04-28 11:31:30		Indicators in lists (first column):
+2015-04-28 11:31:30		  i  script is installed
+2015-04-28 11:31:30		  ?  unknown script
+2015-04-28 11:31:30		  r  script is running (loaded)
+2015-04-28 11:31:30		  N  script is obsolete (new version available)
+2015-04-28 11:31:30		Examples:
+2015-04-28 11:31:30		  /weeget list             => list all scripts
+2015-04-28 11:31:30		  /weeget list game        => list all scripts with text/tag "game"
+2015-04-28 11:31:30		  /weeget install beep.pl  => install script beep.pl
+2015-04-28 11:31:30		  /weeget remove beep.pl   => remove script beep.pl
+2015-04-28 11:32:06		weeget: downloading list of scripts...
+2015-04-28 11:32:07		weeget: scripts downloaded
+2015-04-28 11:32:08		weeget: script "theme.py" not found
+2015-04-28 11:33:08		python: loading script "/home/cjd/.weechat/python/autoload/theme.py"
+2015-04-28 11:33:08	=!=	python: unable to register script "theme" (another script already exists with this name)
+2015-04-28 11:33:08	=!=	python: function "register" not found (or failed) in file "/home/cjd/.weechat/python/autoload/theme.py"
+2015-04-28 11:34:51		theme: action "install" not developed
+2015-04-28 11:38:58		Theme saved to "/home/cjd/.weechat/themes/_undo.theme"
+2015-04-28 11:38:58		Theme "/home/cjd/.weechat/themes/doebi.theme" installed (116 options set)
+2015-04-28 11:39:50		Theme saved to "/home/cjd/.weechat/themes/_undo.theme"
+2015-04-28 11:39:50		Theme "/home/cjd/.weechat/themes/_backup.theme" installed (83 options set)
+2015-04-28 11:42:09	=!=	irc: unable to create temporary server "irc.freenode.net" because the creation of temporary servers with command /connect is currently disabled
+2015-04-28 11:42:09	=!=	irc: if you want to create a standard server, use the command "/server add" (see /help server); if you really want to create a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2015-04-28 11:42:55	=!=	irc: server "freenode" already exists, can't create it!
+2015-04-28 11:52:05		fifo: pipe closed
+2015-04-28 11:52:07		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 11:52:07	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-04-28 11:52:07	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-04-28 11:52:07		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 12:23:54		fifo: removing old fifo pipe "/home/cjd/.weechat/weechat_fifo_26763"
+2015-04-28 12:23:54		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 12:23:54	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-04-28 12:23:54	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-04-28 12:23:55		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 12:51:02		Options saved to irc.conf
+2015-04-28 12:51:08		Options saved to irc.conf
+2015-04-28 12:51:16		Options saved to irc.conf
+2015-04-28 12:51:22		Options saved to irc.conf
+2015-04-28 12:51:28		Options saved to irc.conf
+2015-04-28 12:51:40		Options saved to irc.conf
+2015-04-28 13:14:36		fifo: pipe closed
+2015-04-28 13:14:43		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 13:14:43	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-04-28 13:14:43	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-04-28 13:14:43		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 13:14:50		Scripts loaded:
+2015-04-28 13:14:50		 * ia   buffers.pl 5.0 (Sidebar with list of buffers)
+2015-04-28 13:14:50		 * ia   iset.pl 3.6 (Interactive Set for configuration options)
+2015-04-28 13:14:50		   ia   autoconnect.py 0.2.3 (reopens servers and channels opened last time weechat closed)
+2015-04-28 13:14:50		   ia   colorize_nicks.py 20 (Use the weechat nick colors in the chat area)
+2015-04-28 13:14:50		  ?     theme.py 0.1-dev (WeeChat theme manager)
+2015-04-28 13:14:50		   ia   tmux_env.py 2 (Update weechat environment from tmux)
+2015-04-28 13:14:50		   ia   weeget.py 2.0 (WeeChat scripts manager)
+2015-04-28 13:15:11		fifo: pipe closed
+2015-04-28 13:17:01		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 13:17:01	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-04-28 13:17:01	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-04-28 13:17:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 13:17:28		Scripts loaded:
+2015-04-28 13:17:28		 * ia   buffers.pl 5.0 (Sidebar with list of buffers)
+2015-04-28 13:17:28		 * ia   iset.pl 3.6 (Interactive Set for configuration options)
+2015-04-28 13:17:28		   ia   autoconnect.py 0.2.3 (reopens servers and channels opened last time weechat closed)
+2015-04-28 13:17:28		   ia   colorize_nicks.py 20 (Use the weechat nick colors in the chat area)
+2015-04-28 13:17:28		  ?     theme.py 0.1-dev (WeeChat theme manager)
+2015-04-28 13:17:28		   ia   tmux_env.py 2 (Update weechat environment from tmux)
+2015-04-28 13:17:28		   ia   weeget.py 2.0 (WeeChat scripts manager)
+2015-04-28 13:17:54		weeget: downloading list of scripts...
+2015-04-28 13:17:58		weeget: scripts downloaded
+2015-04-28 13:17:59		python: unloading script "weeget"
+2015-04-28 13:17:59		python: script removed: /home/cjd/.weechat/python/autoload/weeget.py
+2015-04-28 13:17:59		python: script removed: /home/cjd/.weechat/python/weeget.py
+2015-04-28 13:19:26		fifo: pipe closed
+2015-04-28 13:19:28		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 13:19:28	=!=	Error: unable to load plugin "/usr/lib/weechat/plugins/tcl.so": libtcl8.6.so: cannot open shared object file: No such file or directory
+2015-04-28 13:19:28	=!=	If you're trying to load a script and not a C plugin, try command to load scripts (/perl, /python, ...)
+2015-04-28 13:19:28		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 13:20:50		Option changed: weechat.plugin.autoload = "*,!tcl"  (default: "*")
+2015-04-28 13:20:55		fifo: pipe closed
+2015-04-28 13:20:56		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 13:20:57		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 13:21:58		Option changed: irc.server.freenode.autoconnect = on  (default: (undefined))
+2015-04-28 13:22:51		Option changed: irc.server.freenode.nicks = "DIEHLC,DIEHLC_"  (default: (undefined))
+2015-04-28 13:23:02		Option changed: irc.server.freenode.password = """  (default: (undefined))
+2015-04-28 13:23:08		Option changed: irc.server.freenode.password = "nndmt"  (default: (undefined))
+2015-04-28 13:23:25		Option changed: irc.server.freenode.username = "DIEHLC"  (default: (undefined))
+2015-04-28 13:23:33		Option changed: irc.server.freenode.realname = "Cody"  (default: (undefined))
+2015-04-28 13:24:28		Option changed: irc.server.freenode.autojoin = "#vim,#archlinux,#weechat,#nvim,#emacs,#zsh"  (default: (undefined))
+2015-04-28 13:25:00		fifo: pipe closed
+2015-04-28 13:25:01		script: 292 scripts for WeeChat 1.1.1
+2015-04-28 13:25:01		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-28 13:25:47	=!=	Error: unknown command "/autojoin" (type /help for help)
+2015-04-28 13:25:50		fifo: pipe closed
+2015-04-30 15:16:09		script: downloading list of scripts...
+2015-04-30 15:16:09		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-30 15:16:11		script: 292 scripts for WeeChat 1.1.1
+2015-04-30 15:17:54		Options saved to irc.conf
+2015-04-30 17:01:18		Options saved to irc.conf
+2015-04-30 17:02:20		[core]
+2015-04-30 17:02:20		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2015-04-30 17:02:20		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2015-04-30 17:02:20		[python]
+2015-04-30 17:02:20		  python  theme
+2015-04-30 17:02:20		[irc]
+2015-04-30 17:02:20		  admin       connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2015-04-30 17:02:20		  allchan     ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2015-04-30 17:02:20		  allpv       cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2015-04-30 17:02:20		  allserv     dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2015-04-30 17:02:20		  ban         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2015-04-30 17:02:20		[exec]
+2015-04-30 17:02:20		  exec
+2015-04-30 17:02:20		[lua]
+2015-04-30 17:02:20		  lua
+2015-04-30 17:02:20		[perl]
+2015-04-30 17:02:20		  buffers_detach  buffers_whitelist  iset  perl
+2015-04-30 17:02:20		[logger]
+2015-04-30 17:02:20		  logger
+2015-04-30 17:02:20		[charset]
+2015-04-30 17:02:20		  charset
+2015-04-30 17:02:20		[aspell]
+2015-04-30 17:02:20		  aspell
+2015-04-30 17:02:20		[script]
+2015-04-30 17:02:20		  script
+2015-04-30 17:02:20		[alias]
+2015-04-30 17:02:20		  AAWAY    AME      ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       unalias  W        WI       WW     
+2015-04-30 17:02:20		  alias    AMSG     BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    V        WC       WII    
+2015-04-30 17:02:20		[trigger]
+2015-04-30 17:02:20		  trigger
+2015-04-30 17:02:20		[xfer]
+2015-04-30 17:02:20		  me  xfer
+2015-04-30 17:02:20		[guile]
+2015-04-30 17:02:20		  guile
+2015-04-30 17:02:20		[relay]
+2015-04-30 17:02:20		  relay
+2015-04-30 17:02:20		[ruby]
+2015-04-30 17:02:20		  ruby
+2015-04-30 17:02:43		[core]  /buffer  list
+2015-04-30 17:02:43		                 clear [<number>|<name>|-merged|-all [<number>|<name>...]]
+2015-04-30 17:02:43		                 move <number>|-|+
+2015-04-30 17:02:43		                 swap <number1>|<name1> [<number2>|<name2>]
+2015-04-30 17:02:43		                 merge <number>
+2015-04-30 17:02:43		                 unmerge [<number>|-all]
+2015-04-30 17:02:43		                 hide [<number>|<name>|-all [<number>|<name>...]]
+2015-04-30 17:02:43		                 unhide [<number>|<name>|-all [<number>|<name>...]]
+2015-04-30 17:02:43		                 renumber [<number1> [<number2> [<start>]]]
+2015-04-30 17:02:43		                 close [<n1>[-<n2>]|<name>]
+2015-04-30 17:02:43		                 notify <level>
+2015-04-30 17:02:43		                 localvar
+2015-04-30 17:02:43		                 set <property> <value>
+2015-04-30 17:02:43		                 get <property>
+2015-04-30 17:02:43		                 <number>|-|+|<name>
+2015-04-30 17:02:43		manage buffers
+2015-04-30 17:02:43		    list: list buffers (without argument, this list is displayed)
+2015-04-30 17:02:43		   clear: clear buffer content (number for a buffer, -merged for merged buffers, -all for all buffers, or nothing for current buffer)
+2015-04-30 17:02:43		    move: move buffer in the list (may be relative, for example -1); "-" = move to first buffer number, "+" = move to last buffer number + 1
+2015-04-30 17:02:43		    swap: swap two buffers (swap with current buffer if only one number/name given)
+2015-04-30 17:02:43		   merge: merge current buffer to another buffer (chat area will be mix of both buffers)
+2015-04-30 17:02:43		          (by default ctrl-x switches between merged buffers)
+2015-04-30 17:02:43		 unmerge: unmerge buffer from other buffers which have same number
+2015-04-30 17:02:43		    hide: hide the buffer
+2015-04-30 17:02:43		  unhide: unhide the buffer
+2015-04-30 17:02:43		renumber: renumber buffers (works only if option weechat.look.buffer_auto_renumber is off)
+2015-04-30 17:02:43		   close: close buffer (number/range or name is optional)
+2015-04-30 17:02:43		  notify: set notify level for current buffer: this level determines whether buffer will be added to hotlist or not:
+2015-04-30 17:02:43		               none: never
+2015-04-30 17:02:43		          highlight: for highlights only
+2015-04-30 17:02:43		            message: for messages from users + highlights
+2015-04-30 17:02:43		                all: all messages
+2015-04-30 17:02:43		              reset: reset to default value (all)
+2015-04-30 17:02:43		localvar: display local variables for current buffer
+2015-04-30 17:02:43		     set: set a property for current buffer
+2015-04-30 17:02:43		     get: display a property of current buffer
+2015-04-30 17:02:43		  number: jump to buffer by number, possible prefix:
+2015-04-30 17:02:43		          '+': relative jump, add number to current
+2015-04-30 17:02:43		          '-': relative jump, sub number to current
+2015-04-30 17:02:43		          '*': jump to number, using option "weechat.look.jump_current_to_previous_buffer"
+2015-04-30 17:02:43		       -: jump to first buffer number
+2015-04-30 17:02:43		       +: jump to last buffer number
+2015-04-30 17:02:43		    name: jump to buffer by (partial) name
+2015-04-30 17:02:43		Examples:
+2015-04-30 17:02:43		  clear current buffer:
+2015-04-30 17:02:43		    /buffer clear
+2015-04-30 17:02:43		  move buffer to number 5:
+2015-04-30 17:02:43		    /buffer move 5
+2015-04-30 17:02:43		  swap buffer 1 with 3:
+2015-04-30 17:02:43		    /buffer swap 1 3
+2015-04-30 17:02:43		  swap buffer #weechat with current buffer:
+2015-04-30 17:02:43		    /buffer swap #weechat
+2015-04-30 17:02:43		  merge with core buffer:
+2015-04-30 17:02:43		    /buffer merge 1
+2015-04-30 17:02:43		  unmerge buffer:
+2015-04-30 17:02:43		    /buffer unmerge
+2015-04-30 17:02:43		  close current buffer:
+2015-04-30 17:02:43		    /buffer close
+2015-04-30 17:02:43		  close buffers 5 to 7:
+2015-04-30 17:02:43		    /buffer close 5-7
+2015-04-30 17:02:43		  jump to #weechat:
+2015-04-30 17:02:43		    /buffer #weechat
+2015-04-30 17:02:43		  jump to next buffer:
+2015-04-30 17:02:43		    /buffer +1
+2015-04-30 17:02:43		  jump to last buffer number:
+2015-04-30 17:02:43		    /buffer +
+2015-04-30 22:29:09		fifo: removing old fifo pipe "/home/cjd/.weechat/weechat_fifo_8589"
+2015-04-30 22:29:09		script: 292 scripts for WeeChat 1.1.1
+2015-04-30 22:29:10		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-04-30 22:29:26		Options saved to irc.conf
+2015-04-30 22:29:26		Options saved to irc.conf
+2015-04-30 23:01:26		[core]  /color  alias <color> <name>
+2015-04-30 23:01:26		                unalias <color>
+2015-04-30 23:01:26		                reset
+2015-04-30 23:01:26		                term2rgb <color>
+2015-04-30 23:01:26		                rgb2term <rgb> [<limit>]
+2015-04-30 23:01:26		                -o
+2015-04-30 23:01:26		define color aliases and display palette of colors
+2015-04-30 23:01:26		   alias: add an alias for a color
+2015-04-30 23:01:26		 unalias: delete an alias
+2015-04-30 23:01:26		   color: color number (greater than or equal to 0, max depends on terminal, commonly 63 or 255)
+2015-04-30 23:01:26		    name: alias name for color (for example: "orange")
+2015-04-30 23:01:26		   reset: reset all color pairs (required when no more color pairs are available if automatic reset is disabled, see option weechat.look.color_pairs_auto_reset)
+2015-04-30 23:01:26		term2rgb: convert a terminal color (0-255) to RGB color
+2015-04-30 23:01:26		rgb2term: convert a RGB color to terminal color (0-255)
+2015-04-30 23:01:26		   limit: number of colors to use in terminal table (starting from 0); default is 256
+2015-04-30 23:01:26		      -o: send terminal/colors info to current buffer as input
+2015-04-30 23:01:26		Without argument, this command displays colors in a new buffer.
+2015-04-30 23:01:26		Examples:
+2015-04-30 23:01:26		  add alias "orange" for color 214:
+2015-04-30 23:01:26		    /color alias 214 orange
+2015-04-30 23:01:26		  delete color 214:
+2015-04-30 23:01:26		    /color unalias 214
+2015-04-30 23:02:02		214 -> #ffaf00
+2015-04-30 23:03:38	=!=	No help available, "setting" is not a command or an option
+2015-04-30 23:03:42		[core]
+2015-04-30 23:03:42		  away     buffer   command  debug    filter   history  key      mouse    plugin   proxy    reload   save     set      upgrade  version  window 
+2015-04-30 23:03:42		  bar      color    cursor   eval     help     input    layout   mute     print    quit     repeat   secure   unset    uptime   wait   
+2015-04-30 23:03:42		[python]
+2015-04-30 23:03:42		  python  theme
+2015-04-30 23:03:42		[irc]
+2015-04-30 23:03:42		  admin       connect     deop        ignore      kick        lusers      msg         op          query       remove      sapart      squery      topic       users       who       
+2015-04-30 23:03:42		  allchan     ctcp        devoice     info        kickban     map         names       oper        quiet       restart     saquit      squit       trace       version     whois     
+2015-04-30 23:03:42		  allpv       cycle       die         invite      kill        me          nick        part        quote       sajoin      server      stats       unban       voice       whowas    
+2015-04-30 23:03:42		  allserv     dcc         disconnect  ison        links       mode        notice      ping        reconnect   samode      service     summon      unquiet     wallchops 
+2015-04-30 23:03:42		  ban         dehalfop    halfop      join        list        motd        notify      pong        rehash      sanick      servlist    time        userhost    wallops   
+2015-04-30 23:03:42		[exec]
+2015-04-30 23:03:42		  exec
+2015-04-30 23:03:42		[lua]
+2015-04-30 23:03:42		  lua
+2015-04-30 23:03:42		[perl]
+2015-04-30 23:03:42		  buffers_detach  buffers_whitelist  iset  perl
+2015-04-30 23:03:42		[logger]
+2015-04-30 23:03:42		  logger
+2015-04-30 23:03:42		[charset]
+2015-04-30 23:03:42		  charset
+2015-04-30 23:03:42		[aspell]
+2015-04-30 23:03:42		  aspell
+2015-04-30 23:03:42		[script]
+2015-04-30 23:03:42		  script
+2015-04-30 23:03:42		[alias]
+2015-04-30 23:03:42		  AAWAY    AME      ANICK    BYE      CHAT     CLOSE    IG       K        LEAVE    MSGBUF   N        REDRAW   SIGNOFF  UB       unalias  W        WI       WW     
+2015-04-30 23:03:42		  alias    AMSG     BEEP     C        CL       EXIT     J        KB       M        MUB      Q        SAY      T        UMODE    V        WC       WII    
+2015-04-30 23:03:42		[trigger]
+2015-04-30 23:03:42		  trigger
+2015-04-30 23:03:42		[xfer]
+2015-04-30 23:03:42		  me  xfer
+2015-04-30 23:03:42		[guile]
+2015-04-30 23:03:42		  guile
+2015-04-30 23:03:42		[relay]
+2015-04-30 23:03:42		  relay
+2015-04-30 23:03:42		[ruby]
+2015-04-30 23:03:42		  ruby
+2015-04-30 23:20:59		Options saved to irc.conf
+2015-05-01 01:27:37		tmux_env: remove DISPLAY (was ':0')
+2015-05-01 01:27:37		tmux_env: remove SSH_AGENT_PID (was '500')
+2015-05-01 01:27:37		tmux_env: add SSH_AUTH_SOCK=u'/tmp/ssh-DJuSapYY0S/agent.7251' (was '/tmp/ssh-bRJ6MQSSiOPY/agent.489')
+2015-05-01 01:27:37		tmux_env: add SSH_CONNECTION=u'192.168.254.2 37449 192.168.254.4 22' (was None)
+2015-05-01 01:27:37		tmux_env: remove WINDOWID (was '25165831')
+2015-05-01 01:27:37		tmux_env: remove XAUTHORITY (was '/run/user/1000/gdm/Xauthority')
+2015-05-01 11:44:33		Options saved to irc.conf
+2015-05-01 11:44:59		Options saved to irc.conf
+2015-05-01 11:44:59		Options saved to irc.conf
+2015-05-01 11:44:59		Options saved to irc.conf
+2015-05-01 11:45:02		fifo: pipe closed
+2015-05-01 11:45:06		script: 292 scripts for WeeChat 1.1.1
+2015-05-01 11:45:06		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-05-01 11:45:35		tmux_env: remove DISPLAY (was ':0')
+2015-05-01 11:45:35		tmux_env: remove SSH_AGENT_PID (was '500')
+2015-05-01 11:45:35		tmux_env: add SSH_AUTH_SOCK=u'/tmp/ssh-DJuSapYY0S/agent.7251' (was '/tmp/ssh-bRJ6MQSSiOPY/agent.489')
+2015-05-01 11:45:35		tmux_env: add SSH_CONNECTION=u'192.168.254.2 37449 192.168.254.4 22' (was None)
+2015-05-01 11:45:35		tmux_env: remove WINDOWID (was '25165831')
+2015-05-01 11:45:35		tmux_env: remove XAUTHORITY (was '/run/user/1000/gdm/Xauthority')
+2015-05-01 11:46:21		Options saved to irc.conf
+2015-05-01 13:05:43	=!=	No help available, "ingore" is not a command or an option
+2015-05-01 13:05:50		[irc]  /ignore  list
+2015-05-01 13:05:50		                add [re:]<nick> [<server> [<channel>]]
+2015-05-01 13:05:50		                del <number>|-all
+2015-05-01 13:05:50		ignore nicks/hosts from servers or channels
+2015-05-01 13:05:50		     list: list all ignores
+2015-05-01 13:05:50		      add: add an ignore
+2015-05-01 13:05:50		     nick: nick or hostname (can be a POSIX extended regular expression if "re:" is given or a mask using "*" to replace one or more chars)
+2015-05-01 13:05:50		      del: delete an ignore
+2015-05-01 13:05:50		   number: number of ignore to delete (look at list to find it)
+2015-05-01 13:05:50		     -all: delete all ignores
+2015-05-01 13:05:50		   server: internal server name where ignore is working
+2015-05-01 13:05:50		  channel: channel name where ignore is working
+2015-05-01 13:05:50		Note: the regular expression can start with "(?-i)" to become case sensitive.
+2015-05-01 13:05:50		Examples:
+2015-05-01 13:05:50		  ignore nick "toto" everywhere:
+2015-05-01 13:05:50		    /ignore add toto
+2015-05-01 13:05:50		  ignore host "toto@domain.com" on freenode server:
+2015-05-01 13:05:50		    /ignore add toto@domain.com freenode
+2015-05-01 13:05:50		  ignore host "toto*@*.domain.com" on freenode/#weechat:
+2015-05-01 13:05:50		    /ignore add toto*@*.domain.com freenode #weechat
+2015-05-01 13:06:50		irc: no ignore in list
+2015-05-01 13:13:29		Option changed: irc.look.smart_filter = on
+2015-05-01 13:13:34		Filter "joinquit" added:
+2015-05-01 13:13:34		  [joinquit] buffer: * / tags: irc_join,irc_part,irc_quit / regex: * 
+2015-05-01 13:15:44		Options saved to irc.conf
+2015-05-02 04:29:14		Options saved to irc.conf
+2015-05-02 04:29:40		Options saved to irc.conf
+2015-05-02 04:29:40		Options saved to irc.conf
+2015-05-02 20:16:03		Options saved to irc.conf
+2015-05-02 20:16:26		Options saved to irc.conf
+2015-05-02 20:16:26		Options saved to irc.conf
+2015-05-02 20:40:31		tmux_env: add DISPLAY=u':0' (was None)
+2015-05-02 20:40:31		tmux_env: add SSH_AGENT_PID=u'500' (was None)
+2015-05-02 20:40:31		tmux_env: add SSH_AUTH_SOCK=u'/tmp/ssh-bRJ6MQSSiOPY/agent.489' (was u'/tmp/ssh-DJuSapYY0S/agent.7251')
+2015-05-02 20:40:31		tmux_env: remove SSH_CONNECTION (was u'192.168.254.2 37449 192.168.254.4 22')
+2015-05-02 20:40:31		tmux_env: add WINDOWID=u'23068679' (was None)
+2015-05-02 20:40:31		tmux_env: add XAUTHORITY=u'/run/user/1000/gdm/Xauthority' (was None)
+2015-05-02 22:41:18		Options saved to irc.conf
+2015-05-02 22:41:43		Options saved to irc.conf
+2015-05-02 22:41:43		Options saved to irc.conf
+2015-05-02 23:16:10		tmux_env: remove DISPLAY (was u':0')
+2015-05-02 23:16:10		tmux_env: remove SSH_AGENT_PID (was u'500')
+2015-05-02 23:16:10		tmux_env: add SSH_AUTH_SOCK=u'/tmp/ssh-Ro3V9b89dL/agent.13386' (was u'/tmp/ssh-bRJ6MQSSiOPY/agent.489')
+2015-05-02 23:16:10		tmux_env: add SSH_CONNECTION=u'192.168.254.2 38802 192.168.254.4 22' (was None)
+2015-05-02 23:16:10		tmux_env: remove WINDOWID (was u'23068679')
+2015-05-02 23:16:10		tmux_env: remove XAUTHORITY (was u'/run/user/1000/gdm/Xauthority')
+2015-05-04 10:48:58		Options saved to irc.conf
+2015-05-04 10:49:21		Options saved to irc.conf
+2015-05-04 10:49:21		Options saved to irc.conf
+2015-05-04 12:32:17		fifo: pipe closed
+2015-05-04 12:32:24		script: downloading list of scripts...
+2015-05-04 12:32:24		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-05-04 12:32:26		script: 292 scripts for WeeChat 1.1.1
+2015-05-04 12:32:33		fifo: pipe closed
+2015-05-04 12:33:56		script: 292 scripts for WeeChat 1.1.1
+2015-05-04 12:33:56		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, trigger, xfer
+2015-05-04 12:34:09		[alias]  /alias  [-completion <completion>] <alias> [<command> [;<command>...]]
+2015-05-04 12:34:09		create an alias for a command
+2015-05-04 12:34:09		completion: completion for alias (optional, by default completion is done with target command)
+2015-05-04 12:34:09		            note: you can use %%command to use completion of an existing command
+2015-05-04 12:34:09		     alias: name of alias (wildcard "*" is allowed)
+2015-05-04 12:34:09		   command: command name with arguments (many commands can be separated by semicolons)
+2015-05-04 12:34:09		Without argument, this command lists all defined alias.
+2015-05-04 12:34:09		Note: in command, special variables are replaced:
+2015-05-04 12:34:09		        $n: argument 'n' (between 1 and 9)
+2015-05-04 12:34:09		       $-m: arguments from 1 to 'm'
+2015-05-04 12:34:09		       $n-: arguments from 'n' to last
+2015-05-04 12:34:09		      $n-m: arguments from 'n' to 'm'
+2015-05-04 12:34:09		        $*: all arguments
+2015-05-04 12:34:09		        $~: last argument
+2015-05-04 12:34:09		      $var: where "var" is a local variable of buffer (see /buffer localvar)
+2015-05-04 12:34:09		            examples: $nick, $channel, $server, $plugin, $name
+2015-05-04 12:34:09		To remove an alias, use command /unalias.
+2015-05-04 12:34:09		Examples:
+2015-05-04 12:34:09		  alias /split to split window horizontally:
+2015-05-04 12:34:09		    /alias split /window splith
+2015-05-04 12:34:09		  alias /hello to say "hello" on all channels but not on #weechat:
+2015-05-04 12:34:09		    /alias hello /allchan -exclude=#weechat msg * hello
+2015-05-04 12:34:09		  alias /forcejoin to send IRC command "forcejoin" with completion of /sajoin:
+2015-05-04 12:34:09		    /alias -completion %%sajoin forcejoin /quote forcejoin
+2015-05-04 12:34:26		tmux_env: remove DISPLAY (was ':0')
+2015-05-04 12:34:26		tmux_env: remove SSH_AGENT_PID (was '500')
+2015-05-04 12:34:26		tmux_env: add SSH_AUTH_SOCK=u'/tmp/ssh-Ro3V9b89dL/agent.13386' (was '/tmp/ssh-bRJ6MQSSiOPY/agent.489')
+2015-05-04 12:34:26		tmux_env: add SSH_CONNECTION=u'192.168.254.2 38802 192.168.254.4 22' (was None)
+2015-05-04 12:34:26		tmux_env: remove WINDOWID (was '25165831')
+2015-05-04 12:34:26		tmux_env: remove XAUTHORITY (was '/run/user/1000/gdm/Xauthority')
+2015-05-04 12:35:29		Alias "con" => "/connect" created
+2015-05-04 12:35:36	=!=	irc: unable to create temporary server "freedone" because the creation of temporary servers with command /connect is currently disabled
+2015-05-04 12:35:36	=!=	irc: if you want to create a standard server, use the command "/server add" (see /help server); if you really want to create a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2015-05-04 12:37:38		Options saved to irc.conf
+2015-05-05 12:00:23		Options saved to irc.conf
+2015-05-05 12:00:47		Options saved to irc.conf
